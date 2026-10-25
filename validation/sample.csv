@@ -1,0 +1,61 @@
+id,project,from_version,to_version,path,symbol_kind,change_type,param,detail,popularity_rank
+1,prompt-toolkit,3.0.36,3.0.37,prompt_toolkit.eventloop.get_event_loop,function,removed,,,151
+2,prompt-toolkit,3.0.51,3.0.52,prompt_toolkit.layout.Dimension.is_zero,method,removed,,,151
+3,filelock,3.21.0,3.21.1,filelock.ReadWriteLock.release,method,removed,,,44
+4,filelock,3.21.0,3.21.1,filelock.ReadWriteLock.get_lock,classmethod,removed,,,44
+5,typing-extensions,4.7.1,4.8.0,typing_extensions.deprecated,function,param_removed,__msg,,3
+6,typing-extensions,4.7.1,4.8.0,typing_extensions.reveal_type,function,required_param_added,obj,PO,3
+7,httpcore2,0.0.0,2.0.0,httpcore2.main,function,removed,,,130
+8,idna,3.8,3.9,idna.compat.uts46_remap,function,removed,,,4
+9,idna,3.8,3.9,idna.compat.IncrementalEncoder,class_open,removed,,,4
+10,tomli-w,1.0.0,1.1.0,tomli_w.dump,function,required_param_added,fp,PO,342
+11,tomli-w,1.0.0,1.1.0,tomli_w.dump,function,required_param_added,obj,PO,342
+12,python-pptx,0.6.23,1.0.0,pptx.enum.base.MetaEnumeration,class_open,removed,,,395
+13,python-pptx,0.6.23,1.0.0,pptx.shapes.group.GroupShape,class,param_renamed,shape_elm,shape_elm -> grpSp,395
+14,s3transfer,0.13.0,0.13.1,s3transfer.NullHandler,class_open,removed,,,30
+15,s3transfer,0.7.0,0.8.0,s3transfer.crt.create_s3_crt_client,function,param_renamed,botocore_credential_provider,botocore_credential_provider -> crt_credentials_provider,30
+16,structlog,24.2.0,24.3.0,structlog.tracebacks.ExceptionDictTransformer,class,became_keyword_only,locals_max_string,,269
+17,structlog,24.2.0,24.3.0,structlog.tracebacks.ExceptionDictTransformer,class,became_keyword_only,show_locals,,269
+18,asyncpg,0.30.0,0.31.0,asyncpg.protocol.protocol.Record,class,removed,,,257
+19,asyncpg,0.28.0,0.29.0,asyncpg.compat.wait_for,function,removed,,,257
+20,regex,2025.9.18,2025.10.22,regex.regex.subfn,function,removed,,,93
+21,regex,2025.9.18,2025.10.22,regex.regex.search,function,removed,,,93
+22,argcomplete,2.1.2,3.0.0,argcomplete.action_is_open,function,removed,,,384
+23,argcomplete,2.1.2,3.0.0,argcomplete.default_validator,function,removed,,,384
+24,aiosqlite,0.21.0,0.22.0,aiosqlite.Connection.run,method,removed,,,367
+25,xxhash,3.8.2,4.0.0,xxhash.xxh64,class,param_renamed,input,input -> data,219
+26,xxhash,3.8.2,4.0.0,xxhash.xxh3_64,class,param_renamed,input,input -> data,219
+27,typing-inspection,0.1.0,0.2.0,typing_inspection.typing_objects.is_typevar,function,became_positional_only,obj,,28
+28,typing-inspection,0.1.0,0.2.0,typing_inspection.typing_objects.is_never,function,became_positional_only,obj,,28
+29,jedi,0.19.1,0.19.2,jedi.api.completion.filter_names,function,required_param_added,imported_names,PK,268
+30,jedi,0.19.1,0.19.2,jedi.inference.compiled.subprocess.CompiledSubprocess.run,method,param_renamed,inference_state,inference_state -> inference_state_id,268
+31,transformers,4.47.1,4.48.0,transformers.models.glpn.modeling_glpn.GLPNDWConv,class_open,removed,,,274
+32,transformers,4.47.1,4.48.0,transformers.models.swiftformer.modeling_swiftformer.SwiftFormerPatchEmbedding,class_open,removed,,,274
+33,keyring,24.3.1,25.0.0,keyring.backends.macOS.api.create_cfbool,function,removed,,,191
+34,keyring,24.3.1,25.0.0,keyring.backends.macOS.api.create_cfstr,function,removed,,,191
+35,importlib-metadata,9.0.0,9.0.1,importlib_metadata.SimplePath.joinpath,method,became_positional_only,other,,78
+36,importlib-metadata,8.9.0,9.0.0,importlib_metadata.PackagePath,class_open,removed,,,78
+37,cloudpickle,2.2.1,3.0.0,cloudpickle.instance,function,removed,,,163
+38,cloudpickle,2.2.1,3.0.0,cloudpickle.cell_set,function,removed,,,163
+39,sse-starlette,2.1.3,2.2.0,sse_starlette.ServerSentEvent,class,removed,,,123
+40,sse-starlette,2.1.3,2.2.0,sse_starlette.EventSourceResponse.listen_for_disconnect,staticmethod,removed,,,123
+41,uvloop,0.21.0,0.22.1,uvloop.install,function,removed,,,136
+42,uvloop,0.21.0,0.22.1,uvloop.EventLoopPolicy,class_open,removed,,,136
+43,mcp,1.30.0,2.0.0,mcp.server.streamable_http.StreamableHTTPServerTransport,class,param_removed,idle_timeout,,121
+44,mcp,1.30.0,2.0.0,mcp.types.ResourceLink,class_open,removed,,,121
+45,soupsieve,2.10,3.0.2,soupsieve.css_parser.escape,function,removed,,,98
+46,soupsieve,2.10,3.0.2,soupsieve.css_parser.SelectorPattern,class,removed,,,98
+47,black,23.3.0,23.7.0,black.files.path_is_ignored,function,removed,,,248
+48,black,25.1.0,25.9.0,black.linegen.remove_with_parens,function,required_param_added,features,PK,248
+49,google-auth,2.16.3,2.17.0,google.auth.aws.Credentials.validate_metadata_server_urls,method,removed,,,75
+50,google-auth,2.16.0,2.16.1,google.auth.aws.Credentials.validate_token_url,staticmethod,removed,,,75
+51,pyasn1,0.6.0,0.6.1,pyasn1.compat.integer.from_bytes,function,removed,,,65
+52,pyasn1,0.6.0,0.6.1,pyasn1.compat.integer.bitLength,function,removed,,,65
+53,pre-commit,4.4.0,4.5.0,pre_commit.store.Store.delete_repo,method,removed,,,186
+54,pre-commit,2.21.0,3.0.0,pre_commit.clientlib.ordered_load_normalize_legacy_config,function,removed,,,186
+55,httpcore,1.0.2,1.0.3,httpcore.HTTPProxy.response_closed,method,removed,,,35
+56,numpy,2.5.1,2.5.2,numpy.random.RandomState.get_state,method,default_removed,legacy,was False,23
+57,numpy,1.26.4,2.0.0,numpy.lib.isposinf,function,removed,,,23
+58,hatchling,1.19.0,1.20.0,hatchling.builders.wheel.WheelBuilderConfig.set_default_file_selection,method,removed,,,88
+59,hatchling,1.18.0,1.19.0,hatchling.bridge.app.InvokedApplication,class,removed,,,88
+60,jsonschema,4.17.3,4.18.0,jsonschema.Validator,class,param_renamed,resolver,resolver -> registry,48

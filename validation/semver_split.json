@@ -1,0 +1,132 @@
+{
+ "unknown|patch|ge1": {
+  "n": 19752,
+  "high": 0.1168,
+  "projects": 1133
+ },
+ "unknown|major|ge1": {
+  "n": 1435,
+  "high": 0.639,
+  "projects": 595
+ },
+ "unknown|minor|ge1": {
+  "n": 13620,
+  "high": 0.2543,
+  "projects": 1125
+ },
+ "semver|minor|ge1": {
+  "n": 719,
+  "high": 0.2448,
+  "projects": 38
+ },
+ "semver|patch|lt1": {
+  "n": 409,
+  "high": 0.1516,
+  "projects": 20
+ },
+ "semver|major|lt1": {
+  "n": 11,
+  "high": 0.3636,
+  "projects": 11
+ },
+ "calver|major|ge1": {
+  "n": 44,
+  "high": 0.4773,
+  "projects": 11
+ },
+ "calver|minor|lt1": {
+  "n": 17,
+  "high": 0.4706,
+  "projects": 7
+ },
+ "calver|patch|lt1": {
+  "n": 39,
+  "high": 0.0513,
+  "projects": 6
+ },
+ "not_semver|minor|ge1": {
+  "n": 7,
+  "high": 0.4286,
+  "projects": 2
+ },
+ "not_semver|patch|lt1": {
+  "n": 37,
+  "high": 0.0,
+  "projects": 1
+ },
+ "unknown|patch|lt1": {
+  "n": 8383,
+  "high": 0.1313,
+  "projects": 598
+ },
+ "unknown|major|lt1": {
+  "n": 255,
+  "high": 0.4863,
+  "projects": 255
+ },
+ "unknown|minor|lt1": {
+  "n": 4183,
+  "high": 0.3349,
+  "projects": 506
+ },
+ "semver|patch|ge1": {
+  "n": 707,
+  "high": 0.1669,
+  "projects": 40
+ },
+ "semver|major|ge1": {
+  "n": 64,
+  "high": 0.6562,
+  "projects": 25
+ },
+ "calver|patch|ge1": {
+  "n": 61,
+  "high": 0.1148,
+  "projects": 10
+ },
+ "semver|minor|lt1": {
+  "n": 188,
+  "high": 0.3723,
+  "projects": 18
+ },
+ "calver|minor|ge1": {
+  "n": 64,
+  "high": 0.375,
+  "projects": 7
+ },
+ "not_semver|patch|ge1": {
+  "n": 21,
+  "high": 0.1905,
+  "projects": 2
+ },
+ "not_semver|minor|lt1": {
+  "n": 33,
+  "high": 0.0,
+  "projects": 1
+ },
+ "not_semver|major|lt1": {
+  "n": 1,
+  "high": 0.0,
+  "projects": 1
+ },
+ "semver_stable_patch": {
+  "transitions": 707,
+  "with_high_break": 118,
+  "share": 0.1669,
+  "projects_with": 17,
+  "projects": 40
+ },
+ "all_stable_patch": {
+  "transitions": 20541,
+  "with_high_break": 2437,
+  "share": 0.1186,
+  "projects_with": 562,
+  "projects": 1185
+ },
+ "policy_counts": {
+  "unknown": 1755,
+  "calver": 61,
+  "semver": 54,
+  "not_semver": 2
+ }
+}

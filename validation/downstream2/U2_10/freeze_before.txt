@@ -1,0 +1,12 @@
+attrs==26.1.0
+click==8.0.4
+coverage==5.5
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+py==1.11.0
+pytest==6.2.5
+setuptools==69.5.1
+shellingham==1.4.0
+toml==0.10.2
+typer @ file:///home/claude/apidrift/validation/downstream2/part2/U2_10/typer-0.4.0

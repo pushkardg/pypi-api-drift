@@ -1,0 +1,2155 @@
+### q0000
+You are given a Python snippet and an installed library version.
+Library: openai==2.46.0
+```python
+from openai.types.beta.beta_response_input_item import MultiAgentCallOutputOutputAnnotationsUnionMember0
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of openai: 2.23.0 … 3.35.1 (80 releases).
+- `openai.types.beta.beta_response_input_item.MultiAgentCallOutputOutputAnnotationsUnionMember0` exists in: 2.45.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0006
+You are given a Python snippet and an installed library version.
+Library: async-lru==2.0.0
+```python
+from async_lru import alru_cache
+alru_cache(fn=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of async-lru: 1.0.3 … 2.4.0 (11 releases).
+- `async_lru.alru_cache` exists in: 1.0.3–2.4.0
+- `async_lru.alru_cache(..., fn=...)` keyword accepted in: 1.0.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0012
+You are given a Python snippet and an installed library version.
+Library: pytest-httpx==0.31.0
+```python
+from pytest_httpx import non_mocked_hosts
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pytest-httpx: 0.11.0 … 0.36.2 (37 releases).
+- `pytest_httpx.non_mocked_hosts` exists in: 0.11.0–0.30.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0018
+You are given a Python snippet and an installed library version.
+Library: nbformat==5.10.4
+```python
+from nbformat import validate
+validate(strip_invalid_metadata=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of nbformat: 5.1.3 … 5.11.1 (22 releases).
+- `nbformat.validate` exists in: 5.1.3–5.11.1
+- `nbformat.validate(..., strip_invalid_metadata=...)` keyword accepted in: 5.2.0–5.10.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0024
+You are given a Python snippet and an installed library version.
+Library: curl-cffi==0.15.0
+```python
+from curl_cffi import AsyncWebSocket
+AsyncWebSocket(session=..., curl=..., retry_on_recv_error=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of curl-cffi: 0.2.0 … 0.16.3 (43 releases).
+- `curl_cffi.AsyncWebSocket` exists in: 0.10.0–0.16.3
+- `curl_cffi.AsyncWebSocket(..., session=...)` keyword accepted in: 0.10.0–0.16.3
+- `curl_cffi.AsyncWebSocket(..., curl=...)` keyword accepted in: 0.10.0–0.16.3
+- `curl_cffi.AsyncWebSocket(..., retry_on_recv_error=...)` keyword accepted in: 0.14.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0030
+You are given a Python snippet and an installed library version.
+Library: srsly==1.0.7
+```python
+from srsly import write_msgpack
+write_msgpack(data=..., location=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of srsly: 1.0.6 … 2.5.4 (16 releases).
+- `srsly.write_msgpack` exists in: 1.0.6–2.5.4
+- `srsly.write_msgpack(..., data=...)` keyword accepted in: 1.0.6–2.5.4
+- `srsly.write_msgpack(..., location=...)` keyword accepted in: 1.0.6–1.0.7
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0036
+You are given a Python snippet and an installed library version.
+Library: pytest-asyncio==0.25.3
+```python
+from pytest_asyncio.plugin import FactoryFixtureFunction
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pytest-asyncio: 0.15.0 … 1.4.0 (40 releases).
+- `pytest_asyncio.plugin.FactoryFixtureFunction` exists in: 0.17.1–0.25.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0042
+You are given a Python snippet and an installed library version.
+Library: pdfminer-six==20260107
+```python
+from pdfminer.cmapdb import CMapParser
+CMapParser.poll
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pdfminer-six: 20211012 … 20260107 (17 releases).
+- `pdfminer.cmapdb.CMapParser` exists in: 20211012–20260107
+- `pdfminer.cmapdb.CMapParser.poll` exists in: 20211012–20251230
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0048
+You are given a Python snippet and an installed library version.
+Library: sshtunnel==0.5.1
+```python
+from sshtunnel import get_connection_id
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sshtunnel: 0.3.2 … 0.5.1 (3 releases).
+- `sshtunnel.get_connection_id` exists in: 0.3.2–0.4.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0054
+You are given a Python snippet and an installed library version.
+Library: tomlkit==0.7.2
+```python
+from tomlkit.items import Key
+Key.delimiter
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of tomlkit: 0.7.1 … 0.15.2 (32 releases).
+- `tomlkit.items.Key` exists in: 0.7.1–0.15.2
+- `tomlkit.items.Key.delimiter` exists in: 0.7.1–0.7.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0060
+You are given a Python snippet and an installed library version.
+Library: nexus-rpc==1.1.0
+```python
+from nexusrpc.handler import OperationHandler
+OperationHandler.fetch_result
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of nexus-rpc: 1.1.0 … 1.4.0 (4 releases).
+- `nexusrpc.handler.OperationHandler` exists in: 1.1.0–1.4.0
+- `nexusrpc.handler.OperationHandler.fetch_result` exists in: 1.1.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0066
+You are given a Python snippet and an installed library version.
+Library: pytest-env==1.7.0
+```python
+from pytest_env.version import VERSION_TUPLE
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pytest-env: 0.7.0 … 1.8.1 (24 releases).
+- `pytest_env.version.VERSION_TUPLE` exists in: 1.1.0–1.6.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0072
+You are given a Python snippet and an installed library version.
+Library: sqlglot==30.1.0
+```python
+from sqlglot.dialects.presto import DATE_ADD_OR_SUB
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sqlglot: 27.6.1 … 30.23.0 (80 releases).
+- `sqlglot.dialects.presto.DATE_ADD_OR_SUB` exists in: 27.6.1–30.0.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0078
+You are given a Python snippet and an installed library version.
+Library: authlib==0.15.5
+```python
+from authlib.oauth2.rfc6750 import InsufficientScopeError
+InsufficientScopeError(state=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of authlib: 0.15.3 … 1.9.1 (36 releases).
+- `authlib.oauth2.rfc6750.InsufficientScopeError` exists in: 0.15.3–1.9.1
+- `authlib.oauth2.rfc6750.InsufficientScopeError(..., state=...)` keyword accepted in: 0.15.3–0.15.4, 1.0.0–1.9.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0084
+You are given a Python snippet and an installed library version.
+Library: kombu==5.4.2
+```python
+from kombu.utils.text import version_string_as_tuple
+version_string_as_tuple(version=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of kombu: 5.1.0 … 5.6.2 (25 releases).
+- `kombu.utils.text.version_string_as_tuple` exists in: 5.1.0–5.6.2
+- `kombu.utils.text.version_string_as_tuple(..., version=...)` keyword accepted in: 5.4.1–5.4.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0090
+You are given a Python snippet and an installed library version.
+Library: more-itertools==11.0.2
+```python
+from more_itertools.more import running_max
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of more-itertools: 8.7.0 … 11.2.1 (24 releases).
+- `more_itertools.more.running_max` exists in: 11.0.0–11.0.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0096
+You are given a Python snippet and an installed library version.
+Library: leather==0.4.0
+```python
+from leather.utils import formatwarning_orig
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of leather: 0.3.4 … 0.4.1 (3 releases).
+- `leather.utils.formatwarning_orig` exists in: 0.3.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0102
+You are given a Python snippet and an installed library version.
+Library: yamllint==1.34.0
+```python
+from yamllint.rules.truthy import TRUTHY
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of yamllint: 1.26.0 … 1.38.0 (15 releases).
+- `yamllint.rules.truthy.TRUTHY` exists in: 1.26.0–1.33.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0108
+You are given a Python snippet and an installed library version.
+Library: holidays==0.97
+```python
+from holidays.calendars.tibetan import WINTER_SOLSTICE
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of holidays: 0.27.1 … 0.106 (80 releases).
+- `holidays.calendars.tibetan.WINTER_SOLSTICE` exists in: 0.79–0.97
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0114
+You are given a Python snippet and an installed library version.
+Library: tldextract==5.1.2
+```python
+from tldextract.cache import md5
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of tldextract: 3.1.1 … 5.4.0 (24 releases).
+- `tldextract.cache.md5` exists in: 5.0.1–5.1.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0120
+You are given a Python snippet and an installed library version.
+Library: sentencepiece==0.1.97
+```python
+from sentencepiece import EncoderVersion_kOptimized
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sentencepiece: 0.1.95 … 0.2.2 (8 releases).
+- `sentencepiece.EncoderVersion_kOptimized` exists in: 0.1.95–0.1.96
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0126
+You are given a Python snippet and an installed library version.
+Library: sentry-sdk==2.20.0
+```python
+from sentry_sdk.profiler.continuous_profiler import ContinuousScheduler
+ContinuousScheduler.should_autostart
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sentry-sdk: 2.12.0 … 2.72.0 (80 releases).
+- `sentry_sdk.profiler.continuous_profiler.ContinuousScheduler` exists in: 2.12.0–2.72.0
+- `sentry_sdk.profiler.continuous_profiler.ContinuousScheduler.should_autostart` exists in: 2.12.0–2.20.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0132
+You are given a Python snippet and an installed library version.
+Library: google-cloud-firestore==2.27.0
+```python
+from google.cloud.firestore_v1.pipeline_expressions import AggregateFunction
+AggregateFunction(name=..., params=..., use_infix_repr=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of google-cloud-firestore: 1.9.1 … 2.34.1 (61 releases).
+- `google.cloud.firestore_v1.pipeline_expressions.AggregateFunction` exists in: 2.23.0–2.34.1
+- `google.cloud.firestore_v1.pipeline_expressions.AggregateFunction(..., name=...)` keyword accepted in: 2.23.0–2.34.1
+- `google.cloud.firestore_v1.pipeline_expressions.AggregateFunction(..., params=...)` keyword accepted in: 2.23.0–2.34.1
+- `google.cloud.firestore_v1.pipeline_expressions.AggregateFunction(..., use_infix_repr=...)` keyword accepted in: 2.23.0–2.26.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0138
+You are given a Python snippet and an installed library version.
+Library: google-cloud-bigquery==2.34.4
+```python
+from google.cloud.bigquery.enums import SqlParameterScalarTypes
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of google-cloud-bigquery: 2.29.0 … 3.46.2 (80 releases).
+- `google.cloud.bigquery.enums.SqlParameterScalarTypes` exists in: 2.29.0–2.34.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0144
+You are given a Python snippet and an installed library version.
+Library: puremagic==2.0.0
+```python
+from puremagic.scanners.python_scanner import is_substantial_python_code
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of puremagic: 1.11 … 2.2.0 (22 releases).
+- `puremagic.scanners.python_scanner.is_substantial_python_code` exists in: 2.0.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0150
+You are given a Python snippet and an installed library version.
+Library: pathvalidate==3.2.0
+```python
+from pathvalidate import FileNameSanitizer
+FileNameSanitizer(check_reserved=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pathvalidate: 2.3.2 … 3.3.1 (14 releases).
+- `pathvalidate.FileNameSanitizer` exists in: 2.3.2–3.3.1
+- `pathvalidate.FileNameSanitizer(..., check_reserved=...)` keyword accepted in: 2.3.2–3.1.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0156
+You are given a Python snippet and an installed library version.
+Library: pyright==1.1.381
+```python
+from pyright.types import Binary
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pyright: 1.1.338 … 1.1.414 (80 releases).
+- `pyright.types.Binary` exists in: 1.1.338–1.1.381
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0162
+You are given a Python snippet and an installed library version.
+Library: sympy==1.14.0
+```python
+from sympy.physics.wigner import real_gaunt
+real_gaunt(l_1=..., l_2=..., l_3=..., m_1=..., m_2=..., m_3=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sympy: 1.8 … 1.14.0 (13 releases).
+- `sympy.physics.wigner.real_gaunt` exists in: 1.12–1.14.0
+- `sympy.physics.wigner.real_gaunt(..., l_1=...)` keyword accepted in: 1.12–1.14.0
+- `sympy.physics.wigner.real_gaunt(..., l_2=...)` keyword accepted in: 1.12–1.14.0
+- `sympy.physics.wigner.real_gaunt(..., l_3=...)` keyword accepted in: 1.12–1.14.0
+- `sympy.physics.wigner.real_gaunt(..., m_1=...)` keyword accepted in: 1.12–1.13.3
+- `sympy.physics.wigner.real_gaunt(..., m_2=...)` keyword accepted in: 1.12–1.13.3
+- `sympy.physics.wigner.real_gaunt(..., m_3=...)` keyword accepted in: 1.12–1.13.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0168
+You are given a Python snippet and an installed library version.
+Library: pydyf==0.12.0
+```python
+from pydyf import Stream
+Stream.transform
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pydyf: 0.0.2 … 0.13.0 (18 releases).
+- `pydyf.Stream` exists in: 0.0.2–0.13.0
+- `pydyf.Stream.transform` exists in: 0.0.2–0.11.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0174
+You are given a Python snippet and an installed library version.
+Library: vcs-versioning==1.1.1
+```python
+from vcs_versioning.overrides import source_epoch_or_utc_now
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of vcs-versioning: 0.0.1 … 2.6.0 (21 releases).
+- `vcs_versioning.overrides.source_epoch_or_utc_now` exists in: 1.0.1–1.1.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0180
+You are given a Python snippet and an installed library version.
+Library: deprecated==1.3.1
+```python
+from deprecated.classic import string_types
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of deprecated: 1.2.11 … 3.0.0 (10 releases).
+- `deprecated.classic.string_types` exists in: 1.2.11–1.3.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0186
+You are given a Python snippet and an installed library version.
+Library: coverage==7.0.4
+```python
+from coverage.types import TConfigSection
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of coverage: 7.0.2 … 7.16.2 (80 releases).
+- `coverage.types.TConfigSection` exists in: 7.0.2–7.0.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0192
+You are given a Python snippet and an installed library version.
+Library: pydot==1.4.2
+```python
+from pydot import str_type
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pydot: 1.4.2 … 4.0.1 (9 releases).
+- `pydot.str_type` exists in: 1.4.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0198
+You are given a Python snippet and an installed library version.
+Library: faker==40.17.0
+```python
+from faker.providers.phone_number.fr_DZ import PhoneNumberProvider
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of faker: 37.2.0 … 40.43.0 (80 releases).
+- `faker.providers.phone_number.fr_DZ.PhoneNumberProvider` exists in: 38.1.0–40.17.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0204
+You are given a Python snippet and an installed library version.
+Library: python-jose==3.4.0
+```python
+from jose.jwt import utc_now
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of python-jose: 3.3.0 … 3.5.0 (3 releases).
+- `jose.jwt.utc_now` exists in: 3.4.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0210
+You are given a Python snippet and an installed library version.
+Library: google-cloud-bigtable==2.14.0
+```python
+from google.cloud.bigtable_v2 import ReadIteratorStats
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of google-cloud-bigtable: 1.7.0 … 2.50.1 (74 releases).
+- `google.cloud.bigtable_v2.ReadIteratorStats` exists in: 2.13.0–2.13.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0216
+You are given a Python snippet and an installed library version.
+Library: pbs-installer==2024.2.26
+```python
+from pbs_installer import download
+download(url=..., destination=..., session=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pbs-installer: 2024.1.8 … 2026.10.13 (80 releases).
+- `pbs_installer.download` exists in: 2024.1.8–2026.10.13
+- `pbs_installer.download(..., url=...)` keyword accepted in: 2024.1.8–2024.3.22
+- `pbs_installer.download(..., destination=...)` keyword accepted in: 2024.1.8–2026.10.13
+- `pbs_installer.download(..., session=...)` keyword accepted in: 2024.1.8–2024.2.26
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0222
+You are given a Python snippet and an installed library version.
+Library: jsonlines==3.0.0
+```python
+from jsonlines import open
+open(name=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of jsonlines: 2.0.0 … 4.0.0 (4 releases).
+- `jsonlines.open` exists in: 2.0.0–4.0.0
+- `jsonlines.open(..., name=...)` keyword accepted in: 2.0.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0228
+You are given a Python snippet and an installed library version.
+Library: fastavro==1.3.0
+```python
+from fastavro.io.json_decoder import AvroJSONDecoder
+AvroJSONDecoder.read_object_start
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of fastavro: 1.2.4 … 1.13.1 (52 releases).
+- `fastavro.io.json_decoder.AvroJSONDecoder` exists in: 1.2.4–1.13.1
+- `fastavro.io.json_decoder.AvroJSONDecoder.read_object_start` exists in: 1.2.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0234
+You are given a Python snippet and an installed library version.
+Library: paramiko==5.0.0
+```python
+from paramiko import Transport
+Transport(sock=..., gss_deleg_creds=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of paramiko: 2.8.0 … 5.1.0 (32 releases).
+- `paramiko.Transport` exists in: 2.8.0–5.1.0
+- `paramiko.Transport(..., sock=...)` keyword accepted in: 2.8.0–5.1.0
+- `paramiko.Transport(..., gss_deleg_creds=...)` keyword accepted in: 2.8.0–4.0.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0240
+You are given a Python snippet and an installed library version.
+Library: catalogue==1.0.2
+```python
+from catalogue import basestring_
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of catalogue: 1.0.2 … 2.0.10 (10 releases).
+- `catalogue.basestring_` exists in: 1.0.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0246
+You are given a Python snippet and an installed library version.
+Library: truststore==0.2.0
+```python
+from truststore import TruststoreSSLContext
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of truststore: 0.1.0 … 0.10.5 (16 releases).
+- `truststore.TruststoreSSLContext` exists in: 0.1.0–0.2.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0252
+You are given a Python snippet and an installed library version.
+Library: pgvector==0.3.0
+```python
+from pgvector.utils import from_db_binary
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pgvector: 0.1.0 … 0.5.1 (27 releases).
+- `pgvector.utils.from_db_binary` exists in: 0.1.3–0.2.5
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0258
+You are given a Python snippet and an installed library version.
+Library: djangorestframework==3.14.0
+```python
+from rest_framework.fields import NullBooleanField
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of djangorestframework: 3.12.3 … 3.18.3 (17 releases).
+- `rest_framework.fields.NullBooleanField` exists in: 3.12.3–3.13.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0264
+You are given a Python snippet and an installed library version.
+Library: inflect==6.2.0
+```python
+from inflect import print3
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of inflect: 5.0.3 … 7.5.0 (25 releases).
+- `inflect.print3` exists in: 5.0.3–6.2.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0270
+You are given a Python snippet and an installed library version.
+Library: gql==3.5.3
+```python
+from gql.utils import extract_files
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of gql: 3.2.0 … 4.4.0 (10 releases).
+- `gql.utils.extract_files` exists in: 3.2.0–3.5.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0276
+You are given a Python snippet and an installed library version.
+Library: google-cloud-storage==2.8.0
+```python
+from google.cloud.storage.transfer_manager import DEFAULT_CHUNK_SIZE
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of google-cloud-storage: 1.35.1 … 3.17.1 (66 releases).
+- `google.cloud.storage.transfer_manager.DEFAULT_CHUNK_SIZE` exists in: 2.7.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0282
+You are given a Python snippet and an installed library version.
+Library: pywin32==311
+```python
+from win32.lib.win32con import FILE_ATTRIBUTE_ATOMIC_WRITE
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pywin32: 301 … 312 (12 releases).
+- `win32.lib.win32con.FILE_ATTRIBUTE_ATOMIC_WRITE` exists in: 301–311
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0288
+You are given a Python snippet and an installed library version.
+Library: scipy==1.12.0
+```python
+from scipy.stats.qmc import LatinHypercube
+LatinHypercube(d=..., centered=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of scipy: 1.6.1 … 1.18.1 (36 releases).
+- `scipy.stats.qmc.LatinHypercube` exists in: 1.7.0–1.18.1
+- `scipy.stats.qmc.LatinHypercube(..., d=...)` keyword accepted in: 1.7.0–1.18.1
+- `scipy.stats.qmc.LatinHypercube(..., centered=...)` keyword accepted in: 1.7.0–1.11.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0294
+You are given a Python snippet and an installed library version.
+Library: google-cloud-logging==1.15.3
+```python
+from google.cloud.logging_v2 import LoggingServiceV2Client
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of google-cloud-logging: 1.15.2 … 3.17.0 (46 releases).
+- `google.cloud.logging_v2.LoggingServiceV2Client` exists in: 1.15.2–1.15.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0300
+You are given a Python snippet and an installed library version.
+Library: nodeenv==1.7.0
+```python
+from nodeenv import install_packages
+install_packages(env_dir=..., opt=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of nodeenv: 1.6.0 … 1.11.0 (7 releases).
+- `nodeenv.install_packages` exists in: 1.6.0–1.11.0
+- `nodeenv.install_packages(..., env_dir=...)` keyword accepted in: 1.6.0–1.11.0
+- `nodeenv.install_packages(..., opt=...)` keyword accepted in: 1.6.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0306
+You are given a Python snippet and an installed library version.
+Library: pymdown-extensions==12.2
+```python
+from pymdownx.delimiterprocessor import DelimiterProcessor
+DelimiterProcessor(tags=..., md=..., token=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pymdown-extensions: 8.1.1 … 12.3 (65 releases).
+- `pymdownx.delimiterprocessor.DelimiterProcessor` exists in: 12.0–12.3
+- `pymdownx.delimiterprocessor.DelimiterProcessor(..., tags=...)` keyword accepted in: 12.0–12.1
+- `pymdownx.delimiterprocessor.DelimiterProcessor(..., md=...)` keyword accepted in: 12.0–12.3
+- `pymdownx.delimiterprocessor.DelimiterProcessor(..., token=...)` keyword accepted in: 12.0–12.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0312
+You are given a Python snippet and an installed library version.
+Library: inquirerpy==0.3.0
+```python
+from InquirerPy.base import BaseListPrompt
+BaseListPrompt(message=..., height=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of inquirerpy: 0.1.0 … 0.3.4 (12 releases).
+- `InquirerPy.base.BaseListPrompt` exists in: 0.1.0–0.3.4
+- `InquirerPy.base.BaseListPrompt(..., message=...)` keyword accepted in: 0.1.0–0.3.4
+- `InquirerPy.base.BaseListPrompt(..., height=...)` keyword accepted in: 0.1.0–0.2.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0318
+You are given a Python snippet and an installed library version.
+Library: nltk==3.8.1
+```python
+from nltk.corpus.reader.api import PickleCorpusView
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of nltk: 3.6 … 3.10.3 (19 releases).
+- `nltk.corpus.reader.api.PickleCorpusView` exists in: 3.6–3.8.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0324
+You are given a Python snippet and an installed library version.
+Library: django==6.0.1
+```python
+from django.contrib.auth.management import rename_permissions
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of django: 4.2.13 … 6.1.2 (80 releases).
+- `django.contrib.auth.management.rename_permissions` exists in: 6.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0330
+You are given a Python snippet and an installed library version.
+Library: graphene==3.0
+```python
+from graphene import AbstractType
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of graphene: 2.1.9 … 3.4.3 (12 releases).
+- `graphene.AbstractType` exists in: 2.1.9
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0336
+You are given a Python snippet and an installed library version.
+Library: pydeck==0.7.1
+```python
+from pydeck import DeckGLWidget
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pydeck: 0.6.0 … 0.9.3 (10 releases).
+- `pydeck.DeckGLWidget` exists in: 0.6.0–0.7.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0342
+You are given a Python snippet and an installed library version.
+Library: opentelemetry-sdk==1.40.0
+```python
+from opentelemetry.sdk.trace import Tracer
+Tracer(sampler=..., resource=..., span_processor=..., id_generator=..., instrumentation_info=..., span_limits=..., instrumentation_scope=..., _tracer_provider=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of opentelemetry-sdk: 1.0.0 … 1.45.1 (62 releases).
+- `opentelemetry.sdk.trace.Tracer` exists in: 1.0.0–1.45.1
+- `opentelemetry.sdk.trace.Tracer(..., sampler=...)` keyword accepted in: 1.0.0–1.45.1
+- `opentelemetry.sdk.trace.Tracer(..., resource=...)` keyword accepted in: 1.0.0–1.45.1
+- `opentelemetry.sdk.trace.Tracer(..., span_processor=...)` keyword accepted in: 1.0.0–1.45.1
+- `opentelemetry.sdk.trace.Tracer(..., id_generator=...)` keyword accepted in: 1.0.0–1.45.1
+- `opentelemetry.sdk.trace.Tracer(..., instrumentation_info=...)` keyword accepted in: 1.0.0–1.45.1
+- `opentelemetry.sdk.trace.Tracer(..., span_limits=...)` keyword accepted in: 1.3.0–1.45.1
+- `opentelemetry.sdk.trace.Tracer(..., instrumentation_scope=...)` keyword accepted in: 1.11.1–1.45.1
+- `opentelemetry.sdk.trace.Tracer(..., _tracer_provider=...)` keyword accepted in: 1.40.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0348
+You are given a Python snippet and an installed library version.
+Library: agate==1.7.0
+```python
+from agate.columns import xrange
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of agate: 1.6.3 … 1.14.2 (15 releases).
+- `agate.columns.xrange` exists in: 1.6.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0354
+You are given a Python snippet and an installed library version.
+Library: supabase==2.7.0
+```python
+from supabase import SupabaseRealtimeClient
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of supabase: 1.0.4 … 2.33.0 (80 releases).
+- `supabase.SupabaseRealtimeClient` exists in: 1.0.4–2.6.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0360
+You are given a Python snippet and an installed library version.
+Library: markupsafe==2.0.1
+```python
+from markupsafe import soft_unicode
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of markupsafe: 1.1.1 … 3.0.4 (14 releases).
+- `markupsafe.soft_unicode` exists in: 1.1.1–2.0.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0366
+You are given a Python snippet and an installed library version.
+Library: sqlalchemy-utils==0.43.0
+```python
+from sqlalchemy_utils.types.uuid import sqlalchemy_version
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sqlalchemy-utils: 0.37.2 … 0.43.0 (20 releases).
+- `sqlalchemy_utils.types.uuid.sqlalchemy_version` exists in: 0.38.3–0.42.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0372
+You are given a Python snippet and an installed library version.
+Library: mcp-types==0.2.0
+```python
+from mcp_types import ListResourcesRequestParams
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of mcp-types: 0.0.1 … 2.3.0 (8 releases).
+- `mcp_types.ListResourcesRequestParams` exists in: 0.2.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0378
+You are given a Python snippet and an installed library version.
+Library: pypdfium2==4.30.0
+```python
+from pypdfium2 import PdfImage
+PdfImage.get_size
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pypdfium2: 2.4.1 … 5.14.0 (80 releases).
+- `pypdfium2.PdfImage` exists in: 4.0.0–5.14.0
+- `pypdfium2.PdfImage.get_size` exists in: 4.8.0–4.30.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0384
+You are given a Python snippet and an installed library version.
+Library: twine==6.0.1
+```python
+from twine.repository import KEYWORDS_TO_NOT_FLATTEN
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of twine: 3.4.0 … 7.0.0 (18 releases).
+- `twine.repository.KEYWORDS_TO_NOT_FLATTEN` exists in: 3.4.0–6.0.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0390
+You are given a Python snippet and an installed library version.
+Library: kubernetes==22.6.0
+```python
+from kubernetes.client import V1beta1CustomResourceValidation
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of kubernetes: 17.17.0 … 37.0.1 (27 releases).
+- `kubernetes.client.V1beta1CustomResourceValidation` exists in: 17.17.0–21.7.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0396
+You are given a Python snippet and an installed library version.
+Library: sphinx==6.1.3
+```python
+from sphinx.util.images import guess_mimetype_for_stream
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sphinx: 3.5.2 … 9.1.0 (80 releases).
+- `sphinx.util.images.guess_mimetype_for_stream` exists in: 3.5.2–6.1.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0402
+You are given a Python snippet and an installed library version.
+Library: supabase==2.6.0
+```python
+from supabase import SupabaseRealtimeClient
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of supabase: 1.0.4 … 2.33.0 (80 releases).
+- `supabase.SupabaseRealtimeClient` exists in: 1.0.4–2.6.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0408
+You are given a Python snippet and an installed library version.
+Library: click-repl==0.3.0
+```python
+from click_repl import text_type
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of click-repl: 0.2.0 … 0.4.1 (4 releases).
+- `click_repl.text_type` exists in: 0.2.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0414
+You are given a Python snippet and an installed library version.
+Library: pip-api==0.0.34
+```python
+from pip_api import Version
+Version.minor
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pip-api: 0.0.18 … 0.0.35 (16 releases).
+- `pip_api.Version` exists in: 0.0.21–0.0.35
+- `pip_api.Version.minor` exists in: 0.0.21–0.0.34
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0420
+You are given a Python snippet and an installed library version.
+Library: cattrs==23.2.3
+```python
+from cattrs.gen import generate_unique_filename
+generate_unique_filename(cls=..., func_name=..., reserve=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of cattrs: 1.2.0 … 26.2.1 (27 releases).
+- `cattrs.gen.generate_unique_filename` exists in: 23.1.1–26.2.1
+- `cattrs.gen.generate_unique_filename(..., cls=...)` keyword accepted in: 23.1.1–26.2.1
+- `cattrs.gen.generate_unique_filename(..., func_name=...)` keyword accepted in: 23.1.1–26.2.1
+- `cattrs.gen.generate_unique_filename(..., reserve=...)` keyword accepted in: 23.1.1–23.2.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0426
+You are given a Python snippet and an installed library version.
+Library: dulwich==0.21.5
+```python
+from dulwich.index import index_entry_from_stat
+index_entry_from_stat(stat_val=..., hex_sha=..., flags=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of dulwich: 0.20.18 … 1.2.17 (80 releases).
+- `dulwich.index.index_entry_from_stat` exists in: 0.20.18–1.2.17
+- `dulwich.index.index_entry_from_stat(..., stat_val=...)` keyword accepted in: 0.20.18–1.2.17
+- `dulwich.index.index_entry_from_stat(..., hex_sha=...)` keyword accepted in: 0.20.18–1.2.17
+- `dulwich.index.index_entry_from_stat(..., flags=...)` keyword accepted in: 0.20.18–0.21.5
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0432
+You are given a Python snippet and an installed library version.
+Library: mammoth==1.5.1
+```python
+from mammoth.docx.xmlparser import Handler
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of mammoth: 1.4.14 … 1.13.0 (20 releases).
+- `mammoth.docx.xmlparser.Handler` exists in: 1.4.14–1.5.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0438
+You are given a Python snippet and an installed library version.
+Library: watchtower==1.0.5
+```python
+from watchtower import boto_filter
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of watchtower: 1.0.2 … 3.4.0 (16 releases).
+- `watchtower.boto_filter` exists in: 1.0.3–1.0.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0444
+You are given a Python snippet and an installed library version.
+Library: grpcio-health-checking==1.65.5
+```python
+from grpc_health.v1.health_pb2_grpc import EXPECTED_ERROR_RELEASE
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of grpcio-health-checking: 1.40.0 … 1.84.0 (80 releases).
+- `grpc_health.v1.health_pb2_grpc.EXPECTED_ERROR_RELEASE` exists in: 1.63.0–1.65.5
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0450
+You are given a Python snippet and an installed library version.
+Library: flake8==4.0.0
+```python
+from flake8.exceptions import MercurialQRefreshHookAlreadyExists
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of flake8: 3.9.0 … 7.4.1 (20 releases).
+- `flake8.exceptions.MercurialQRefreshHookAlreadyExists` exists in: 3.9.0–3.9.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0456
+You are given a Python snippet and an installed library version.
+Library: safetensors==0.2.3
+```python
+from safetensors.flax import load
+load(buffer=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of safetensors: 0.0.1 … 0.8.0 (28 releases).
+- `safetensors.flax.load` exists in: 0.0.1–0.8.0
+- `safetensors.flax.load(..., buffer=...)` keyword accepted in: 0.0.1–0.2.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0462
+You are given a Python snippet and an installed library version.
+Library: python-socketio==5.9.0
+```python
+from socketio.namespace import BaseNamespace
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of python-socketio: 5.1.0 … 5.17.0 (36 releases).
+- `socketio.namespace.BaseNamespace` exists in: 5.1.0–5.9.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0468
+You are given a Python snippet and an installed library version.
+Library: lazy-object-proxy==1.8.0
+```python
+from lazy_object_proxy.compat import PY3
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of lazy-object-proxy: 1.6.0 … 1.13.0 (8 releases).
+- `lazy_object_proxy.compat.PY3` exists in: 1.6.0–1.7.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0474
+You are given a Python snippet and an installed library version.
+Library: dulwich==0.21.6
+```python
+from dulwich.index import index_entry_from_stat
+index_entry_from_stat(stat_val=..., hex_sha=..., flags=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of dulwich: 0.20.18 … 1.2.17 (80 releases).
+- `dulwich.index.index_entry_from_stat` exists in: 0.20.18–1.2.17
+- `dulwich.index.index_entry_from_stat(..., stat_val=...)` keyword accepted in: 0.20.18–1.2.17
+- `dulwich.index.index_entry_from_stat(..., hex_sha=...)` keyword accepted in: 0.20.18–1.2.17
+- `dulwich.index.index_entry_from_stat(..., flags=...)` keyword accepted in: 0.20.18–0.21.5
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0480
+You are given a Python snippet and an installed library version.
+Library: inflect==7.2.0
+```python
+from inflect import same_method
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of inflect: 5.0.3 … 7.5.0 (25 releases).
+- `inflect.same_method` exists in: 6.2.0–7.0.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0486
+You are given a Python snippet and an installed library version.
+Library: matplotlib-inline==0.1.3
+```python
+from matplotlib_inline.backend_inline import draw_if_interactive
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of matplotlib-inline: 0.1.0 … 0.2.2 (9 releases).
+- `matplotlib_inline.backend_inline.draw_if_interactive` exists in: 0.1.0–0.1.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0492
+You are given a Python snippet and an installed library version.
+Library: wcmatch==9.0
+```python
+from wcmatch.util import norm_pattern
+norm_pattern(pattern=..., normalize=..., is_raw_chars=..., ignore_escape=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of wcmatch: 7.2 … 11.1 (21 releases).
+- `wcmatch.util.norm_pattern` exists in: 7.2–11.1
+- `wcmatch.util.norm_pattern(..., pattern=...)` keyword accepted in: 7.2–11.1
+- `wcmatch.util.norm_pattern(..., normalize=...)` keyword accepted in: 7.2–11.1
+- `wcmatch.util.norm_pattern(..., is_raw_chars=...)` keyword accepted in: 7.2–11.1
+- `wcmatch.util.norm_pattern(..., ignore_escape=...)` keyword accepted in: 7.2–8.5.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0498
+You are given a Python snippet and an installed library version.
+Library: aioitertools==0.11.0
+```python
+from aioitertools.asyncio import as_completed
+as_completed(aws=..., loop=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of aioitertools: 0.8.0 … 0.13.0 (6 releases).
+- `aioitertools.asyncio.as_completed` exists in: 0.8.0–0.13.0
+- `aioitertools.asyncio.as_completed(..., aws=...)` keyword accepted in: 0.8.0–0.13.0
+- `aioitertools.asyncio.as_completed(..., loop=...)` keyword accepted in: 0.8.0–0.10.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0504
+You are given a Python snippet and an installed library version.
+Library: terminado==0.10.0
+```python
+from terminado.management import unicode
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of terminado: 0.9.2 … 0.18.1 (19 releases).
+- `terminado.management.unicode` exists in: 0.9.2–0.9.5
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0510
+You are given a Python snippet and an installed library version.
+Library: tqdm==4.66.1
+```python
+from tqdm.utils import envwrap
+envwrap(prefix=..., case_sensitive=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of tqdm: 4.55.1 … 4.70.1 (44 releases).
+- `tqdm.utils.envwrap` exists in: 4.66.0–4.70.1
+- `tqdm.utils.envwrap(..., prefix=...)` keyword accepted in: 4.66.0–4.70.1
+- `tqdm.utils.envwrap(..., case_sensitive=...)` keyword accepted in: 4.66.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0516
+You are given a Python snippet and an installed library version.
+Library: sqlalchemy-utils==0.42.1
+```python
+from sqlalchemy_utils.types.uuid import sqlalchemy_version
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sqlalchemy-utils: 0.37.2 … 0.43.0 (20 releases).
+- `sqlalchemy_utils.types.uuid.sqlalchemy_version` exists in: 0.38.3–0.42.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0522
+You are given a Python snippet and an installed library version.
+Library: strands-agents==1.57.2
+```python
+from strands.bidi import BidiAgent
+BidiAgent(load_tools_from_directory=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of strands-agents: 0.1.5 … 1.61.1 (80 releases).
+- `strands.bidi.BidiAgent` exists in: 1.57.2–1.61.1
+- `strands.bidi.BidiAgent(..., load_tools_from_directory=...)` keyword accepted in: 1.57.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0528
+You are given a Python snippet and an installed library version.
+Library: pytest-html==4.0.0
+```python
+from pytest_html.util import ansi_support
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pytest-html: 3.2.0 … 4.2.0 (7 releases).
+- `pytest_html.util.ansi_support` exists in: 3.2.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0534
+You are given a Python snippet and an installed library version.
+Library: cssselect==1.6.0
+```python
+from cssselect.parser import Relation
+Relation(selector=..., subselector=..., combinator=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of cssselect: 1.2.0 … 1.6.0 (5 releases).
+- `cssselect.parser.Relation` exists in: 1.2.0–1.6.0
+- `cssselect.parser.Relation(..., selector=...)` keyword accepted in: 1.2.0–1.6.0
+- `cssselect.parser.Relation(..., subselector=...)` keyword accepted in: 1.2.0–1.5.0
+- `cssselect.parser.Relation(..., combinator=...)` keyword accepted in: 1.2.0–1.5.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0540
+You are given a Python snippet and an installed library version.
+Library: python-dotenv==1.2.0
+```python
+from dotenv.cli import list
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of python-dotenv: 0.16.0 … 1.2.4 (19 releases).
+- `dotenv.cli.list` exists in: 0.16.0–1.1.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0546
+You are given a Python snippet and an installed library version.
+Library: weasyprint==59.0
+```python
+from weasyprint.layout.page import OrientedBox
+OrientedBox.shrink_to_fit
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of weasyprint: 52.3 … 70.0 (43 releases).
+- `weasyprint.layout.page.OrientedBox` exists in: 54.0–70.0
+- `weasyprint.layout.page.OrientedBox.shrink_to_fit` exists in: 54.0–59.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0552
+You are given a Python snippet and an installed library version.
+Library: psycopg==3.0.12
+```python
+from psycopg.types.array import MixedItemsListDumper
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of psycopg: 3.0 … 3.3.6 (61 releases).
+- `psycopg.types.array.MixedItemsListDumper` exists in: 3.0–3.0.12
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0558
+You are given a Python snippet and an installed library version.
+Library: prometheus-client==0.11.0
+```python
+from prometheus_client.core import Info
+Info(name=..., documentation=..., labelvalues=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of prometheus-client: 0.10.0 … 0.26.0 (24 releases).
+- `prometheus_client.core.Info` exists in: 0.10.0–0.26.0
+- `prometheus_client.core.Info(..., name=...)` keyword accepted in: 0.10.0–0.26.0
+- `prometheus_client.core.Info(..., documentation=...)` keyword accepted in: 0.10.0–0.26.0
+- `prometheus_client.core.Info(..., labelvalues=...)` keyword accepted in: 0.10.0–0.10.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0564
+You are given a Python snippet and an installed library version.
+Library: watchdog==4.0.2
+```python
+from watchdog.observers.winapi import FILE_NOTIFY_INFORMATION
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of watchdog: 2.0.0 … 6.0.0 (27 releases).
+- `watchdog.observers.winapi.FILE_NOTIFY_INFORMATION` exists in: 2.0.0–4.0.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0570
+You are given a Python snippet and an installed library version.
+Library: sentry-sdk==2.21.0
+```python
+from sentry_sdk.profiler.continuous_profiler import ContinuousScheduler
+ContinuousScheduler.should_autostart
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sentry-sdk: 2.12.0 … 2.72.0 (80 releases).
+- `sentry_sdk.profiler.continuous_profiler.ContinuousScheduler` exists in: 2.12.0–2.72.0
+- `sentry_sdk.profiler.continuous_profiler.ContinuousScheduler.should_autostart` exists in: 2.12.0–2.20.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0576
+You are given a Python snippet and an installed library version.
+Library: psycopg==3.0.13
+```python
+from psycopg.types.array import MixedItemsListDumper
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of psycopg: 3.0 … 3.3.6 (61 releases).
+- `psycopg.types.array.MixedItemsListDumper` exists in: 3.0–3.0.12
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0582
+You are given a Python snippet and an installed library version.
+Library: jaraco-functools==3.8.1
+```python
+from jaraco.functools import CallableT
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of jaraco-functools: 3.2.0 … 4.6.0 (22 releases).
+- `jaraco.functools.CallableT` exists in: 3.5.0–3.8.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0588
+You are given a Python snippet and an installed library version.
+Library: anthropic==0.115.1
+```python
+from anthropic.types.beta import BetaWebhookMemoryStoreDeletedEventData
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of anthropic: 0.76.0 … 1.15.0 (80 releases).
+- `anthropic.types.beta.BetaWebhookMemoryStoreDeletedEventData` exists in: 0.115.0, 0.118.0–1.15.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0594
+You are given a Python snippet and an installed library version.
+Library: celery==5.5.3
+```python
+from celery.worker.consumer import Consumer
+Consumer.cancel_all_unacked_requests
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of celery: 5.1.0 … 5.6.3 (24 releases).
+- `celery.worker.consumer.Consumer` exists in: 5.1.0–5.6.3
+- `celery.worker.consumer.Consumer.cancel_all_unacked_requests` exists in: 5.5.0–5.5.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0600
+You are given a Python snippet and an installed library version.
+Library: limits==4.1
+```python
+from limits.typing import ScriptP
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of limits: 1.6 … 5.8.0 (73 releases).
+- `limits.typing.ScriptP` exists in: 2.5.2–4.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0606
+You are given a Python snippet and an installed library version.
+Library: jupyterlab-server==2.18.0
+```python
+from jupyterlab_server.translation_utils import TranslationBundle
+TranslationBundle(domain=..., locale=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of jupyterlab-server: 2.1.0 … 2.28.1 (63 releases).
+- `jupyterlab_server.translation_utils.TranslationBundle` exists in: 2.1.0–2.28.1
+- `jupyterlab_server.translation_utils.TranslationBundle(..., domain=...)` keyword accepted in: 2.1.0–2.28.1
+- `jupyterlab_server.translation_utils.TranslationBundle(..., locale=...)` keyword accepted in: 2.1.0–2.18.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0612
+You are given a Python snippet and an installed library version.
+Library: feedparser==6.0.13
+```python
+from feedparser.api import endbracket
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of feedparser: 6.0.3 … 6.0.14 (12 releases).
+- `feedparser.api.endbracket` exists in: 6.0.3–6.0.12
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0618
+You are given a Python snippet and an installed library version.
+Library: platformdirs==4.9.6
+```python
+from platformdirs.version import VERSION_TUPLE
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of platformdirs: 2.5.1 … 4.13.5 (80 releases).
+- `platformdirs.version.VERSION_TUPLE` exists in: 3.11.0–4.9.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0624
+You are given a Python snippet and an installed library version.
+Library: youtube-transcript-api==0.6.3
+```python
+from youtube_transcript_api import CookiePathInvalid
+CookiePathInvalid(video_id=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of youtube-transcript-api: 0.4.0 … 1.2.4 (21 releases).
+- `youtube_transcript_api.CookiePathInvalid` exists in: 0.4.0–1.2.4
+- `youtube_transcript_api.CookiePathInvalid(..., video_id=...)` keyword accepted in: 0.4.0–0.6.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0630
+You are given a Python snippet and an installed library version.
+Library: testcontainers==4.3.1
+```python
+from testcontainers.core.docker_client import read_tc_properties
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of testcontainers: 3.3.0 … 4.15.0 (46 releases).
+- `testcontainers.core.docker_client.read_tc_properties` exists in: 4.0.0–4.3.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0636
+You are given a Python snippet and an installed library version.
+Library: bidict==0.23.0
+```python
+from bidict import NamedBidictBase
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of bidict: 0.21.3 … 0.24.1 (8 releases).
+- `bidict.NamedBidictBase` exists in: 0.22.0–0.22.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0642
+You are given a Python snippet and an installed library version.
+Library: frozendict==2.3.10
+```python
+from frozendict.core import checkPosition
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of frozendict: 2.0.2 … 2.4.7 (31 releases).
+- `frozendict.core.checkPosition` exists in: 2.1.0–2.3.9
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0648
+You are given a Python snippet and an installed library version.
+Library: jaraco-functools==3.9.0
+```python
+from jaraco.functools import CallableT
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of jaraco-functools: 3.2.0 … 4.6.0 (22 releases).
+- `jaraco.functools.CallableT` exists in: 3.5.0–3.8.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0654
+You are given a Python snippet and an installed library version.
+Library: pywin32==308
+```python
+from win32.scripts.VersionStamp.bulkstamp import walk
+walk(dirname=..., names=..., arg=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pywin32: 301 … 312 (12 releases).
+- `win32.scripts.VersionStamp.bulkstamp.walk` exists in: 301–312
+- `win32.scripts.VersionStamp.bulkstamp.walk(..., dirname=...)` keyword accepted in: 301–312
+- `win32.scripts.VersionStamp.bulkstamp.walk(..., names=...)` keyword accepted in: 301–312
+- `win32.scripts.VersionStamp.bulkstamp.walk(..., arg=...)` keyword accepted in: 301–307
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0660
+You are given a Python snippet and an installed library version.
+Library: watchdog==5.0.3
+```python
+from watchdog.utils.echo import is_classmethod
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of watchdog: 2.0.0 … 6.0.0 (27 releases).
+- `watchdog.utils.echo.is_classmethod` exists in: 2.0.0–5.0.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0666
+You are given a Python snippet and an installed library version.
+Library: dataclasses-json==0.5.8
+```python
+from dataclasses_json.api import B
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of dataclasses-json: 0.5.3 … 0.6.7 (18 releases).
+- `dataclasses_json.api.B` exists in: 0.5.3–0.5.7
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0672
+You are given a Python snippet and an installed library version.
+Library: more-itertools==10.8.0
+```python
+from more_itertools import iter_except
+iter_except(exception=..., func=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of more-itertools: 8.7.0 … 11.2.1 (24 releases).
+- `more_itertools.iter_except` exists in: 8.7.0–11.2.1
+- `more_itertools.iter_except(..., exception=...)` keyword accepted in: 8.7.0–11.2.1
+- `more_itertools.iter_except(..., func=...)` keyword accepted in: 8.7.0–10.8.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0678
+You are given a Python snippet and an installed library version.
+Library: dbt-adapters==1.3.2
+```python
+from dbt.adapters.record import QueryRecordParams
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of dbt-adapters: 1.0.0 … 1.24.5 (64 releases).
+- `dbt.adapters.record.QueryRecordParams` exists in: 1.2.1–1.3.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0684
+You are given a Python snippet and an installed library version.
+Library: humanize==3.12.0
+```python
+from humanize.i18n import ngettext
+ngettext(message=..., num=..., plural=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of humanize: 3.3.0 … 4.16.0 (38 releases).
+- `humanize.i18n.ngettext` exists in: 3.3.0–3.14.0
+- `humanize.i18n.ngettext(..., message=...)` keyword accepted in: 3.3.0–3.14.0
+- `humanize.i18n.ngettext(..., num=...)` keyword accepted in: 3.3.0–3.12.0
+- `humanize.i18n.ngettext(..., plural=...)` keyword accepted in: 3.3.0–3.12.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0690
+You are given a Python snippet and an installed library version.
+Library: langgraph==0.4.0
+```python
+from langgraph.pregel.io import map_command
+map_command(cmd=..., pending_writes=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of langgraph: 0.3.18 … 1.2.16 (80 releases).
+- `langgraph.pregel.io.map_command` exists in: 0.3.18–0.5.4
+- `langgraph.pregel.io.map_command(..., cmd=...)` keyword accepted in: 0.3.18–0.5.4
+- `langgraph.pregel.io.map_command(..., pending_writes=...)` keyword accepted in: 0.3.18–0.3.34
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0696
+You are given a Python snippet and an installed library version.
+Library: pycares==5.0.0
+```python
+from pycares import Channel
+Channel(event_thread=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pycares: 3.2.0 … 5.2.0 (22 releases).
+- `pycares.Channel` exists in: 3.2.0–5.2.0
+- `pycares.Channel(..., event_thread=...)` keyword accepted in: 4.7.0–4.11.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0702
+You are given a Python snippet and an installed library version.
+Library: partd==1.2.0
+```python
+from partd import ignoring
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of partd: 1.2.0 … 1.4.2 (5 releases).
+- `partd.ignoring` exists in: 1.2.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0708
+You are given a Python snippet and an installed library version.
+Library: twisted==22.8.0
+```python
+from twisted.protocols import deprecatedModuleAttribute
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of twisted: 21.2.0 … 26.4.0 (15 releases).
+- `twisted.protocols.deprecatedModuleAttribute` exists in: 21.2.0–22.8.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0714
+You are given a Python snippet and an installed library version.
+Library: contourpy==1.1.1
+```python
+from contourpy.util.mpl_util import mpl_codes_to_offsets
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of contourpy: 0.0.1 … 1.4.0 (22 releases).
+- `contourpy.util.mpl_util.mpl_codes_to_offsets` exists in: 0.0.1–1.1.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0720
+You are given a Python snippet and an installed library version.
+Library: python-utils==2.7.0
+```python
+from python_utils.time import timeout_generator
+timeout_generator(timeout=..., interval_exponent=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of python-utils: 2.5.0 … 4.1.3 (45 releases).
+- `python_utils.time.timeout_generator` exists in: 2.6.0–4.1.3
+- `python_utils.time.timeout_generator(..., timeout=...)` keyword accepted in: 2.6.0–4.1.3
+- `python_utils.time.timeout_generator(..., interval_exponent=...)` keyword accepted in: 2.6.0–2.6.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0726
+You are given a Python snippet and an installed library version.
+Library: msgpack==1.0.6
+```python
+from msgpack.fallback import unicode
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of msgpack: 1.0.3 … 1.2.3 (13 releases).
+- `msgpack.fallback.unicode` exists in: 1.0.3–1.0.5
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0732
+You are given a Python snippet and an installed library version.
+Library: opentelemetry-sdk==1.1.0
+```python
+from opentelemetry.sdk.resources import CLOUD_ZONE
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of opentelemetry-sdk: 1.0.0 … 1.45.1 (62 releases).
+- `opentelemetry.sdk.resources.CLOUD_ZONE` exists in: 1.0.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0738
+You are given a Python snippet and an installed library version.
+Library: pycparser==2.23
+```python
+from pycparser.c_parser import CParser
+CParser.p_block_item_list
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pycparser: 2.21 … 3.11 (6 releases).
+- `pycparser.c_parser.CParser` exists in: 2.21–3.11
+- `pycparser.c_parser.CParser.p_block_item_list` exists in: 2.21–2.23
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0744
+You are given a Python snippet and an installed library version.
+Library: pypdf2==2.3.0
+```python
+from PyPDF2.generic import readHexStringFromStream
+readHexStringFromStream(stream=..., forced_encoding=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pypdf2: 1.27.0 … 3.0.1 (53 releases).
+- `PyPDF2.generic.readHexStringFromStream` exists in: 1.27.0–2.10.0
+- `PyPDF2.generic.readHexStringFromStream(..., stream=...)` keyword accepted in: 1.27.0–2.10.0
+- `PyPDF2.generic.readHexStringFromStream(..., forced_encoding=...)` keyword accepted in: 2.2.0–2.2.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0750
+You are given a Python snippet and an installed library version.
+Library: zeep==4.1.0
+```python
+from zeep.transports import AsyncTransport
+AsyncTransport(session=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of zeep: 4.1.0 … 4.3.3 (7 releases).
+- `zeep.transports.AsyncTransport` exists in: 4.1.0–4.3.3
+- `zeep.transports.AsyncTransport(..., session=...)` keyword accepted in: 4.1.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0756
+You are given a Python snippet and an installed library version.
+Library: einops==0.7.0
+```python
+from einops.einops import TransformRecipe
+TransformRecipe(elementary_axes_lengths=..., input_composite_axes=..., reduced_elementary_axes=..., axes_permutation=..., added_axes=..., output_composite_axes=..., ellipsis_position_in_lhs=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of einops: 0.3.1 … 0.8.2 (11 releases).
+- `einops.einops.TransformRecipe` exists in: 0.3.1–0.8.2
+- `einops.einops.TransformRecipe(..., elementary_axes_lengths=...)` keyword accepted in: 0.3.1–0.8.2
+- `einops.einops.TransformRecipe(..., input_composite_axes=...)` keyword accepted in: 0.3.1–0.6.1
+- `einops.einops.TransformRecipe(..., reduced_elementary_axes=...)` keyword accepted in: 0.3.1–0.6.1
+- `einops.einops.TransformRecipe(..., axes_permutation=...)` keyword accepted in: 0.3.1–0.8.2
+- `einops.einops.TransformRecipe(..., added_axes=...)` keyword accepted in: 0.3.1–0.8.2
+- `einops.einops.TransformRecipe(..., output_composite_axes=...)` keyword accepted in: 0.3.1–0.8.2
+- `einops.einops.TransformRecipe(..., ellipsis_position_in_lhs=...)` keyword accepted in: 0.3.1–0.6.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0762
+You are given a Python snippet and an installed library version.
+Library: pathlib-abc==0.3.0
+```python
+from pathlib_abc import glob
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pathlib-abc: 0.1.0 … 0.5.2 (12 releases).
+- `pathlib_abc.glob` exists in: 0.1.0–0.2.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0768
+You are given a Python snippet and an installed library version.
+Library: packageurl-python==0.17.5
+```python
+from packageurl.contrib.purl2url import build_qpkg_download_url
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of packageurl-python: 0.9.4 … 0.17.6 (37 releases).
+- `packageurl.contrib.purl2url.build_qpkg_download_url` exists in: 0.17.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0774
+You are given a Python snippet and an installed library version.
+Library: google-cloud-storage==2.7.0
+```python
+from google.cloud.storage.transfer_manager import DEFAULT_CHUNK_SIZE
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of google-cloud-storage: 1.35.1 … 3.17.1 (66 releases).
+- `google.cloud.storage.transfer_manager.DEFAULT_CHUNK_SIZE` exists in: 2.7.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0780
+You are given a Python snippet and an installed library version.
+Library: traitlets==5.8.1
+```python
+from traitlets.config.loader import KeyValueConfigLoader
+KeyValueConfigLoader.argcomplete
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of traitlets: 5.1.0 … 5.16.1 (30 releases).
+- `traitlets.config.loader.KeyValueConfigLoader` exists in: 5.1.0–5.16.1
+- `traitlets.config.loader.KeyValueConfigLoader.argcomplete` exists in: 5.8.0–5.8.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0786
+You are given a Python snippet and an installed library version.
+Library: pytest-timeout==2.0.2
+```python
+from pytest_timeout import timeout_setup
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pytest-timeout: 2.0.1 … 2.4.0 (6 releases).
+- `pytest_timeout.timeout_setup` exists in: 2.0.1–2.0.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0792
+You are given a Python snippet and an installed library version.
+Library: partd==1.2.0
+```python
+from partd.utils import do_nothing
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of partd: 1.2.0 … 1.4.2 (5 releases).
+- `partd.utils.do_nothing` exists in: 1.2.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0798
+You are given a Python snippet and an installed library version.
+Library: contourpy==1.2.0
+```python
+from contourpy.util.mpl_util import mpl_codes_to_offsets
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of contourpy: 0.0.1 … 1.4.0 (22 releases).
+- `contourpy.util.mpl_util.mpl_codes_to_offsets` exists in: 0.0.1–1.1.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0804
+You are given a Python snippet and an installed library version.
+Library: cron-descriptor==1.4.5
+```python
+from cron_descriptor import MissingFieldException
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of cron-descriptor: 1.4.3 … 2.2.1 (11 releases).
+- `cron_descriptor.MissingFieldException` exists in: 1.4.3–1.4.5, 2.0.4–2.2.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0810
+You are given a Python snippet and an installed library version.
+Library: pdf2image==1.16.2
+```python
+from pdf2image import pdfinfo_from_bytes
+pdfinfo_from_bytes(pdf_file=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pdf2image: 1.15.0 … 1.17.0 (6 releases).
+- `pdf2image.pdfinfo_from_bytes` exists in: 1.15.0–1.17.0
+- `pdf2image.pdfinfo_from_bytes(..., pdf_file=...)` keyword accepted in: 1.15.0–1.16.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0816
+You are given a Python snippet and an installed library version.
+Library: pypdf2==1.27.5
+```python
+from PyPDF2.utils import PdfReadWarning
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pypdf2: 1.27.0 … 3.0.1 (53 releases).
+- `PyPDF2.utils.PdfReadWarning` exists in: 1.27.0–1.27.5
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0822
+You are given a Python snippet and an installed library version.
+Library: aiohappyeyeballs==0.3.0
+```python
+from aiohappyeyeballs import create_connection
+create_connection(addr_infos=..., all_errors=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of aiohappyeyeballs: 0.0.1 … 2.7.1 (45 releases).
+- `aiohappyeyeballs.create_connection` exists in: 0.1.0–0.9.0
+- `aiohappyeyeballs.create_connection(..., addr_infos=...)` keyword accepted in: 0.1.0–0.9.0
+- `aiohappyeyeballs.create_connection(..., all_errors=...)` keyword accepted in: 0.1.0–0.3.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0828
+You are given a Python snippet and an installed library version.
+Library: tox==4.58.0
+```python
+from tox.tox_env.package import locked
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of tox: 4.33.0 … 4.67.1 (80 releases).
+- `tox.tox_env.package.locked` exists in: 4.33.0–4.58.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0834
+You are given a Python snippet and an installed library version.
+Library: python-jose==3.5.0
+```python
+from jose.jwt import utc_now
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of python-jose: 3.3.0 … 3.5.0 (3 releases).
+- `jose.jwt.utc_now` exists in: 3.4.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0840
+You are given a Python snippet and an installed library version.
+Library: av==18.1.0
+```python
+from av import open
+open(file=..., metadata_errors=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of av: 12.0.0 … 19.0.1 (22 releases).
+- `av.open` exists in: 12.0.0–19.0.1
+- `av.open(..., file=...)` keyword accepted in: 12.0.0–19.0.1
+- `av.open(..., metadata_errors=...)` keyword accepted in: 12.0.0–18.1.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0846
+You are given a Python snippet and an installed library version.
+Library: pytest-randomly==4.0.0
+```python
+from pytest_randomly import random_states
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pytest-randomly: 3.6.0 … 5.0.0 (18 releases).
+- `pytest_randomly.random_states` exists in: 3.6.0–4.0.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0852
+You are given a Python snippet and an installed library version.
+Library: pymupdf==1.24.2
+```python
+from fitz.extra import JM_get_annot_xref_list2
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pymupdf: 1.18.19 … 2.0 (80 releases).
+- `fitz.extra.JM_get_annot_xref_list2` exists in: 1.23.9–1.24.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0858
+You are given a Python snippet and an installed library version.
+Library: lazy-object-proxy==1.7.1
+```python
+from lazy_object_proxy.compat import PY3
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of lazy-object-proxy: 1.6.0 … 1.13.0 (8 releases).
+- `lazy_object_proxy.compat.PY3` exists in: 1.6.0–1.7.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0864
+You are given a Python snippet and an installed library version.
+Library: pandas-gbq==0.29.1
+```python
+from pandas_gbq.auth import CLIENT_SECRET
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pandas-gbq: 0.15.0 … 0.35.2 (43 releases).
+- `pandas_gbq.auth.CLIENT_SECRET` exists in: 0.15.0–0.29.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0870
+You are given a Python snippet and an installed library version.
+Library: sphinx==6.2.0
+```python
+from sphinx.util.images import guess_mimetype_for_stream
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of sphinx: 3.5.2 … 9.1.0 (80 releases).
+- `sphinx.util.images.guess_mimetype_for_stream` exists in: 3.5.2–6.1.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0876
+You are given a Python snippet and an installed library version.
+Library: pydot==2.0.0
+```python
+from pydot import str_type
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of pydot: 1.4.2 … 4.0.1 (9 releases).
+- `pydot.str_type` exists in: 1.4.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0882
+You are given a Python snippet and an installed library version.
+Library: datadog-api-client==2.12.0
+```python
+from datadog_api_client.v2.models import MetricBulkTagConfigEmailList
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of datadog-api-client: 1.0.0 … 2.62.0 (80 releases).
+- `datadog_api_client.v2.models.MetricBulkTagConfigEmailList` exists in: 1.9.0–2.12.0, 2.13.2–2.56.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0888
+You are given a Python snippet and an installed library version.
+Library: ua-parser==1.0.0
+```python
+from ua_parser.user_agent_parser import OSParser
+OSParser.MatchSpans
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of ua-parser: 0.15.0 … 1.0.2 (9 releases).
+- `ua_parser.user_agent_parser.OSParser` exists in: 0.15.0–1.0.2
+- `ua_parser.user_agent_parser.OSParser.MatchSpans` exists in: 0.15.0–0.18.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0894
+You are given a Python snippet and an installed library version.
+Library: leather==0.3.4
+```python
+from leather.utils import formatwarning_orig
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of leather: 0.3.4 … 0.4.1 (3 releases).
+- `leather.utils.formatwarning_orig` exists in: 0.3.4
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0900
+You are given a Python snippet and an installed library version.
+Library: dbt-common==1.8.0
+```python
+from dbt_common.events.types import BehaviorDeprecationEvent
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of dbt-common: 0.1.0 … 1.39.0 (59 releases).
+- `dbt_common.events.types.BehaviorDeprecationEvent` exists in: 1.8.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0906
+You are given a Python snippet and an installed library version.
+Library: genai-prices==0
+```python
+from genai_prices.types import Provider
+Provider.is_match
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of genai-prices: 0 … 0.1.13 (74 releases).
+- `genai_prices.types.Provider` exists in: 0–0.1.13
+- `genai_prices.types.Provider.is_match` exists in: 0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0912
+You are given a Python snippet and an installed library version.
+Library: ghapi==2.0.0
+```python
+from ghapi.all import print_summary
+print_summary(req=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of ghapi: 0.1.14 … 2.1.4 (42 releases).
+- `ghapi.all.print_summary` exists in: 0.1.14–2.1.4
+- `ghapi.all.print_summary(..., req=...)` keyword accepted in: 0.1.14–1.1.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0918
+You are given a Python snippet and an installed library version.
+Library: mammoth==1.6.0
+```python
+from mammoth.docx.xmlparser import Handler
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of mammoth: 1.4.14 … 1.13.0 (20 releases).
+- `mammoth.docx.xmlparser.Handler` exists in: 1.4.14–1.5.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0924
+You are given a Python snippet and an installed library version.
+Library: requests-oauthlib==2.0.0
+```python
+from requests_oauthlib.oauth1_auth import unicode
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of requests-oauthlib: 1.3.1 … 2.0.0 (2 releases).
+- `requests_oauthlib.oauth1_auth.unicode` exists in: 1.3.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0930
+You are given a Python snippet and an installed library version.
+Library: google-cloud-secret-manager==1.0.2
+```python
+from google.cloud.secretmanager import SecretManagerServiceClient
+SecretManagerServiceClient(channel=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of google-cloud-secret-manager: 1.0.1 … 2.31.0 (58 releases).
+- `google.cloud.secretmanager.SecretManagerServiceClient` exists in: 1.0.1–2.31.0
+- `google.cloud.secretmanager.SecretManagerServiceClient(..., channel=...)` keyword accepted in: 1.0.1–1.0.2
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0936
+You are given a Python snippet and an installed library version.
+Library: django-cors-headers==3.14.0
+```python
+from corsheaders.middleware import CorsPostCsrfMiddleware
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of django-cors-headers: 3.7.0 … 4.9.0 (20 releases).
+- `corsheaders.middleware.CorsPostCsrfMiddleware` exists in: 3.7.0–3.14.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0942
+You are given a Python snippet and an installed library version.
+Library: hvac==2.0.0
+```python
+from hvac.api.auth_methods import Mfa
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of hvac: 0.10.7 … 2.4.0 (23 releases).
+- `hvac.api.auth_methods.Mfa` exists in: 0.10.7–1.2.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0948
+You are given a Python snippet and an installed library version.
+Library: docutils==0.18.1
+```python
+from docutils.parsers.rst.roles import unimplemented_role
+unimplemented_role(role=..., rawtext=..., text=..., lineno=..., inliner=..., attributes=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of docutils: 0.17 … 0.23 (16 releases).
+- `docutils.parsers.rst.roles.unimplemented_role` exists in: 0.17–0.23
+- `docutils.parsers.rst.roles.unimplemented_role(..., role=...)` keyword accepted in: 0.17–0.23
+- `docutils.parsers.rst.roles.unimplemented_role(..., rawtext=...)` keyword accepted in: 0.17–0.23
+- `docutils.parsers.rst.roles.unimplemented_role(..., text=...)` keyword accepted in: 0.17–0.23
+- `docutils.parsers.rst.roles.unimplemented_role(..., lineno=...)` keyword accepted in: 0.17–0.23
+- `docutils.parsers.rst.roles.unimplemented_role(..., inliner=...)` keyword accepted in: 0.17–0.23
+- `docutils.parsers.rst.roles.unimplemented_role(..., attributes=...)` keyword accepted in: 0.17–0.18
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0954
+You are given a Python snippet and an installed library version.
+Library: secretstorage==3.4.1
+```python
+from secretstorage.dhcrypto import int_to_bytes
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of secretstorage: 3.3.1 … 3.5.0 (6 releases).
+- `secretstorage.dhcrypto.int_to_bytes` exists in: 3.3.1–3.4.1
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0960
+You are given a Python snippet and an installed library version.
+Library: watchfiles==0.11
+```python
+from watchfiles.main import arun_process
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of watchfiles: 0.10 … 1.3.0 (28 releases).
+- `watchfiles.main.arun_process` exists in: 0.10
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0966
+You are given a Python snippet and an installed library version.
+Library: typeguard==3.0.0
+```python
+from typeguard import typechecked
+typechecked(always=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of typeguard: 2.11.0 … 4.6.0 (31 releases).
+- `typeguard.typechecked` exists in: 2.11.0–4.6.0
+- `typeguard.typechecked(..., always=...)` keyword accepted in: 2.11.0–2.13.3
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0972
+You are given a Python snippet and an installed library version.
+Library: openapi-spec-validator==0.6.0
+```python
+from openapi_spec_validator.validation.validators import SpecValidator
+SpecValidator(schema_validator=..., value_validator_class=..., value_validator_format_checker=..., resolver_handlers=...)
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of openapi-spec-validator: 0.2.10 … 0.9.0 (25 releases).
+- `openapi_spec_validator.validation.validators.SpecValidator` exists in: 0.5.0–0.9.0
+- `openapi_spec_validator.validation.validators.SpecValidator(..., schema_validator=...)` keyword accepted in: 0.5.0–0.6.0
+- `openapi_spec_validator.validation.validators.SpecValidator(..., value_validator_class=...)` keyword accepted in: 0.5.0–0.6.0
+- `openapi_spec_validator.validation.validators.SpecValidator(..., value_validator_format_checker=...)` keyword accepted in: 0.5.0–0.6.0
+- `openapi_spec_validator.validation.validators.SpecValidator(..., resolver_handlers=...)` keyword accepted in: 0.5.0–0.6.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0978
+You are given a Python snippet and an installed library version.
+Library: freezegun==1.1.0
+```python
+from freezegun.api import iscoroutinefunction
+```
+API history from the PyPI API Drift dataset (analysed releases only):
+Analysed releases of freezegun: 1.1.0 … 1.5.5 (13 releases).
+- `freezegun.api.iscoroutinefunction` exists in: 1.1.0
+
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+

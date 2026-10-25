@@ -1,0 +1,152 @@
+task_id,valid_a,faith_a,succ_a,reason_a,valid_b,faith_b,succ_b,reason_b,valid_c,faith_c,succ_c,reason_c,project,change_type
+t002,False,True,False,from ddtrace.contrib.internal.ray.patch: ModuleNotFoundError: No module named 'ray',False,True,False,cannot import RAY_ACTOR_MODULE_DENYLIST from ddtrace.contrib.internal.ray.constants,False,True,False,from ddtrace.contrib.internal.ray.core.actor: ModuleNotFoundError: No module named 'ray',ddtrace,removed
+t003,False,True,False,cannot import OutputContainer from av,True,True,True,,True,True,True,,av,removed
+t004,False,True,False,from pyathena.sqlalchemy.base: ModuleNotFoundError: No module named 'sqlalchemy',False,True,False,from pyathena.sqlalchemy.preparer: ModuleNotFoundError: No module named 'sqlalchemy',True,True,True,,pyathena,removed
+t000,False,True,False,SockClient.connect: no attribute 'connect',True,False,False,,True,True,True,,wandb,removed
+t006,False,True,False,cannot import MAXIMUM_CONTENT_WIDTH from streamlit.elements.image,False,False,False,,True,True,True,,streamlit,removed
+t007,False,True,False,Instance.get_config: no attribute 'get_config',True,True,True,,True,False,False,,mashumaro,removed
+t008,False,True,False,cannot import im from PIL.SpiderImagePlugin,True,False,False,,False,False,False,PyCodec.im: no attribute 'im',pillow,removed
+t009,False,True,False,cannot import logger from langchain_community.document_loaders.onedrive,False,False,False,,True,False,False,,langchain-community,removed
+t010,False,True,False,Client.projects: no attribute 'projects',True,True,True,,True,False,False,,langsmith,removed
+t005,False,True,False,from xgboost.testing: ModuleNotFoundError: No module named 'pytest',False,True,False,from xgboost.testing.predict: ModuleNotFoundError: No module named 'pytest',False,True,False,from xgboost.testing.utils: ModuleNotFoundError: No module named 'pytest',xgboost,removed
+t012,False,True,False,from aws_lambda_powertools.event_handler.openapi.types: ModuleNotFoundError: No module named 'jmespath',False,False,False,,False,True,False,from aws_lambda_powertools.event_handler.openapi.pydantic_loader: ModuleNotFoundError: No module named 'jmespath',aws-lambda-powertools,removed
+t011,False,True,False,GcsObjectStore.find_missing_objects: no attribute 'find_missing_objects',False,True,False,GcsObjectStore.find_missing_objects: no attribute 'find_missing_objects',True,False,False,,dulwich,removed
+t001,False,True,False,cannot import warn_unknown_credential from litellm.rust_bridge.callbacks_legacy_python,False,False,False,,True,True,True,,litellm,removed
+t013,False,True,False,cannot import condition from great_expectations.expectations.row_conditions,True,False,False,,True,True,True,,great-expectations,removed
+t014,False,True,False,cannot import BaseRequestPayload from mlflow.gateway.schemas.chat,True,True,True,,True,True,True,,mlflow,removed
+t016,False,True,False,Item.filter: no attribute 'filter',False,True,False,Item.filter: no attribute 'filter',True,False,False,,moto,removed
+t017,False,True,False,cannot import FeedbackList from twilio.rest.api.v2010.account.call,True,False,False,,True,False,False,,twilio,removed
+t018,True,True,True,,True,True,True,,False,True,False,cannot import infty from numpy.core,numpy,removed
+t015,False,True,False,cannot import VertexAIModelGarden from langchain_google_vertexai.llms,True,False,False,,True,True,True,,langchain-google-vertexai,removed
+t021,False,True,False,cannot import make_stop from strands.vended_tools,True,False,False,,True,True,True,,strands-agents,removed
+t022,False,True,False,cannot import Interrupt from langgraph.pregel,True,True,True,,True,True,True,,langgraph,removed
+t020,False,True,False,from triton.compiler.compiler: ModuleNotFoundError: No module named 'setuptools',False,False,False,from triton.compiler.compiler: ModuleNotFoundError: No module named 'setuptools',False,True,False,from triton.compiler.backends.cuda: ModuleNotFoundError: No module named 'setuptools',triton,removed
+t023,False,True,False,cannot import build_host from websockets.http,False,False,False,,True,True,True,,websockets,removed
+t025,False,True,False,cannot import cliques_containing_node from networkx.algorithms.clique,True,True,True,,True,False,False,,networkx,removed
+t026,False,True,False,cannot import Vector from fakeredis.model,False,True,False,cannot import Vector from fakeredis.model,False,True,False,cannot import VectorSet from fakeredis.model,fakeredis,removed
+t027,False,True,False,cannot import load from nltk.chunk,True,True,True,,False,True,False,"from nltk: LookupError: 
+**********************************************************************
+  Resource [93mwordnet[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('wordnet')
+  [0m
+  For more information see: https://www.nltk.o",nltk,removed
+t029,False,True,False,DirectMemmoveBuffer.write: no attribute 'write',True,False,False,,True,False,False,,gcsfs,removed
+t030,False,True,False,from zmq.backend.cffi.devices: ModuleNotFoundError: No module named 'cffi',False,True,False,from zmq.backend.cffi.devices: ModuleNotFoundError: No module named 'cffi',True,True,True,,pyzmq,removed
+t031,False,False,False,cannot import DOT_ATOM_TEXT from email_validator,True,True,True,,True,True,True,,email-validator,removed
+t032,False,True,False,TexinfoBuilder.init_document_data: no attribute 'init_document_data',True,False,False,,True,False,False,,sphinx,removed
+t033,False,True,False,from sentry_sdk.integrations.pydantic_ai: DidNotEnable: pydantic-ai not installed,True,True,True,,True,True,True,,sentry-sdk,removed
+t028,False,True,False,cannot import is_url from transformers.models.idefics3.processing_idefics3,False,False,False,,True,True,True,,transformers,removed
+t035,False,False,False,,False,False,False,,False,True,False,cannot import PY2 from gevent.thread,gevent,removed
+t034,False,True,False,cannot import BetaManagedAgentsSessionThreadAgent from anthropic.types.beta.sessions,False,True,False,cannot import BetaManagedAgentsSessionThreadAgent from anthropic.types.beta.sessions,True,True,True,,anthropic,removed
+t036,False,True,False,cannot import Translation from groq.types,True,True,True,,True,True,True,,groq,removed
+t037,False,True,False,cannot import JWTRegistry from joserfc.rfc7519.registry,True,True,True,,True,True,True,,joserfc,removed
+t038,False,True,False,FileDialogInfo.from_dict: no attribute 'from_dict',True,True,True,,True,False,False,,selenium,removed
+t039,False,True,False,cannot import insert_re from clickhouse_connect.dbapi.cursor,True,False,False,,True,True,True,,clickhouse-connect,removed
+t040,False,True,False,cannot import logger from langgraph_sdk.client,False,False,False,,True,False,False,,langgraph-sdk,removed
+t041,False,True,False,cannot import running_min from more_itertools.more,False,True,False,cannot import running_min from more_itertools.more,True,True,True,,more-itertools,removed
+t042,False,True,False,cannot import wrap_function_wrapper from wrapt.wrappers,True,True,True,,True,True,True,,wrapt,removed
+t043,False,True,False,from pyiceberg.table: ModuleNotFoundError: No module named 'pyarrow',True,True,True,,True,True,True,,pyiceberg,removed
+t044,False,True,False,ApiClient.pool: no attribute 'pool',True,False,False,,True,False,False,,kubernetes,removed
+t024,False,True,False,"from pandas.core.internals: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,True,False,"from pandas.core.internals: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,True,False,"from pandas.core.internals: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",pandas,removed
+t045,False,True,False,cannot import CONTEXT_SCHEMA from snowplow_tracker.tracker,True,True,True,,True,True,True,,snowplow-tracker,removed
+t049,False,True,False,cannot import logger from mcp.client.auth,False,False,False,,False,False,False,from mcp.cli.cli: ImportError: cannot import name 'eval_type_backport' from 'pydantic._internal._typing_extra' (/tmp/rv_6q1q53oo/lib/python3.12/site-packages/pydantic/_internal/_typing_extra.py),mcp,removed
+t050,False,True,False,cannot import TRANSPARENT from weasyprint.formatting_structure.build,False,False,False,,True,True,True,,weasyprint,removed
+t047,False,True,False,cannot import PdfEmbeddedFileParams from pymupdf.mupdf,False,True,False,cannot import PdfEmbeddedFileParams from pymupdf.mupdf,False,True,False,from fitz.mupdf: ModuleNotFoundError: No module named 'fitz.mupdf',pymupdf,removed
+t046,False,True,False,cannot import TESTS_ERROR from swebench.metrics.getters,True,True,True,,True,True,True,,swebench,removed
+t052,False,True,False,cannot import is_bytes from Crypto.SelfTest.IO.test_PBES,True,True,True,,True,True,True,,pycryptodome,removed
+t054,False,True,False,cannot import is_ansi_terminal from progressbar.utils,False,False,False,,True,True,True,,progressbar2,removed
+t051,True,True,True,,True,True,True,,False,True,False,from mlflow: ModuleNotFoundError: No module named 'pkg_resources',mlflow-skinny,removed
+t057,False,True,False,RecordingPointPen.moveTo: no attribute 'moveTo',True,False,False,,True,False,False,,fonttools,removed
+t056,False,True,False,cannot import ExecuteResponse from databricks.sql.utils,True,True,True,,True,True,True,,databricks-sql-connector,removed
+t058,False,True,False,from mypy.typeshed.stdlib.io: ModuleNotFoundError: No module named 'mypy.typeshed.stdlib.io',False,True,False,from mypy.typeshed.stdlib.io: ModuleNotFoundError: No module named 'mypy.typeshed.stdlib.io',True,False,False,,mypy,removed
+t059,False,True,False,cannot import parse_style from fpdf.svg,True,False,False,,True,True,True,,fpdf2,removed
+t061,False,True,False,from litellm.proxy.openai_files_endpoints.files_endpoints: ModuleNotFoundError: No module named 'fastapi',False,True,False,from litellm.proxy.openai_files_endpoints.files_endpoints: ModuleNotFoundError: No module named 'fastapi',False,True,False,from litellm.proxy.openai_files_endpoints.files_endpoints: ModuleNotFoundError: No module named 'fastapi',litellm,param_renamed
+t060,False,True,False,get_dataset(...): got an unexpected keyword argument 'uc_table_name',True,True,True,,True,True,True,,mlflow,param_renamed
+t055,False,True,False,from dbt.env_vars: ImportError: cannot import name 'KNOWN_ENGINE_ENV_VARS' from partially initialized module 'dbt.env_vars' (most likely due to a circular import) (/tmp/rv_k7rel4g5/lib/python3.12/site-packages/dbt/env_vars.py),False,False,False,from dbt.env_vars: ImportError: cannot import name 'KNOWN_ENGINE_ENV_VARS' from partially initialized module 'dbt.env_vars' (most likely due to a circular import) (/tmp/rv_k7rel4g5/lib/python3.12/site-packages/dbt/env_vars.py),True,True,True,,dbt-core,removed
+t063,False,True,False,download(...): got an unexpected keyword argument 'url',False,True,False,download(...): got an unexpected keyword argument 'url',True,True,True,,pbs-installer,param_renamed
+t066,False,True,False,truncate_and_annotate_messages(...): got an unexpected keyword argument 'max_bytes',True,True,True,,True,True,True,,sentry-sdk,param_renamed
+t068,False,True,False,from aws_lambda_powertools.event_handler.openapi.swagger_ui.html: ModuleNotFoundError: No module named 'jmespath',False,True,False,from aws_lambda_powertools.event_handler.openapi.swagger_ui.html: ModuleNotFoundError: No module named 'jmespath',False,True,False,from aws_lambda_powertools.event_handler.openapi.swagger_ui.html: ModuleNotFoundError: No module named 'jmespath',aws-lambda-powertools,param_renamed
+t069,False,True,False,health_check(...): got an unexpected keyword argument 'language_version',True,True,True,,True,True,True,,pre-commit,param_renamed
+t067,False,True,False,StreamGroup(...): got an unexpected keyword argument 'start_key',False,True,False,StreamGroup(...): got an unexpected keyword argument 'start_key',True,True,True,,fakeredis,param_renamed
+t070,False,True,False,Connection(...): got an unexpected keyword argument 'experimental_python_types',True,True,True,,True,True,True,,trino,param_renamed
+t064,False,True,False,np_frombuffer(...): got an unexpected keyword argument 'context',False,True,False,np_frombuffer(...): got an unexpected keyword argument 'context',True,True,True,,numba,param_renamed
+t071,False,True,False,EnvSettingsSource(...): got an unexpected keyword argument 'env_prefix_len',True,True,True,,True,True,True,,pydantic-settings,param_renamed
+t072,False,True,False,remove_addr_infos(...): got an unexpected keyword argument 'address',False,True,False,remove_addr_infos(...): got an unexpected keyword argument 'address',True,True,True,,aiohappyeyeballs,param_renamed
+t075,False,True,False,get_root_url(...): got an unexpected keyword argument 'version',True,True,True,,True,True,True,,nodeenv,param_renamed
+t076,False,True,False,TypeVarLikeQuery(...): got an unexpected keyword argument 'lookup',False,True,False,TypeVarLikeQuery(...): got an unexpected keyword argument 'lookup',True,True,True,,mypy,param_renamed
+t073,False,True,False,BleachSanitizerFilter(...): got an unexpected keyword argument 'allowed_elements',True,True,True,,True,True,True,,bleach,param_renamed
+t077,False,True,False,BaseKey(...): got an unexpected keyword argument 'options',True,True,True,,True,True,True,,joserfc,param_renamed
+t074,False,True,False,wait_for_download_with_progress(...): got an unexpected keyword argument 'api',False,True,False,wait_for_download_with_progress(...): got an unexpected keyword argument 'api',True,True,True,,wandb,param_renamed
+t080,False,True,False,from s3transfer.crt: ModuleNotFoundError: No module named 'awscrt',False,True,False,from s3transfer.crt: ModuleNotFoundError: No module named 'awscrt',False,True,False,from s3transfer.crt: ModuleNotFoundError: No module named 'awscrt',s3transfer,param_renamed
+t081,False,True,False,from engineio.async_drivers.gevent: ModuleNotFoundError: No module named 'gevent',False,True,False,from engineio.async_drivers.gevent: ModuleNotFoundError: No module named 'gevent',False,True,False,from engineio.async_drivers.gevent: ModuleNotFoundError: No module named 'gevent',python-engineio,param_renamed
+t082,False,True,False,generate_quality_report(...): got an unexpected keyword argument 'html_report',True,True,True,,True,True,True,,diff-cover,param_renamed
+t078,False,True,False,AsyncUnaryStreamMetadataInterceptor(...): got an unexpected keyword argument 'gaada',False,True,False,AsyncUnaryStreamMetadataInterceptor(...): got an unexpected keyword argument 'gaada',True,True,True,,google-ads,param_renamed
+t079,False,True,False,image_to_url(...): got an unexpected keyword argument 'width',True,True,True,,True,True,True,,streamlit,param_renamed
+t085,False,True,False,from key_value.aio.wrappers.statistics: ImportError: cannot import name 'prepare_ttls' from 'key_value.shared.utils.time_to_live' (/tmp/rv_fdzml093/lib/python3.12/site-packages/key_value/shared/utils/time_to_live.py),False,True,False,from key_value.aio.wrappers.statistics: ImportError: cannot import name 'prepare_ttls' from 'key_value.shared.utils.time_to_live' (/tmp/rv_fdzml093/lib/python3.12/site-packages/key_value/shared/utils/time_to_live.py),False,True,False,from key_value.aio.wrappers.statistics: ImportError: cannot import name 'prepare_ttls' from 'key_value.shared.utils.time_to_live' (/tmp/rv_fdzml093/lib/python3.12/site-packages/key_value/shared/utils/time_to_live.py),py-key-value-aio,param_renamed
+t083,False,True,False,TransitGatewayPeeringAttachment(...): got an unexpected keyword argument 'transit_gateway_id',True,True,True,,True,True,True,,moto,param_renamed
+t086,False,True,False,wrap_function_wrapper(...): got an unexpected keyword argument 'module',False,True,False,wrap_function_wrapper(...): got an unexpected keyword argument 'module',True,True,True,,wrapt,param_renamed
+t084,False,True,False,CloudFetchQueue(...): got an unexpected keyword argument 'result_links',True,True,True,,True,True,True,,databricks-sql-connector,param_renamed
+t088,False,True,False,get_image_from_uri(...): got an unexpected keyword argument 'optimize_size',True,True,True,,True,True,True,,weasyprint,param_renamed
+t089,False,True,False,InsightsQuestionnairesQuestionContext(...): got an unexpected keyword argument 'question_id',True,True,True,,True,True,True,,twilio,param_renamed
+t087,False,True,False,from mlflow.dspy.callback: ModuleNotFoundError: No module named 'numpy',False,True,False,from mlflow.dspy.callback: ModuleNotFoundError: No module named 'numpy',False,True,False,from mlflow.dspy.callback: ModuleNotFoundError: No module named 'numpy',mlflow-skinny,param_renamed
+t091,False,True,False,from onnxruntime.transformers.models.llama.llama_inputs: ImportError: ,False,True,False,from onnxruntime.transformers.models.llama.llama_inputs: ImportError: ,False,True,False,from onnxruntime.transformers.models.llama.llama_inputs: ImportError: ,onnxruntime,param_renamed
+t092,False,True,False,uuid8(...): got an unexpected keyword argument 'bytes',True,True,True,,True,True,True,,uuid-utils,param_renamed
+t093,False,True,False,build_formatted_time(...): got an unexpected keyword argument 'dialect',True,True,True,,True,True,True,,sqlglot,param_renamed
+t095,False,True,False,cell_len(...): got an unexpected keyword argument '_cell_len',True,True,True,,True,True,True,,rich,param_renamed
+t094,False,True,False,delete(...): got an unexpected keyword argument 'secret_name',True,True,True,,True,True,True,,modal,param_renamed
+t090,True,True,True,,True,True,True,,True,True,True,,dbt-common,param_renamed
+t097,False,True,False,GroupShape(...): got an unexpected keyword argument 'shape_elm',True,True,True,,True,True,True,,python-pptx,param_renamed
+t098,False,True,False,avg_over_time(...): got an unexpected keyword argument 'number',True,True,True,,True,True,True,,elasticsearch,param_renamed
+t100,False,True,False,array_out(...): got an unexpected keyword argument 'ar',True,True,True,,True,True,True,,pg8000,param_renamed
+t102,False,True,False,lock(...): got an unexpected keyword argument 'file_',True,True,True,,True,True,True,,portalocker,param_renamed
+t103,False,True,False,from mlflow.store.tracking.gateway.config_resolver: ModuleNotFoundError: No module named 'sqlalchemy',False,True,False,from mlflow.store.tracking.gateway.config_resolver: ModuleNotFoundError: No module named 'sqlalchemy',False,True,False,from mlflow.store.tracking.gateway.config_resolver: ModuleNotFoundError: No module named 'sqlalchemy',mlflow-tracing,param_renamed
+t101,False,True,False,is_x(...): got an unexpected keyword argument 'id',True,True,True,,True,True,True,,jupyterlab,param_renamed
+t105,False,True,False,from huggingface_hub.cli.skills: ModuleNotFoundError: No module named 'click',False,True,False,from huggingface_hub.cli.skills: ModuleNotFoundError: No module named 'click',False,True,False,from huggingface_hub.cli.skills: ModuleNotFoundError: No module named 'click',huggingface-hub,param_removed
+t099,False,True,False,"from skimage.measure: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,True,False,"from skimage.measure: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,True,False,"from skimage.measure: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",scikit-image,param_renamed
+t107,False,True,False,url_schema(...): got an unexpected keyword argument 'cls',True,True,True,,True,True,True,,pydantic-core,param_removed
+t108,False,True,False,FakeUserSettings(...): got an unexpected keyword argument 'tags',True,True,True,,True,True,True,,moto,param_removed
+t109,False,True,False,Connection(...): got an unexpected keyword argument 'idc_client_display_name',False,True,False,Connection(...): got an unexpected keyword argument 'idc_client_display_name',True,True,True,,redshift-connector,param_removed
+t110,False,True,False,from time_machine.cli: ModuleNotFoundError: No module named 'tokenize_rt',False,True,False,from time_machine.cli: ModuleNotFoundError: No module named 'tokenize_rt',False,True,False,from time_machine.cli: ModuleNotFoundError: No module named 'tokenize_rt',time-machine,param_removed
+t111,False,True,False,process_api_requests(...): got an unexpected keyword argument 'requests',True,True,True,,True,True,True,,mlflow,param_removed
+t112,False,True,False,InterfaceSock(...): got an unexpected keyword argument 'sock_client',True,True,True,,True,True,True,,wandb,param_removed
+t113,False,True,False,from datasets.load: AttributeError: module 'pyarrow' has no attribute 'PyExtensionType',False,True,False,from datasets.load: AttributeError: module 'pyarrow' has no attribute 'PyExtensionType',False,True,False,from datasets.load: AttributeError: module 'pyarrow' has no attribute 'PyExtensionType',datasets,param_removed
+t106,True,True,True,,True,True,True,,True,True,True,,accelerate,param_removed
+t114,False,True,False,read_csv_batched(...): got an unexpected keyword argument 'missing_utf8_is_empty_string',False,True,False,read_csv_batched(...): got an unexpected keyword argument 'missing_utf8_is_empty_string',True,True,True,,polars,param_removed
+t104,True,True,True,,False,True,False,get_mixed_precision_context_manager(...): got an unexpected keyword argument 'cache_enabled',True,True,True,,accelerate,param_renamed
+t115,False,True,False,InvalidKeyTypeError(...): got an unexpected keyword argument 'error',True,True,True,,True,True,True,,joserfc,param_removed
+t116,False,True,False,Then(...): got an unexpected keyword argument 'is_order_dependent',False,True,False,Then(...): got an unexpected keyword argument 'is_order_dependent',True,True,True,,narwhals,param_removed
+t118,True,True,True,,True,True,True,,True,True,True,,black,param_removed
+t117,False,True,False,AvroFileHeader(...): got an unexpected keyword argument 'struct',False,True,False,AvroFileHeader(...): got an unexpected keyword argument 'struct',True,True,True,,pyiceberg,param_removed
+t119,False,True,False,ChartStock(...): got an unexpected keyword argument 'options',True,True,True,,True,True,True,,xlsxwriter,param_removed
+t122,False,True,False,make_blockwise_graph(...): got an unexpected keyword argument 'deserializing',True,True,True,,True,True,True,,dask,param_removed
+t124,False,True,False,from sentry_sdk.integrations.langchain: DidNotEnable: langchain not installed,False,True,False,from sentry_sdk.integrations.langchain: DidNotEnable: langchain not installed,False,True,False,from sentry_sdk.integrations.langchain: DidNotEnable: langchain not installed,sentry-sdk,param_removed
+t123,False,True,False,from onnxruntime.transformers.models.t5.convert_to_onnx: ModuleNotFoundError: No module named 'torch',False,True,False,from onnxruntime.transformers.models.t5.convert_to_onnx: ModuleNotFoundError: No module named 'torch',False,True,False,from onnxruntime.transformers.models.t5.convert_to_onnx: ModuleNotFoundError: No module named 'torch',onnxruntime,param_removed
+t125,False,True,False,TomlConfigSettingsSource(...): got an unexpected keyword argument 'toml_file_encoding',False,True,False,TomlConfigSettingsSource(...): got an unexpected keyword argument 'toml_file_encoding',True,True,True,,pydantic-settings,param_removed
+t126,False,True,False,RawBatchCommandCursor(...): got an unexpected keyword argument 'explicit_session',False,True,False,RawBatchCommandCursor(...): got an unexpected keyword argument 'explicit_session',True,True,True,,pymongo,param_removed
+t128,False,True,False,RedispyBridge(...): got an unexpected keyword argument 'key_prefix',False,True,False,RedispyBridge(...): got an unexpected keyword argument 'key_prefix',True,True,True,,limits,param_removed
+t129,False,True,False,push_attr_list(...): got an unexpected keyword argument 'loc',True,True,True,,True,True,True,,pydot,param_removed
+t120,True,True,True,,True,True,True,,True,True,True,,scipy,param_removed
+t130,False,True,False,MySQLCachingSHA2PasswordAuthPlugin(...): got an unexpected keyword argument 'auth_data',True,True,True,,True,True,True,,mysql-connector-python,param_removed
+t127,False,True,False,TGetPrimaryKeysReq(...): got an unexpected keyword argument 'operationId',False,True,False,TGetPrimaryKeysReq(...): got an unexpected keyword argument 'operationId',True,True,True,,databricks-sql-connector,param_removed
+t132,False,True,False,from ddtrace.contrib.internal.langgraph.patch: ModuleNotFoundError: No module named 'langgraph',False,True,False,from ddtrace.contrib.internal.langgraph.patch: ModuleNotFoundError: No module named 'langgraph',False,True,False,from ddtrace.contrib.internal.langgraph.patch: ModuleNotFoundError: No module named 'langgraph',ddtrace,param_removed
+t134,False,True,False,Core(...): got an unexpected keyword argument 'metacov',True,True,True,,True,True,True,,coverage,param_removed
+t135,True,True,True,,True,True,True,,True,True,True,,sqlalchemy,param_removed
+t136,False,True,False,import_object(...): got an unexpected keyword argument 'raiseerror',False,True,False,import_object(...): got an unexpected keyword argument 'warningiserror',True,True,True,,sphinx,param_removed
+t133,False,True,False,merge_freshness(...): got an unexpected keyword argument 'base',True,True,True,,True,True,True,,dbt-core,param_removed
+t138,True,True,True,,True,True,True,,True,True,True,,selenium,param_removed
+t139,False,True,False,CliRunner(...): got an unexpected keyword argument 'catch_exceptions',True,True,True,,True,True,True,,typer,param_removed
+t137,False,True,False,"from awswrangler.catalog: ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4",False,True,False,"from awswrangler.catalog: ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4",False,True,False,"from awswrangler.catalog: ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4",awswrangler,param_removed
+t140,False,True,False,FunctionExpression(...): got an unexpected keyword argument 'use_infix_repr',True,True,True,,True,True,True,,google-cloud-firestore,param_removed
+t141,False,True,False,CliTokenSource(...): got an unexpected keyword argument 'fallback_cmd',True,True,True,,True,True,True,,databricks-sdk,param_removed
+t143,False,True,False,AsyncRPCFilterRequestBuilder(...): got an unexpected keyword argument 'session',False,True,False,AsyncRPCFilterRequestBuilder(...): got an unexpected keyword argument 'session',True,True,True,,postgrest,param_removed
+t142,False,True,False,MultiTaskElasticNetCV(...): got an unexpected keyword argument 'n_alphas',False,True,False,MultiTaskElasticNetCV(...): got an unexpected keyword argument 'n_alphas',True,True,True,,scikit-learn,param_removed
+t145,True,True,True,,True,True,True,,True,True,True,,langsmith,param_removed
+t146,False,True,False,FormParser(...): got an unexpected keyword argument 'FileClass',False,True,False,FormParser(...): got an unexpected keyword argument 'FileClass',True,True,True,,python-multipart,param_removed
+t147,False,True,False,from transformers.generation.continuous_batching: ModuleNotFoundError: No module named 'torch',False,True,False,from transformers.generation.continuous_batching: ModuleNotFoundError: No module named 'torch',False,True,False,from transformers.generation.continuous_batching: ModuleNotFoundError: No module named 'torch',transformers,param_removed
+t148,False,True,False,HealthyMajorityPolicy(...): got an unexpected keyword argument 'health_check_probes',True,True,True,,True,True,True,,redis,param_removed
+t149,False,True,False,recurse_event_loop(...): got an unexpected keyword argument 'model',True,True,True,,True,True,True,,strands-agents,param_removed
+t144,False,True,False,convert_to_gemini_tool_call_result(...): got an unexpected keyword argument 'custom_llm_provider',False,True,False,convert_to_gemini_tool_call_result(...): got an unexpected keyword argument 'custom_llm_provider',True,True,True,,litellm,param_removed
+t131,False,True,False,"from skimage.segmentation: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,True,False,"from skimage.segmentation: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,True,False,"from skimage.segmentation: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",scikit-image,param_removed

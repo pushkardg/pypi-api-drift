@@ -1,0 +1,52 @@
+{
+ "sample": 400,
+ "decided": 400,
+ "unknown": 0,
+ "pairs_correct": 366,
+ "pair_label_precision": 0.915,
+ "ci": [
+  88.4,
+  93.9
+ ],
+ "before_valid_rate": 0.94,
+ "after_invalid_rate": 0.9725,
+ "by_type": {
+  "param_removed": {
+   "n": 54,
+   "correct": 52,
+   "precision": 0.963,
+   "ci": [
+    87.5,
+    99.0
+   ]
+  },
+  "param_renamed": {
+   "n": 54,
+   "correct": 49,
+   "precision": 0.9074,
+   "ci": [
+    80.1,
+    96.0
+   ]
+  },
+  "removed": {
+   "n": 292,
+   "correct": 265,
+   "precision": 0.9075,
+   "ci": [
+    86.9,
+    93.6
+   ]
+  }
+ },
+ "libraries": 265,
+ "libraries_all_correct": 235,
+ "wrong_before_only": 23,
+ "wrong_after_only": 10,
+ "wrong_both": 0,
+ "methods": {
+  "runtime": 390,
+  "source": 9,
+  "runtime+source": 1
+ }
+}

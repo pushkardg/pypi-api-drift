@@ -1,0 +1,10 @@
+attrs==20.3.0
+iniconfig==1.1.1
+packaging==20.8
+pluggy==0.13.1
+py==1.10.0
+pyparsing==2.4.7
+pytest==6.2.2
+pyyaml==5.3.1
+pyyaml-include @ file:///home/claude/apidrift/validation/downstream2/part1/U1_18/src
+toml==0.10.2

@@ -1,0 +1,84 @@
+{
+ "audit1": {
+  "sample": 60,
+  "libraries": 32,
+  "as_audited": {
+   "confirmed": 36,
+   "false_positive": 22,
+   "partially": 2
+  },
+  "claims_still_made": 32,
+  "high": {
+   "n": 28,
+   "confirmed": 28,
+   "partially": 0,
+   "false_positive": 0,
+   "precision": 1.0
+  },
+  "medium": {
+   "n": 4,
+   "confirmed": 4,
+   "partially": 0,
+   "false_positive": 0,
+   "precision": 1.0
+  }
+ },
+ "audit2": {
+  "sample": 60,
+  "libraries": 32,
+  "as_audited": {
+   "confirmed": 43,
+   "false_positive": 15,
+   "partially": 2
+  },
+  "claims_still_made": 47,
+  "high": {
+   "n": 42,
+   "confirmed": 39,
+   "partially": 2,
+   "false_positive": 1,
+   "precision": 0.9286
+  },
+  "medium": {
+   "n": 5,
+   "confirmed": 3,
+   "partially": 0,
+   "false_positive": 2,
+   "precision": 0.6
+  }
+ },
+ "audit3": {
+  "sample": 100,
+  "libraries": 53,
+  "as_audited": {
+   "confirmed": 80,
+   "false_positive": 15,
+   "partially": 5
+  },
+  "claims_still_made": 96,
+  "high": {
+   "n": 73,
+   "confirmed": 69,
+   "partially": 3,
+   "false_positive": 1,
+   "precision": 0.9452
+  },
+  "medium": {
+   "n": 23,
+   "confirmed": 7,
+   "partially": 2,
+   "false_positive": 14,
+   "precision": 0.3043
+  },
+  "as_audited_high": {
+   "n": 80,
+   "precision": 0.8875,
+   "precision_incl_partial": 0.925
+  },
+  "as_audited_medium": {
+   "n": 20,
+   "precision": 0.45,
+   "precision_incl_partial": 0.55
+  }
+ }
+}

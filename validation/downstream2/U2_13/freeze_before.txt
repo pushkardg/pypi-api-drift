@@ -1,0 +1,12 @@
+certifi==2026.10.19
+chardet==3.0.4
+idna==2.10
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pygments==2.21.0
+pytest==8.4.2
+requests==2.24.0
+-e file:///home/claude/apidrift/validation/downstream2/part2/U2_13/requests-file-1.5.1
+six==1.17.0
+urllib3==1.25.11

@@ -1,0 +1,16 @@
+blinker==1.9.0
+click==8.5.0
+Flask==2.2.5
+Flask-SQLAlchemy @ file:///tmp/claude-0/-home-claude/0359666d-f4bf-5f83-9bbd-c4ff1fd22d9c/scratchpad/src/Flask-SQLAlchemy-2.5.1
+greenlet==3.5.6
+iniconfig==2.3.1
+itsdangerous==2.2.0
+Jinja2==3.1.6
+MarkupSafe==3.0.4
+mock==5.2.0
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.1.1
+SQLAlchemy==1.4.54
+Werkzeug==2.2.3

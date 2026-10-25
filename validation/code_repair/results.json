@@ -1,0 +1,103 @@
+{
+ "tasks": 150,
+ "tasks_scored": 143,
+ "tasks_excluded": 7,
+ "excluded": [
+  {
+   "task_id": "t019",
+   "reason": "original snippet is valid in the new release"
+  },
+  {
+   "task_id": "t048",
+   "reason": "original snippet is valid in the new release"
+  },
+  {
+   "task_id": "t053",
+   "reason": "original snippet is valid in the new release"
+  },
+  {
+   "task_id": "t062",
+   "reason": "original snippet is valid in the new release"
+  },
+  {
+   "task_id": "t065",
+   "reason": "original snippet is valid in the new release"
+  },
+  {
+   "task_id": "t096",
+   "reason": "original snippet is valid in the new release"
+  },
+  {
+   "task_id": "t121",
+   "reason": "original snippet is valid in the new release"
+  }
+ ],
+ "libraries": 109,
+ "conditions": {
+  "a": {
+   "name": "closed book",
+   "valid_rate": 0.5874,
+   "faithful_rate": 0.9301,
+   "success": 81,
+   "success_rate": 0.5664,
+   "success_ci": [
+    48.5,
+    64.5
+   ]
+  },
+  "b": {
+   "name": "documentation",
+   "valid_rate": 0.6993,
+   "faithful_rate": 0.8601,
+   "success": 86,
+   "success_rate": 0.6014,
+   "success_ci": [
+    52.0,
+    67.8
+   ]
+  },
+  "c": {
+   "name": "PyPI API Drift",
+   "valid_rate": 0.8042,
+   "faithful_rate": 0.8811,
+   "success": 98,
+   "success_rate": 0.6853,
+   "success_ci": [
+    60.5,
+    75.6
+   ]
+  }
+ },
+ "by_stratum": {
+  "prm": {
+   "n": 44,
+   "a": 0.5227,
+   "b": 0.5682,
+   "c": 0.7045
+  },
+  "prn": {
+   "n": 42,
+   "a": 0.5714,
+   "b": 0.7381,
+   "c": 0.7619
+  },
+  "rem": {
+   "n": 57,
+   "a": 0.5965,
+   "b": 0.5263,
+   "c": 0.614
+  }
+ },
+ "mcnemar": {
+  "c_vs_a": {
+   "c_only": 29,
+   "other_only": 12,
+   "p": 0.0115
+  },
+  "c_vs_b": {
+   "c_only": 21,
+   "other_only": 9,
+   "p": 0.0428
+  }
+ }
+}

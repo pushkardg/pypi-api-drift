@@ -1,0 +1,553 @@
+id,project,version_before,version_after,snippet,symbol,change_type,param
+1,agate,1.6.3,1.7.0,from agate.columns import xrange,agate.columns.xrange,removed,
+2,aiohappyeyeballs,0.3.0,0.4.0,"from aiohappyeyeballs import create_connection
+create_connection(addr_infos=..., all_errors=...)",aiohappyeyeballs.create_connection,param_removed,all_errors
+3,aiohttp,3.10.11,3.11.0,"from aiohttp import ClientWebSocketResponse
+ClientWebSocketResponse(reader=..., writer=..., protocol=..., response=..., timeout=..., autoclose=..., autoping=..., loop=..., receive_timeout=...)",aiohttp.ClientWebSocketResponse,param_removed,receive_timeout
+4,aiohttp,3.13.2,3.13.3,from aiohttp.compression_utils import ZlibBaseHandler,aiohttp.compression_utils.ZlibBaseHandler,removed,
+5,anyio,3.7.1,4.0.0,"from anyio.abc import TestRunner
+TestRunner.close",anyio.abc.TestRunner.close,removed,
+6,anyio,3.7.1,4.0.0,from anyio import maybe_async_cm,anyio.maybe_async_cm,removed,
+7,asttokens,2.4.1,3.0.0,from asttokens.util import AstConstant,asttokens.util.AstConstant,removed,
+8,async-lru,1.0.3,2.0.0,"from async_lru import alru_cache
+alru_cache(cache_exceptions=...)",async_lru.alru_cache,param_removed,cache_exceptions
+9,async-lru,1.0.3,2.0.0,"from async_lru import alru_cache
+alru_cache(fn=...)",async_lru.alru_cache,param_removed,fn
+10,av,12.1.0,12.2.0,from av import VideoFormatComponent,av.VideoFormatComponent,removed,
+11,av,18.1.0,19.0.0,"from av import open
+open(file=..., metadata_errors=...)",av.open,param_removed,metadata_errors
+12,aws-xray-sdk,2.12.0,2.12.1,from aws_xray_sdk.core.utils.compat import PY35,aws_xray_sdk.core.utils.compat.PY35,removed,
+13,awscrt,0.34.1,0.35.0,"from awscrt.mqtt import Connection
+Connection(client=..., host_name=..., port=..., client_id=..., enable_metrics=...)",awscrt.mqtt.Connection,param_renamed,enable_metrics
+14,bidict,0.22.1,0.23.0,from bidict import NamedBidictBase,bidict.NamedBidictBase,removed,
+15,billiard,3.6.4.0,4.0.0,from billiard.compat import buf_t,billiard.compat.buf_t,removed,
+16,bleach,4.1.0,5.0.0,from bleach.html5lib_shim import PARSEERROR_TYPE,bleach.html5lib_shim.PARSEERROR_TYPE,removed,
+17,bleach,4.1.0,5.0.0,"from bleach.sanitizer import Cleaner
+Cleaner(styles=...)",bleach.sanitizer.Cleaner,param_removed,styles
+18,cachetools,5.5.2,6.0.0,from cachetools import MRUCache,cachetools.MRUCache,removed,
+19,cachetools,5.5.2,6.0.0,from cachetools.func import mru_cache,cachetools.func.mru_cache,removed,
+20,catalogue,1.0.2,2.0.2,from catalogue import basestring_,catalogue.basestring_,removed,
+21,cattrs,23.2.2,23.2.3,"from cattrs.gen import generate_unique_filename
+generate_unique_filename(cls=..., func_name=..., reserve=...)",cattrs.gen.generate_unique_filename,param_renamed,reserve
+22,cattrs,24.1.3,25.1.0,from cattrs.gen import DictStructureFn,cattrs.gen.DictStructureFn,removed,
+23,celery,5.3.6,5.4.0,"from celery.bin.control import control
+control(ctx=..., timeout=..., destination=..., json=..., action=...)",celery.bin.control.control,param_renamed,action
+24,celery,5.5.3,5.6.0,"from celery.worker.consumer import Consumer
+Consumer.cancel_all_unacked_requests",celery.worker.consumer.Consumer.cancel_all_unacked_requests,removed,
+25,certifi,2025.4.26,2025.6.15,from certifi.core import Package,certifi.core.Package,removed,
+26,certifi,2025.4.26,2025.6.15,from certifi.core import Resource,certifi.core.Resource,removed,
+27,cffi,2.0.0,2.1.0,from cffi.api import callable,cffi.api.callable,removed,
+28,clickhouse-connect,0.7.19,0.8.0,from clickhouse_connect.driver.query import format_query_value,clickhouse_connect.driver.query.format_query_value,removed,
+29,clickhouse-connect,0.15.1,1.0.0,"from clickhouse_connect.driver.query import QueryContext
+QueryContext(utc_tz_aware=...)",clickhouse_connect.driver.query.QueryContext,param_removed,utc_tz_aware
+30,cloudpathlib,0.9.0,0.10.0,from cloudpathlib.anypath import AnyPathMeta,cloudpathlib.anypath.AnyPathMeta,removed,
+31,cloudpathlib,0.3.0,0.4.0,from cloudpathlib import OverwriteDirtyFile,cloudpathlib.OverwriteDirtyFile,removed,
+32,colorama,0.4.5,0.4.6,from colorama.initialise import atexit_done,colorama.initialise.atexit_done,removed,
+33,colorama,0.4.5,0.4.6,from colorama.initialise import wrapped_stderr,colorama.initialise.wrapped_stderr,removed,
+34,colorlog,5.0.1,6.4.0,"from colorlog.escape_codes import parse_colors
+parse_colors(sequence=...)",colorlog.escape_codes.parse_colors,param_renamed,sequence
+35,contourpy,1.1.1,1.2.0,from contourpy.util.mpl_util import mpl_codes_to_offsets,contourpy.util.mpl_util.mpl_codes_to_offsets,removed,
+36,contourpy,1.1.1,1.2.0,from contourpy.util.mpl_util import offsets_to_mpl_codes,contourpy.util.mpl_util.offsets_to_mpl_codes,removed,
+37,cron-descriptor,1.4.5,2.0.3,from cron_descriptor import FormatException,cron_descriptor.FormatException,removed,
+38,cron-descriptor,1.4.5,2.0.3,from cron_descriptor import MissingFieldException,cron_descriptor.MissingFieldException,removed,
+39,croniter,5.0.1,6.0.0,from croniter.croniter import bad_length,croniter.croniter.bad_length,removed,
+40,cryptography,44.0.3,45.0.1,"from cryptography.x509 import ObjectIdentifier
+ObjectIdentifier(val=...)",cryptography.x509.ObjectIdentifier,param_renamed,val
+41,cryptography,48.0.1,49.0.0,from cryptography.hazmat.primitives.asymmetric.types import CERTIFICATE_PRIVATE_KEY_TYPES,cryptography.hazmat.primitives.asymmetric.types.CERTIFICATE_PRIVATE_KEY_TYPES,removed,
+42,cssselect,1.5.0,1.6.0,"from cssselect.parser import Relation
+Relation(selector=..., combinator=..., subselector=...)",cssselect.parser.Relation,param_removed,subselector
+43,cssselect,1.5.0,1.6.0,"from cssselect.parser import Relation
+Relation(selector=..., subselector=..., combinator=...)",cssselect.parser.Relation,param_renamed,combinator
+44,cssselect2,0.7.0,0.8.0,from cssselect2 import SORT_KEY,cssselect2.SORT_KEY,removed,
+45,dacite,1.7.0,1.8.0,from dacite.dataclasses import create_instance,dacite.dataclasses.create_instance,removed,
+46,databricks-labs-blueprint,0.0.5,0.0.6,"from databricks.labs.blueprint.entrypoint import find_project_root
+find_project_root(current=...)",databricks.labs.blueprint.entrypoint.find_project_root,param_removed,current
+47,dataclasses-json,0.5.7,0.5.8,from dataclasses_json.api import B,dataclasses_json.api.B,removed,
+48,datadog,0.53.0,0.54.0,"from datadog import DogStatsd
+DogStatsd(socket_connect_timeout=...)",datadog.DogStatsd,param_removed,socket_connect_timeout
+49,dateparser,1.1.1,1.1.2,from dateparser_scripts.order_languages import most_common_locales,dateparser_scripts.order_languages.most_common_locales,removed,
+50,dateparser,1.3.0,1.4.0,from dateparser.timezone_parser import current_hash,dateparser.timezone_parser.current_hash,removed,
+51,db-dtypes,1.3.0,1.3.1,"from db_dtypes import JSONArray
+JSONArray(values=..., dtype=...)",db_dtypes.JSONArray,param_removed,dtype
+52,db-dtypes,1.4.2,1.4.3,from db_dtypes.pandas_backports import NDArrayBackedExtensionArray,db_dtypes.pandas_backports.NDArrayBackedExtensionArray,removed,
+53,dbt-adapters,1.3.2,1.4.0,from dbt.adapters.record import QueryRecord,dbt.adapters.record.QueryRecord,removed,
+54,dbt-adapters,1.3.2,1.4.0,from dbt.adapters.record import QueryRecordParams,dbt.adapters.record.QueryRecordParams,removed,
+55,deepdiff,8.1.1,8.2.0,from deepdiff.serialization import csv,deepdiff.serialization.csv,removed,
+56,deprecated,1.3.1,3.0.0,from deprecated.classic import string_types,deprecated.classic.string_types,removed,
+57,dill,0.3.4,0.3.5,from dill import msg,dill.msg,removed,
+58,dill,0.3.5.1,0.3.6,"from dill.detect import trace
+trace(boolean=...)",dill.detect.trace,param_renamed,boolean
+59,diskcache,5.2.1,5.3.0,from diskcache.core import WindowsError,diskcache.core.WindowsError,removed,
+60,distro,1.6.0,1.7.0,from distro import InfoDict,distro.InfoDict,removed,
+61,django-cors-headers,3.14.0,4.0.0,"from corsheaders.conf import Settings
+Settings.CORS_REPLACE_HTTPS_REFERER",corsheaders.conf.Settings.CORS_REPLACE_HTTPS_REFERER,removed,
+62,django-cors-headers,3.14.0,4.0.0,from corsheaders.middleware import CorsPostCsrfMiddleware,corsheaders.middleware.CorsPostCsrfMiddleware,removed,
+63,django-filter,23.5,24.1,from django_filters.compat import TestCase,django_filters.compat.TestCase,removed,
+64,django-filter,24.3,25.1,"from django_filters.rest_framework import DjangoFilterBackend
+DjangoFilterBackend.get_schema_operation_parameters",django_filters.rest_framework.DjangoFilterBackend.get_schema_operation_parameters,removed,
+65,dnspython,2.1.0,2.2.0,"from dns.zone import Transaction
+Transaction(zone=..., replacement=..., read_only=...)",dns.zone.Transaction,param_renamed,read_only
+66,dnspython,2.2.1,2.3.0,from dns.rdtypes.txtbase import TXT,dns.rdtypes.txtbase.TXT,removed,
+67,docker,5.0.0,5.0.1,from docker.transport.unixconn import UnixHTTPResponse,docker.transport.unixconn.UnixHTTPResponse,removed,
+68,docker,6.1.3,7.0.0,"from docker.utils import kwargs_from_env
+kwargs_from_env(assert_hostname=...)",docker.utils.kwargs_from_env,param_removed,assert_hostname
+69,docstring-parser,0.16,0.17.0,from docstring_parser.attrdoc import ast_constant_attr,docstring_parser.attrdoc.ast_constant_attr,removed,
+70,duckdb,0.8.1,0.9.0,from duckdb.experimental.spark.sql.functions import substr,duckdb.experimental.spark.sql.functions.substr,removed,
+71,einops,0.6.1,0.7.0,"from einops.einops import TransformRecipe
+TransformRecipe(elementary_axes_lengths=..., input_composite_axes=..., reduced_elementary_axes=..., axes_permutation=..., added_axes=..., output_composite_axes=..., ellipsis_position_in_lhs=...)",einops.einops.TransformRecipe,param_removed,ellipsis_position_in_lhs
+72,einops,0.8.0,0.8.1,from einops.experimental.indexing import CompositionDecomposition,einops.experimental.indexing.CompositionDecomposition,removed,
+73,emoji,2.11.1,2.12.0,from emoji.unicode_codes import get_aliases_unicode_dict,emoji.unicode_codes.get_aliases_unicode_dict,removed,
+74,emoji,1.2.0,2.8.0,from emoji import UNICODE_EMOJI_SPANISH,emoji.UNICODE_EMOJI_SPANISH,removed,
+75,envier,0.3.0,0.4.0,from envier.sphinx import RST_PARSER_SETTINGS,envier.sphinx.RST_PARSER_SETTINGS,removed,
+76,eval-type-backport,0.0.1,0.1.0,from eval_type_backport.eval_type_backport import UnionTransformer,eval_type_backport.eval_type_backport.UnionTransformer,removed,
+77,executing,0.10.0,1.0.0,from executing.executing import ReloadCacheFinder,executing.executing.ReloadCacheFinder,removed,
+78,executing,0.10.0,1.0.0,from executing.executing import all_subclasses,executing.executing.all_subclasses,removed,
+79,face,24.0.0,26.0.0,from face.utils import unicode,face.utils.unicode,removed,
+80,faker,40.17.0,40.18.0,from faker.providers.phone_number.fr_DZ import PhoneNumberProvider,faker.providers.phone_number.fr_DZ.PhoneNumberProvider,removed,
+81,faker,40.32.0,40.33.0,"from faker.providers.company.pt_BR import company_id_checksum
+company_id_checksum(digits=...)",faker.providers.company.pt_BR.company_id_checksum,param_renamed,digits
+82,fastapi-cli,0.0.16,0.0.17,from fastapi_cli.config import PYDANTIC_VERSION_MINOR_TUPLE,fastapi_cli.config.PYDANTIC_VERSION_MINOR_TUPLE,removed,
+83,fastavro,1.2.4,1.3.0,"from fastavro.io.json_decoder import AvroJSONDecoder
+AvroJSONDecoder.read_object_start",fastavro.io.json_decoder.AvroJSONDecoder.read_object_start,removed,
+84,fastavro,1.9.5,1.9.6,"from fastavro.utils import gen_data
+gen_data(schema=..., named_schemas=..., index=...)",fastavro.utils.gen_data,param_removed,index
+85,fastmcp-slim,3.3.0,3.3.1,from fastmcp.server.auth.authorization import logger,fastmcp.server.auth.authorization.logger,removed,
+86,fastmcp-slim,3.4.9,4.0.0,from fastmcp.server.context import ResultT,fastmcp.server.context.ResultT,removed,
+87,feedparser,6.0.12,6.0.13,from feedparser.api import endbracket,feedparser.api.endbracket,removed,
+88,findpython,0.1.1,0.1.2,from findpython.utils import subprocess_output,findpython.utils.subprocess_output,removed,
+89,findpython,0.7.0,0.7.1,from findpython.providers.winreg import SYS_ARCHITECTURE,findpython.providers.winreg.SYS_ARCHITECTURE,removed,
+90,flatbuffers,25.9.23,25.12.19,"from flatbuffers import Builder
+Builder.growByteBuffer",flatbuffers.Builder.growByteBuffer,removed,
+91,flatbuffers,25.9.23,25.12.19,from flatbuffers.builder import vtableEqual,flatbuffers.builder.vtableEqual,removed,
+92,freezegun,1.1.0,1.2.0,from freezegun.api import iscoroutinefunction,freezegun.api.iscoroutinefunction,removed,
+93,frozendict,2.3.9,2.3.10,from frozendict.core import checkPosition,frozendict.core.checkPosition,removed,
+94,ftfy,6.2.0,6.2.1,from ftfy.bad_codecs.sloppy import PY26,ftfy.bad_codecs.sloppy.PY26,removed,
+95,genai-prices,0,0.0.1,"from genai_prices.types import Provider
+Provider.is_match",genai_prices.types.Provider.is_match,removed,
+96,genai-prices,0.0.72,0.0.73,from genai_prices.types import providers_schema,genai_prices.types.providers_schema,removed,
+97,geopandas,0.14.4,1.0.0,from geopandas.io.file import to_file,geopandas.io.file.to_file,removed,
+98,glom,23.1.1,23.3.0,from glom.core import PY2,glom.core.PY2,removed,
+99,google-auth-oauthlib,0.8.0,1.0.0,"from google_auth_oauthlib.flow import InstalledAppFlow
+InstalledAppFlow.run_console",google_auth_oauthlib.flow.InstalledAppFlow.run_console,removed,
+100,google-cloud-aiplatform,1.102.0,1.103.0,from vertexai.preview.reasoning_engines.templates.adk import get_adk_major_version,vertexai.preview.reasoning_engines.templates.adk.get_adk_major_version,removed,
+101,google-cloud-bigquery,2.34.4,3.0.1,from google.cloud.bigquery import LegacyBigQueryStorageError,google.cloud.bigquery.LegacyBigQueryStorageError,removed,
+102,google-cloud-bigquery,2.34.4,3.0.1,from google.cloud.bigquery.enums import SqlParameterScalarTypes,google.cloud.bigquery.enums.SqlParameterScalarTypes,removed,
+103,google-cloud-bigquery-storage,1.1.2,2.2.0,"from google.cloud.bigquery_storage import BigQueryReadClient
+BigQueryReadClient.project_path",google.cloud.bigquery_storage.BigQueryReadClient.project_path,removed,
+104,google-cloud-bigquery-storage,1.1.2,2.2.0,"from google.cloud.bigquery_storage import BigQueryReadClient
+BigQueryReadClient(client_config=...)",google.cloud.bigquery_storage.BigQueryReadClient,param_removed,client_config
+105,google-cloud-kms,1.4.2,2.3.0,"from google.cloud.kms import KeyManagementServiceClient
+KeyManagementServiceClient.location_path",google.cloud.kms.KeyManagementServiceClient.location_path,removed,
+106,google-cloud-kms,1.4.2,2.3.0,"from google.cloud.kms import KeyManagementServiceClient
+KeyManagementServiceClient(client_config=...)",google.cloud.kms.KeyManagementServiceClient,param_removed,client_config
+107,google-cloud-logging,1.15.3,2.1.0,from google.cloud.logging_v2 import LoggingServiceV2Client,google.cloud.logging_v2.LoggingServiceV2Client,removed,
+108,google-cloud-logging,1.15.3,2.1.0,from google.cloud.logging_v2 import MetricsServiceV2Client,google.cloud.logging_v2.MetricsServiceV2Client,removed,
+109,google-cloud-monitoring,1.1.2,2.0.1,"from google.cloud.monitoring import MetricServiceClient
+MetricServiceClient(channel=...)",google.cloud.monitoring.MetricServiceClient,param_removed,channel
+110,google-cloud-secret-manager,1.0.2,2.2.0,"from google.cloud.secretmanager import SecretManagerServiceClient
+SecretManagerServiceClient(channel=...)",google.cloud.secretmanager.SecretManagerServiceClient,param_removed,channel
+111,google-cloud-secret-manager,1.0.2,2.2.0,from google.cloud.secretmanager_v1.types import names,google.cloud.secretmanager_v1.types.names,removed,
+112,google-cloud-speech,1.3.4,2.1.0,"from google.cloud.speech import SpeechClient
+SpeechClient.long_running_recognize",google.cloud.speech.SpeechClient.long_running_recognize,removed,
+113,google-cloud-speech,1.3.4,2.1.0,from google.cloud.speech_v1.types import names,google.cloud.speech_v1.types.names,removed,
+114,google-cloud-storage,2.7.0,2.8.0,from google.cloud.storage.transfer_manager import DEFAULT_CHUNK_SIZE,google.cloud.storage.transfer_manager.DEFAULT_CHUNK_SIZE,removed,
+115,google-cloud-storage,3.4.0,3.4.1,"from google.cloud.storage import Blob
+Blob(name=..., bucket=..., crc32c_checksum=...)",google.cloud.storage.Blob,param_removed,crc32c_checksum
+116,google-cloud-tasks,1.5.2,2.2.0,"from google.cloud.tasks import CloudTasksClient
+CloudTasksClient(channel=...)",google.cloud.tasks.CloudTasksClient,param_removed,channel
+117,graphql-core,3.1.4,3.1.5,"from graphql.language.block_string import get_block_string_indentation
+get_block_string_indentation(lines=...)",graphql.language.block_string.get_block_string_indentation,param_renamed,lines
+118,graphql-core,3.2.13,3.3.0,"from graphql.utilities.extend_schema import ExtendSchemaImpl
+ExtendSchemaImpl.build_interfaces",graphql.utilities.extend_schema.ExtendSchemaImpl.build_interfaces,removed,
+119,graphql-relay,3.1.1,3.1.2,"from graphql_relay import node_definitions
+node_definitions(id_fetcher=...)",graphql_relay.node_definitions,param_renamed,id_fetcher
+120,graphql-relay,3.1.5,3.2.0,from graphql_relay import resolve_maybe_thunk,graphql_relay.resolve_maybe_thunk,removed,
+121,graphviz,0.18,0.18.1,from graphviz.backend import FORMATTERS,graphviz.backend.FORMATTERS,removed,
+122,gremlinpython,3.5.8,3.6.0,from gremlin_python.process.graph_traversal import min,gremlin_python.process.graph_traversal.min,removed,
+123,grimp,3.9,3.11,from grimp.domain.valueobjects import ValueObject,grimp.domain.valueobjects.ValueObject,removed,
+124,grimp,3.12,3.13,"from grimp import ImportGraph
+ImportGraph.find_all_simple_chains",grimp.ImportGraph.find_all_simple_chains,removed,
+125,grpcio-health-checking,1.65.5,1.66.0,from grpc_health.v1.health_pb2_grpc import EXPECTED_ERROR_RELEASE,grpc_health.v1.health_pb2_grpc.EXPECTED_ERROR_RELEASE,removed,
+126,grpcio-health-checking,1.65.5,1.66.0,from grpc_health.v1.health_pb2_grpc import SCHEDULED_RELEASE_DATE,grpc_health.v1.health_pb2_grpc.SCHEDULED_RELEASE_DATE,removed,
+127,h2,4.2.0,4.3.0,from h2.utilities import UPPER_RE,h2.utilities.UPPER_RE,removed,
+128,holidays,0.34,0.35,"from holidays.groups import HinduCalendarHolidays
+HinduCalendarHolidays(calendar=...)",holidays.groups.HinduCalendarHolidays,param_renamed,calendar
+129,holidays,0.97,0.98,from holidays.calendars.tibetan import WINTER_SOLSTICE,holidays.calendars.tibetan.WINTER_SOLSTICE,removed,
+130,httplib2,0.22.0,0.30.0,from httplib2.auth import RedirectMissingLocation,httplib2.auth.RedirectMissingLocation,removed,
+131,httplib2,0.22.0,0.30.0,from httplib2.auth import RelativeURIError,httplib2.auth.RelativeURIError,removed,
+132,huey,2.6.0,3.0.0,"from huey.contrib.kyototycoon import KyotoTycoonStorage
+KyotoTycoonStorage.prefix_key",huey.contrib.kyototycoon.KyotoTycoonStorage.prefix_key,removed,
+133,huey,2.6.0,3.0.0,from huey.storage import to_bytes,huey.storage.to_bytes,removed,
+134,humanize,3.12.0,3.13.0,"from humanize.i18n import ngettext
+ngettext(message=..., num=..., plural=...)",humanize.i18n.ngettext,param_removed,plural
+135,hvac,1.2.1,2.0.0,from hvac.api.auth_methods import Mfa,hvac.api.auth_methods.Mfa,removed,
+136,inflect,6.2.0,7.0.0,from inflect import print3,inflect.print3,removed,
+137,inflect,7.0.0,7.2.0,from inflect import same_method,inflect.same_method,removed,
+138,installer,0.5.1,0.6.0,"from installer.records import RecordEntry
+RecordEntry.to_line",installer.records.RecordEntry.to_line,removed,
+139,invoke,2.0.1,2.1.0,"from invoke.parser.context import flag_key
+flag_key(x=...)",invoke.parser.context.flag_key,param_renamed,x
+140,ipywidgets,7.8.5,8.0.0,"from ipywidgets import register
+register(name=...)",ipywidgets.register,param_renamed,name
+141,ipywidgets,7.8.5,8.0.0,from ipywidgets.widgets.widget_upload import content_from_json,ipywidgets.widgets.widget_upload.content_from_json,removed,
+142,itsdangerous,2.0.1,2.1.0,from itsdangerous import TimedJSONWebSignatureSerializer,itsdangerous.TimedJSONWebSignatureSerializer,removed,
+143,jaraco-functools,3.8.1,3.9.0,from jaraco.functools import CallableT,jaraco.functools.CallableT,removed,
+144,json-repair,0.46.1,0.46.2,"from json_repair.string_file_wrapper import StringFileWrapper
+StringFileWrapper(fd=..., CHUNK_LENGTH=...)",json_repair.string_file_wrapper.StringFileWrapper,param_renamed,CHUNK_LENGTH
+145,json5,0.9.28,0.10.0,"from json5.host import Host
+Host.print_",json5.host.Host.print_,removed,
+146,json5,0.9.22,0.9.23,from json5.lib import long,json5.lib.long,removed,
+147,jsonpatch,1.34,1.35,"from jsonpatch import DiffBuilder
+DiffBuilder.iter_from",jsonpatch.DiffBuilder.iter_from,removed,
+148,jsonpath-ng,1.9.1,1.10.0,from jsonpath_ng.parser import LIST_KEY,jsonpath_ng.parser.LIST_KEY,removed,
+149,jsonpath-ng,1.7.0,1.8.0,"from jsonpath_ng import Index
+Index(index=...)",jsonpath_ng.Index,param_removed,index
+150,jsonpickle,2.2.0,3.0.0,from jsonpickle.compat import PY3_ORDERED_DICT,jsonpickle.compat.PY3_ORDERED_DICT,removed,
+151,jsonpickle,3.3.0,3.4.0,from jsonpickle.unpickler import loadmodule,jsonpickle.unpickler.loadmodule,removed,
+152,jsonpointer,2.4,3.0.0,from jsonpointer import encode_str,jsonpointer.encode_str,removed,
+153,jsonpointer,2.4,3.0.0,from jsonpointer import str,jsonpointer.str,removed,
+154,jsonref,0.3.0,1.0.0,from jsonref import JsonLoader,jsonref.JsonLoader,removed,
+155,jupyter-lsp,1.3.0,1.4.0,from jupyter_lsp.session import SKIP_JSON_SPEC,jupyter_lsp.session.SKIP_JSON_SPEC,removed,
+156,jupyterlab,3.6.8,4.0.0,"from jupyterlab.upgrade_extension import update_extension
+update_extension(target=..., branch=...)",jupyterlab.upgrade_extension.update_extension,param_renamed,branch
+157,jupyterlab,4.5.11,4.6.0,from jupyterlab.labextensions import WatchLabExtensionApp,jupyterlab.labextensions.WatchLabExtensionApp,removed,
+158,jupyterlab-server,2.16.6,2.17.0,from jupyterlab_server.test_utils import wrap_request,jupyterlab_server.test_utils.wrap_request,removed,
+159,jupyterlab-server,2.18.0,2.19.0,"from jupyterlab_server.translation_utils import TranslationBundle
+TranslationBundle(domain=..., locale=...)",jupyterlab_server.translation_utils.TranslationBundle,param_renamed,locale
+160,jupyterlab-widgets,3.0.5,3.0.6,from jupyterlab_widgets import data,jupyterlab_widgets.data,removed,
+161,kombu,5.4.2,5.5.0,"from kombu.utils.text import version_string_as_tuple
+version_string_as_tuple(version=...)",kombu.utils.text.version_string_as_tuple,param_renamed,version
+162,langchain-anthropic,0.3.22,1.0.0,from langchain_anthropic import Anthropic,langchain_anthropic.Anthropic,removed,
+163,langchain-anthropic,0.3.22,1.0.0,from langchain_anthropic.experimental import ChatAnthropicTools,langchain_anthropic.experimental.ChatAnthropicTools,removed,
+164,langchain-core,0.3.86,1.0.0,"from langchain_core.load.load import Reviver
+Reviver(init_validator=...)",langchain_core.load.load.Reviver,param_removed,init_validator
+165,langchain-core,0.3.86,1.0.0,from langchain_core.tracers.schemas import TracerSessionV1,langchain_core.tracers.schemas.TracerSessionV1,removed,
+166,langchain-google-vertexai,2.1.2,3.0.0,from langchain_google_vertexai import GemmaChatLocalHF,langchain_google_vertexai.GemmaChatLocalHF,removed,
+167,langchain-google-vertexai,2.1.2,3.0.0,"from langchain_google_vertexai import VectorSearchVectorStore
+VectorSearchVectorStore(searcher=..., document_storage=..., embbedings=...)",langchain_google_vertexai.VectorSearchVectorStore,param_removed,embbedings
+168,langchain-text-splitters,0.3.5,0.3.6,"from langchain_text_splitters import HTMLHeaderTextSplitter
+HTMLHeaderTextSplitter.aggregate_elements_to_chunks",langchain_text_splitters.HTMLHeaderTextSplitter.aggregate_elements_to_chunks,removed,
+169,lazy-object-proxy,1.7.1,1.8.0,from lazy_object_proxy.compat import PY2,lazy_object_proxy.compat.PY2,removed,
+170,lazy-object-proxy,1.7.1,1.8.0,from lazy_object_proxy.compat import PY3,lazy_object_proxy.compat.PY3,removed,
+171,leather,0.3.4,0.4.0,from leather.utils import formatwarning_orig,leather.utils.formatwarning_orig,removed,
+172,levenshtein,0.24.0,0.25.0,from Levenshtein.StringMatcher import jaro,Levenshtein.StringMatcher.jaro,removed,
+173,levenshtein,0.24.0,0.25.0,from Levenshtein.StringMatcher import subtract_edit,Levenshtein.StringMatcher.subtract_edit,removed,
+174,lightgbm,3.3.5,4.0.0,from lightgbm.basic import C_API_MATRIX_TYPE_CSR,lightgbm.basic.C_API_MATRIX_TYPE_CSR,removed,
+175,lightgbm,4.5.0,4.6.0,"from lightgbm import train
+train(params=..., train_set=..., categorical_feature=...)",lightgbm.train,param_removed,categorical_feature
+176,limits,2.5.1,2.5.2,"from limits.util import get_dependency
+get_dependency(dep=...)",limits.util.get_dependency,param_renamed,dep
+177,limits,4.1,4.2,from limits.typing import ScriptP,limits.typing.ScriptP,removed,
+178,linkify-it-py,1.0.3,2.0.0,from linkify_it.ucre import SRC_HOST_TERMINATOR,linkify_it.ucre.SRC_HOST_TERMINATOR,removed,
+179,linkify-it-py,2.1.0,2.1.1,"from linkify_it.main import Match
+Match(linkifyit=..., shift=...)",linkify_it.main.Match,param_renamed,shift
+180,llvmlite,0.43.0,0.44.0,"from llvmlite.binding import ModulePassManager
+ModulePassManager.add_reverse_post_order_function_attrs_pass",llvmlite.binding.ModulePassManager.add_reverse_post_order_function_attrs_pass,removed,
+181,llvmlite,0.47.0,0.48.0,"from llvmlite.binding import PipelineTuningOptions
+PipelineTuningOptions(size_level=...)",llvmlite.binding.PipelineTuningOptions,param_removed,size_level
+182,magika,0.5.1,0.6.1,from magika.types import FeedbackReport,magika.types.FeedbackReport,removed,
+183,magika,0.6.2,0.6.3,from magika.cli.magika_client import get_magika_result_from_stdin,magika.cli.magika_client.get_magika_result_from_stdin,removed,
+184,mammoth,1.4.16,1.4.17,"from mammoth.docx.complex_fields import hyperlink
+hyperlink(href=...)",mammoth.docx.complex_fields.hyperlink,param_renamed,href
+185,mammoth,1.5.1,1.6.0,from mammoth.docx.xmlparser import Handler,mammoth.docx.xmlparser.Handler,removed,
+186,markdown,3.3.4,3.3.6,"from markdown.extensions.toc import slugify
+slugify(value=..., separator=..., encoding=...)",markdown.extensions.toc.slugify,param_renamed,encoding
+187,markdown-it-py,3.0.0,4.0.0,"from markdown_it.helpers import parseLinkTitle
+parseLinkTitle(string=..., maximum=..., pos=...)",markdown_it.helpers.parseLinkTitle,param_renamed,pos
+188,markupsafe,2.0.1,2.1.0,from markupsafe import soft_unicode,markupsafe.soft_unicode,removed,
+189,matplotlib-inline,0.1.3,0.1.5,from matplotlib_inline.backend_inline import draw_if_interactive,matplotlib_inline.backend_inline.draw_if_interactive,removed,
+190,maxminddb,2.5.2,2.6.0,from maxminddb.extension import InvalidDatabaseError,maxminddb.extension.InvalidDatabaseError,removed,
+191,mcp-types,0.2.0,2.0.0,from mcp_types import ElicitResultMeta,mcp_types.ElicitResultMeta,removed,
+192,mcp-types,0.2.0,2.0.0,from mcp_types import ListResourcesRequestParams,mcp_types.ListResourcesRequestParams,removed,
+193,mergedeep,1.3.1,1.3.2,from mergedeep.mergedeep import KT,mergedeep.mergedeep.KT,removed,
+194,mergedeep,1.3.1,1.3.2,from mergedeep.mergedeep import VT,mergedeep.mergedeep.VT,removed,
+195,mistune,2.1.0,3.0.0,from mistune.plugins import PLUGINS,mistune.plugins.PLUGINS,removed,
+196,ml-dtypes,0.2.0,0.3.0,from ml_dtypes import float8_e4m3b11,ml_dtypes.float8_e4m3b11,removed,
+197,mmh3,4.0.1,4.1.0,"from mmh3 import hash_bytes
+hash_bytes(key=..., signed=...)",mmh3.hash_bytes,param_renamed,signed
+198,more-itertools,10.8.0,11.0.0,"from more_itertools import iter_except
+iter_except(exception=..., func=...)",more_itertools.iter_except,param_renamed,func
+199,more-itertools,11.0.1,11.0.2,from more_itertools.more import running_max,more_itertools.more.running_max,removed,
+200,mpmath,1.3.0,1.4.0,from mpmath.libmp.libintmath import MAX_EULER_CACHE,mpmath.libmp.libintmath.MAX_EULER_CACHE,removed,
+201,mpmath,1.3.0,1.4.0,from mpmath import runtests,mpmath.runtests,removed,
+202,msal,1.21.0,1.22.0,"from msal.authority import canonicalize
+canonicalize(authority_url=...)",msal.authority.canonicalize,param_renamed,authority_url
+203,msal,1.35.0,1.35.1,from msal.authority import AZURE_CHINA,msal.authority.AZURE_CHINA,removed,
+204,msgpack,1.0.5,1.0.6,from msgpack.fallback import unicode,msgpack.fallback.unicode,removed,
+205,msgpack,1.0.8,1.1.0,from msgpack.fallback import StringIO,msgpack.fallback.StringIO,removed,
+206,multiprocess,0.70.12.2,0.70.13,"from multiprocess.heap import BufferWrapper
+BufferWrapper.get_address",multiprocess.heap.BufferWrapper.get_address,removed,
+207,mysqlclient,2.2.8,2.3.0,"from MySQLdb.cursors import SSCursor
+SSCursor.next",MySQLdb.cursors.SSCursor.next,removed,
+208,natsort,7.1.1,8.0.0,"from natsort.utils import sep_inserter
+sep_inserter(sep=..., iterable=...)",natsort.utils.sep_inserter,param_renamed,iterable
+209,natsort,8.1.0,8.2.0,from natsort.utils import TwoBlankTuple,natsort.utils.TwoBlankTuple,removed,
+210,nbclient,0.7.0,0.7.1,from nbclient.util import check_ipython,nbclient.util.check_ipython,removed,
+211,nbformat,5.10.4,5.11.0,"from nbformat import validate
+validate(repair_duplicate_cell_ids=...)",nbformat.validate,param_removed,repair_duplicate_cell_ids
+212,nbformat,5.10.4,5.11.0,"from nbformat import validate
+validate(strip_invalid_metadata=...)",nbformat.validate,param_removed,strip_invalid_metadata
+213,ninja,1.11.1,1.11.1.1,from ninja import get_versions,ninja.get_versions,removed,
+214,nodeenv,1.6.0,1.7.0,"from nodeenv import get_env_dir
+get_env_dir(args=..., opt=...)",nodeenv.get_env_dir,param_removed,opt
+215,nodeenv,1.6.0,1.7.0,"from nodeenv import install_packages
+install_packages(env_dir=..., opt=...)",nodeenv.install_packages,param_renamed,opt
+216,nvidia-ml-py,12.560.30,12.570.86,"from pynvml import nvmlDeviceGetMinMaxClockOfPState
+nvmlDeviceGetMinMaxClockOfPState(device=..., pstate=..., minClockMHz=..., maxClockMHz=..., type=...)",pynvml.nvmlDeviceGetMinMaxClockOfPState,param_renamed,type
+217,oauthlib,3.3.1,4.0.0,"from oauthlib.oauth2 import RevocationEndpoint
+RevocationEndpoint(request_validator=..., enable_jsonp=...)",oauthlib.oauth2.RevocationEndpoint,param_removed,enable_jsonp
+218,openapi-schema-validator,0.3.0,0.3.1,from openapi_schema_validator.validators import BaseOAS30Validator,openapi_schema_validator.validators.BaseOAS30Validator,removed,
+219,openapi-schema-validator,0.3.0,0.3.1,from openapi_schema_validator.validators import BaseOAS31Validator,openapi_schema_validator.validators.BaseOAS31Validator,removed,
+220,openapi-spec-validator,0.6.0,0.7.0,"from openapi_spec_validator.validation.validators import SpecValidator
+SpecValidator(schema_validator=..., value_validator_class=..., value_validator_format_checker=..., resolver_handlers=...)",openapi_spec_validator.validation.validators.SpecValidator,param_removed,resolver_handlers
+221,opencv-python-headless,4.14.0.94,5.0.0.93,from cv2.detail import ArgKind_GOBJREF,cv2.detail.ArgKind_GOBJREF,removed,
+222,opencv-python-headless,4.14.0.94,5.0.0.93,from cv2.fisheye import CALIB_RECOMPUTE_EXTRINSIC,cv2.fisheye.CALIB_RECOMPUTE_EXTRINSIC,removed,
+223,opensearch-py,1.0.0,1.1.0,"from opensearchpy.client import CatClient
+CatClient.ml_jobs",opensearchpy.client.CatClient.ml_jobs,removed,
+224,opensearch-py,2.3.2,2.4.0,"from opensearchpy import OpenSearch
+OpenSearch.delete_point_in_time",opensearchpy.OpenSearch.delete_point_in_time,removed,
+225,opentelemetry-sdk,1.0.0,1.1.0,from opentelemetry.sdk.resources import CLOUD_ZONE,opentelemetry.sdk.resources.CLOUD_ZONE,removed,
+226,opentelemetry-sdk,1.40.0,1.41.0,"from opentelemetry.sdk.trace import Tracer
+Tracer(sampler=..., resource=..., span_processor=..., id_generator=..., instrumentation_info=..., span_limits=..., instrumentation_scope=..., _tracer_provider=...)",opentelemetry.sdk.trace.Tracer,param_removed,_tracer_provider
+227,overrides,4.1.0,4.1.1,"from overrides.enforce import ensure_return_type_compatibility
+ensure_return_type_compatibility(super_sig=..., sub_sig=...)",overrides.enforce.ensure_return_type_compatibility,param_renamed,sub_sig
+228,overrides,4.1.2,5.0.0,from overrides.enforce import ensure_no_extra_args_in_sub,overrides.enforce.ensure_no_extra_args_in_sub,removed,
+229,packageurl-python,0.10.2,0.10.3,"from packageurl.contrib.django.utils import purl_to_lookups
+purl_to_lookups(purl=...)",packageurl.contrib.django.utils.purl_to_lookups,param_renamed,purl
+230,packageurl-python,0.17.4,0.17.5,from packageurl.contrib.purl2url import build_qpkg_download_url,packageurl.contrib.purl2url.build_qpkg_download_url,removed,
+231,packaging,21.3,22.0,from packaging.requirements import MARKER_SEPARATOR,packaging.requirements.MARKER_SEPARATOR,removed,
+232,pandas-gbq,0.17.9,0.18.0,"from pandas_gbq.gbq import InvalidSchema
+InvalidSchema(message=..., local_schema=..., remote_schema=...)",pandas_gbq.gbq.InvalidSchema,param_removed,remote_schema
+233,pandas-gbq,0.29.0,0.29.1,from pandas_gbq.auth import CLIENT_SECRET,pandas_gbq.auth.CLIENT_SECRET,removed,
+234,paramiko,2.12.0,3.0.0,from paramiko.util import deflate_zero,paramiko.util.deflate_zero,removed,
+235,paramiko,4.0.0,5.0.0,"from paramiko import Transport
+Transport(sock=..., gss_deleg_creds=...)",paramiko.Transport,param_removed,gss_deleg_creds
+236,partd,1.2.0,1.3.0,from partd import ignoring,partd.ignoring,removed,
+237,partd,1.2.0,1.3.0,from partd.utils import do_nothing,partd.utils.do_nothing,removed,
+238,patsy,0.5.6,1.0.1,from patsy.test_highlevel import test_future,patsy.test_highlevel.test_future,removed,
+239,pbr,6.1.1,7.0.0,from pbr.packaging import NoseTest,pbr.packaging.NoseTest,removed,
+240,pbs-installer,2024.2.26,2024.3.22,"from pbs_installer import download
+download(url=..., destination=..., session=...)",pbs_installer.download,param_renamed,session
+241,pbs-installer,2024.2.26,2024.3.22,"from pbs_installer import install
+install(request=..., destination=..., session=...)",pbs_installer.install,param_renamed,session
+242,pdf2image,1.16.0,1.16.2,"from pdf2image import pdfinfo_from_bytes
+pdfinfo_from_bytes(pdf_file=...)",pdf2image.pdfinfo_from_bytes,param_renamed,pdf_file
+243,pdfminer-six,20231228,20240706,"from pdfminer.layout import LTChar
+LTChar.is_compatible",pdfminer.layout.LTChar.is_compatible,removed,
+244,pdfminer-six,20251230,20260107,"from pdfminer.cmapdb import CMapParser
+CMapParser.poll",pdfminer.cmapdb.CMapParser.poll,removed,
+245,pg8000,1.31.3,1.31.4,"from pg8000.converters import composite_out
+composite_out(ar=...)",pg8000.converters.composite_out,param_renamed,ar
+246,pgvector,0.2.5,0.3.0,from pgvector.utils import from_db_binary,pgvector.utils.from_db_binary,removed,
+247,pip,21.0.1,21.1,from pip import MYPY_CHECK_RUNNING,pip.MYPY_CHECK_RUNNING,removed,
+248,pip-api,0.0.34,0.0.35,"from pip_api import Version
+Version.major",pip_api.Version.major,removed,
+249,pip-api,0.0.34,0.0.35,"from pip_api import Version
+Version.minor",pip_api.Version.minor,removed,
+250,pip-audit,0.0.2,0.0.3,from pip_audit.dependency_source.resolvelib.pypi_provider import get_metadata_for_wheel,pip_audit.dependency_source.resolvelib.pypi_provider.get_metadata_for_wheel,removed,
+251,pkginfo,1.11.0,1.11.1,from pkginfo.commandline import ParsedOptions,pkginfo.commandline.ParsedOptions,removed,
+252,platformdirs,4.9.4,4.9.6,from platformdirs.version import TYPE_CHECKING,platformdirs.version.TYPE_CHECKING,removed,
+253,platformdirs,4.9.4,4.9.6,from platformdirs.version import VERSION_TUPLE,platformdirs.version.VERSION_TUPLE,removed,
+254,plotly,6.9.0,7.0.0,"from plotly.offline import plot
+plot(figure_or_data=..., show_link=...)",plotly.offline.plot,param_removed,show_link
+255,progressbar2,4.2.0,4.3.0,"from progressbar.widgets import wrapper
+wrapper(function=..., wrapper=...)",progressbar.widgets.wrapper,param_renamed,wrapper
+256,puremagic,2.0.0,2.0.1,from puremagic.scanners.python_scanner import is_substantial_python_code,puremagic.scanners.python_scanner.is_substantial_python_code,removed,
+257,py-partiql-parser,0.4.0,0.4.1,"from py_partiql_parser import QueryMetadata
+QueryMetadata(tables=..., where_clauses=...)",py_partiql_parser.QueryMetadata,param_renamed,where_clauses
+258,pybind11,3.0.4,3.1.0,"from pybind11.setup_helpers import no_recompile
+no_recompile(src=..., obg=...)",pybind11.setup_helpers.no_recompile,param_renamed,obg
+259,pycares,4.5.0,4.6.0,from pycares import exported_pycares_symbols,pycares.exported_pycares_symbols,removed,
+260,pycares,4.11.0,5.0.0,"from pycares import Channel
+Channel(event_thread=...)",pycares.Channel,param_removed,event_thread
+261,pycountry,23.12.7,23.12.11,from pycountry import Subdivision,pycountry.Subdivision,removed,
+262,pycparser,2.23,3.0,"from pycparser.c_parser import CParser
+CParser.p_block_item_list",pycparser.c_parser.CParser.p_block_item_list,removed,
+263,pycryptodomex,3.19.1,3.20.0,from Cryptodome.SelfTest.IO.test_PBES import is_bytes,Cryptodome.SelfTest.IO.test_PBES.is_bytes,removed,
+264,pydantic,2.8.2,2.9.0,from pydantic.functional_serializers import FuncType,pydantic.functional_serializers.FuncType,removed,
+265,pydantic-core,2.29.0,2.30.0,"from pydantic_core.core_schema import arguments_schema
+arguments_schema(arguments=..., populate_by_name=...)",pydantic_core.core_schema.arguments_schema,param_removed,populate_by_name
+266,pydantic-extra-types,2.9.0,2.10.0,from pydantic_extra_types.phone_numbers import GeneratorCallableStr,pydantic_extra_types.phone_numbers.GeneratorCallableStr,removed,
+267,pydata-google-auth,1.5.0,1.6.0,from pydata_google_auth.auth import CLIENT_ID,pydata_google_auth.auth.CLIENT_ID,removed,
+268,pydeck,0.7.1,0.8.0,from pydeck import DeckGLWidget,pydeck.DeckGLWidget,removed,
+269,pydyf,0.10.0,0.11.0,"from pydyf import PDF
+PDF(version=...)",pydyf.PDF,param_removed,version
+270,pydyf,0.11.0,0.12.0,"from pydyf import Stream
+Stream.transform",pydyf.Stream.transform,removed,
+271,pyflakes,3.4.0,4.0.0,"from pyflakes.checker import Checker
+Checker(tree=..., file_tokens=...)",pyflakes.checker.Checker,param_removed,file_tokens
+272,pyjwt,2.11.0,2.12.0,from jwt.algorithms import ALLOWED_EC_KEY_TYPES,jwt.algorithms.ALLOWED_EC_KEY_TYPES,removed,
+273,pyjwt,2.11.0,2.12.0,from jwt.algorithms import ALLOWED_KEY_TYPES,jwt.algorithms.ALLOWED_KEY_TYPES,removed,
+274,pymssql,2.3.12,2.3.13,"from pymssql import Cursor
+Cursor.getrow",pymssql.Cursor.getrow,removed,
+275,pymysql,1.2.0,1.2.1,"from pymysql.connections import Connection
+Connection.escape_string",pymysql.connections.Connection.escape_string,removed,
+276,pymysql,1.2.0,1.2.1,from pymysql.converters import escape_bytes_prefixed,pymysql.converters.escape_bytes_prefixed,removed,
+277,pyopenssl,24.2.1,24.3.0,from OpenSSL.crypto import dump_crl,OpenSSL.crypto.dump_crl,removed,
+278,pyparsing,3.0.9,3.1.0,"from pyparsing import delimited_list
+delimited_list(expr=..., max=...)",pyparsing.delimited_list,param_removed,max
+279,pypdf2,1.27.5,1.27.6,from PyPDF2.utils import PdfReadWarning,PyPDF2.utils.PdfReadWarning,removed,
+280,pypdf2,2.2.1,2.3.0,"from PyPDF2.generic import readHexStringFromStream
+readHexStringFromStream(stream=..., forced_encoding=...)",PyPDF2.generic.readHexStringFromStream,param_removed,forced_encoding
+281,pyright,1.1.381,1.1.382,from pyright.types import Binary,pyright.types.Binary,removed,
+282,pyright,1.1.381,1.1.382,from pyright.types import Strategy,pyright.types.Strategy,removed,
+283,pyspnego,0.9.2,0.10.2,from spnego.sspi import SSPI_IMP_ERR,spnego.sspi.SSPI_IMP_ERR,removed,
+284,pytest-env,1.6.0,1.7.0,from pytest_env.version import TYPE_CHECKING,pytest_env.version.TYPE_CHECKING,removed,
+285,pytest-env,1.6.0,1.7.0,from pytest_env.version import VERSION_TUPLE,pytest_env.version.VERSION_TUPLE,removed,
+286,pytest-html,3.2.0,4.0.0,from pytest_html.plugin import extra,pytest_html.plugin.extra,removed,
+287,pytest-html,3.2.0,4.0.0,from pytest_html.util import ansi_support,pytest_html.util.ansi_support,removed,
+288,pytest-httpx,0.30.0,0.31.0,from pytest_httpx import assert_all_responses_were_requested,pytest_httpx.assert_all_responses_were_requested,removed,
+289,pytest-httpx,0.30.0,0.31.0,from pytest_httpx import non_mocked_hosts,pytest_httpx.non_mocked_hosts,removed,
+290,pytest-json-ctrf,0.5.3,0.6.0,"from ctrf.Report import Report
+Report.process_retries",ctrf.Report.Report.process_retries,removed,
+291,pytest-randomly,4.0.0,4.0.1,from pytest_randomly import random_states,pytest_randomly.random_states,removed,
+292,pytest-rerunfailures,16.0,16.0.1,"from pytest_rerunfailures import get_reruns_condition
+get_reruns_condition(item=..., report=...)",pytest_rerunfailures.get_reruns_condition,param_removed,report
+293,pytest-split,0.9.0,0.10.0,from pytest_split.algorithms import least_duration,pytest_split.algorithms.least_duration,removed,
+294,pytest-timeout,2.0.2,2.1.0,from pytest_timeout import timeout_setup,pytest_timeout.timeout_setup,removed,
+295,pytest-timeout,2.2.0,2.3.1,from pytest_timeout import write_title,pytest_timeout.write_title,removed,
+296,pytest-xdist,0.0.0,2.2.1,"from xdist.plugin import pytest_xdist_auto_num_workers
+pytest_xdist_auto_num_workers(config=...)",xdist.plugin.pytest_xdist_auto_num_workers,param_removed,config
+297,pytest-xdist,0.0.0,2.2.1,"from xdist.remote import WorkerInteractor
+WorkerInteractor.pytest_collection_modifyitems",xdist.remote.WorkerInteractor.pytest_collection_modifyitems,removed,
+298,python-docx,1.0.1,1.1.0,from docx.types import StoryChild,docx.types.StoryChild,removed,
+299,python-docx,1.1.0,1.1.1,from docx.opc.shared import lazyproperty,docx.opc.shared.lazyproperty,removed,
+300,python-dotenv,1.1.1,1.2.0,from dotenv.cli import list,dotenv.cli.list,removed,
+301,python-engineio,4.4.1,4.5.0,"from engineio.async_drivers.gevent_uwsgi import uWSGIWebSocket
+uWSGIWebSocket(app=...)",engineio.async_drivers.gevent_uwsgi.uWSGIWebSocket,param_renamed,app
+302,python-engineio,4.7.0,4.7.1,"from engineio.async_drivers.gevent import WebSocketWSGI
+WebSocketWSGI.close",engineio.async_drivers.gevent.WebSocketWSGI.close,removed,
+303,python-jose,3.4.0,3.5.0,from jose.jwt import utc_now,jose.jwt.utc_now,removed,
+304,python-json-logger,3.2.0,3.2.1,from pythonjsonlogger.jsonlogger import OptionalCallableOrStr,pythonjsonlogger.jsonlogger.OptionalCallableOrStr,removed,
+305,python-json-logger,3.2.0,3.2.1,from pythonjsonlogger.jsonlogger import merge_record_extra,pythonjsonlogger.jsonlogger.merge_record_extra,removed,
+306,python-socketio,5.9.0,5.10.0,from socketio import BaseManager,socketio.BaseManager,removed,
+307,python-socketio,5.9.0,5.10.0,from socketio.namespace import BaseNamespace,socketio.namespace.BaseNamespace,removed,
+308,python-utils,2.6.3,2.7.0,"from python_utils.time import timeout_generator
+timeout_generator(timeout=..., interval_exponent=...)",python_utils.time.timeout_generator,param_renamed,interval_exponent
+309,python-utils,3.6.1,3.7.0,from python_utils.decorators import P,python_utils.decorators.P,removed,
+310,pytokens,0.0.0,0.1.0,from pytokens import greet,pytokens.greet,removed,
+311,pytokens,0.1.5,0.1.7,"from pytokens import TokenIterator
+TokenIterator.push_fstring_quote",pytokens.TokenIterator.push_fstring_quote,removed,
+312,pywin32,307,308,"from win32.scripts.VersionStamp.bulkstamp import walk
+walk(dirname=..., names=..., arg=...)",win32.scripts.VersionStamp.bulkstamp.walk,param_renamed,arg
+313,pywin32,311,312,from win32.lib.win32con import FILE_ATTRIBUTE_ATOMIC_WRITE,win32.lib.win32con.FILE_ATTRIBUTE_ATOMIC_WRITE,removed,
+314,readme-renderer,33.0,34.0,from readme_renderer.clean import ALLOWED_STYLES,readme_renderer.clean.ALLOWED_STYLES,removed,
+315,readme-renderer,33.0,34.0,"from readme_renderer.clean import clean
+clean(html=..., styles=...)",readme_renderer.clean.clean,param_removed,styles
+316,requests-oauthlib,1.3.1,2.0.0,from requests_oauthlib.oauth1_auth import unicode,requests_oauthlib.oauth1_auth.unicode,removed,
+317,resolvelib,0.8.1,0.9.0,"from resolvelib import BaseReporter
+BaseReporter.backtracking",resolvelib.BaseReporter.backtracking,removed,
+318,responses,0.17.0,0.18.0,from responses.test_responses import test_callback_deprecated_argument,responses.test_responses.test_callback_deprecated_argument,removed,
+319,responses,0.17.0,0.18.0,from responses.test_responses import test_set_registry_context_manager,responses.test_responses.test_set_registry_context_manager,removed,
+320,rich-click,1.7.4,1.8.0,"from rich_click.cli import main
+main(args=...)",rich_click.cli.main,param_renamed,args
+321,rich-click,1.8.9,1.9.0,from rich_click.rich_help_rendering import get_rich_options,rich_click.rich_help_rendering.get_rich_options,removed,
+322,ruamel-yaml,0.17.21,0.17.22,from ruamel.yaml.main import safe_dump_all,ruamel.yaml.main.safe_dump_all,removed,
+323,ruamel-yaml,0.17.32,0.17.33,from ruamel.yaml.compat import PY2,ruamel.yaml.compat.PY2,removed,
+324,scramp,1.4.5,1.4.6,from scramp import get_versions,scramp.get_versions,removed,
+325,scramp,1.4.6,1.4.7,from scramp.utils import hi,scramp.utils.hi,removed,
+326,secretstorage,3.4.1,3.5.0,from secretstorage.dhcrypto import int_to_bytes,secretstorage.dhcrypto.int_to_bytes,removed,
+327,sentry-sdk,2.20.0,2.21.0,"from sentry_sdk.profiler.continuous_profiler import ContinuousScheduler
+ContinuousScheduler.should_autostart",sentry_sdk.profiler.continuous_profiler.ContinuousScheduler.should_autostart,removed,
+328,sentry-sdk,2.46.0,2.47.0,"from sentry_sdk.integrations.pydantic_ai.spans import update_invoke_agent_span
+update_invoke_agent_span(span=..., output=...)",sentry_sdk.integrations.pydantic_ai.spans.update_invoke_agent_span,param_renamed,output
+329,shortuuid,1.0.9,1.0.10,from shortuuid.cli import main,shortuuid.cli.main,removed,
+330,simple-websocket,0.10.1,1.0.0,"from simple_websocket import Client
+Client(url=..., selector_class=...)",simple_websocket.Client,param_removed,selector_class
+331,skops,0.11.0,0.12.0,"from skops.card import Card
+Card(model=..., metadata=...)",skops.card.Card,param_removed,metadata
+332,slack-sdk,3.26.0,3.26.1,from slack_sdk.oauth.installation_store.internals import minor,slack_sdk.oauth.installation_store.internals.minor,removed,
+333,smmap,3.0.5,4.0.0,from smmap.util import buffer,smmap.util.buffer,removed,
+334,snowflake-sqlalchemy,1.7.1,1.7.2,from snowflake.sqlalchemy.snowdialect import extract_parameters,snowflake.sqlalchemy.snowdialect.extract_parameters,removed,
+335,snowplow-tracker,0.9.1,0.10.0,"from snowplow_tracker import Tracker
+Tracker.check_form_element",snowplow_tracker.Tracker.check_form_element,removed,
+336,snowplow-tracker,0.12.0,0.13.0,"from snowplow_tracker import AsyncEmitter
+AsyncEmitter(endpoint=..., buffer_size=...)",snowplow_tracker.AsyncEmitter,param_renamed,buffer_size
+337,srsly,1.0.7,2.4.0,"from srsly import write_msgpack
+write_msgpack(data=..., location=...)",srsly.write_msgpack,param_renamed,location
+338,srsly,2.4.4,2.4.5,from srsly.cloudpickle.cloudpickle import CloudPickler,srsly.cloudpickle.cloudpickle.CloudPickler,removed,
+339,sshtunnel,0.4.0,0.5.1,from sshtunnel import get_connection_id,sshtunnel.get_connection_id,removed,
+340,stevedore,4.1.1,5.0.0,"from stevedore.extension import Extension
+Extension.extras",stevedore.extension.Extension.extras,removed,
+341,strands-agents,0.1.8,0.1.9,from strands.event_loop.event_loop import initialize_state,strands.event_loop.event_loop.initialize_state,removed,
+342,strands-agents,1.57.2,1.58.0,"from strands.bidi import BidiAgent
+BidiAgent(load_tools_from_directory=...)",strands.bidi.BidiAgent,param_removed,load_tools_from_directory
+343,supabase,2.0.3,2.1.0,from supabase.lib.auth_client import SupabaseAuthClient,supabase.lib.auth_client.SupabaseAuthClient,removed,
+344,supabase,2.6.0,2.7.0,from supabase import SupabaseRealtimeClient,supabase.SupabaseRealtimeClient,removed,
+345,supabase-functions,0.10.0,0.10.1,from supabase_functions.utils import is_valid_jwt,supabase_functions.utils.is_valid_jwt,removed,
+346,sympy,1.12.1,1.13.0,from sympy.core.numbers import igcd_lehmer,sympy.core.numbers.igcd_lehmer,removed,
+347,sympy,1.13.3,1.14.0,"from sympy.physics.wigner import real_gaunt
+real_gaunt(l_1=..., l_2=..., l_3=..., m_1=..., m_2=..., m_3=...)",sympy.physics.wigner.real_gaunt,param_renamed,m_3
+348,tensorboard,2.12.3,2.13.0,from tensorboard.default import ExperimentalNpmiPlugin,tensorboard.default.ExperimentalNpmiPlugin,removed,
+349,tensorboard,2.13.0,2.14.0,"from tensorboard.plugins.hparams.backend_context import Context
+Context(tb_context=..., max_domain_discrete_len=...)",tensorboard.plugins.hparams.backend_context.Context,param_removed,max_domain_discrete_len
+350,terminado,0.9.5,0.10.0,from terminado.management import byte_code,terminado.management.byte_code,removed,
+351,terminado,0.9.5,0.10.0,from terminado.management import unicode,terminado.management.unicode,removed,
+352,textual,2.0.4,2.1.0,from textual.messages import TerminalSupportInBandWindowResize,textual.messages.TerminalSupportInBandWindowResize,removed,
+353,textual,5.3.0,6.0.0,"from textual.widgets import Label
+Label(renderable=...)",textual.widgets.Label,param_renamed,renderable
+354,tiktoken,0.4.0,0.5.0,from tiktoken.model import MODEL_TO_ENCODING,tiktoken.model.MODEL_TO_ENCODING,removed,
+355,tldextract,5.1.1,5.1.2,"from tldextract.remote import looks_like_ipv6
+looks_like_ipv6(maybe_ip=..., pton=...)",tldextract.remote.looks_like_ipv6,param_removed,pton
+356,tldextract,5.1.2,5.1.3,from tldextract.cache import md5,tldextract.cache.md5,removed,
+357,tomlkit,0.11.8,0.12.0,"from tomlkit.items import Float
+Float(trivia=..., raw=..., _=...)",tomlkit.items.Float,param_renamed,_
+358,tomlkit,0.7.2,0.8.0,"from tomlkit.items import Key
+Key.delimiter",tomlkit.items.Key.delimiter,removed,
+359,toolz,0.11.2,0.12.0,from toolz.curried.operator import should_curry,toolz.curried.operator.should_curry,removed,
+360,tox,4.58.0,4.59.0,from tox.tox_env.package import locked,tox.tox_env.package.locked,removed,
+361,tox,4.64.9,4.64.10,"from tox.execute.local_sub_process import LocalSubprocessExecuteFailedStatus
+LocalSubprocessExecuteFailedStatus(options=..., out=..., err=..., exit_code=...)",tox.execute.local_sub_process.LocalSubprocessExecuteFailedStatus,param_renamed,exit_code
+362,tqdm,4.66.0,4.66.1,"from tqdm.utils import envwrap
+envwrap(prefix=..., literal_eval=...)",tqdm.utils.envwrap,param_removed,literal_eval
+363,tqdm,4.66.0,4.66.1,"from tqdm.utils import envwrap
+envwrap(prefix=..., case_sensitive=...)",tqdm.utils.envwrap,param_renamed,case_sensitive
+364,traitlets,5.8.1,5.9.0,"from traitlets.config.loader import KeyValueConfigLoader
+KeyValueConfigLoader.argcomplete",traitlets.config.loader.KeyValueConfigLoader.argcomplete,removed,
+365,truststore,0.2.0,0.3.0,from truststore import TruststoreSSLContext,truststore.TruststoreSSLContext,removed,
+366,twine,3.8.0,4.0.0,"from twine.commands.check import check
+check(dists=..., output_stream=...)",twine.commands.check.check,param_removed,output_stream
+367,twine,6.0.1,6.1.0,from twine.repository import KEYWORDS_TO_NOT_FLATTEN,twine.repository.KEYWORDS_TO_NOT_FLATTEN,removed,
+368,typeguard,2.13.3,3.0.0,from typeguard import TypeWarning,typeguard.TypeWarning,removed,
+369,typeguard,2.13.3,3.0.0,"from typeguard import typechecked
+typechecked(always=...)",typeguard.typechecked,param_removed,always
+370,tzlocal,4.3.1,5.0,from tzlocal.utils import ZoneInfoNotFoundError,tzlocal.utils.ZoneInfoNotFoundError,removed,
+371,ua-parser,0.18.0,1.0.0,"from ua_parser.user_agent_parser import OSParser
+OSParser.MatchSpans",ua_parser.user_agent_parser.OSParser.MatchSpans,removed,
+372,uncalled-for,0.1.2,0.2.0,"from uncalled_for import without_dependencies
+without_dependencies(fn=...)",uncalled_for.without_dependencies,param_renamed,fn
+373,uncalled-for,0.3.0,0.3.1,from uncalled_for import get_class_dependencies,uncalled_for.get_class_dependencies,removed,
+374,unidecode,1.2.0,1.3.2,from unidecode.util import PY3,unidecode.util.PY3,removed,
+375,uritemplate,4.1.1,4.2.0,"from uritemplate.variable import URIVariable
+URIVariable.post_parse",uritemplate.variable.URIVariable.post_parse,removed,
+376,validators,0.21.1,0.21.2,from validators import ValidationFailure,validators.ValidationFailure,removed,
+377,vcrpy,5.1.0,6.0.0,"from vcr.patch import ConnectionRemover
+ConnectionRemover.remove_connection_to_pool_entry",vcr.patch.ConnectionRemover.remove_connection_to_pool_entry,removed,
+378,vcs-versioning,1.1.1,2.0.1,from vcs_versioning.overrides import get_debug_level,vcs_versioning.overrides.get_debug_level,removed,
+379,vcs-versioning,1.1.1,2.0.1,from vcs_versioning.overrides import source_epoch_or_utc_now,vcs_versioning.overrides.source_epoch_or_utc_now,removed,
+380,wasabi,0.10.1,1.1.1,from wasabi.util import basestring_,wasabi.util.basestring_,removed,
+381,wasabi,0.10.1,1.1.1,from wasabi.util import zip_longest,wasabi.util.zip_longest,removed,
+382,watchdog,4.0.2,5.0.0,from watchdog.observers.winapi import FILE_NOTIFY_INFORMATION,watchdog.observers.winapi.FILE_NOTIFY_INFORMATION,removed,
+383,watchdog,5.0.3,6.0.0,from watchdog.utils.echo import is_classmethod,watchdog.utils.echo.is_classmethod,removed,
+384,watchfiles,0.10,0.11,from watchfiles.cli import callback,watchfiles.cli.callback,removed,
+385,watchfiles,0.10,0.11,from watchfiles.main import arun_process,watchfiles.main.arun_process,removed,
+386,watchtower,1.0.4,1.0.5,from watchtower import boto_debug_filter,watchtower.boto_debug_filter,removed,
+387,watchtower,1.0.4,1.0.5,from watchtower import boto_filter,watchtower.boto_filter,removed,
+388,wcmatch,8.5.2,9.0,"from wcmatch.util import norm_pattern
+norm_pattern(pattern=..., normalize=..., is_raw_chars=..., ignore_escape=...)",wcmatch.util.norm_pattern,param_removed,ignore_escape
+389,wcwidth,0.2.8,0.2.9,from wcwidth.wcwidth import ZERO_WIDTH_CF,wcwidth.wcwidth.ZERO_WIDTH_CF,removed,
+390,weasel,0.1.1,0.2.0,from weasel.schemas import SpacyEnvVars,weasel.schemas.SpacyEnvVars,removed,
+391,websocket-client,1.6.4,1.7.0,"from websocket import ABNF
+ABNF(mask=...)",websocket.ABNF,param_renamed,mask
+392,whitenoise,5.3.0,6.0.0,"from whitenoise.compress import main
+main(root=...)",whitenoise.compress.main,param_renamed,root
+393,whitenoise,6.3.0,6.4.0,from whitenoise.string_utils import decode_if_byte_string,whitenoise.string_utils.decode_if_byte_string,removed,
+394,yamllint,1.33.0,1.34.0,from yamllint.rules.truthy import TRUTHY,yamllint.rules.truthy.TRUTHY,removed,
+395,youtube-transcript-api,0.6.3,1.0.0,"from youtube_transcript_api import CookiePathInvalid
+CookiePathInvalid(video_id=...)",youtube_transcript_api.CookiePathInvalid,param_renamed,video_id
+396,youtube-transcript-api,0.6.3,1.0.0,from youtube_transcript_api import TooManyRequests,youtube_transcript_api.TooManyRequests,removed,
+397,zeep,4.1.0,4.2.0,"from zeep.transports import AsyncTransport
+AsyncTransport(session=...)",zeep.transports.AsyncTransport,param_removed,session
+398,zipp,3.17.0,3.18.0,from zipp.glob import replace,zipp.glob.replace,removed,
+399,zipp,3.17.0,3.18.0,from zipp.glob import translate,zipp.glob.translate,removed,
+400,zstandard,0.16.0,0.17.0,from zstandard.backend_cffi import HASHLOG3_MAX,zstandard.backend_cffi.HASHLOG3_MAX,removed,

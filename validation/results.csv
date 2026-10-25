@@ -1,0 +1,61 @@
+id,project,path,change_type,verdict,method,evidence
+1,prompt-toolkit,prompt_toolkit.eventloop.get_event_loop,removed,confirmed,runtime,Present in 3.0.36 (eventloop.utils); AttributeError on prompt_toolkit.eventloop in 3.0.37.
+2,prompt-toolkit,prompt_toolkit.layout.Dimension.is_zero,removed,confirmed,runtime,Dimension.is_zero exists in 3.0.51; AttributeError in 3.0.52.
+3,filelock,filelock.ReadWriteLock.release,removed,false_positive,runtime,ReadWriteLock.release present with identical signature in 3.21.1; 3.21.1 only wrapped the import in try/except ModuleNotFoundError (fallback ReadWriteLock=None).
+4,filelock,filelock.ReadWriteLock.get_lock,removed,false_positive,runtime,ReadWriteLock.get_lock present with identical signature in 3.21.1; same try/except conditional import as row 3.
+5,typing-extensions,typing_extensions.deprecated,param_removed,partially,runtime,"Not removed: (__msg, *, ...) became (msg, /, *, ...) - PEP 484 dunder positional-only converted to PEP 570; only the odd keyword call __msg= breaks."
+6,typing-extensions,typing_extensions.reveal_type,required_param_added,false_positive,source,"On Py>=3.11 both versions re-export typing.reveal_type (identical); on <=3.10 (__obj) -> (obj, /) is a rename of the same single positional-only param, no new param."
+7,httpcore2,httpcore2.main,removed,confirmed,runtime,"httpcore2 0.0.0 (requires Python>=3.14) only exposes main(); 2.0.0 has no main - but 0.0.0 is a name-placeholder release, not a real API."
+8,idna,idna.compat.uts46_remap,removed,confirmed,runtime,idna.compat.uts46_remap (re-export of idna.core) present in 3.8; AttributeError in 3.9.
+9,idna,idna.compat.IncrementalEncoder,removed,confirmed,runtime,idna.compat.IncrementalEncoder (re-export of idna.codec) present in 3.8; AttributeError in 3.9.
+10,tomli-w,tomli_w.dump,required_param_added,false_positive,runtime,"No new param: (__obj, __fp, *, ...) became (obj, fp, /, *, ...); same two positional-only args, dunder convention converted to PEP 570."
+11,tomli-w,tomli_w.dump,required_param_added,false_positive,runtime,No new param: __obj renamed obj and marked positional-only via '/'; arity unchanged.
+12,python-pptx,pptx.enum.base.MetaEnumeration,removed,confirmed,runtime,pptx.enum.base.MetaEnumeration present in 0.6.23; AttributeError in 1.0.0.
+13,python-pptx,pptx.shapes.group.GroupShape,param_renamed,confirmed,runtime,"GroupShape.__init__(shape_elm, parent) in 0.6.23 became (grpSp, parent) in 1.0.0."
+14,s3transfer,s3transfer.NullHandler,removed,false_positive,runtime,s3transfer.NullHandler still accessible in 0.13.1 (now the re-exported logging.NullHandler instead of a local subclass).
+15,s3transfer,s3transfer.crt.create_s3_crt_client,param_renamed,confirmed,runtime,"With awscrt installed: 0.7.0 signature has botocore_credential_provider=None, 0.8.0 has crt_credentials_provider=None at the same position."
+16,structlog,structlog.tracebacks.ExceptionDictTransformer,became_keyword_only,confirmed,runtime,"24.2.0 (show_locals, locals_max_string, max_frames) positional-or-keyword; 24.3.0 all after '*'."
+17,structlog,structlog.tracebacks.ExceptionDictTransformer,became_keyword_only,confirmed,runtime,"show_locals positional-or-keyword in 24.2.0, keyword-only in 24.3.0."
+18,asyncpg,asyncpg.protocol.protocol.Record,removed,false_positive,runtime,asyncpg.protocol.protocol.Record still accessible in 0.31.0 (compiled module re-exports type now defined in asyncpg.protocol.record).
+19,asyncpg,asyncpg.compat.wait_for,removed,false_positive,runtime,asyncpg.compat.wait_for still accessible in 0.29.0 (aliases asyncio.wait_for on 3.12; own impl on 3.11).
+20,regex,regex.regex.subfn,removed,false_positive,runtime,regex.regex.subfn still reachable via attributes in 2025.10.22 (regex.regex now aliases the package; code moved to regex._main) - though 'import regex.regex' now raises ModuleNotFoundError.
+21,regex,regex.regex.search,removed,false_positive,runtime,regex.regex.search still reachable via attributes in 2025.10.22 (same module alias as row 20; 'import regex.regex' no longer works).
+22,argcomplete,argcomplete.action_is_open,removed,confirmed,runtime,argcomplete.action_is_open present in 2.1.2; AttributeError in 3.0.0.
+23,argcomplete,argcomplete.default_validator,removed,confirmed,runtime,argcomplete.default_validator present in 2.1.2; AttributeError in 3.0.0.
+24,aiosqlite,aiosqlite.Connection.run,removed,confirmed,runtime,aiosqlite.Connection.run present in 0.21.0; AttributeError in 0.22.0.
+25,xxhash,xxhash.xxh64,param_renamed,confirmed,runtime,"Compiled type (no inspect signature); xxh64(input=...) works in 3.8.2 and fails in 4.0.0, xxh64(data=...) the reverse."
+26,xxhash,xxhash.xxh3_64,param_renamed,confirmed,runtime,"Compiled type; xxh3_64(input=...) works in 3.8.2 and TypeError in 4.0.0, which accepts data=."
+27,typing-inspection,typing_inspection.typing_objects.is_typevar,became_positional_only,false_positive,runtime,"is_typevar(obj, /) already positional-only in 0.1.0 (keyword call raises TypeError in both versions)."
+28,typing-inspection,typing_inspection.typing_objects.is_never,became_positional_only,false_positive,runtime,"is_never(obj, /) already positional-only in 0.1.0 (keyword call raises TypeError in both versions)."
+29,jedi,jedi.api.completion.filter_names,required_param_added,confirmed,runtime,filter_names gained positional-or-keyword imported_names with no default in 0.19.2.
+30,jedi,jedi.inference.compiled.subprocess.CompiledSubprocess.run,param_renamed,confirmed,runtime,"CompiledSubprocess.run(self, inference_state, ...) became (self, inference_state_id, ...) in 0.19.2."
+31,transformers,transformers.models.glpn.modeling_glpn.GLPNDWConv,removed,false_positive,source,class GLPNDWConv still defined at module level of modeling_glpn.py in 4.48.0; 4.48.0 only added an __all__ that omits it (runtime unverifiable: needs torch).
+32,transformers,transformers.models.swiftformer.modeling_swiftformer.SwiftFormerPatchEmbedding,removed,false_positive,source,class SwiftFormerPatchEmbedding still defined at module level in 4.48.0; only excluded from the newly added __all__ (runtime needs torch).
+33,keyring,keyring.backends.macOS.api.create_cfbool,removed,confirmed,source,"keyring/backends/macOS/api.py defines create_cfbool in 24.3.1; 25.0.0 replaces it with singledispatch create_cf (macOS-only module, not importable on Linux)."
+34,keyring,keyring.backends.macOS.api.create_cfstr,removed,confirmed,source,create_cfstr defined in 24.3.1 api.py; absent in 25.0.0 (replaced by create_cf).
+35,importlib-metadata,importlib_metadata.SimplePath.joinpath,became_positional_only,confirmed,runtime,"SimplePath.joinpath(self, other) became (self, other, /) in 9.0.1."
+36,importlib-metadata,importlib_metadata.PackagePath,removed,false_positive,runtime,"importlib_metadata.PackagePath still accessible in 9.0.0 (defined in __init__, just not listed in __all__)."
+37,cloudpickle,cloudpickle.instance,removed,false_positive,runtime,cloudpickle.instance still accessible in 3.0.0 (cloudpickle.cloudpickle re-export; not in new __all__).
+38,cloudpickle,cloudpickle.cell_set,removed,confirmed,runtime,cloudpickle.cell_set present in 2.2.1; AttributeError in 3.0.0.
+39,sse-starlette,sse_starlette.ServerSentEvent,removed,confirmed,runtime,sse_starlette.ServerSentEvent at package top level in 2.1.3; AttributeError in 2.2.0 (sse_starlette.sse.ServerSentEvent still exists).
+40,sse-starlette,sse_starlette.EventSourceResponse.listen_for_disconnect,removed,confirmed,runtime,EventSourceResponse.listen_for_disconnect present in 2.1.3; AttributeError in 2.2.0.
+41,uvloop,uvloop.install,removed,false_positive,runtime,uvloop.install still accessible in 0.22.1 via lazy module __getattr__ (emits DeprecationWarning only when called on 3.12+).
+42,uvloop,uvloop.EventLoopPolicy,removed,false_positive,runtime,uvloop.EventLoopPolicy still accessible in 0.22.1 via lazy module __getattr__.
+43,mcp,mcp.server.streamable_http.StreamableHTTPServerTransport,param_removed,confirmed,runtime,StreamableHTTPServerTransport had idle_timeout=None in 1.30.0; parameter absent in 2.0.0.
+44,mcp,mcp.types.ResourceLink,removed,false_positive,runtime,mcp.types.ResourceLink still accessible in 2.0.0 (re-exported from the new mcp_types package).
+45,soupsieve,soupsieve.css_parser.escape,removed,false_positive,runtime,soupsieve.css_parser.escape present in both 2.10 and 3.0.2 (needs beautifulsoup4 installed to import).
+46,soupsieve,soupsieve.css_parser.SelectorPattern,removed,false_positive,runtime,soupsieve.css_parser.SelectorPattern present in both 2.10 and 3.0.2.
+47,black,black.files.path_is_ignored,removed,confirmed,runtime,black.files.path_is_ignored present in 23.3.0; AttributeError in 23.7.0.
+48,black,black.linegen.remove_with_parens,required_param_added,confirmed,source,"Pure wheel: remove_with_parens(node, parent) became (node, parent, mode, features) in 25.9.0 (mypyc build exposes no signature)."
+49,google-auth,google.auth.aws.Credentials.validate_metadata_server_urls,removed,confirmed,runtime,Credentials.validate_metadata_server_urls present in 2.16.3; AttributeError in 2.17.0.
+50,google-auth,google.auth.aws.Credentials.validate_token_url,removed,confirmed,runtime,Credentials.validate_token_url present in 2.16.0 (needs urllib3 to import); AttributeError in 2.16.1.
+51,pyasn1,pyasn1.compat.integer.from_bytes,removed,confirmed,runtime,pyasn1.compat.integer.from_bytes present in 0.6.0; AttributeError in 0.6.1.
+52,pyasn1,pyasn1.compat.integer.bitLength,removed,confirmed,runtime,pyasn1.compat.integer.bitLength present in 0.6.0; AttributeError in 0.6.1.
+53,pre-commit,pre_commit.store.Store.delete_repo,removed,confirmed,runtime,Store.delete_repo present in 4.4.0; AttributeError in 4.5.0.
+54,pre-commit,pre_commit.clientlib.ordered_load_normalize_legacy_config,removed,confirmed,runtime,clientlib.ordered_load_normalize_legacy_config present in 2.21.0; AttributeError in 3.0.0.
+55,httpcore,httpcore.HTTPProxy.response_closed,removed,confirmed,runtime,HTTPProxy.response_closed (inherited from ConnectionPool) present in 1.0.2; AttributeError in 1.0.3.
+56,numpy,numpy.random.RandomState.get_state,default_removed,false_positive,runtime,"get_state(legacy=True) in both 2.5.1 and 2.5.2; get_state() with no args works in 2.5.2 (and old default was True, not False)."
+57,numpy,numpy.lib.isposinf,removed,confirmed,runtime,numpy.lib.isposinf present in 1.26.4; AttributeError in 2.0.0 (still at numpy.isposinf).
+58,hatchling,hatchling.builders.wheel.WheelBuilderConfig.set_default_file_selection,removed,confirmed,runtime,WheelBuilderConfig.set_default_file_selection present in 1.19.0; AttributeError in 1.20.0.
+59,hatchling,hatchling.bridge.app.InvokedApplication,removed,confirmed,runtime,hatchling.bridge.app.InvokedApplication present in 1.18.0; AttributeError in 1.19.0.
+60,jsonschema,jsonschema.Validator,param_renamed,partially,runtime,"Protocol jsonschema.Validator.__init__ did go resolver=None -> registry (now required), but it is a typing Protocol; concrete validators in 4.18.0 still accept resolver= (deprecated)."

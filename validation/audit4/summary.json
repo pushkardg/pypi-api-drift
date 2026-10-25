@@ -1,0 +1,81 @@
+{
+ "all": {
+  "n": 160,
+  "decided": 160,
+  "confirmed": 147,
+  "false_positive": 13,
+  "partially": 0,
+  "precision": 0.9187,
+  "ci": [
+   86.6,
+   95.2
+  ],
+  "runtime": 125
+ },
+ "by_stratum": {
+  "new_in_v12": {
+   "n": 80,
+   "decided": 80,
+   "confirmed": 72,
+   "false_positive": 8,
+   "partially": 0,
+   "precision": 0.9,
+   "ci": [
+    81.5,
+    94.8
+   ],
+   "runtime": 66
+  },
+  "unchanged": {
+   "n": 80,
+   "decided": 80,
+   "confirmed": 75,
+   "false_positive": 5,
+   "partially": 0,
+   "precision": 0.9375,
+   "ci": [
+    86.2,
+    97.3
+   ],
+   "runtime": 59
+  }
+ },
+ "by_type": {
+  "removed": {
+   "n": 128,
+   "decided": 128,
+   "confirmed": 117,
+   "false_positive": 11,
+   "partially": 0,
+   "precision": 0.9141,
+   "ci": [
+    85.3,
+    95.1
+   ],
+   "runtime": 104
+  },
+  "signature": {
+   "n": 32,
+   "decided": 32,
+   "confirmed": 30,
+   "false_positive": 2,
+   "partially": 0,
+   "precision": 0.9375,
+   "ci": [
+    79.9,
+    98.3
+   ],
+   "runtime": 21
+  }
+ },
+ "libraries": 134,
+ "population": {
+  "new_in_v12": 8274,
+  "unchanged": 173676
+ },
+ "weighted_precision": 0.9358,
+ "weighted_ci": [
+  88.5,
+  98.7
+ ]
+}

@@ -1,0 +1,61 @@
+id,project,path,change_type,verdict,method,evidence
+1,jupyter-server,jupyter_server.gateway.managers.GatewayMappingKernelManager.start_kernel,became_keyword_only,confirmed,runtime,"start_kernel(self, kernel_id=None, path=None, **kwargs) -> (self, *, kernel_id=None, path=None, **kwargs); path became keyword-only."
+2,jupyter-server,jupyter_server.gateway.managers.GatewayMappingKernelManager.start_kernel,became_keyword_only,confirmed,runtime,Same signature change; kernel_id moved behind a bare * and became keyword-only in 2.1.0.
+3,pydantic-settings,pydantic_settings.DotEnvSettingsSource,param_renamed,partially,runtime,"env_prefix_len (int, positional slot 4) is gone in 2.0.0, but env_prefix is a different new str parameter (and case_sensitive was inserted), not a rename; the break is really param_removed."
+4,pydantic-settings,pydantic_settings.main.env_file_sentinel,removed,confirmed,runtime,pydantic_settings.main.env_file_sentinel exists in 1.99 (PosixPath) and raises AttributeError in 2.0.0.
+5,tenacity,tenacity.wait.wait_unit_type,removed,confirmed,runtime,tenacity.wait.wait_unit_type is accessible in 8.1.0 and missing in 8.2.0.
+6,tenacity,tenacity.wait.to_seconds,removed,confirmed,runtime,tenacity.wait.to_seconds is accessible in 8.1.0 and missing in 8.2.0.
+7,unidiff,unidiff.patch.PY2,removed,confirmed,runtime,unidiff.patch.PY2 exists in 0.7.5 and is gone in 1.0.0.
+8,unidiff,unidiff.patch.implements_to_string,removed,confirmed,runtime,unidiff.patch.implements_to_string exists in 0.7.5 and is gone in 1.0.0.
+9,mypy-boto3-s3,mypy_boto3_s3.type_defs.AbortMultipartUploadRequestRequestTypeDef,removed,confirmed,runtime,TypedDict AbortMultipartUploadRequestRequestTypeDef importable in 1.36.9 and missing in 1.36.15 (with boto3 installed).
+10,mypy-boto3-s3,mypy_boto3_s3.type_defs.PutBucketOwnershipControlsRequestRequestTypeDef,kind_changed,false_positive,runtime,"Both versions expose a _TypedDictMeta class; 1.28.36 only switched from class-syntax to functional TypedDict(...) assignment, so kind is unchanged at runtime."
+11,requests-toolbelt,requests_toolbelt.exceptions.IgnoringGAECertificateValidation,removed,confirmed,runtime,IgnoringGAECertificateValidation present in 0.10.1 (needs urllib3<2 to import) and absent in 1.0.0.
+12,sqlparse,sqlparse.keywords.FLAGS,removed,confirmed,runtime,sqlparse.keywords.FLAGS exists in 0.4.3 and is gone in 0.4.4.
+13,sqlparse,sqlparse.keywords.is_keyword,removed,confirmed,runtime,sqlparse.keywords.is_keyword exists in 0.4.3 and is gone in 0.4.4.
+14,protobuf,google.protobuf.descriptor_pool.DescriptorPool.AddServiceDescriptor,removed,confirmed,runtime,DescriptorPool.AddServiceDescriptor present in 4.25.9 (upb and python backends) and absent in 5.26.0.
+15,protobuf,google.protobuf.internal.decoder.SetRecursionLimit,removed,confirmed,runtime,google.protobuf.internal.decoder.SetRecursionLimit present in 4.25.9 and absent in 5.26.0.
+16,backports-zstd,backports.zstd.zipfile.ZipFile.data_offset,removed,false_positive,runtime,ZipFile.data_offset is not accessible at runtime in 0.4.0 either; it existed only in zipfile/__init__.pyi stub.
+17,backports-zstd,backports.zstd.tarfile.TarFile,param_removed,false_positive,runtime,Runtime TarFile.__init__ still has stream=False in 1.4.0; only tarfile.pyi dropped it.
+18,google-cloud-audit-log,google.cloud.audit.audit_log_pb2.AuthorizationInfo,removed,false_positive,runtime,audit_log_pb2.AuthorizationInfo is a message class in both versions; 0.3.0 creates it via _builder.BuildTopDescriptorsAndMessages(globals()).
+19,google-cloud-audit-log,google.cloud.audit.audit_log_pb2.ResourceLocation,removed,false_positive,runtime,audit_log_pb2.ResourceLocation is accessible in 0.3.0; generated dynamically via _builder into globals().
+20,pycryptodome,Crypto.Hash.cSHAKE128.cSHAKE_XOF,required_param_added,false_positive,runtime,"cSHAKE_XOF(data, custom, capacity, function) has required capacity in 3.24.1 too; only the 3.24.1 .pyi stub omitted it."
+21,pycryptodome,Crypto.SelfTest.PublicKey.test_RSA.RSATest,removed,confirmed,runtime,test_RSA.RSATest exists in 3.24.1; in 4.0.0 the module defines TestRSA instead (needs pytest to import) and RSATest is gone.
+22,asgiref,asgiref.sync.AsyncToSync.main_wrap,required_param_added,confirmed,runtime,"main_wrap(..., context, *args, **kwargs) -> (..., context, awaitable) with awaitable required in 3.9.0."
+23,asgiref,asgiref.sync.AsyncToSync.main_event_loop,removed,confirmed,runtime,AsyncToSync instances have main_event_loop in 3.11.1 (set in __init__) and not in 3.12.0.
+24,redshift-connector,redshift_connector.connect,param_removed,confirmed,runtime,redshift_connector.connect accepts replication in 2.1.9; 2.1.10 has no replication param and no **kwargs.
+25,redshift-connector,redshift_connector.Connection.handle_COPY_IN_RESPONSE,removed,confirmed,runtime,Connection.handle_COPY_IN_RESPONSE present in 2.1.8 and absent in 2.1.9.
+26,shellingham,shellingham.posix.proc.STAT_TTY,removed,confirmed,runtime,shellingham.posix.proc.STAT_TTY present in 1.5.0.post1 and absent in 1.5.2.
+27,shellingham,shellingham.posix.ps.get_process_mapping,removed,confirmed,runtime,shellingham.posix.ps.get_process_mapping present in 1.5.0.post1 and absent in 1.5.2.
+28,webcolors,webcolors.SUPPORTED_SPECIFICATIONS,removed,confirmed,runtime,webcolors.SUPPORTED_SPECIFICATIONS accessible in 1.12 and AttributeError in 1.13.
+29,webcolors,webcolors.CSS3_NAMES_TO_HEX,removed,confirmed,runtime,webcolors.CSS3_NAMES_TO_HEX accessible in 1.13 and AttributeError in 24.6.0.
+30,debugpy,debugpy.server.api.wait_for_client,kind_changed,false_positive,runtime,"In 1.8.21 the class wait_for_client is immediately shadowed by wait_for_client = wait_for_client(), so the public name was already an instance; nothing changed for callers."
+31,debugpy,debugpy.common.singleton.ThreadSafeSingleton.assert_locked,param_removed,partially,runtime,"assert_locked went from @staticmethod(self) to a normal method: inst.assert_locked(inst) breaks, but ThreadSafeSingleton.assert_locked(obj) still works and no parameter was dropped semantically."
+32,fastmcp,fastmcp.server.proxy.ProxyManagerMixin,removed,confirmed,runtime,fastmcp.server.proxy.ProxyManagerMixin present in 2.14.7 and absent in 3.0.0.
+33,fastmcp,fastmcp.settings.ServerSettings.auth,removed,confirmed,runtime,ServerSettings has auth field in 2.5.2 (model_fields/instance) and not in 2.6.0 (with period-appropriate deps).
+34,altair,altair.Latitude.timeUnit,became_keyword_only,false_positive,runtime,"Latitude.timeUnit is a _PropertySetter (*args, **kwds) in both versions with identical runtime behaviour; only typing.overload stubs changed."
+35,altair,altair.Latitude.timeUnit,became_keyword_only,false_positive,runtime,Same as row 34: positional args are treated identically at runtime in 5.4.1 and 5.5.0; only @overload signatures changed.
+36,azure-storage-blob,azure.storage.blob.aio.BlobClient.query_blob,removed,confirmed,runtime,aio.BlobClient.query_blob was accessible (inherited from sync BlobClient) in 12.21.0 and is absent in 12.22.0.
+37,joserfc,joserfc.jwe.JWEEncModel,removed,confirmed,runtime,joserfc.jwe.JWEEncModel accessible in 1.2.2 and AttributeError in 1.3.0.
+38,joserfc,joserfc.rfc7518.jwe_algs.AESAlgModel.decrypt_recipient,removed,confirmed,runtime,AESAlgModel.decrypt_recipient accessible in 0.1.0 and missing in 0.2.0.
+39,msal-extensions,msal_extensions.PersistedTokenCache.find,removed,false_positive,runtime,"PersistedTokenCache.find still accessible in 1.2.0, inherited from msal.token_cache.TokenCache (override removed)."
+40,psutil,psutil.test,removed,confirmed,runtime,psutil.test present in 6.1.1 and absent in 7.0.0.
+41,psutil,psutil.long,removed,confirmed,runtime,psutil.long (alias of int) present in 6.1.1 and absent in 7.0.0.
+42,reportlab,reportlab.lib.rl_accel.hex32,removed,false_positive,runtime,reportlab.lib.rl_accel.hex32 is accessible in 4.3.0; names are injected into module globals by a loop.
+43,reportlab,reportlab.lib.rl_accel.fp_str,removed,false_positive,runtime,rl_accel.fp_str is accessible in 4.3.0; the Python fallback was renamed _py_fp_str but is exported as fp_str via globals().
+44,playwright,playwright.sync_api.Page.expose_binding,param_removed,confirmed,runtime,"Page.expose_binding has keyword-only handle in 1.59.0 and signature (name, callback) in 1.60.0."
+45,playwright,playwright.sync_api.BrowserType.launch_persistent_context,param_removed,confirmed,runtime,BrowserType.launch_persistent_context has devtools in 1.57.0; absent in 1.58.0 with no **kwargs.
+46,snowflake-connector-python,snowflake.connector.vendored.urllib3.util.url.IPV6_ADDRZ_RE,removed,confirmed,runtime,Vendored urllib3 util.url.IPV6_ADDRZ_RE present in 3.17.3 and absent in 3.17.4.
+47,snowflake-connector-python,snowflake.connector.telemetry.TelemetryField.KEY_OOB_ERROR_CODE,removed,confirmed,runtime,TelemetryField.KEY_OOB_ERROR_CODE present in 4.8.0 and absent in 5.0.0.
+48,cyclopts,cyclopts.help.HelpEntry.name,removed,confirmed,runtime,HelpEntry.name is a slot member in 3.24.0; 4.0.0 HelpEntry has names (tuple) and instances lack name.
+49,cyclopts,cyclopts.argument.utils.get_choices_from_hint,removed,confirmed,runtime,cyclopts.argument.utils.get_choices_from_hint present in 4.23.3 and absent in 4.24.0.
+50,jupyter-core,jupyter_core.version_info,removed,confirmed,runtime,jupyter_core.version_info accessible in 5.5.0 and AttributeError in 5.5.1.
+51,jupyter-core,jupyter_core.migrate.pjoin,removed,confirmed,runtime,jupyter_core.migrate.pjoin accessible in 5.5.0 and AttributeError in 5.5.1.
+52,xgboost,xgboost.spark.core.SparkXGBRegressorModel,removed,confirmed,runtime,xgboost.spark.core.SparkXGBRegressorModel present in 1.7.6 and absent from core in 2.0.0 (pyspark installed).
+53,xgboost,xgboost.RabitTracker.host_ip,removed,confirmed,runtime,RabitTracker instances have host_ip in 2.0.3 (set in __init__); 2.1.0 instances only have handle.
+54,databricks-sql-connector,databricks.sql.CursorAlreadyClosedError,became_keyword_only,confirmed,runtime,"CursorAlreadyClosedError(message, context, session_id_hex, *args, **kwargs) -> session_id_hex keyword-only after *args in 4.2.2."
+55,databricks-sql-connector,databricks.sql.client.Cursor.execute,param_removed,confirmed,runtime,"Cursor.execute had enforce_embedded_schema_correctness in 3.7.5; 4.0.0 is (operation, parameters) with no **kwargs."
+56,alembic,alembic.op.execute,became_keyword_only,confirmed,runtime,"op.execute is a (*args, **kw) proxy, but the target Operations.execute and op.pyi made execution_options keyword-only in 1.11.0."
+57,alembic,alembic.operations.ops.CreatePrimaryKeyOp,became_keyword_only,confirmed,runtime,"CreatePrimaryKeyOp(..., columns, schema=None, **kw) -> (..., columns, *, schema=None, **kw) in 1.11.0."
+58,httptools,httptools.HTTPProtocol.on_url,required_param_added,false_positive,runtime,"httptools.HTTPProtocol is not accessible in 0.7.1 (star-import limited by __all__); the change is a typing.Protocol stub fix from on_url(url) to on_url(self, url), not a new required param."
+59,httptools,httptools.URL,removed,false_positive,runtime,httptools.URL is not accessible in either version; URL only lives in compiled httptools.parser.url_parser and its .pyi.
+60,pyzmq,zmq.sugar.context.Context,varkw_removed,false_positive,runtime,"24.0.1 **kwargs only forwarded to base __init__ which accepted only shadow; 25.0.0 makes shadow explicit, and every call valid before still works."

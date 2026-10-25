@@ -1,0 +1,201 @@
+id,project,before_ok,after_broken,label_correct,method,evidence
+1,sphinx,yes,yes,yes,runtime,6.1.3: names resolve; 6.2.0: sphinx.util.images.guess_mimetype_for_stream missing (ImportError).
+2,cyclonedx-python-lib,no,yes,no,runtime,Bom is never importable from cyclonedx.output in 5.2.0 either: it is only imported under `if TYPE_CHECKING:` there.
+3,poetry,yes,yes,yes,runtime,1.8.5: names resolve; 2.0.0: poetry.inspection.lazy_wheel.U missing (ImportError).
+4,dbt-core,no,yes,no,runtime,"RunTask.original_invocation_started_at is an instance attribute (self.... = in __init__), so class getattr fails in 1.10.23 as well."
+5,setuptools,yes,yes,yes,runtime,75.3.4: names resolve; 75.4.0: setuptools.command.bdist_wheel.remove_readonly missing (ImportError).
+6,opentelemetry-proto,no,yes,no,runtime,"global___IntGauge exists only in metrics_pb2.pyi (type stub); the runtime metrics_pb2 module never defines it, in 1.9.0 or 1.9.1."
+7,jupyter-builder,yes,yes,yes,runtime,0.0.3: names resolve; 0.0.4: jupyter_builder.jlpm.execvp missing (ImportError).
+8,gql,yes,yes,yes,runtime,3.5.3: names resolve; 4.0.0: gql.utils.extract_files missing (ImportError).
+9,shapely,yes,yes,yes,runtime,1.8.5.post1: names resolve; 2.0.0: shapely.geos.WKBWriter missing (ImportError).
+10,pypdf,yes,yes,yes,runtime,3.17.4: names resolve; 4.0.0: PdfReader.getFormTextFields missing (AttributeError).
+11,nexus-rpc,yes,yes,yes,runtime,1.1.0: names resolve; 1.2.0: OperationHandler.fetch_result missing (AttributeError).
+12,networkx,yes,yes,yes,runtime,3.4.2: names resolve; 3.5: networkx.algorithms.d_separation.d_separated missing (ImportError).
+13,modal,no,yes,no,runtime,"FunctionStats.backlog is a dataclass field without a default, so it is not a class attribute in 1.5.5 either."
+14,isort,yes,yes,yes,runtime,5.10.0: names resolve; 5.10.1: isort.settings.FILE_SKIP_RE missing (ImportError).
+15,psycopg,yes,yes,yes,runtime,3.0.12: names resolve; 3.0.13: psycopg.types.array.MixedItemsListDumper missing (ImportError).
+16,selenium,yes,yes,yes,runtime,4.39.0: names resolve; 4.40.0: Proxy.ftpProxy missing (AttributeError).
+17,polars,no,yes,no,runtime,DynamicGroupBy.by is an instance attribute set in __init__; class getattr fails in 0.20.16 too.
+18,google-cloud-spanner,yes,yes,yes,runtime,3.11.1: names resolve; 3.12.0: google.cloud.spanner_dbapi.parser.EXPR missing (ImportError).
+19,kubernetes,yes,yes,yes,runtime,21.7.0: names resolve; 22.6.0: kubernetes.client.V1beta1CustomResourceValidation missing (ImportError).
+20,mlflow-tracing,yes,yes,yes,runtime,3.5.1: names resolve; 3.6.0: mlflow.utils.IS_PYDANTIC_V2_OR_NEWER missing (ImportError).
+21,imageio,yes,yes,yes,runtime,2.10.5: names resolve; 2.11.0: imageio.plugins.pillow_legacy.SPECIAL_FORMATS missing (ImportError).
+22,litellm,yes,yes,yes,runtime,1.101.6: names resolve; 1.102.0: IBMWatsonXAIConfig.atransform_request missing (AttributeError).
+23,accelerate,yes,yes,yes,runtime,0.20.3: names resolve; 0.21.0: FullyShardedDataParallelPlugin.load_model missing (AttributeError).
+24,pathlib-abc,yes,yes,yes,runtime,0.2.0: names resolve; 0.3.0: pathlib_abc.glob missing (ImportError).
+25,bitarray,yes,yes,yes,runtime,3.3.1: names resolve; 3.3.2: bitarray.test_bitarray.SequenceMethodsTests missing (ImportError).
+26,numba,yes,yes,yes,runtime,0.55.2: names resolve; 0.56.0: numba.np.arrayobj.numpy_ones_like_dtype_nd missing (ImportError).
+27,markdownify,yes,yes,yes,runtime,0.14.1: names resolve; 1.0.0: markdownify.all_whitespace_re missing (ImportError).
+28,databricks-sdk,yes,yes,yes,runtime,0.78.0: names resolve; 0.79.0: EndpointStatus.start_time missing (AttributeError).
+29,pymupdf,yes,yes,yes,runtime,1.24.1: names resolve; 1.24.2: fitz.extra.JM_get_annot_xref_list2 missing (ImportError).
+30,omegaconf,yes,yes,yes,runtime,2.1.2: names resolve; 2.2.1: OmegaConf.get_resolver missing (AttributeError).
+31,snowballstemmer,yes,yes,yes,runtime,3.0.1: names resolve; 3.1.0: snowballstemmer.arabic_stemmer.lab31 missing (ImportError).
+32,mlflow,yes,yes,yes,runtime,3.1.0: names resolve; 3.1.1: mlflow.store.artifact.databricks_sdk_models_artifact_repo.DOWNLOAD_CHUNK_SIZE missing (ImportError).
+33,fpdf2,no,yes,no,runtime,FPDF.images_used_per_page_number is an instance attribute set in __init__; class getattr fails in 2.8.2 too.
+34,jira,no,yes,no,runtime,JIRA.logging is an instance attribute set in __init__; class getattr fails in 3.0.1 too.
+35,datasets,yes,yes,yes,runtime,2.8.0: names resolve; 2.9.0: datasets.iterable_dataset.ShardShuffledExamplesIterable missing (ImportError).
+36,langsmith,no,yes,no,runtime,langsmith trace.agent_id is an instance attribute set in __init__; class getattr fails in 0.14.1 too.
+37,torch,no,yes,no,source,"torch 2.6.0 stage.py sets self.prev_rank inside PipelineStage.__init__ only (no class-level definition), so PipelineStage.prev_rank fails in 2.6.0 too; not installable here (CUDA wheel, CPU index blocked) so inspected the released wheel source."
+38,dask,yes,yes,yes,runtime,2025.2.0: names resolve; 2025.3.0: dask.array.reductions.partial_reduce missing (ImportError).
+39,weasyprint,yes,yes,yes,runtime,59.0: names resolve; 60.0: OrientedBox.shrink_to_fit missing (AttributeError).
+40,fonttools,yes,yes,yes,runtime,4.39.3: names resolve; 4.39.4: fontTools.ttLib.main missing (ImportError).
+41,twilio,yes,yes,yes,runtime,9.4.2: names resolve; 9.4.3: V1.porting_webhook_configuration_fetch missing (AttributeError).
+42,flake8,yes,yes,yes,runtime,3.9.2: names resolve; 4.0.0: flake8.exceptions.MercurialQRefreshHookAlreadyExists missing (ImportError).
+43,deptry,no,yes,no,runtime,deptry Config.extend_exclude is an instance attribute set in __init__; class getattr fails in 0.2.17 too.
+44,wrapt,yes,yes,yes,runtime,1.15.0: names resolve; 1.16.0: wrapt.wrappers.function_wrapper missing (ImportError).
+45,pyiceberg,yes,yes,yes,runtime,0.2.1: names resolve; 0.3.0: pyiceberg.avro.reader.primitive_reader missing (ImportError).
+46,anthropic,yes,yes,yes,runtime,0.115.0: names resolve; 0.115.1: anthropic.types.beta.BetaWebhookMemoryStoreDeletedEventData missing (ImportError).
+47,redis,yes,yes,yes,runtime,4.1.0: names resolve; 4.1.1: NodesManager.cluster_require_full_coverage missing (AttributeError).
+48,great-expectations,yes,yes,yes,runtime,1.12.3: names resolve; 1.13.0: great_expectations.data_context.store.TupleS3StoreBackend missing (ImportError).
+49,msgspec,no,yes,no,runtime,S is a TypeVar defined only in msgspec/structs.pyi; the runtime module has no S in 0.21.1 or 0.22.0.
+50,email-validator,yes,yes,yes,runtime,1.3.1: names resolve; 2.0.0: email_validator.ATEXT missing (ImportError).
+51,swebench,yes,yes,yes,runtime,4.1.0: names resolve; 5.0.0: swebench.harness.utils.load_cached_environment_yml missing (ImportError).
+52,onnxruntime,yes,yes,yes,runtime,1.8.1: names resolve; 1.9.0: MachineInfo.get_onnxruntime_tools_info missing (AttributeError).
+53,datadog-api-client,yes,yes,yes,runtime,2.12.0: names resolve; 2.13.0: datadog_api_client.v2.models.MetricBulkTagConfigEmailList missing (ImportError).
+54,pymongo,yes,yes,yes,runtime,4.0.2: names resolve; 4.1.0: pymongo.errors.InvalidStringData missing (ImportError).
+55,pylint,yes,yes,yes,runtime,2.15.10: names resolve; 2.16.0: TypeChecker.visit_extslice missing (AttributeError).
+56,setuptools-scm,yes,yes,yes,runtime,7.1.0: names resolve; 8.0.1: setuptools_scm.trace missing (ImportError).
+57,statsmodels,yes,yes,yes,runtime,0.12.2: names resolve; 0.13.0: ARMAResults.maroots missing (AttributeError).
+58,poetry-core,yes,yes,yes,runtime,2.0.1: names resolve; 2.1.0: poetry.core.constraints.generic.parser.parse_single_constraint missing (ImportError).
+59,pytest-asyncio,yes,yes,yes,runtime,0.25.3: names resolve; 0.26.0: pytest_asyncio.plugin.FactoryFixtureFunction missing (ImportError).
+60,twisted,yes,yes,yes,runtime,22.8.0: names resolve; 22.10.0: twisted.protocols.deprecatedModuleAttribute missing (ImportError).
+61,azure-core,yes,no,no,runtime,HttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST still resolves in 1.26.2: it became a backward-compatible classproperty (_universal.py:380-388) rather than being removed.
+62,portalocker,yes,yes,yes,runtime,3.2.0: names resolve; 4.0.0: FlockLocker.LOCKER missing (AttributeError).
+63,respx,yes,yes,yes,runtime,0.17.1: names resolve; 0.18.0: respx.types.SyncResponse missing (ImportError).
+64,langgraph-checkpoint,yes,yes,yes,runtime,2.0.15: names resolve; 2.0.16: langgraph.checkpoint.serde.jsonplus.ENC_POOL missing (ImportError).
+65,dbt-common,yes,yes,yes,runtime,1.8.0: names resolve; 1.9.0: dbt_common.events.types.BehaviorDeprecationEvent missing (ImportError).
+66,jupyter-events,yes,yes,yes,runtime,0.1.0: names resolve; 0.2.0: jupyter_events.logger.yaml missing (ImportError).
+67,datamodel-code-generator,yes,yes,yes,runtime,0.54.1: names resolve; 0.55.0: datamodel_code_generator.util.Model missing (ImportError).
+68,ijson,yes,yes,yes,runtime,3.2.3: names resolve; 3.3.0: ijson.compat.IS_PY35 missing (ImportError).
+69,streamlit,yes,yes,yes,runtime,1.44.1: names resolve; 1.45.0: Runtime.message_cache missing (AttributeError).
+70,mypy,yes,yes,yes,runtime,1.12.1: names resolve; 1.13.0: mypy.util.is_sub_path missing (ImportError).
+71,postgrest,yes,yes,yes,runtime,1.1.0: names resolve; 1.1.1: postgrest.utils.is_valid_jwt missing (ImportError).
+72,pyyaml,yes,yes,yes,runtime,5.4.1: names resolve; 6.0: yaml.load_warning missing (ImportError).
+73,sqlglot,yes,yes,yes,runtime,30.0.3: names resolve; 30.1.0: sqlglot.dialects.presto.DATE_ADD_OR_SUB missing (ImportError).
+74,coverage,yes,yes,yes,runtime,7.0.3: names resolve; 7.0.4: coverage.types.TConfigSection missing (ImportError).
+75,django,yes,yes,yes,runtime,6.0: names resolve; 6.0.1: django.contrib.auth.management.rename_permissions missing (ImportError).
+76,pillow,no,yes,no,runtime,"BLP1Decoder.tile is an instance attribute (ImageFile decoder state), not a class attribute in 9.0.1 either."
+77,djangorestframework,yes,yes,yes,runtime,3.13.1: names resolve; 3.14.0: rest_framework.fields.NullBooleanField missing (ImportError).
+78,charset-normalizer,yes,yes,yes,runtime,2.1.1: names resolve; 3.0.0: CharsetMatch.coherence_non_latin missing (AttributeError).
+79,matplotlib,no,yes,no,runtime,Cursor.background is an instance attribute set in __init__; class getattr fails in 3.10.9 too.
+80,google-cloud-bigtable,yes,yes,yes,runtime,2.13.2: names resolve; 2.14.0: google.cloud.bigtable_v2.ReadIteratorStats missing (ImportError).
+81,confection,yes,yes,yes,runtime,1.0.0: names resolve; 1.1.0: Promise.validate missing (AttributeError).
+82,wheel,yes,yes,yes,runtime,0.44.0: names resolve; 0.45.0: wheel.cli.convert.wininst2wheel missing (ImportError).
+83,moto,yes,yes,yes,runtime,5.1.5: names resolve; 5.1.6: moto.iam.responses.UPDATE_OPEN_ID_CONNECT_PROVIDER_THUMBPRINT missing (ImportError).
+84,nltk,yes,yes,yes,source,3.8.1 resolves PickleCorpusView at runtime; 3.9 (import of nltk.corpus.reader.api raises LookupError for missing wordnet data here) has no PickleCorpusView in reader/api.py or reader/util.py source.
+85,sqlmodel,yes,yes,yes,runtime,0.0.18: names resolve; 0.0.19: sqlmodel.sql.expression.SelectBase missing (ImportError).
+86,amazon-ion,yes,yes,yes,runtime,0.9.3: names resolve; 0.10.0: amazon.ion.util.Enum missing (ImportError).
+87,sentencepiece,yes,yes,yes,runtime,0.1.96: names resolve; 0.1.97: sentencepiece.EncoderVersion_kOptimized missing (ImportError).
+88,testcontainers,yes,yes,yes,runtime,4.3.1: names resolve; 4.3.2: testcontainers.core.docker_client.read_tc_properties missing (ImportError).
+89,ipython,yes,yes,yes,runtime,9.10.1: names resolve; 9.11.0: IPython.core.magic.on_off missing (ImportError).
+90,distlib,no,yes,no,runtime,"distlib.util.HTTPS is only defined under `if _ver_info == (2, 6):` in 0.3.3, so it never resolves on Python 3."
+91,kafka-python,yes,yes,yes,runtime,3.0.2: names resolve; 3.0.4: NetworkSelector.unschedule missing (AttributeError).
+92,pydot,yes,yes,yes,runtime,1.4.2: names resolve; 2.0.0: pydot.str_type missing (ImportError).
+93,pandas,yes,yes,yes,runtime,1.4.4: names resolve; 1.5.0: pandas.core.dtypes.cast.astype_array_safe missing (ImportError).
+94,pyathena,yes,yes,yes,runtime,3.15.0: names resolve; 3.16.0: pyathena.sqlalchemy.base.RESERVED_WORDS missing (ImportError).
+95,mistralai,yes,yes,yes,runtime,2.10.1: names resolve; 3.0.0: mistralai.client.models.deploymentworkerspecresponse.DeploymentWorkerSpecResponseBackendSpecTypedDict missing (ImportError).
+96,trino,yes,yes,yes,runtime,0.306.0: names resolve; 0.307.0: Authentication.handle_err missing (AttributeError).
+97,thinc,yes,yes,yes,runtime,7.4.6: names resolve; 8.0.0: registry.make_schedule missing (AttributeError).
+98,time-machine,yes,yes,yes,runtime,3.2.0: names resolve; 3.3.0: time_machine.now missing (ImportError).
+99,cython,yes,yes,yes,runtime,3.1.8: names resolve; 3.2.0: OptimizeBuiltinCalls.PyBytes_GetItemInt_func_type missing (AttributeError).
+100,hypothesis,yes,yes,yes,runtime,6.157.1: names resolve; 6.157.2: hypothesis.internal.floats.STRUCT_FORMATS missing (ImportError).
+101,temporalio,no,yes,no,runtime,"ActivityExecutionDescription.eager_execution_requested is a dataclass field without a default, so not a class attribute in 1.32.0 either."
+102,flit-core,no,yes,no,runtime,flit_core Module.directory is an instance attribute set in __init__; class getattr fails in 3.4.0 too.
+103,yfinance,yes,yes,yes,runtime,0.2.36: names resolve; 0.2.37: yfinance.const.price_colnames missing (ImportError).
+104,spacy,yes,yes,yes,runtime,3.2.6: names resolve; 3.3.0: Errors.E081 missing (AttributeError).
+105,fsspec,yes,yes,yes,runtime,2022.5.0: names resolve; 2022.7.0: fsspec.asyn.lock missing (ImportError).
+106,dask-expr,yes,yes,yes,runtime,1.1.21: names resolve; 2.0.0: dask_expr.read_table missing (ImportError).
+107,typer,no,yes,no,runtime,typer OptionInfo.is_flag is an instance attribute set in __init__; class getattr fails in 0.12.5 too.
+108,realtime,yes,yes,yes,runtime,1.0.6: names resolve; 2.0.0: realtime.timetz missing (ImportError).
+109,pygments,yes,yes,yes,runtime,2.8.1: names resolve; 2.9.0: ScalaLexer.upper missing (AttributeError).
+110,rapidfuzz,no,yes,no,runtime,ResultType is declared only in rapidfuzz/process.pyi (type stub); the runtime module lacks it in 2.0.11 too.
+111,google-genai,yes,yes,yes,runtime,1.75.0: names resolve; 2.0.0: google.genai.interactions.URLContextCallContentParam missing (ImportError).
+112,ddtrace,yes,yes,yes,runtime,4.13.3: names resolve; 4.14.0: ddtrace.internal.remoteconfig.client.Role missing (ImportError).
+113,diff-cover,yes,yes,yes,runtime,9.2.4: names resolve; 9.3.0: diff_cover.diff_cover_tool.JSON_REPORT_HELP missing (ImportError).
+114,sqlalchemy,yes,yes,yes,runtime,2.0.36: names resolve; 2.0.37: sqlalchemy.util.typing.de_stringify_union_elements missing (ImportError).
+115,openpyxl,yes,yes,yes,runtime,3.1.4: names resolve; 3.1.5: openpyxl.packaging.extended.get_version missing (ImportError).
+116,requests,yes,no,no,runtime,requests.compat.bytes still resolves in 2.28.0 (compat.py:76 `bytes = bytes`).
+117,sqlalchemy-utils,yes,yes,yes,runtime,0.42.1: names resolve; 0.43.0: sqlalchemy_utils.types.uuid.sqlalchemy_version missing (ImportError).
+118,lark,yes,yes,yes,runtime,0.12.0: names resolve; 1.0.0: lark.parsers.lalr_interactive_parser.ParserPuppet missing (ImportError).
+119,click-repl,yes,yes,yes,runtime,0.2.0: names resolve; 0.3.0: click_repl.text_type missing (ImportError).
+120,opencv-python,yes,yes,yes,runtime,4.14.0.94: names resolve; 5.0.0.93: cv2.typing.GProtoInputArgs missing (ImportError).
+121,mashumaro,yes,yes,yes,runtime,3.2: names resolve; 3.3: mashumaro.core.meta.helpers.resolve_type_vars missing (ImportError).
+122,jupyter-client,yes,yes,yes,runtime,8.3.1: names resolve; 8.4.0: jupyter_client.utils.UTC missing (ImportError).
+123,werkzeug,no,yes,no,runtime,D is a TypeVar defined only in werkzeug/datastructures/headers.pyi; the runtime module lacks it in 3.0.6 too.
+124,graphene,yes,yes,yes,runtime,2.1.9: names resolve; 3.0: graphene.AbstractType missing (ImportError).
+125,flask-cors,yes,yes,yes,runtime,3.0.10: names resolve; 4.0.0: flask_cors.decorator.get_app_kwarg_dict missing (ImportError).
+126,langchain,yes,yes,yes,runtime,1.0.2: names resolve; 1.0.3: langchain.tools.tool_node.tools_condition missing (ImportError).
+127,fastapi,yes,yes,yes,runtime,0.139.2: names resolve; 0.140.0: Dependant.cache_key missing (AttributeError).
+128,blinker,no,yes,no,runtime,"PNamespaceSignal is defined only under `if t.TYPE_CHECKING:` in blinker/base.py 1.8.2, so it is not importable at runtime."
+129,pathable,yes,yes,yes,runtime,0.4.4: names resolve; 0.5.0: LookupPath.iteritems missing (AttributeError).
+130,fastapi-cloud-cli,yes,yes,yes,runtime,0.24.0: names resolve; 0.25.0: fastapi_cloud_cli.commands.teams.TeamsListOutput missing (ImportError).
+131,babel,yes,yes,yes,runtime,2.17.0: names resolve; 2.18.0: babel.numbers.NUMBER_PATTERN missing (ImportError).
+132,pyee,yes,yes,yes,runtime,11.1.1: names resolve; 12.0.0: pyee.ExecutorEventEmitter missing (ImportError).
+133,peewee,no,yes,no,runtime,SQLITE_DBSTATUS_CACHE_USED is absent from playhouse.sqlite_ext in 4.0.1 (only referenced as cysqlite.SQLITE_DBSTATUS_CACHE_USED in cysqlite_ext.py); 4.0.0 lacks it as well.
+134,websockets,yes,yes,yes,runtime,15.0.1: names resolve; 16.0: Connection.acknowledge_pending_pings missing (AttributeError).
+135,seaborn,no,yes,no,runtime,seaborn.factorplot is already gone in 0.12.2 (last defined in 0.11.x categorical.py).
+136,pypdfium2,yes,yes,yes,runtime,4.30.0: names resolve; 5.0.0: PdfImage.get_size missing (AttributeError).
+137,openai,yes,yes,yes,runtime,2.45.0: names resolve; 2.46.0: openai.types.beta.beta_response_input_item.MultiAgentCallOutputOutputAnnotationsUnionMember0 missing (ImportError).
+138,jsonpath-python,yes,yes,yes,runtime,1.0.6: names resolve; 1.1.0: jsonpath.create_logger missing (ImportError).
+139,xlsxwriter,no,yes,no,runtime,"In the 3.2.4 wheel, xlsxwriter.utility does `from .test.helperfunctions import ...` but the wheel ships no xlsxwriter/test package, so the import fails with ModuleNotFoundError; 3.2.5 drops compare_xlsx_files."
+140,aws-lambda-powertools,yes,yes,yes,runtime,2.43.1: names resolve; 3.0.0: aws_lambda_powertools.utilities.feature_flags.schema.HOUR_MIN_SEPARATOR missing (ImportError).
+141,triton,yes,yes,yes,runtime,3.1.0: names resolve and keywords bind; 3.2.0: cospi() rejects keyword '_builder'.
+142,narwhals,yes,yes,yes,runtime,1.26.0: names resolve and keywords bind; 1.27.1: Expr() rejects keyword 'is_order_dependent'; the labelled keyword 'aggregates' is also absent from the 1.27.1 signature (no **kwargs).
+143,inquirerpy,yes,yes,yes,runtime,0.2.4: names resolve and keywords bind; 0.3.0: BaseListPrompt() rejects keyword 'height'.
+144,pyarrow,yes,yes,yes,runtime,20.0.0: names resolve and keywords bind; 21.0.0: RecordBatchFileWriter() rejects keyword 'use_legacy_format'.
+145,mlflow-skinny,yes,yes,yes,runtime,2.10.2: names resolve and keywords bind; 2.11.0: generate_dockerfile() rejects keyword 'disable_env_creation'.
+146,authlib,yes,yes,yes,runtime,0.15.4: names resolve and keywords bind; 0.15.5: InsufficientScopeError() rejects keyword 'state'.
+147,pillow-heif,yes,yes,yes,runtime,0.1.11: names resolve and keywords bind; 0.2.4: HeifThumbnail() rejects keyword 'size'; the labelled keyword 'bit_depth' is also absent from the 0.2.4 signature (no **kwargs).
+148,scikit-image,yes,yes,yes,runtime,0.24.0: names resolve and keywords bind; 0.25.0: gaussian() rejects keyword 'output'.
+149,virtualenv,yes,yes,yes,runtime,20.34.0: names resolve and keywords bind; 20.35.2: clear() rejects keyword 'cache'.
+150,optuna,yes,yes,yes,runtime,4.9.0: names resolve and keywords bind; 5.0.0: PedAnovaImportanceEvaluator() rejects keyword 'baseline_quantile'.
+151,flask,yes,yes,yes,runtime,2.0.3: names resolve and keywords bind; 2.1.0: locate_app() rejects keyword 'script_info'.
+152,google-cloud-firestore,yes,yes,yes,runtime,2.26.0: names resolve and keywords bind; 2.27.0: AggregateFunction() rejects keyword 'use_infix_repr'.
+153,scikit-learn,yes,yes,yes,runtime,1.5.2: names resolve and keywords bind; 1.6.0: check_estimators_fit_returns_self() rejects keyword 'readonly_memmap'.
+154,scipy,yes,yes,yes,runtime,1.11.4: names resolve and keywords bind; 1.12.0: LatinHypercube() rejects keyword 'centered'.
+155,incremental,no,yes,no,runtime,"In 24.7.2, run is a click.Command: its (*args, **kwargs) signature binds, but actually calling run(package=...) raises TypeError: Context.__init__() got an unexpected keyword argument 'package'; in 24.11.0 run(argv) rejects the keywords outright."
+156,google-api-core,yes,yes,yes,runtime,1.34.1: names resolve and keywords bind; 2.0.0: Redirection() rejects keyword 'details'.
+157,dulwich,yes,yes,yes,runtime,0.21.5: names resolve and keywords bind; 0.21.6: index_entry_from_stat() rejects keyword 'flags'.
+158,huggingface-hub,yes,yes,yes,runtime,1.11.0: names resolve and keywords bind; 1.12.0: info() rejects keyword 'quiet'.
+159,oracledb,yes,yes,yes,runtime,1.4.2: names resolve and keywords bind; 2.0.0: create_pool() rejects keyword 'sessionCallback'.
+160,ipykernel,yes,yes,yes,runtime,5.5.6: names resolve and keywords bind; 6.0.2: get_connection_info() rejects keyword 'profile'.
+161,awswrangler,yes,yes,yes,runtime,3.6.0: names resolve and keywords bind; 3.7.0: get_table_types() rejects keyword 'transaction_id'.
+162,cachecontrol,yes,yes,yes,runtime,0.12.11: names resolve and keywords bind; 0.12.13: FileCache() rejects keyword 'use_dir_lock'.
+163,curl-cffi,yes,yes,yes,runtime,0.14.0: names resolve and keywords bind; 0.15.0: AsyncWebSocket() rejects keyword 'retry_on_recv_error'.
+164,pygithub,yes,yes,yes,runtime,2.5.0: names resolve and keywords bind; 2.6.0: AppAuth() rejects keyword 'jwt_algorithm'.
+165,langgraph,yes,yes,yes,runtime,0.3.34: names resolve and keywords bind; 0.4.0: map_command() rejects keyword 'pending_writes'.
+166,marshmallow,yes,yes,yes,runtime,3.26.2: names resolve and keywords bind; 4.0.0: SchemaOpts() rejects keyword 'ordered'.
+167,uuid-utils,yes,yes,yes,runtime,0.18.0: names resolve and keywords bind; 1.0.0: uuid7() rejects keyword 'timestamp'.
+168,cbor2,yes,yes,yes,runtime,5.9.0: names resolve and keywords bind; 6.0.0: tag_hook() rejects keyword 'decoder'.
+169,click,yes,yes,yes,runtime,8.0.4: names resolve and keywords bind; 8.1.0: Parameter() rejects keyword 'autocompletion'.
+170,httpx,yes,yes,yes,runtime,0.27.2: names resolve and keywords bind; 0.28.0: create_ssl_context() rejects keyword 'http2'.
+171,pydantic-ai-slim,yes,yes,yes,runtime,2.4.0: names resolve and keywords bind; 2.5.0: PrefectModel() rejects keyword 'event_stream_handler'.
+172,pathvalidate,yes,yes,yes,runtime,3.1.0: names resolve and keywords bind; 3.2.0: FileNameSanitizer() rejects keyword 'check_reserved'.
+173,aioitertools,yes,yes,yes,runtime,0.10.0: names resolve and keywords bind; 0.11.0: as_completed() rejects keyword 'loop'.
+174,storage3,yes,yes,yes,runtime,0.3.1: names resolve and keywords bind; 0.3.2: create_client() rejects keyword 'key'.
+175,mako,yes,yes,yes,runtime,1.1.6: names resolve and keywords bind; 1.2.0: ModuleTemplate() rejects keyword 'disable_unicode'.
+176,py-key-value-aio,yes,yes,yes,runtime,0.2.1: names resolve and keywords bind; 0.2.2: PassthroughCacheWrapper() rejects keyword 'primary_store'; the labelled keyword 'cache_store' is also absent from the 0.2.2 signature (no **kwargs).
+177,docutils,yes,yes,yes,runtime,0.18: names resolve and keywords bind; 0.18.1: unimplemented_role() rejects keyword 'attributes'.
+178,mdit-py-plugins,yes,yes,yes,runtime,0.3.5: names resolve and keywords bind; 0.4.0: dollar_pre() rejects keyword 'str'.
+179,pytest-cov,yes,yes,yes,runtime,6.1.0: names resolve and keywords bind; 6.1.1: TestContextPlugin() rejects keyword 'cov'.
+180,safetensors,yes,yes,yes,source,"safetensors.flax.load is `def load(buffer: bytes)` in 0.2.3 and `def load(data: bytes)` in 0.2.4; not installable here (2022 jaxlib wheels are not on PyPI; sdist build needs setuptools_rust), so inspected the sdist sources."
+181,opentelemetry-exporter-otlp-proto-grpc,yes,yes,yes,runtime,1.11.0: names resolve and keywords bind; 1.11.1: get_resource_data() rejects keyword 'sdk_resource_instrumentation_library_data'.
+182,pymdown-extensions,yes,yes,yes,runtime,12.1: names resolve and keywords bind; 12.2: DelimiterProcessor() rejects keyword 'tags'; the labelled keyword 'token' is also absent from the 12.2 signature (no **kwargs).
+183,smart-open,yes,yes,yes,runtime,4.1.2: names resolve and keywords bind; 5.0.0: open() rejects keyword 'multipart_upload_kwargs'.
+184,prometheus-client,yes,yes,yes,runtime,0.10.1: names resolve and keywords bind; 0.11.0: Info() rejects keyword 'labelvalues'.
+185,elastic-transport,yes,yes,yes,runtime,7.16.0: names resolve and keywords bind; 8.0.0: Transport() rejects keyword 'connection_pool_class'.
+186,gevent,no,yes,no,runtime,"gevent.ssl.wrap_socket(_sock, **_kwargs) is a placeholder stub in ssl.py that is replaced at import by the real wrap_socket(sock, ...), so _sock is rejected in 22.10.2 too."
+187,supabase-auth,yes,yes,yes,runtime,2.22.3: names resolve and keywords bind; 2.22.4: parse_user_response() rejects keyword 'data'.
+188,trio-websocket,yes,yes,yes,runtime,0.9.2: names resolve and keywords bind; 0.10.0: WebSocketConnection() rejects keyword 'wsproto'.
+189,ghapi,yes,yes,yes,runtime,1.1.1: names resolve and keywords bind; 2.0.0: print_summary() rejects keyword 'req'.
+190,libcst,yes,yes,yes,runtime,0.4.2: names resolve and keywords bind; 0.4.3: get_absolute_module_for_import_or_raise() rejects keyword 'current_package'.
+191,jsonlines,yes,yes,yes,runtime,2.0.0: names resolve and keywords bind; 3.0.0: open() rejects keyword 'name'.
+192,zope-interface,yes,yes,yes,runtime,6.4.post2: names resolve and keywords bind; 7.0.1: asReStructuredText() rejects keyword 'I'.
+193,maturin,yes,yes,yes,runtime,1.8.6: names resolve and keywords bind; 1.8.7: get_requires_for_build_wheel() rejects keyword '_config_settings'.
+194,aenum,no,yes,no,runtime,"aenum/_enum.py 3.1.15 defines is_single_bit(value) at line 140 and then redefines it as is_single_bit(num) at line 378; the later one wins, so value= is rejected in 3.1.15 too."
+195,makefun,yes,yes,yes,runtime,1.10.2: names resolve and keywords bind; 1.11.0: gen_partial_sig() rejects keyword 'f'.
+196,send2trash,yes,yes,yes,runtime,1.8.3: names resolve and keywords bind; 2.0.0: check_create() rejects keyword 'dir'.
+197,simple-salesforce,yes,yes,yes,runtime,1.12.7: names resolve and keywords bind; 1.12.8: SalesforceAuthenticationFailed() rejects keyword 'message'.
+198,pyproj,yes,yes,yes,runtime,3.0.1: names resolve and keywords bind; 3.1.0: Transformer() rejects keyword 'base_transformer'.
+199,tree-sitter,yes,yes,yes,runtime,0.20.4: names resolve and keywords bind; 0.21.0: Language() rejects keyword 'library_path'.
+200,pytest-django,yes,yes,yes,runtime,4.4.0: names resolve and keywords bind; 4.5.0: transactional_db() rejects keyword 'django_db_setup'; the labelled keyword 'request' is also absent from the 4.5.0 signature (no **kwargs).

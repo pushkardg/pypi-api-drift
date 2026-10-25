@@ -1,0 +1,17 @@
+asgiref==3.12.1
+attrs==26.1.0
+blinker==1.9.0
+click==8.5.0
+Flask @ file:///tmp/claude-0/-home-claude/0359666d-f4bf-5f83-9bbd-c4ff1fd22d9c/scratchpad/src/Flask-2.0.3
+greenlet==3.5.6
+iniconfig==2.3.1
+itsdangerous==2.2.0
+Jinja2==3.0.3
+MarkupSafe==3.0.4
+packaging==26.3
+pluggy==1.7.0
+py==1.11.0
+pytest==7.1.3
+python-dotenv==1.2.4
+tomli==2.5.0
+Werkzeug==2.0.3

@@ -1,0 +1,6 @@
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+py==1.11.0
+pytest==7.4.4
+-e file:///home/claude/apidrift/validation/downstream2/part2/U2_08/pytest-describe-2.0.1

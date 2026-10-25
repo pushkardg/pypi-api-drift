@@ -1,0 +1,13 @@
+alembic==1.20.0
+banal==1.1.2
+dataset @ file:///tmp/claude-0/-home-claude/0359666d-f4bf-5f83-9bbd-c4ff1fd22d9c/scratchpad/src/dataset-1.5.2
+greenlet==3.5.6
+iniconfig==2.3.1
+Mako==1.4.3
+MarkupSafe==3.0.4
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.1.1
+SQLAlchemy==2.0.36
+typing_extensions==4.16.0

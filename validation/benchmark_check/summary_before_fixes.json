@@ -1,0 +1,31 @@
+{
+ "sample": 200,
+ "decided": 200,
+ "unknown": 0,
+ "pairs_correct": 172,
+ "pair_label_precision": 0.86,
+ "ci": [
+  80.5,
+  90.1
+ ],
+ "before_valid_rate": 0.87,
+ "after_invalid_rate": 0.99,
+ "by_type": {
+  "param_removed": {
+   "n": 35,
+   "correct": 34
+  },
+  "param_renamed": {
+   "n": 25,
+   "correct": 23
+  },
+  "removed": {
+   "n": 140,
+   "correct": 115
+  }
+ },
+ "methods": {
+  "runtime": 197,
+  "source": 3
+ }
+}

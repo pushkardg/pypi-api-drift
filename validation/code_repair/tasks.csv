@@ -1,0 +1,255 @@
+task_id,pair_id,project,version_before,version_after,snippet,symbol,change_type,param,change_detail,change_released
+t000,wandb:0.21.0:wandb.sdk.lib.sock_client.SockClient.connect:removed:,wandb,0.20.1,0.21.0,"from wandb.sdk.lib.sock_client import SockClient
+SockClient.connect",wandb.sdk.lib.sock_client.SockClient.connect,removed,,still available as wandb.sdk.lib.service.service_token.ServiceToken.connect,2025-07-02 00:23:46.671357+00:00
+t001,litellm:1.104.0:litellm.rust_bridge.callbacks_legacy_python.warn_unknown_credential:removed:,litellm,1.103.5,1.104.0,from litellm.rust_bridge.callbacks_legacy_python import warn_unknown_credential,litellm.rust_bridge.callbacks_legacy_python.warn_unknown_credential,removed,,still available as litellm.rust_bridge.preflight.warn_unknown_credential,2026-10-03 22:43:13.323315+00:00
+t002,ddtrace:4.8.0:ddtrace.contrib.internal.ray.patch.RAY_ACTOR_MODULE_DENYLIST:removed:,ddtrace,4.7.2,4.8.0,from ddtrace.contrib.internal.ray.patch import RAY_ACTOR_MODULE_DENYLIST,ddtrace.contrib.internal.ray.patch.RAY_ACTOR_MODULE_DENYLIST,removed,,still available as ddtrace.contrib.internal.ray.core.actor.RAY_ACTOR_MODULE_DENYLIST,2026-04-30 18:55:35.723456+00:00
+t003,av:12.2.0:av.OutputContainer:removed:,av,12.1.0,12.2.0,from av import OutputContainer,av.OutputContainer,removed,,still available as av.container.OutputContainer,2024-06-28 12:03:46.245757+00:00
+t004,pyathena:3.16.0:pyathena.sqlalchemy.base.DDL_RESERVED_WORDS:removed:,pyathena,3.15.0,3.16.0,from pyathena.sqlalchemy.base import DDL_RESERVED_WORDS,pyathena.sqlalchemy.base.DDL_RESERVED_WORDS,removed,,still available as pyathena.sqlalchemy.constants.DDL_RESERVED_WORDS,2025-08-03 04:16:13.936952+00:00
+t005,xgboost:3.1.0:xgboost.testing.predictor_equal:removed:,xgboost,3.0.5,3.1.0,from xgboost.testing import predictor_equal,xgboost.testing.predictor_equal,removed,,still available as xgboost.testing.utils.predictor_equal,2025-10-17 23:27:50.480892+00:00
+t006,streamlit:1.41.0:streamlit.elements.image.MAXIMUM_CONTENT_WIDTH:removed:,streamlit,1.40.2,1.41.0,from streamlit.elements.image import MAXIMUM_CONTENT_WIDTH,streamlit.elements.image.MAXIMUM_CONTENT_WIDTH,removed,,still available as streamlit.elements.lib.image_utils.MAXIMUM_CONTENT_WIDTH,2024-12-10 19:36:51.141546+00:00
+t007,mashumaro:3.9.1:mashumaro.jsonschema.schema.Instance.get_config:removed:,mashumaro,3.9,3.9.1,"from mashumaro.jsonschema.schema import Instance
+Instance.get_config",mashumaro.jsonschema.schema.Instance.get_config,removed,,still available as mashumaro.core.meta.code.builder.CodeBuilder.get_config,2023-08-22 21:49:41.824858+00:00
+t008,pillow:12.1.0:PIL.SpiderImagePlugin.im:removed:,pillow,12.0.0,12.1.0,from PIL.SpiderImagePlugin import im,PIL.SpiderImagePlugin.im,removed,,still available as PIL.ImageFile.PyCodec.im,2026-01-02 09:12:39.082697+00:00
+t009,langchain-community:0.3.6:langchain_community.document_loaders.onedrive.logger:removed:,langchain-community,0.3.5,0.3.6,from langchain_community.document_loaders.onedrive import logger,langchain_community.document_loaders.onedrive.logger,removed,,still available as langchain_community.cache.logger,2024-11-12 15:28:54.288487+00:00
+t010,langsmith:0.9.8:langsmith.client.Client.projects:removed:,langsmith,0.9.7,0.9.8,"from langsmith.client import Client
+Client.projects",langsmith.client.Client.projects,removed,,still available as langsmith.async_client.AsyncClient.projects,2026-07-06 19:06:08.911991+00:00
+t011,dulwich:0.21.0:dulwich.cloud.gcs.GcsObjectStore.find_missing_objects:removed:,dulwich,0.20.50,0.21.0,"from dulwich.cloud.gcs import GcsObjectStore
+GcsObjectStore.find_missing_objects",dulwich.cloud.gcs.GcsObjectStore.find_missing_objects,removed,,still available as dulwich.repo.Repo.find_missing_objects,2023-01-16 19:07:45.538746+00:00
+t012,aws-lambda-powertools:2.28.0:aws_lambda_powertools.event_handler.openapi.types.PYDANTIC_V2:removed:,aws-lambda-powertools,2.27.1,2.28.0,from aws_lambda_powertools.event_handler.openapi.types import PYDANTIC_V2,aws_lambda_powertools.event_handler.openapi.types.PYDANTIC_V2,removed,,still available as aws_lambda_powertools.event_handler.openapi.pydantic_loader.PYDANTIC_V2,2023-11-23 16:09:35.892797+00:00
+t013,great-expectations:1.9.0:great_expectations.expectations.row_conditions.condition:removed:,great-expectations,1.8.1,1.9.0,from great_expectations.expectations.row_conditions import condition,great_expectations.expectations.row_conditions.condition,removed,,still available as great_expectations.expectations.legacy_row_conditions.condition,2025-11-07 18:17:09.417307+00:00
+t014,mlflow:2.20.0:mlflow.gateway.schemas.chat.BaseRequestPayload:removed:,mlflow,2.19.0,2.20.0,from mlflow.gateway.schemas.chat import BaseRequestPayload,mlflow.gateway.schemas.chat.BaseRequestPayload,removed,,still available as mlflow.types.chat.BaseRequestPayload,2025-01-23 10:55:32.977093+00:00
+t015,langchain-google-vertexai:0.1.1:langchain_google_vertexai.llms.VertexAIModelGarden:removed:,langchain-google-vertexai,0.1.0,0.1.1,from langchain_google_vertexai.llms import VertexAIModelGarden,langchain_google_vertexai.llms.VertexAIModelGarden,removed,,still available as langchain_google_vertexai.VertexAIModelGarden,2024-03-15 07:09:32.445167+00:00
+t016,moto:4.1.12:moto.dynamodb.models.Item.filter:removed:,moto,4.1.11,4.1.12,"from moto.dynamodb.models import Item
+Item.filter",moto.dynamodb.models.Item.filter,removed,,still available as moto.cloudwatch.models.MetricDatum.filter,2023-06-24 21:53:38.563018+00:00
+t017,twilio:9.0.2:twilio.rest.api.v2010.account.call.FeedbackList:removed:,twilio,8.13.0,9.0.2,from twilio.rest.api.v2010.account.call import FeedbackList,twilio.rest.api.v2010.account.call.FeedbackList,removed,,still available as twilio.rest.api.v2010.account.message.FeedbackList,2024-03-15 05:45:28.808821+00:00
+t018,numpy:2.0.0:numpy.infty:removed:,numpy,1.26.4,2.0.0,from numpy import infty,numpy.infty,removed,,still available as numpy.core.infty,2024-06-16 13:15:27.886589+00:00
+t019,sentence-transformers:5.4.0:sentence_transformers.sparse_encoder.evaluation.SparseBinaryClassificationEvaluator.SparseBinaryClassificationEvaluator:removed:,sentence-transformers,5.3.0,5.4.0,from sentence_transformers.sparse_encoder.evaluation.SparseBinaryClassificationEvaluator import SparseBinaryClassificationEvaluator,sentence_transformers.sparse_encoder.evaluation.SparseBinaryClassificationEvaluator.SparseBinaryClassificationEvaluator,removed,,still available as sentence_transformers.sparse_encoder.evaluation.SparseBinaryClassificationEvaluator,2026-04-09 13:34:11.298292+00:00
+t020,triton:2.3.0:triton.compiler.compiler.get_kernel_name:removed:,triton,2.2.0,2.3.0,from triton.compiler.compiler import get_kernel_name,triton.compiler.compiler.get_kernel_name,removed,,still available as triton.compiler.backends.cuda.get_kernel_name,2024-04-05 02:48:01.044073+00:00
+t021,strands-agents:1.50.1:strands.vended_tools.make_stop:removed:,strands-agents,1.50.0,1.50.1,from strands.vended_tools import make_stop,strands.vended_tools.make_stop,removed,,still available as strands.experimental.tools.make_stop,2026-07-24 21:40:00.853297+00:00
+t022,langgraph:0.6.0:langgraph.pregel.Interrupt:removed:,langgraph,0.5.4,0.6.0,from langgraph.pregel import Interrupt,langgraph.pregel.Interrupt,removed,,still available as langgraph.types.Interrupt,2025-07-28 13:53:02.029139+00:00
+t023,websockets:13.0:websockets.http.build_host:removed:,websockets,12.0,13.0,from websockets.http import build_host,websockets.http.build_host,removed,,still available as websockets.headers.build_host,2024-08-20 13:55:44.363099+00:00
+t024,pandas:2.1.0:pandas.core.internals.Block.getitem_block:removed:,pandas,2.0.3,2.1.0,"from pandas.core.internals import Block
+Block.getitem_block",pandas.core.internals.Block.getitem_block,removed,,still available as pandas.core.internals.ObjectBlock.getitem_block,2023-08-30 13:13:55.634968+00:00
+t025,networkx:3.2:networkx.algorithms.clique.cliques_containing_node:removed:,networkx,3.1,3.2,from networkx.algorithms.clique import cliques_containing_node,networkx.algorithms.clique.cliques_containing_node,removed,,still available as networkx.cliques_containing_node,2023-10-19 04:01:15.257721+00:00
+t026,fakeredis:2.36.0:fakeredis.model.Vector.accept_filter:removed:,fakeredis,2.35.1,2.36.0,"from fakeredis.model import Vector
+Vector.accept_filter",fakeredis.model.Vector.accept_filter,removed,,still available as fakeredis.model.VectorSet.accept_filter,2026-05-29 19:14:25.974314+00:00
+t027,nltk:3.9:nltk.chunk.load:removed:,nltk,3.8.1,3.9,from nltk.chunk import load,nltk.chunk.load,removed,,still available as nltk.load,2024-08-18 07:35:39.898916+00:00
+t028,transformers:5.10.1:transformers.models.idefics3.processing_idefics3.is_url:removed:,transformers,5.9.0,5.10.1,from transformers.models.idefics3.processing_idefics3 import is_url,transformers.models.idefics3.processing_idefics3.is_url,removed,,still available as transformers.models.idefics.processing_idefics.is_url,2026-06-03 15:37:00.433138+00:00
+t029,gcsfs:2026.6.0:gcsfs.zb_hns_utils.DirectMemmoveBuffer.write:removed:,gcsfs,2026.5.0,2026.6.0,"from gcsfs.zb_hns_utils import DirectMemmoveBuffer
+DirectMemmoveBuffer.write",gcsfs.zb_hns_utils.DirectMemmoveBuffer.write,removed,,still available as gcsfs.zonal_file.ZonalFile.write,2026-06-18 03:16:07.407848+00:00
+t030,pyzmq:26.4.0:zmq.backend.cffi.devices.device:removed:,pyzmq,26.3.0,26.4.0,from zmq.backend.cffi.devices import device,zmq.backend.cffi.devices.device,removed,,still available as zmq.device,2025-04-04 12:04:25.449416+00:00
+t031,email-validator:2.0.0:email_validator.DOT_ATOM_TEXT_INTL:removed:,email-validator,1.3.1,2.0.0,from email_validator import DOT_ATOM_TEXT_INTL,email_validator.DOT_ATOM_TEXT_INTL,removed,,still available as email_validator.rfc_constants.DOT_ATOM_TEXT_INTL,2023-04-16 01:28:23.694453+00:00
+t032,sphinx:8.1.0:sphinx.builders.texinfo.TexinfoBuilder.init_document_data:removed:,sphinx,8.0.2,8.1.0,"from sphinx.builders.texinfo import TexinfoBuilder
+TexinfoBuilder.init_document_data",sphinx.builders.texinfo.TexinfoBuilder.init_document_data,removed,,still available as sphinx.builders.latex.LaTeXBuilder.init_document_data,2024-10-10 15:57:32.883289+00:00
+t033,sentry-sdk:2.69.0:sentry_sdk.integrations.pydantic_ai.capture_internal_exceptions:removed:,sentry-sdk,2.68.1,2.69.0,from sentry_sdk.integrations.pydantic_ai import capture_internal_exceptions,sentry_sdk.integrations.pydantic_ai.capture_internal_exceptions,removed,,still available as sentry_sdk.utils.capture_internal_exceptions,2026-09-08 08:16:27.203684+00:00
+t034,anthropic:0.103.0:anthropic.types.beta.sessions.BetaManagedAgentsSessionThreadAgent:removed:,anthropic,0.102.0,0.103.0,from anthropic.types.beta.sessions import BetaManagedAgentsSessionThreadAgent,anthropic.types.beta.sessions.BetaManagedAgentsSessionThreadAgent,removed,,still available as anthropic.types.beta.BetaManagedAgentsSessionThreadAgent,2026-05-19 07:08:02.608456+00:00
+t035,gevent:26.4.0:gevent.testing.PY2:removed:,gevent,25.9.1,26.4.0,from gevent.testing import PY2,gevent.testing.PY2,removed,,still available as gevent.thread.PY2,2026-04-08 21:54:17.747446+00:00
+t036,groq:0.6.0:groq.types.Translation:removed:,groq,0.5.0,0.6.0,from groq.types import Translation,groq.types.Translation,removed,,still available as groq.types.audio.Translation,2024-05-16 17:46:49.822285+00:00
+t037,joserfc:0.2.0:joserfc.rfc7519.registry.JWTRegistry:removed:,joserfc,0.1.0,0.2.0,from joserfc.rfc7519.registry import JWTRegistry,joserfc.rfc7519.registry.JWTRegistry,removed,,still available as joserfc.jwt.JWTRegistry,2023-06-25 09:40:44.880184+00:00
+t038,selenium:4.44.0:selenium.webdriver.common.bidi.input.FileDialogInfo.from_dict:removed:,selenium,4.43.0,4.44.0,"from selenium.webdriver.common.bidi.input import FileDialogInfo
+FileDialogInfo.from_dict",selenium.webdriver.common.bidi.input.FileDialogInfo.from_dict,removed,,still available as selenium.webdriver.common.virtual_authenticator.Credential.from_dict,2026-05-12 22:48:16.836166+00:00
+t039,clickhouse-connect:1.9.0:clickhouse_connect.dbapi.cursor.insert_re:removed:,clickhouse-connect,1.8.0,1.9.0,from clickhouse_connect.dbapi.cursor import insert_re,clickhouse_connect.dbapi.cursor.insert_re,removed,,still available as clickhouse_connect.driver.query.insert_re,2026-09-22 15:08:42.133929+00:00
+t040,langgraph-sdk:0.3.6:langgraph_sdk.client.logger:removed:,langgraph-sdk,0.3.5,0.3.6,from langgraph_sdk.client import logger,langgraph_sdk.client.logger,removed,,still available as langgraph_sdk.errors.logger,2026-02-14 19:46:02.480002+00:00
+t041,more-itertools:11.0.2:more_itertools.more.running_min:removed:,more-itertools,11.0.1,11.0.2,from more_itertools.more import running_min,more_itertools.more.running_min,removed,,still available as more_itertools.running_min,2026-04-09 15:01:32.210520+00:00
+t042,wrapt:1.16.0:wrapt.wrappers.wrap_function_wrapper:removed:,wrapt,1.15.0,1.16.0,from wrapt.wrappers import wrap_function_wrapper,wrapt.wrappers.wrap_function_wrapper,removed,,still available as wrapt.wrap_function_wrapper,2023-11-09 06:33:28.271549+00:00
+t043,pyiceberg:0.3.0:pyiceberg.table.bind:removed:,pyiceberg,0.2.1,0.3.0,from pyiceberg.table import bind,pyiceberg.table.bind,removed,,still available as pyiceberg.expressions.visitors.bind,2023-02-09 15:42:33.744055+00:00
+t044,kubernetes:37.0.0:kubernetes.aio.client.api_client.ApiClient.pool:removed:,kubernetes,36.0.3,37.0.0,"from kubernetes.aio.client.api_client import ApiClient
+ApiClient.pool",kubernetes.aio.client.api_client.ApiClient.pool,removed,,still available as kubernetes.client.ApiClient.pool,2026-10-07 00:51:42.249980+00:00
+t045,snowplow-tracker:1.0.0:snowplow_tracker.tracker.CONTEXT_SCHEMA:removed:,snowplow-tracker,0.15.0,1.0.0,from snowplow_tracker.tracker import CONTEXT_SCHEMA,snowplow_tracker.tracker.CONTEXT_SCHEMA,removed,,still available as snowplow_tracker.constants.CONTEXT_SCHEMA,2023-06-16 14:31:09.884465+00:00
+t046,swebench:1.0.14:swebench.metrics.getters.TESTS_ERROR:removed:,swebench,1.0.13,1.0.14,from swebench.metrics.getters import TESTS_ERROR,swebench.metrics.getters.TESTS_ERROR,removed,,still available as swebench.harness.constants.TESTS_ERROR,2024-04-11 01:21:47.410670+00:00
+t047,pymupdf:1.26.1:pymupdf.mupdf.PdfEmbeddedFileParams:removed:,pymupdf,1.26.0,1.26.1,from pymupdf.mupdf import PdfEmbeddedFileParams,pymupdf.mupdf.PdfEmbeddedFileParams,removed,,still available as fitz.mupdf.PdfEmbeddedFileParams,2025-06-11 22:14:53.777981+00:00
+t048,anyio:4.15.0:anyio.abc.BlockingPortal:removed:,anyio,4.14.2,4.15.0,from anyio.abc import BlockingPortal,anyio.abc.BlockingPortal,removed,,still available as anyio.from_thread.BlockingPortal,2026-09-02 21:46:35.485450+00:00
+t049,mcp:1.20.0:mcp.client.auth.logger:removed:,mcp,1.19.0,1.20.0,from mcp.client.auth import logger,mcp.client.auth.logger,removed,,still available as mcp.cli.cli.logger,2025-10-30 22:14:51.078517+00:00
+t050,weasyprint:61.0:weasyprint.formatting_structure.build.TRANSPARENT:removed:,weasyprint,60.2,61.0,from weasyprint.formatting_structure.build import TRANSPARENT,weasyprint.formatting_structure.build.TRANSPARENT,removed,,still available as weasyprint.layout.table.TRANSPARENT,2024-02-12 10:01:43.980070+00:00
+t051,mlflow-skinny:2.10.0:mlflow.johnsnowlabs.MlflowException:removed:,mlflow-skinny,2.9.2,2.10.0,from mlflow.johnsnowlabs import MlflowException,mlflow.johnsnowlabs.MlflowException,removed,,still available as mlflow.MlflowException,2024-01-26 04:42:46.108130+00:00
+t052,pycryptodome:3.20.0:Crypto.SelfTest.IO.test_PBES.is_bytes:removed:,pycryptodome,3.19.1,3.20.0,from Crypto.SelfTest.IO.test_PBES import is_bytes,Crypto.SelfTest.IO.test_PBES.is_bytes,removed,,still available as Crypto.Hash.MD5.is_bytes,2024-01-10 11:30:18.610033+00:00
+t053,llvmlite:0.44.0:llvmlite.binding.ModulePassManager.add_dot_cfg_printer_pass:removed:,llvmlite,0.43.0,0.44.0,"from llvmlite.binding import ModulePassManager
+ModulePassManager.add_dot_cfg_printer_pass",llvmlite.binding.ModulePassManager.add_dot_cfg_printer_pass,removed,,still available as llvmlite.binding.PassManager.add_dot_cfg_printer_pass,2025-01-20 11:14:22.949321+00:00
+t054,progressbar2:4.3.0:progressbar.utils.is_ansi_terminal:removed:,progressbar2,4.2.0,4.3.0,from progressbar.utils import is_ansi_terminal,progressbar.utils.is_ansi_terminal,removed,,still available as progressbar.env.is_ansi_terminal,2023-12-18 02:45:05.885923+00:00
+t055,dbt-core:1.11.8:dbt.env_vars.EngineEnvVar:removed:,dbt-core,1.11.7,1.11.8,from dbt.env_vars import EngineEnvVar,dbt.env_vars.EngineEnvVar,removed,,still available as dbt.cli.params.EngineEnvVar,2026-04-08 19:01:44.830375+00:00
+t056,databricks-sql-connector:4.1.2:databricks.sql.utils.ExecuteResponse:removed:,databricks-sql-connector,4.0.5,4.1.2,from databricks.sql.utils import ExecuteResponse,databricks.sql.utils.ExecuteResponse,removed,,still available as databricks.sql.backend.types.ExecuteResponse,2025-08-22 12:10:43.232744+00:00
+t057,fonttools:4.44.0:fontTools.varLib.interpolatable.RecordingPointPen.moveTo:removed:,fonttools,4.43.1,4.44.0,"from fontTools.varLib.interpolatable import RecordingPointPen
+RecordingPointPen.moveTo",fontTools.varLib.interpolatable.RecordingPointPen.moveTo,removed,,still available as fontTools.pens.qtPen.QtPen.moveTo,2023-11-03 12:11:37.183823+00:00
+t058,mypy:1.14.0:mypy.typeshed.stdlib.io.TextIOBase.readline:removed:,mypy,1.13.0,1.14.0,"from mypy.typeshed.stdlib.io import TextIOBase
+TextIOBase.readline",mypy.typeshed.stdlib.io.TextIOBase.readline,removed,,still available as mypy.dmypy_util.WriteToConn.readline,2024-12-20 15:24:30.509487+00:00
+t059,fpdf2:2.7.9:fpdf.svg.parse_style:removed:,fpdf2,2.7.8,2.7.9,from fpdf.svg import parse_style,fpdf.svg.parse_style,removed,,still available as fpdf.html.parse_style,2024-05-17 15:59:11.485727+00:00
+t060,mlflow:3.4.0:mlflow.genai.get_dataset:param_renamed:uc_table_name,mlflow,3.3.2,3.4.0,"from mlflow.genai import get_dataset
+get_dataset(uc_table_name=...)",mlflow.genai.get_dataset,param_renamed,uc_table_name,uc_table_name -> name,2025-09-17 06:24:26.457845+00:00
+t061,litellm:1.90.1:litellm.proxy.openai_files_endpoints.files_endpoints.get_first_json_object:param_renamed:file_content_bytes,litellm,1.90.0,1.90.1,"from litellm.proxy.openai_files_endpoints.files_endpoints import get_first_json_object
+get_first_json_object(file_content_bytes=...)",litellm.proxy.openai_files_endpoints.files_endpoints.get_first_json_object,param_renamed,file_content_bytes,file_content_bytes -> file_source,2026-06-30 01:43:38.154128+00:00
+t062,networkx:3.7:networkx.vf2pp_all_isomorphisms:param_renamed:G1,networkx,3.6.1,3.7,"from networkx import vf2pp_all_isomorphisms
+vf2pp_all_isomorphisms(G2=..., G1=...)",networkx.vf2pp_all_isomorphisms,param_renamed,G1,G1 -> FG,2026-09-21 16:45:14.609636+00:00
+t063,pbs-installer:2024.3.23:pbs_installer.download:param_renamed:url,pbs-installer,2024.3.22,2024.3.23,"from pbs_installer import download
+download(destination=..., url=...)",pbs_installer.download,param_renamed,url,url -> python_file,2024-03-22 11:57:16.825949+00:00
+t064,numba:0.57.0:numba.np.arrayobj.np_frombuffer:param_renamed:builder,numba,0.56.4,0.57.0,"from numba.np.arrayobj import np_frombuffer
+np_frombuffer(context=..., sig=..., args=..., builder=...)",numba.np.arrayobj.np_frombuffer,param_renamed,builder,builder -> buffer,2023-05-02 16:39:19.687993+00:00
+t065,black:24.4.1:black.nodes.is_docstring:param_renamed:leaf,black,24.4.0,24.4.1,"from black.nodes import is_docstring
+is_docstring(mode=..., leaf=...)",black.nodes.is_docstring,param_renamed,leaf,leaf -> node,2024-04-24 15:17:55.798636+00:00
+t066,sentry-sdk:2.51.0:sentry_sdk.ai.utils.truncate_and_annotate_messages:param_renamed:max_bytes,sentry-sdk,2.50.0,2.51.0,"from sentry_sdk.ai.utils import truncate_and_annotate_messages
+truncate_and_annotate_messages(messages=..., span=..., scope=..., max_bytes=...)",sentry_sdk.ai.utils.truncate_and_annotate_messages,param_renamed,max_bytes,max_bytes -> max_single_message_chars,2026-01-28 10:29:48.868455+00:00
+t067,fakeredis:2.39.0:fakeredis.model.StreamGroup:param_renamed:start_key,fakeredis,2.38.0,2.39.0,"from fakeredis.model import StreamGroup
+StreamGroup(stream=..., name=..., start_key=...)",fakeredis.model.StreamGroup,param_renamed,start_key,start_key -> last_delivered_key,2026-10-01 12:35:17.899744+00:00
+t068,aws-lambda-powertools:2.32.0:aws_lambda_powertools.event_handler.openapi.swagger_ui.html.generate_swagger_html:param_renamed:js_url,aws-lambda-powertools,2.31.0,2.32.0,"from aws_lambda_powertools.event_handler.openapi.swagger_ui.html import generate_swagger_html
+generate_swagger_html(spec=..., css_url=..., js_url=...)",aws_lambda_powertools.event_handler.openapi.swagger_ui.html.generate_swagger_html,param_renamed,js_url,js_url -> path,2024-01-19 13:36:08.247078+00:00
+t069,pre-commit:3.1.0:pre_commit.languages.node.health_check:param_renamed:language_version,pre-commit,3.0.4,3.1.0,"from pre_commit.languages.node import health_check
+health_check(prefix=..., language_version=...)",pre_commit.languages.node.health_check,param_renamed,language_version,language_version -> version,2023-02-23 01:53:27.027527+00:00
+t070,trino:0.321.0:trino.dbapi.Connection:param_renamed:experimental_python_types,trino,0.320.0,0.321.0,"from trino.dbapi import Connection
+Connection(host=..., experimental_python_types=...)",trino.dbapi.Connection,param_renamed,experimental_python_types,experimental_python_types -> legacy_primitive_types,2023-01-11 11:40:58.872074+00:00
+t071,pydantic-settings:2.0.0:pydantic_settings.EnvSettingsSource:param_renamed:env_prefix_len,pydantic-settings,1.99,2.0.0,"from pydantic_settings import EnvSettingsSource
+EnvSettingsSource(settings_cls=..., env_prefix_len=...)",pydantic_settings.EnvSettingsSource,param_renamed,env_prefix_len,env_prefix_len -> env_prefix,2023-06-30 12:21:26.088215+00:00
+t072,aiohappyeyeballs:2.0.0:aiohappyeyeballs.remove_addr_infos:param_renamed:address,aiohappyeyeballs,1.8.1,2.0.0,"from aiohappyeyeballs import remove_addr_infos
+remove_addr_infos(addr_infos=..., address=...)",aiohappyeyeballs.remove_addr_infos,param_renamed,address,address -> addr,2023-12-10 05:38:12.842049+00:00
+t073,bleach:6.0.0:bleach.sanitizer.BleachSanitizerFilter:param_renamed:allowed_elements,bleach,5.0.1,6.0.0,"from bleach.sanitizer import BleachSanitizerFilter
+BleachSanitizerFilter(source=..., allowed_elements=...)",bleach.sanitizer.BleachSanitizerFilter,param_renamed,allowed_elements,allowed_elements -> allowed_tags,2023-01-23 16:40:15.874914+00:00
+t074,wandb:0.25.1:wandb.apis.public.runhistory.wait_for_download_with_progress:param_renamed:api,wandb,0.25.0,0.25.1,"from wandb.apis.public.runhistory import wait_for_download_with_progress
+wait_for_download_with_progress(request_id=..., contains_live_data=..., api=...)",wandb.apis.public.runhistory.wait_for_download_with_progress,param_renamed,api,api -> service_api,2026-03-10 23:51:40.196873+00:00
+t075,nodeenv:1.9.0:nodeenv.get_root_url:param_renamed:version,nodeenv,1.8.0,1.9.0,"from nodeenv import get_root_url
+get_root_url(version=...)",nodeenv.get_root_url,param_renamed,version,version -> version_str,2024-05-28 22:12:31.574149+00:00
+t076,mypy:1.0.0:mypy.typeanal.TypeVarLikeQuery:param_renamed:lookup,mypy,0.991,1.0.0,"from mypy.typeanal import TypeVarLikeQuery
+TypeVarLikeQuery(scope=..., lookup=...)",mypy.typeanal.TypeVarLikeQuery,param_renamed,lookup,lookup -> api,2023-02-06 19:42:52.074505+00:00
+t077,joserfc:0.4.0:joserfc.rfc7517.models.BaseKey:param_renamed:options,joserfc,0.3.0,0.4.0,"from joserfc.rfc7517.models import BaseKey
+BaseKey(raw_value=..., original_value=..., options=...)",joserfc.rfc7517.models.BaseKey,param_renamed,options,options -> parameters,2023-07-06 13:30:51.772945+00:00
+t078,google-ads:30.0.0:google.ads.googleads.interceptors.AsyncUnaryStreamMetadataInterceptor:param_renamed:gaada,google-ads,29.2.0,30.0.0,"from google.ads.googleads.interceptors import AsyncUnaryStreamMetadataInterceptor
+AsyncUnaryStreamMetadataInterceptor(developer_token=..., gaada=...)",google.ads.googleads.interceptors.AsyncUnaryStreamMetadataInterceptor,param_renamed,gaada,gaada -> ads_assistant,2026-03-25 19:38:33.494779+00:00
+t079,streamlit:1.49.0:streamlit.elements.lib.image_utils.image_to_url:param_renamed:width,streamlit,1.48.1,1.49.0,"from streamlit.elements.lib.image_utils import image_to_url
+image_to_url(image=..., clamp=..., channels=..., output_format=..., image_id=..., width=...)",streamlit.elements.lib.image_utils.image_to_url,param_renamed,width,width -> layout_config,2025-08-26 19:40:45.533349+00:00
+t080,s3transfer:0.8.0:s3transfer.crt.create_s3_crt_client:param_renamed:botocore_credential_provider,s3transfer,0.7.0,0.8.0,"from s3transfer.crt import create_s3_crt_client
+create_s3_crt_client(region=..., botocore_credential_provider=...)",s3transfer.crt.create_s3_crt_client,param_renamed,botocore_credential_provider,botocore_credential_provider -> crt_credentials_provider,2023-11-27 06:47:15.893487+00:00
+t081,python-engineio:4.5.0:engineio.async_drivers.gevent.WebSocketWSGI:param_renamed:app,python-engineio,4.4.1,4.5.0,"from engineio.async_drivers.gevent import WebSocketWSGI
+WebSocketWSGI(app=...)",engineio.async_drivers.gevent.WebSocketWSGI,param_renamed,app,app -> handler,2023-07-05 12:37:40.867616+00:00
+t082,diff-cover:9.3.0:diff_cover.diff_quality_tool.generate_quality_report:param_renamed:html_report,diff-cover,9.2.4,9.3.0,"from diff_cover.diff_quality_tool import generate_quality_report
+generate_quality_report(tool=..., compare_branch=..., html_report=...)",diff_cover.diff_quality_tool.generate_quality_report,param_renamed,html_report,html_report -> diff_tool,2025-05-24 12:06:55.743063+00:00
+t083,moto:5.1.15:moto.ec2.models.transit_gateway_attachments.TransitGatewayPeeringAttachment:param_renamed:transit_gateway_id,moto,5.1.14,5.1.15,"from moto.ec2.models.transit_gateway_attachments import TransitGatewayPeeringAttachment
+TransitGatewayPeeringAttachment(backend=..., peer_transit_gateway_id=..., peer_region=..., peer_account_id=..., tags=..., region_name=..., transit_gateway_id=...)",moto.ec2.models.transit_gateway_attachments.TransitGatewayPeeringAttachment,param_renamed,transit_gateway_id,transit_gateway_id -> transit_gateway,2025-10-17 20:45:28.632862+00:00
+t084,databricks-sql-connector:4.1.2:databricks.sql.utils.CloudFetchQueue:param_renamed:result_links,databricks-sql-connector,4.0.5,4.1.2,"from databricks.sql.utils import CloudFetchQueue
+CloudFetchQueue(schema_bytes=..., max_download_threads=..., ssl_options=..., result_links=...)",databricks.sql.utils.CloudFetchQueue,param_renamed,result_links,result_links -> chunk_id,2025-08-22 12:10:43.232744+00:00
+t085,py-key-value-aio:0.2.2:key_value.aio.wrappers.statistics.StatisticsWrapper:param_renamed:store,py-key-value-aio,0.2.1,0.2.2,"from key_value.aio.wrappers.statistics import StatisticsWrapper
+StatisticsWrapper(store=...)",key_value.aio.wrappers.statistics.StatisticsWrapper,param_renamed,store,store -> key_value,2025-10-14 18:10:08.874520+00:00
+t086,wrapt:2.0.0:wrapt.wrap_function_wrapper:param_renamed:module,wrapt,1.17.3,2.0.0,"from wrapt import wrap_function_wrapper
+wrap_function_wrapper(name=..., wrapper=..., module=...)",wrapt.wrap_function_wrapper,param_renamed,module,module -> target,2025-10-19 23:47:52.858080+00:00
+t087,mlflow-skinny:2.21.0:mlflow.dspy.callback.MlflowCallback:param_renamed:prediction_context,mlflow-skinny,2.20.4,2.21.0,"from mlflow.dspy.callback import MlflowCallback
+MlflowCallback(prediction_context=...)",mlflow.dspy.callback.MlflowCallback,param_renamed,prediction_context,prediction_context -> dependencies_schema,2025-03-14 12:14:05.746242+00:00
+t088,weasyprint:59.0:weasyprint.images.get_image_from_uri:param_renamed:optimize_size,weasyprint,58.1,59.0,"from weasyprint.images import get_image_from_uri
+get_image_from_uri(cache=..., url_fetcher=..., url=..., optimize_size=...)",weasyprint.images.get_image_from_uri,param_renamed,optimize_size,optimize_size -> options,2023-05-11 09:28:41.537758+00:00
+t089,twilio:8.2.0:twilio.rest.flex_api.v1.insights_questionnaires_question.InsightsQuestionnairesQuestionContext:param_renamed:question_id,twilio,8.1.0,8.2.0,"from twilio.rest.flex_api.v1.insights_questionnaires_question import InsightsQuestionnairesQuestionContext
+InsightsQuestionnairesQuestionContext(version=..., question_id=...)",twilio.rest.flex_api.v1.insights_questionnaires_question.InsightsQuestionnairesQuestionContext,param_renamed,question_id,question_id -> question_sid,2023-05-04 09:32:26.606240+00:00
+t090,dbt-common:0.1.1:dbt_common.clients.jinja.extract_toplevel_blocks:param_renamed:data,dbt-common,0.1.0,0.1.1,"from dbt_common.clients.jinja import extract_toplevel_blocks
+extract_toplevel_blocks(data=...)",dbt_common.clients.jinja.extract_toplevel_blocks,param_renamed,data,data -> text,2024-01-26 20:34:53.607191+00:00
+t091,onnxruntime:1.18.0:onnxruntime.transformers.models.llama.llama_inputs.convert_inputs_for_ort:param_renamed:use_gqa,onnxruntime,1.17.3,1.18.0,"from onnxruntime.transformers.models.llama.llama_inputs import convert_inputs_for_ort
+convert_inputs_for_ort(pt_inputs=..., use_gqa=...)",onnxruntime.transformers.models.llama.llama_inputs.convert_inputs_for_ort,param_renamed,use_gqa,use_gqa -> use_buffer_share,2024-05-17 18:06:56.663675+00:00
+t092,uuid-utils:1.0.0:uuid_utils.compat.uuid8:param_renamed:bytes,uuid-utils,0.18.0,1.0.0,"from uuid_utils.compat import uuid8
+uuid8(bytes=...)",uuid_utils.compat.uuid8,param_renamed,bytes,bytes -> a,2026-09-08 13:26:37.553888+00:00
+t093,sqlglot:30.8.0:sqlglot.dialects.dialect.build_formatted_time:param_renamed:dialect,sqlglot,30.7.0,30.8.0,"from sqlglot.dialects.dialect import build_formatted_time
+build_formatted_time(exp_class=..., dialect=...)",sqlglot.dialects.dialect.build_formatted_time,param_renamed,dialect,dialect -> dialect_override,2026-05-13 09:04:36.336047+00:00
+t094,modal:1.1.3:modal.cli.secret.delete:param_renamed:secret_name,modal,1.1.1,1.1.3,"from modal.cli.secret import delete
+delete(secret_name=...)",modal.cli.secret.delete,param_renamed,secret_name,secret_name -> name,2025-08-19 21:26:18.215776+00:00
+t095,rich:14.3.0:rich.cells.cell_len:param_renamed:_cell_len,rich,14.2.0,14.3.0,"from rich.cells import cell_len
+cell_len(text=..., _cell_len=...)",rich.cells.cell_len,param_renamed,_cell_len,_cell_len -> unicode_version,2026-01-24 12:25:44.679789+00:00
+t096,snowplow-tracker:0.13.0:snowplow_tracker.CeleryEmitter:param_renamed:buffer_size,snowplow-tracker,0.12.0,0.13.0,"from snowplow_tracker import CeleryEmitter
+CeleryEmitter(endpoint=..., buffer_size=...)",snowplow_tracker.CeleryEmitter,param_renamed,buffer_size,buffer_size -> batch_size,2023-01-25 14:35:25.198524+00:00
+t097,python-pptx:1.0.0:pptx.shapes.group.GroupShape:param_renamed:shape_elm,python-pptx,0.6.23,1.0.0,"from pptx.shapes.group import GroupShape
+GroupShape(parent=..., shape_elm=...)",pptx.shapes.group.GroupShape,param_renamed,shape_elm,shape_elm -> grpSp,2024-08-03 21:26:39.331675+00:00
+t098,elasticsearch:9.3.0:elasticsearch.esql.functions.avg_over_time:param_renamed:number,elasticsearch,9.2.1,9.3.0,"from elasticsearch.esql.functions import avg_over_time
+avg_over_time(number=...)",elasticsearch.esql.functions.avg_over_time,param_renamed,number,number -> field,2026-02-03 20:26:34.552655+00:00
+t099,scikit-image:0.21.0:skimage.measure.ransac:param_renamed:random_state,scikit-image,0.20.0,0.21.0,"from skimage.measure import ransac
+ransac(data=..., model_class=..., min_samples=..., residual_threshold=..., random_state=...)",skimage.measure.ransac,param_renamed,random_state,random_state -> rng,2023-06-02 05:00:01.375800+00:00
+t100,pg8000:1.31.4:pg8000.converters.array_out:param_renamed:ar,pg8000,1.31.3,1.31.4,"from pg8000.converters import array_out
+array_out(ar=...)",pg8000.converters.array_out,param_renamed,ar,ar -> val,2025-07-20 17:18:36.151315+00:00
+t101,jupyterlab:4.0.0:jupyterlab.semver.is_x:param_renamed:id,jupyterlab,3.6.8,4.0.0,"from jupyterlab.semver import is_x
+is_x(id=...)",jupyterlab.semver.is_x,param_renamed,id,id -> id_,2023-05-15 16:44:07.174295+00:00
+t102,portalocker:3.2.0:portalocker.portalocker.lock:param_renamed:file_,portalocker,3.1.1,3.2.0,"from portalocker.portalocker import lock
+lock(flags=..., file_=...)",portalocker.portalocker.lock,param_renamed,file_,file_ -> file,2025-06-14 13:20:38.083996+00:00
+t103,mlflow-tracing:3.9.0:mlflow.store.tracking.gateway.config_resolver.get_endpoint_config:param_renamed:endpoint_id,mlflow-tracing,3.8.1,3.9.0,"from mlflow.store.tracking.gateway.config_resolver import get_endpoint_config
+get_endpoint_config(endpoint_id=...)",mlflow.store.tracking.gateway.config_resolver.get_endpoint_config,param_renamed,endpoint_id,endpoint_id -> endpoint_name,2026-01-29 07:44:57.615230+00:00
+t104,accelerate:0.22.0:accelerate.utils.get_mixed_precision_context_manager:param_renamed:cache_enabled,accelerate,0.21.0,0.22.0,"from accelerate.utils import get_mixed_precision_context_manager
+get_mixed_precision_context_manager(cache_enabled=...)",accelerate.utils.get_mixed_precision_context_manager,param_renamed,cache_enabled,cache_enabled -> autocast_kwargs,2023-08-23 06:25:15.787704+00:00
+t105,huggingface-hub:1.9.0:huggingface_hub.cli.skills.skills_add:param_removed:codex,huggingface-hub,1.8.0,1.9.0,"from huggingface_hub.cli.skills import skills_add
+skills_add(codex=...)",huggingface_hub.cli.skills.skills_add,param_removed,codex,,2026-04-03 08:35:53.897672+00:00
+t106,accelerate:1.0.0:accelerate.Accelerator:param_removed:even_batches,accelerate,0.34.2,1.0.0,"from accelerate import Accelerator
+Accelerator(even_batches=...)",accelerate.Accelerator,param_removed,even_batches,,2024-10-07 15:29:34.781100+00:00
+t107,pydantic-core:2.26.0:pydantic_core.core_schema.url_schema:param_removed:cls,pydantic-core,2.25.1,2.26.0,"from pydantic_core.core_schema import url_schema
+url_schema(cls=...)",pydantic_core.core_schema.url_schema,param_removed,cls,,2024-11-04 15:00:33.955875+00:00
+t108,moto:5.0.17:moto.workspacesweb.models.FakeUserSettings:param_removed:tags,moto,5.0.16,5.0.17,"from moto.workspacesweb.models import FakeUserSettings
+FakeUserSettings(additional_encryption_context=..., client_token=..., cookie_synchronization_configuration=..., copy_allowed=..., customer_managed_key=..., deep_link_allowed=..., disconnect_timeout_in_minutes=..., download_allowed=..., idle_disconnect_timeout_in_minutes=..., paste_allowed=..., print_allowed=..., upload_allowed=..., region_name=..., account_id=..., tags=...)",moto.workspacesweb.models.FakeUserSettings,param_removed,tags,,2024-10-13 13:41:12.224512+00:00
+t109,redshift-connector:2.0.917:redshift_connector.Connection:param_removed:idc_client_display_name,redshift-connector,2.0.916,2.0.917,"from redshift_connector import Connection
+Connection(user=..., password=..., database=..., idc_client_display_name=...)",redshift_connector.Connection,param_removed,idc_client_display_name,,2023-11-20 18:09:55.691156+00:00
+t110,time-machine:3.5.0:time_machine.cli.maybe_migrate_call:param_removed:freeze_time_import_seen,time-machine,3.4.0,3.5.0,"from time_machine.cli import maybe_migrate_call
+maybe_migrate_call(ret=..., node=..., freezegun_import_seen=..., freezer_functions=..., freeze_time_import_seen=...)",time_machine.cli.maybe_migrate_call,param_removed,freeze_time_import_seen,,2026-08-25 00:18:17.540438+00:00
+t111,mlflow:2.19.0:mlflow.openai.api_request_parallel_processor.process_api_requests:param_removed:max_requests_per_minute,mlflow,2.18.0,2.19.0,"from mlflow.openai.api_request_parallel_processor import process_api_requests
+process_api_requests(requests=..., request_url=..., api_token=..., max_requests_per_minute=...)",mlflow.openai.api_request_parallel_processor.process_api_requests,param_removed,max_requests_per_minute,,2024-12-11 09:49:32.119419+00:00
+t112,wandb:0.21.2:wandb.sdk.interface.interface_sock.InterfaceSock:param_removed:mailbox,wandb,0.21.1,0.21.2,"from wandb.sdk.interface.interface_sock import InterfaceSock
+InterfaceSock(sock_client=..., stream_id=..., mailbox=...)",wandb.sdk.interface.interface_sock.InterfaceSock,param_removed,mailbox,,2025-08-28 22:50:11.801663+00:00
+t113,datasets:2.14.5:datasets.load.create_builder_configs_from_metadata_configs:param_removed:allowed_extensions,datasets,2.14.4,2.14.5,"from datasets.load import create_builder_configs_from_metadata_configs
+create_builder_configs_from_metadata_configs(module_path=..., metadata_configs=..., supports_metadata=..., allowed_extensions=...)",datasets.load.create_builder_configs_from_metadata_configs,param_removed,allowed_extensions,,2023-09-06 15:38:14.164363+00:00
+t114,polars:1.43.2:polars.read_csv_batched:param_removed:missing_utf8_is_empty_string,polars,1.42.1,1.43.2,"from polars import read_csv_batched
+read_csv_batched(source=..., missing_utf8_is_empty_string=...)",polars.read_csv_batched,param_removed,missing_utf8_is_empty_string,,2026-08-01 06:27:15.543514+00:00
+t115,joserfc:0.6.0:joserfc.errors.InvalidKeyTypeError:param_removed:error,joserfc,0.5.0,0.6.0,"from joserfc.errors import InvalidKeyTypeError
+InvalidKeyTypeError(error=...)",joserfc.errors.InvalidKeyTypeError,param_removed,error,,2023-07-20 12:45:52.065925+00:00
+t116,narwhals:1.27.1:narwhals.functions.Then:param_removed:aggregates,narwhals,1.26.0,1.27.1,"from narwhals.functions import Then
+Then(to_compliant_expr=..., is_order_dependent=..., changes_length=..., aggregates=...)",narwhals.functions.Then,param_removed,aggregates,,2025-02-17 15:38:44.730810+00:00
+t117,pyiceberg:0.10.0:pyiceberg.avro.file.AvroFileHeader:param_removed:struct,pyiceberg,0.9.1,0.10.0,"from pyiceberg.avro.file import AvroFileHeader
+AvroFileHeader(struct=...)",pyiceberg.avro.file.AvroFileHeader,param_removed,struct,,2025-09-11 14:59:20.541324+00:00
+t118,black:23.3.0:black.lines.is_line_short_enough:param_removed:line_length,black,23.1.0,23.3.0,"from black.lines import is_line_short_enough
+is_line_short_enough(line=..., line_length=...)",black.lines.is_line_short_enough,param_removed,line_length,,2023-03-29 01:00:52.253538+00:00
+t119,xlsxwriter:3.2.1:xlsxwriter.chart_stock.ChartStock:param_removed:options,xlsxwriter,3.2.0,3.2.1,"from xlsxwriter.chart_stock import ChartStock
+ChartStock(options=...)",xlsxwriter.chart_stock.ChartStock,param_removed,options,,2025-01-22 23:41:17.441751+00:00
+t120,scipy:1.14.0:scipy.signal.firwin:param_removed:nyq,scipy,1.13.1,1.14.0,"from scipy.signal import firwin
+firwin(numtaps=..., cutoff=..., nyq=...)",scipy.signal.firwin,param_removed,nyq,,2024-06-24 20:34:23.552357+00:00
+t121,oracledb:2.0.0:oracledb.PoolParams:param_removed:encoding,oracledb,1.4.2,2.0.0,"from oracledb import PoolParams
+PoolParams(encoding=...)",oracledb.PoolParams,param_removed,encoding,,2023-12-19 23:06:37.542968+00:00
+t122,dask:2024.11.1:dask.blockwise.make_blockwise_graph:param_removed:deserializing,dask,2024.10.0,2024.11.1,"from dask.blockwise import make_blockwise_graph
+make_blockwise_graph(func=..., output=..., out_indices=..., deserializing=...)",dask.blockwise.make_blockwise_graph,param_removed,deserializing,,2024-11-11 15:59:50.258172+00:00
+t123,onnxruntime:1.22.0:onnxruntime.transformers.models.t5.convert_to_onnx.export_onnx_models:param_removed:merge_encoder_and_decoder_init,onnxruntime,1.21.1,1.22.0,"from onnxruntime.transformers.models.t5.convert_to_onnx import export_onnx_models
+export_onnx_models(model_name_or_path=..., cache_dir=..., output_dir=..., use_gpu=..., use_external_data_format=..., optimize_onnx=..., precision=..., verbose=..., merge_encoder_and_decoder_init=...)",onnxruntime.transformers.models.t5.convert_to_onnx.export_onnx_models,param_removed,merge_encoder_and_decoder_init,,2025-05-09 20:26:17.454661+00:00
+t124,sentry-sdk:2.35.0:sentry_sdk.integrations.langchain.SentryLangchainCallback:param_removed:tiktoken_encoding_name,sentry-sdk,2.34.1,2.35.0,"from sentry_sdk.integrations.langchain import SentryLangchainCallback
+SentryLangchainCallback(max_span_map_size=..., include_prompts=..., tiktoken_encoding_name=...)",sentry_sdk.integrations.langchain.SentryLangchainCallback,param_removed,tiktoken_encoding_name,,2025-08-14 17:11:18.290971+00:00
+t125,pydantic-settings:2.2.1:pydantic_settings.TomlConfigSettingsSource:param_removed:toml_file_encoding,pydantic-settings,2.2.0,2.2.1,"from pydantic_settings import TomlConfigSettingsSource
+TomlConfigSettingsSource(settings_cls=..., toml_file_encoding=...)",pydantic_settings.TomlConfigSettingsSource,param_removed,toml_file_encoding,,2024-02-19 19:50:19.747388+00:00
+t126,pymongo:4.16.0:pymongo.command_cursor.RawBatchCommandCursor:param_removed:explicit_session,pymongo,4.15.5,4.16.0,"from pymongo.command_cursor import RawBatchCommandCursor
+RawBatchCommandCursor(collection=..., cursor_info=..., address=..., explicit_session=...)",pymongo.command_cursor.RawBatchCommandCursor,param_removed,explicit_session,,2026-01-07 18:05:05.459718+00:00
+t127,databricks-sql-connector:4.0.4:databricks.sql.thrift_api.TCLIService.ttypes.TGetPrimaryKeysReq:param_removed:operationId,databricks-sql-connector,4.0.3,4.0.4,"from databricks.sql.thrift_api.TCLIService.ttypes import TGetPrimaryKeysReq
+TGetPrimaryKeysReq(operationId=...)",databricks.sql.thrift_api.TCLIService.ttypes.TGetPrimaryKeysReq,param_removed,operationId,,2025-06-16 11:01:10.450285+00:00
+t128,limits:5.0.0:limits.aio.storage.redis.RedispyBridge:param_removed:key_prefix,limits,4.8.0,5.0.0,"from limits.aio.storage.redis import RedispyBridge
+RedispyBridge(uri=..., dependency=..., key_prefix=...)",limits.aio.storage.redis.RedispyBridge,param_removed,key_prefix,,2025-04-16 00:55:28.591240+00:00
+t129,pydot:4.0.0:pydot.dot_parser.push_attr_list:param_removed:s,pydot,3.0.4,4.0.0,"from pydot.dot_parser import push_attr_list
+push_attr_list(loc=..., toks=..., s=...)",pydot.dot_parser.push_attr_list,param_removed,s,,2025-05-04 11:13:01.458696+00:00
+t130,mysql-connector-python:8.2.0:mysql.connector.plugins.caching_sha2_password.MySQLCachingSHA2PasswordAuthPlugin:param_removed:database,mysql-connector-python,8.1.0,8.2.0,"from mysql.connector.plugins.caching_sha2_password import MySQLCachingSHA2PasswordAuthPlugin
+MySQLCachingSHA2PasswordAuthPlugin(auth_data=..., database=...)",mysql.connector.plugins.caching_sha2_password.MySQLCachingSHA2PasswordAuthPlugin,param_removed,database,,2023-10-25 07:57:07.510488+00:00
+t131,scikit-image:0.20.0:skimage.segmentation.random_walker:param_removed:multichannel,scikit-image,0.19.3,0.20.0,"from skimage.segmentation import random_walker
+random_walker(data=..., labels=..., multichannel=...)",skimage.segmentation.random_walker,param_removed,multichannel,,2023-02-28 23:31:46.003540+00:00
+t132,ddtrace:4.6.0:ddtrace.contrib.internal.langgraph.patch.patched_create_react_agent:param_removed:pin,ddtrace,4.5.10,4.6.0,"from ddtrace.contrib.internal.langgraph.patch import patched_create_react_agent
+patched_create_react_agent(langgraph=..., func=..., instance=..., args=..., kwargs=..., pin=...)",ddtrace.contrib.internal.langgraph.patch.patched_create_react_agent,param_removed,pin,,2026-03-16 14:43:53.630776+00:00
+t133,dbt-core:1.9.5:dbt.parser.sources.merge_freshness:param_removed:update,dbt-core,1.9.4,1.9.5,"from dbt.parser.sources import merge_freshness
+merge_freshness(base=..., update=...)",dbt.parser.sources.merge_freshness,param_removed,update,,2025-05-28 04:34:06.200716+00:00
+t134,coverage:7.14.2:coverage.core.Core:param_removed:metacov,coverage,7.14.1,7.14.2,"from coverage.core import Core
+Core(warn=..., debug=..., config=..., dynamic_contexts=..., metacov=...)",coverage.core.Core,param_removed,metacov,,2026-06-20 14:49:28.991876+00:00
+t135,sqlalchemy:2.0.0:sqlalchemy.dialects.oracle.VARCHAR2:param_removed:_expect_unicode,sqlalchemy,1.4.54,2.0.0,"from sqlalchemy.dialects.oracle import VARCHAR2
+VARCHAR2(_expect_unicode=...)",sqlalchemy.dialects.oracle.VARCHAR2,param_removed,_expect_unicode,,2023-01-26 23:02:33.292448+00:00
+t136,sphinx:8.1.0:sphinx.ext.autodoc.import_object:param_removed:warningiserror,sphinx,8.0.2,8.1.0,"from sphinx.ext.autodoc import import_object
+import_object(modname=..., objpath=..., warningiserror=...)",sphinx.ext.autodoc.import_object,param_removed,warningiserror,,2024-10-10 15:57:32.883289+00:00
+t137,awswrangler:3.7.0:awswrangler.catalog.get_table_description:param_removed:query_as_of_time,awswrangler,3.6.0,3.7.0,"from awswrangler.catalog import get_table_description
+get_table_description(database=..., table=..., query_as_of_time=...)",awswrangler.catalog.get_table_description,param_removed,query_as_of_time,,2024-03-05 22:00:24.464161+00:00
+t138,selenium:4.10.0:selenium.webdriver.edge.webdriver.WebDriver:param_removed:capabilities,selenium,4.9.1,4.10.0,"from selenium.webdriver.edge.webdriver import WebDriver
+WebDriver(capabilities=...)",selenium.webdriver.edge.webdriver.WebDriver,param_removed,capabilities,,2023-06-07 16:17:04.196708+00:00
+t139,typer:0.26.3:typer.testing.CliRunner:param_removed:catch_exceptions,typer,0.26.2,0.26.3,"from typer.testing import CliRunner
+CliRunner(catch_exceptions=...)",typer.testing.CliRunner,param_removed,catch_exceptions,,2026-05-28 20:30:49.816201+00:00
+t140,google-cloud-firestore:2.27.0:google.cloud.firestore_v1.pipeline_expressions.FunctionExpression:param_removed:use_infix_repr,google-cloud-firestore,2.26.0,2.27.0,"from google.cloud.firestore_v1.pipeline_expressions import FunctionExpression
+FunctionExpression(name=..., params=..., use_infix_repr=...)",google.cloud.firestore_v1.pipeline_expressions.FunctionExpression,param_removed,use_infix_repr,,2026-04-13 22:55:41.726439+00:00
+t141,databricks-sdk:0.106.0:databricks.sdk.credentials_provider.CliTokenSource:param_removed:fallback_cmd,databricks-sdk,0.105.0,0.106.0,"from databricks.sdk.credentials_provider import CliTokenSource
+CliTokenSource(cmd=..., token_type_field=..., access_token_field=..., expiry_field=..., fallback_cmd=...)",databricks.sdk.credentials_provider.CliTokenSource,param_removed,fallback_cmd,,2026-04-30 12:33:18.116446+00:00
+t142,scikit-learn:1.9.0:sklearn.linear_model.MultiTaskElasticNetCV:param_removed:n_alphas,scikit-learn,1.8.0,1.9.0,"from sklearn.linear_model import MultiTaskElasticNetCV
+MultiTaskElasticNetCV(n_alphas=...)",sklearn.linear_model.MultiTaskElasticNetCV,param_removed,n_alphas,,2026-06-02 11:54:24.454245+00:00
+t143,postgrest:2.22.0:postgrest.AsyncRPCFilterRequestBuilder:param_removed:path,postgrest,2.21.1,2.22.0,"from postgrest import AsyncRPCFilterRequestBuilder
+AsyncRPCFilterRequestBuilder(session=..., http_method=..., headers=..., params=..., json=..., path=...)",postgrest.AsyncRPCFilterRequestBuilder,param_removed,path,,2025-10-08 19:32:45.234349+00:00
+t144,litellm:1.96.0:litellm.litellm_core_utils.prompt_templates.factory.convert_to_gemini_tool_call_result:param_removed:custom_llm_provider,litellm,1.95.1,1.96.0,"from litellm.litellm_core_utils.prompt_templates.factory import convert_to_gemini_tool_call_result
+convert_to_gemini_tool_call_result(message=..., last_message_with_tool_calls=..., custom_llm_provider=...)",litellm.litellm_core_utils.prompt_templates.factory.convert_to_gemini_tool_call_result,param_removed,custom_llm_provider,,2026-08-09 01:36:45.408382+00:00
+t145,langsmith:0.14.2:langsmith.run_helpers.ensure_traceable:param_removed:agent_environment,langsmith,0.14.1,0.14.2,"from langsmith.run_helpers import ensure_traceable
+ensure_traceable(func=..., agent_environment=...)",langsmith.run_helpers.ensure_traceable,param_removed,agent_environment,,2026-09-30 14:41:31.669506+00:00
+t146,python-multipart:0.0.25:python_multipart.FormParser:param_removed:FileClass,python-multipart,0.0.24,0.0.25,"from python_multipart import FormParser
+FormParser(content_type=..., on_field=..., on_file=..., FileClass=...)",python_multipart.FormParser,param_removed,FileClass,,2026-04-10 13:15:01.643562+00:00
+t147,transformers:5.4.0:transformers.generation.continuous_batching.ContinuousBatchingManager:param_removed:kv_padding_interval_size,transformers,5.3.0,5.4.0,"from transformers.generation.continuous_batching import ContinuousBatchingManager
+ContinuousBatchingManager(model=..., generation_config=..., kv_padding_interval_size=...)",transformers.generation.continuous_batching.ContinuousBatchingManager,param_removed,kv_padding_interval_size,,2026-03-27 00:24:21.735512+00:00
+t148,redis:7.4.0:redis.asyncio.multidb.healthcheck.HealthyMajorityPolicy:param_removed:health_check_delay,redis,7.3.1,7.4.0,"from redis.asyncio.multidb.healthcheck import HealthyMajorityPolicy
+HealthyMajorityPolicy(health_check_probes=..., health_check_delay=...)",redis.asyncio.multidb.healthcheck.HealthyMajorityPolicy,param_removed,health_check_delay,,2026-03-24 09:14:35.968180+00:00
+t149,strands-agents:0.3.0:strands.event_loop.event_loop.recurse_event_loop:param_removed:messages,strands-agents,0.2.1,0.3.0,"from strands.event_loop.event_loop import recurse_event_loop
+recurse_event_loop(model=..., system_prompt=..., tool_config=..., tool_handler=..., thread_pool=..., event_loop_metrics=..., event_loop_parent_span=..., kwargs=..., messages=...)",strands.event_loop.event_loop.recurse_event_loop,param_removed,messages,,2025-07-11 19:00:08.600870+00:00

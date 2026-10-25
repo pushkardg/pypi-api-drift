@@ -1,0 +1,17 @@
+# data tables are published separately (Hugging Face); check them with verify_data.py
+/data/
+*.parquet
+!benchmark/*.parquet
+!tests/fixtures/data/*.parquet
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.duckdb_tmp/
+# local outputs
+apidrift.sarif

@@ -1,0 +1,144 @@
+task_id,change_type,orig_valid_a,rerun_valid_a,strict_valid_a,faith_a,succ_a,strict_succ_a,strict_reason_a,orig_valid_b,rerun_valid_b,strict_valid_b,faith_b,succ_b,strict_succ_b,strict_reason_b,orig_valid_c,rerun_valid_c,strict_valid_c,faith_c,succ_c,strict_succ_c,strict_reason_c
+t000,removed,False,False,False,True,False,False,from wandb.sdk.lib.service.service_client: ModuleNotFoundError: No module named 'wandb.sdk.lib.service.service_client',True,True,True,False,False,False,,True,True,True,True,True,True,
+t001,removed,False,False,False,True,False,False,cannot import warn_unknown_credential from litellm.rust_bridge.callbacks_legacy_python,False,False,False,True,False,False,from litellm.rust_bridge.credentials_legacy_python: ModuleNotFoundError: No module named 'litellm.rust_bridge.credentials_legacy_python',True,True,True,True,True,True,
+t002,removed,False,False,False,True,False,False,cannot import RAY_ACTOR_MODULE_DENYLIST from ddtrace.contrib.internal.ray.constants,False,False,False,True,False,False,from ddtrace.contrib.internal.ray.core.actor: ModuleNotFoundError: No module named 'ray',False,False,False,True,False,False,from ddtrace.contrib.internal.ray.core.actor: ModuleNotFoundError: No module named 'ray'
+t003,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t004,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t005,removed,False,False,False,True,False,False,from xgboost.testing.utils: ModuleNotFoundError: No module named 'pytest',False,False,False,True,False,False,from xgboost.testing.utils: ModuleNotFoundError: No module named 'pytest',False,False,False,True,False,False,from xgboost.testing.utils: ModuleNotFoundError: No module named 'pytest'
+t006,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t007,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t008,removed,True,True,True,False,False,False,,True,True,True,False,False,False,,True,True,True,False,False,False,
+t009,removed,False,False,False,False,False,False,,False,False,False,False,False,False,,True,True,True,False,False,False,
+t010,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,False,False,False,
+t011,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t012,removed,False,False,False,True,False,False,from aws_lambda_powertools.event_handler.openapi.compat: ModuleNotFoundError: No module named 'jmespath',False,False,False,True,False,False,from aws_lambda_powertools.event_handler.openapi.pydantic_loader: ModuleNotFoundError: No module named 'jmespath',False,False,False,True,False,False,from aws_lambda_powertools.event_handler.openapi.pydantic_loader: ModuleNotFoundError: No module named 'jmespath'
+t013,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t014,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t015,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t016,removed,True,True,True,True,True,True,,True,True,True,False,False,False,,True,True,True,False,False,False,
+t017,removed,True,True,True,True,True,True,,True,True,True,False,False,False,,True,True,True,False,False,False,
+t018,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t020,removed,False,False,False,True,False,False,from triton.compiler.backends.cuda: ModuleNotFoundError: No module named 'setuptools',False,False,False,False,False,False,,False,False,False,True,False,False,from triton.compiler.backends.cuda: ModuleNotFoundError: No module named 'setuptools'
+t021,removed,False,False,False,False,False,False,cannot import stop from strands.vended_tools,False,False,False,True,False,False,from strands.experimental.vended_tools: ModuleNotFoundError: No module named 'strands.experimental.vended_tools',True,True,True,True,True,True,
+t022,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t023,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t024,removed,False,False,False,True,False,False,"from pandas.core.internals: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,False,False,True,False,False,"from pandas.core.internals: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,False,False,True,False,False,"from pandas.core.internals: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject"
+t025,removed,True,True,True,False,False,False,,True,True,True,False,False,False,,True,True,True,False,False,False,
+t026,removed,False,False,False,True,False,False,cannot import Vector from fakeredis.model,False,False,False,True,False,False,cannot import Vector from fakeredis.model,False,False,False,True,False,False,cannot import VectorSet from fakeredis.model
+t027,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t028,removed,False,False,False,True,False,False,cannot import is_url from transformers.image_utils,False,False,False,True,False,False,cannot import is_url from transformers.image_utils,True,True,True,True,True,True,
+t029,removed,False,False,False,True,False,False,DirectMemmoveBuffer.write: no attribute 'write',True,True,True,False,False,False,,True,True,True,False,False,False,
+t030,removed,True,True,True,True,True,True,,False,False,False,True,False,False,from zmq.backend.cffi.devices: ModuleNotFoundError: No module named 'cffi',True,True,True,True,True,True,
+t031,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t032,removed,False,False,False,True,False,False,TexinfoBuilder.document_data: no attribute 'document_data',True,True,True,False,False,False,,True,True,True,False,False,False,
+t033,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t034,removed,False,False,False,True,False,False,cannot import BetaManagedAgentsSessionAgent from anthropic.types.beta.sessions,False,False,False,True,False,False,cannot import BetaManagedAgentsSessionThreadAgent from anthropic.types.beta.sessions.threads,True,True,True,True,True,True,
+t035,removed,False,False,False,False,False,False,,False,False,False,False,False,False,,False,False,False,True,False,False,cannot import PY2 from gevent.thread
+t036,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t037,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t038,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,False,False,False,
+t039,removed,True,True,True,True,True,True,,False,False,False,True,False,False,cannot import insert_re from clickhouse_connect.driver.binding,True,True,True,True,True,True,
+t040,removed,True,True,True,True,True,True,,False,False,False,False,False,False,,True,True,True,False,False,False,
+t041,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t042,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t043,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t044,removed,False,False,False,True,False,False,ApiClient.rest_client: no attribute 'rest_client',True,True,True,True,True,True,,True,True,True,False,False,False,
+t045,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t046,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t047,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,False,False,False,True,False,False,from fitz.mupdf: ModuleNotFoundError: No module named 'fitz.mupdf'
+t049,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t050,removed,False,False,False,False,False,False,,False,False,False,True,False,False,cannot import TRANSPARENT from weasyprint.css.computed_values,True,True,True,True,True,True,
+t051,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,False,False,False,True,False,False,from mlflow: ModuleNotFoundError: No module named 'pkg_resources'
+t052,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t054,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t055,removed,False,False,False,True,False,False,from dbt.env_vars: ImportError: cannot import name 'KNOWN_ENGINE_ENV_VARS' from partially initialized module 'dbt.env_vars' (most likely due to a circular import) (/tmp/rv_f2koe54p/lib/python3.12/site-packages/dbt/env_vars.py),False,False,False,False,False,False,from dbt.env_vars: ImportError: cannot import name 'KNOWN_ENGINE_ENV_VARS' from partially initialized module 'dbt.env_vars' (most likely due to a circular import) (/tmp/rv_f2koe54p/lib/python3.12/site-packages/dbt/env_vars.py),True,True,True,True,True,True,
+t056,removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t057,removed,False,False,False,True,False,False,RecordingPointPen.moveTo: no attribute 'moveTo',True,True,True,False,False,False,,True,True,True,False,False,False,
+t058,removed,False,False,False,True,False,False,from mypy.typeshed.stdlib._io: ModuleNotFoundError: No module named 'mypy.typeshed.stdlib._io',False,False,False,True,False,False,from mypy.typeshed.stdlib._io: ModuleNotFoundError: No module named 'mypy.typeshed.stdlib._io',False,False,False,True,False,False,from mypy.typeshed.stdlib._io: ModuleNotFoundError: No module named 'mypy.typeshed.stdlib._io'
+t059,removed,False,False,False,True,False,False,cannot import parse_style_attributes from fpdf.svg,True,True,True,False,False,False,,True,True,True,True,True,True,
+t060,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t061,param_renamed,False,False,False,True,False,False,cannot import get_first_json_object from litellm.proxy.openai_files_endpoints.common_utils,False,False,False,True,False,False,from litellm.proxy.openai_files_endpoints.files_endpoints: ModuleNotFoundError: No module named 'fastapi',False,False,False,True,False,False,from litellm.proxy.openai_files_endpoints.files_endpoints: ModuleNotFoundError: No module named 'fastapi'
+t063,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t064,param_renamed,False,False,False,True,False,False,np_frombuffer(...): missing a required argument: 'typingctx',True,True,True,True,True,True,,True,True,True,True,True,True,
+t066,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t067,param_renamed,True,True,True,True,True,True,,False,False,False,True,False,False,StreamGroup(...): missing a required argument: 'last_delivered_key',True,True,True,True,True,True,
+t068,param_renamed,False,False,False,True,False,False,from aws_lambda_powertools.event_handler.openapi.swagger_ui.html: ModuleNotFoundError: No module named 'jmespath',False,False,False,True,False,False,from aws_lambda_powertools.event_handler.openapi.swagger_ui.html: ModuleNotFoundError: No module named 'jmespath',False,False,False,True,False,False,from aws_lambda_powertools.event_handler.openapi.swagger_ui.html: ModuleNotFoundError: No module named 'jmespath'
+t069,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t070,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t071,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t072,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t073,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t074,param_renamed,False,False,False,True,False,False,wait_for_download_with_progress(...): missing a required argument: 'service_api',False,False,False,True,False,False,wait_for_download_with_progress(...): missing a required argument: 'service_api',True,True,True,True,True,True,
+t075,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t076,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t077,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t078,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t079,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t080,param_renamed,False,False,False,True,False,False,from s3transfer.crt: ModuleNotFoundError: No module named 'awscrt',False,False,False,True,False,False,from s3transfer.crt: ModuleNotFoundError: No module named 'awscrt',False,False,False,True,False,False,from s3transfer.crt: ModuleNotFoundError: No module named 'awscrt'
+t081,param_renamed,False,False,False,True,False,False,from engineio.async_drivers.gevent: ModuleNotFoundError: No module named 'gevent',False,False,False,True,False,False,from engineio.async_drivers.gevent: ModuleNotFoundError: No module named 'gevent',False,False,False,True,False,False,from engineio.async_drivers.gevent: ModuleNotFoundError: No module named 'gevent'
+t082,param_renamed,False,False,False,True,False,False,generate_quality_report(...): missing a required argument: 'diff_tool',True,True,True,True,True,True,,True,True,True,True,True,True,
+t083,param_renamed,False,False,False,True,False,False,TransitGatewayPeeringAttachment(...): missing a required argument: 'transit_gateway',True,True,True,True,True,True,,True,True,True,True,True,True,
+t084,param_renamed,True,True,False,True,True,False,ThriftCloudFetchQueue(...): missing a required argument: 'session_id_hex',True,True,True,True,True,True,,True,True,True,False,False,False,
+t085,param_renamed,False,False,False,True,False,False,from key_value.aio.wrappers.statistics: ImportError: cannot import name 'prepare_ttls' from 'key_value.shared.utils.time_to_live' (/tmp/rv_bs2mh7hd/lib/python3.12/site-packages/key_value/shared/utils/time_to_live.py),False,False,False,True,False,False,from key_value.aio.wrappers.statistics: ImportError: cannot import name 'prepare_ttls' from 'key_value.shared.utils.time_to_live' (/tmp/rv_bs2mh7hd/lib/python3.12/site-packages/key_value/shared/utils/time_to_live.py),False,False,False,True,False,False,from key_value.aio.wrappers.statistics: ImportError: cannot import name 'prepare_ttls' from 'key_value.shared.utils.time_to_live' (/tmp/rv_bs2mh7hd/lib/python3.12/site-packages/key_value/shared/utils/time_to_live.py)
+t086,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t087,param_renamed,False,False,False,True,False,False,from mlflow.dspy.callback: ModuleNotFoundError: No module named 'numpy',False,False,False,True,False,False,from mlflow.dspy.callback: ModuleNotFoundError: No module named 'numpy',False,False,False,True,False,False,from mlflow.dspy.callback: ModuleNotFoundError: No module named 'numpy'
+t088,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t089,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t090,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t091,param_renamed,False,False,False,True,False,False,from onnxruntime.transformers.models.llama.llama_inputs: ImportError: ,False,False,False,True,False,False,from onnxruntime.transformers.models.llama.llama_inputs: ImportError: ,False,False,False,True,False,False,from onnxruntime.transformers.models.llama.llama_inputs: ImportError: 
+t092,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t093,param_renamed,False,False,False,True,False,False,build_formatted_time(...): got an unexpected keyword argument 'dialect',True,True,True,True,True,True,,True,True,True,True,True,True,
+t094,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t095,param_renamed,True,True,True,False,False,False,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t097,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t098,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t099,param_renamed,False,False,False,True,False,False,"from skimage.measure: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,False,False,True,False,False,"from skimage.measure: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,False,False,True,False,False,"from skimage.measure: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject"
+t100,param_renamed,False,False,False,True,False,False,array_out(...): missing a required argument: 'val',True,True,True,True,True,True,,True,True,True,True,True,True,
+t101,param_renamed,False,False,False,False,False,False,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t102,param_renamed,False,False,False,True,False,False,lock(...): missing a required argument: 'file',True,True,True,True,True,True,,True,True,True,True,True,True,
+t103,param_renamed,False,False,False,True,False,False,from mlflow.store.tracking.gateway.config_resolver: ModuleNotFoundError: No module named 'sqlalchemy',False,False,False,True,False,False,from mlflow.store.tracking.gateway.config_resolver: ModuleNotFoundError: No module named 'sqlalchemy',False,False,False,True,False,False,from mlflow.store.tracking.gateway.config_resolver: ModuleNotFoundError: No module named 'sqlalchemy'
+t104,param_renamed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t105,param_removed,False,False,False,True,False,False,from huggingface_hub.cli.skills: ModuleNotFoundError: No module named 'click',False,False,False,True,False,False,from huggingface_hub.cli.skills: ModuleNotFoundError: No module named 'click',False,False,False,True,False,False,from huggingface_hub.cli.skills: ModuleNotFoundError: No module named 'click'
+t106,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t107,param_removed,True,True,True,True,True,True,,True,True,True,False,False,False,,True,True,True,True,True,True,
+t108,param_removed,False,False,False,True,False,False,FakeUserSettings(...): got an unexpected keyword argument 'tags',True,True,True,False,False,False,,True,True,True,True,True,True,
+t109,param_removed,False,False,False,True,False,False,Connection(...): got an unexpected keyword argument 'idc_client_display_name',True,True,True,False,False,False,,True,True,True,True,True,True,
+t110,param_removed,False,False,False,True,False,False,from time_machine.cli: ModuleNotFoundError: No module named 'tokenize_rt',False,False,False,True,False,False,from time_machine.cli: ModuleNotFoundError: No module named 'tokenize_rt',False,False,False,True,False,False,from time_machine.cli: ModuleNotFoundError: No module named 'tokenize_rt'
+t111,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t112,param_removed,False,False,False,True,False,False,InterfaceSock(...): got an unexpected keyword argument 'mailbox',True,True,True,True,True,True,,True,True,True,True,True,True,
+t113,param_removed,False,False,False,False,False,False,from datasets.load: AttributeError: module 'pyarrow' has no attribute 'PyExtensionType',False,False,False,True,False,False,from datasets.load: AttributeError: module 'pyarrow' has no attribute 'PyExtensionType',False,False,False,True,False,False,from datasets.load: AttributeError: module 'pyarrow' has no attribute 'PyExtensionType'
+t114,param_removed,False,False,False,True,False,False,read_csv_batched(...): got an unexpected keyword argument 'missing_is_empty_string',False,False,False,True,False,False,scan_csv(...): got an unexpected keyword argument 'missing_utf8_is_empty_string',True,True,True,True,True,True,
+t115,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t116,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t117,param_removed,False,False,False,True,False,False,AvroFileHeader(...): got an unexpected keyword argument 'magic',False,False,False,True,False,False,AvroFileHeader(...): got an unexpected keyword argument 'magic',True,True,True,True,True,True,
+t118,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t119,param_removed,True,True,True,True,True,True,,True,True,True,False,False,False,,True,True,True,False,False,False,
+t120,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t122,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,False,False,False,
+t123,param_removed,False,False,False,True,False,False,from onnxruntime.transformers.models.t5.convert_to_onnx: ModuleNotFoundError: No module named 'torch',False,False,False,True,False,False,from onnxruntime.transformers.models.t5.convert_to_onnx: ModuleNotFoundError: No module named 'torch',False,False,False,True,False,False,from onnxruntime.transformers.models.t5.convert_to_onnx: ModuleNotFoundError: No module named 'torch'
+t124,param_removed,False,False,False,False,False,False,from sentry_sdk.integrations.langchain: DidNotEnable: langchain not installed,False,False,False,True,False,False,from sentry_sdk.integrations.langchain: DidNotEnable: langchain not installed,False,False,False,True,False,False,from sentry_sdk.integrations.langchain: DidNotEnable: langchain not installed
+t125,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,False,False,False,
+t126,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,False,False,False,
+t127,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t128,param_removed,False,False,False,True,False,False,RedispyBridge(...): got an unexpected keyword argument 'key_prefix',False,False,False,True,False,False,RedispyBridge(...): got an unexpected keyword argument 'key_prefix',True,True,True,True,True,True,
+t129,param_removed,False,False,False,True,False,False,push_attr_list(...): got an unexpected keyword argument 'loc',True,True,True,True,True,True,,True,True,True,True,True,True,
+t130,param_removed,True,True,True,True,True,True,,True,True,False,True,True,False,MySQLCachingSHA2PasswordAuthPlugin(...): missing a required argument: 'username',True,True,True,True,True,True,
+t131,param_removed,False,False,False,True,False,False,"from skimage.segmentation: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,False,False,True,False,False,"from skimage.segmentation: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject",False,False,False,True,False,False,"from skimage.segmentation: ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject"
+t132,param_removed,False,False,False,True,False,False,from ddtrace.contrib.internal.langgraph.patch: ModuleNotFoundError: No module named 'langgraph',False,False,False,True,False,False,from ddtrace.contrib.internal.langgraph.patch: ModuleNotFoundError: No module named 'langgraph',False,False,False,True,False,False,from ddtrace.contrib.internal.langgraph.patch: ModuleNotFoundError: No module named 'langgraph'
+t133,param_removed,False,False,False,True,False,False,cannot import merge_source_freshness from dbt.parser.sources,True,True,True,True,True,True,,True,True,True,True,True,True,
+t134,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t135,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t136,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t137,param_removed,False,False,False,True,False,False,"from awswrangler.catalog: ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4",False,False,False,False,False,False,"from awswrangler.catalog: ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4",False,False,False,True,False,False,"from awswrangler.catalog: ImportError: pyarrow requires NumPy 2.0 or newer, found 1.26.4"
+t138,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t139,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t140,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t141,param_removed,True,True,True,True,True,True,,True,True,True,False,False,False,,True,True,True,True,True,True,
+t142,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t143,param_removed,False,False,False,True,False,False,AsyncRPCFilterRequestBuilder(...): missing a required argument: 'request',False,False,False,True,False,False,AsyncRPCFilterRequestBuilder(...): missing a required argument: 'request',True,True,True,True,True,True,
+t144,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t145,param_removed,True,True,True,True,True,True,,True,True,True,True,True,True,,True,True,True,True,True,True,
+t146,param_removed,False,False,False,True,False,False,FormParser(...): got an unexpected keyword argument 'file_class',False,False,False,True,False,False,FormParser(...): got an unexpected keyword argument 'file_class',True,True,True,True,True,True,
+t147,param_removed,False,False,False,True,False,False,from transformers.generation.continuous_batching: ModuleNotFoundError: No module named 'torch',False,False,False,True,False,False,from transformers.generation.continuous_batching: ModuleNotFoundError: No module named 'torch',False,False,False,True,False,False,from transformers.generation.continuous_batching: ModuleNotFoundError: No module named 'torch'
+t148,param_removed,False,False,False,True,False,False,HealthyMajorityPolicy(...): got an unexpected keyword argument 'probes',True,True,True,True,True,True,,True,True,True,True,True,True,
+t149,param_removed,False,False,False,True,False,False,recurse_event_loop(...): missing a required argument: 'agent',True,True,True,True,True,True,,True,True,True,True,True,True,

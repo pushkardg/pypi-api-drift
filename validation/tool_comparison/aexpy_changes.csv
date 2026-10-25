@@ -1,0 +1,474 @@
+id,project,from_version,to_version,path,change_type,param,tool_label,breaking,raw
+1,beautifulsoup4,4.14.3,4.15.0,bs4.formatter.Formatter._populate_class_variables,removed,,RemoveAlias|Low,potential,Remove alias (bs4.formatter.Formatter): _populate_class_variables => bs4.dammit.EntitySubstitution._populate_class_variables
+1,beautifulsoup4,4.14.3,4.15.0,bs4.dammit.EntitySubstitution.CHARACTER_TO_HTML_ENTITY_WITH_AMPERSAND_RE,removed,,RemoveExternalAlias|Low,potential,Remove alias (bs4.dammit.EntitySubstitution): CHARACTER_TO_HTML_ENTITY_WITH_AMPERSAND_RE => re.<instance (<class 're.Pattern'>)>
+1,beautifulsoup4,4.14.3,4.15.0,bs4.dammit.EntitySubstitution.CHARACTER_TO_HTML_ENTITY_RE,removed,,RemoveExternalAlias|Low,potential,Remove alias (bs4.dammit.EntitySubstitution): CHARACTER_TO_HTML_ENTITY_RE => re.<instance (<class 're.Pattern'>)>
+1,beautifulsoup4,4.14.3,4.15.0,bs4.formatter.HTMLFormatter._populate_class_variables,removed,,RemoveAlias|Low,potential,Remove alias (bs4.formatter.HTMLFormatter): _populate_class_variables => bs4.dammit.EntitySubstitution._populate_class_variables
+1,beautifulsoup4,4.14.3,4.15.0,bs4.formatter.XMLFormatter._populate_class_variables,removed,,RemoveAlias|Low,potential,Remove alias (bs4.formatter.XMLFormatter): _populate_class_variables => bs4.dammit.EntitySubstitution._populate_class_variables
+1,beautifulsoup4,4.14.3,4.15.0,bs4.dammit.EntitySubstitution._populate_class_variables,removed,,RemoveMethod|Low,potential,Remove method (bs4.dammit.EntitySubstitution): _populate_class_variables
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.PageElement._find_all,param_removed,_stacklevel,RemoveOptionalParameter|Low,potential,Remove PositionalOrKeyword parameter (bs4.element.PageElement._find_all): _stacklevel.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.PageElement.find_all_next,param_removed,_stacklevel,RemoveOptionalParameter|High,yes,Remove PositionalOrKeyword parameter (bs4.element.PageElement.find_all_next): _stacklevel.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.PageElement.find_all_previous,param_removed,_stacklevel,RemoveOptionalParameter|High,yes,Remove PositionalOrKeyword parameter (bs4.element.PageElement.find_all_previous): _stacklevel.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.PageElement.find_next_siblings,param_removed,_stacklevel,RemoveOptionalParameter|High,yes,Remove PositionalOrKeyword parameter (bs4.element.PageElement.find_next_siblings): _stacklevel.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.PageElement.find_parents,param_removed,_stacklevel,RemoveOptionalParameter|High,yes,Remove PositionalOrKeyword parameter (bs4.element.PageElement.find_parents): _stacklevel.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.PageElement.find_previous_siblings,param_removed,_stacklevel,RemoveOptionalParameter|High,yes,Remove PositionalOrKeyword parameter (bs4.element.PageElement.find_previous_siblings): _stacklevel.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.Tag.__call__,param_removed,_stacklevel,RemoveOptionalParameter|High,yes,Remove PositionalOrKeyword parameter (bs4.element.Tag.__call__): _stacklevel.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.Tag.append,other,,ChangeReturnType|Medium,potential,Change return type (bs4.element.Tag.append): bs4.element.PageElement => [bs4.element.PageElement | builtins.list<bs4.element.PageElement>]
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.Tag.find_all,param_removed,_stacklevel,RemoveOptionalParameter|High,yes,Remove PositionalOrKeyword parameter (bs4.element.Tag.find_all): _stacklevel.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.element.PageElement.text,other,,ChangeAttributeType|Medium,potential,Change attribute type (bs4.element.PageElement.text): builtins.property => builtins.str
+1,beautifulsoup4,4.14.3,4.15.0,bs4.dammit.EntitySubstitution.CHARACTER_TO_HTML_ENTITY,removed,,RemoveAttribute|High,yes,Remove attribute (bs4.dammit.EntitySubstitution): CHARACTER_TO_HTML_ENTITY.
+1,beautifulsoup4,4.14.3,4.15.0,bs4.dammit.EntitySubstitution.HTML_ENTITY_TO_CHARACTER,removed,,RemoveAttribute|High,yes,Remove attribute (bs4.dammit.EntitySubstitution): HTML_ENTITY_TO_CHARACTER.
+2,fakeredis,2.8.0,2.9.0,fakeredis._command_args_parsing._parse_params,removed,,RemoveFunction|Low,potential,Remove function (fakeredis._command_args_parsing): _parse_params.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrange,required_param_added,withscores,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrange): withscores.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrange,required_param_added,byscore,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrange): byscore.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrange,vararg_removed,args,RemoveVarPositional|Low,potential,Remove VarPositional parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrange): args.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebylex,required_param_added,offset,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebylex): offset.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebylex,required_param_added,count,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebylex): count.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebylex,vararg_removed,args,RemoveVarPositional|Low,potential,Remove VarPositional parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebylex): args.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebyscore,required_param_added,withscores,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebyscore): withscores.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebyscore,required_param_added,offset,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebyscore): offset.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebyscore,required_param_added,count,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebyscore): count.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebyscore,vararg_removed,args,RemoveVarPositional|Low,potential,Remove VarPositional parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin._zrangebyscore): args.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin.zrevrangebylex,positional_reordered,_max,MoveParameter|High,yes,Move parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin.zrevrangebylex): _max: 3 -> 4.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin.zrevrangebylex,positional_reordered,_min,MoveParameter|High,yes,Move parameter (fakeredis.commands_mixins.sortedset_mixin.SortedSetCommandsMixin.zrevrangebylex): _min: 4 -> 3.
+2,fakeredis,2.8.0,2.9.0,fakeredis.commands_mixins.string_mixin.StringCommandsMixin.substr,removed,,RemoveMethod|High,yes,Remove method (fakeredis.commands_mixins.string_mixin.StringCommandsMixin): substr
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._async.client.QueryRulesetClient,removed,,RemoveAlias|Low,potential,Remove alias (elasticsearch._async.client): QueryRulesetClient => elasticsearch._async.client.query_ruleset.QueryRulesetClient
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._async.client.query_ruleset,removed,,RemoveModule|Low,potential,Remove module (elasticsearch._async.client): query_ruleset.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._sync.client.QueryRulesetClient,removed,,RemoveAlias|Low,potential,Remove alias (elasticsearch._sync.client): QueryRulesetClient => elasticsearch._sync.client.query_ruleset.QueryRulesetClient
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._sync.client.query_ruleset,removed,,RemoveModule|Low,potential,Remove module (elasticsearch._sync.client): query_ruleset.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.client.QueryRulesetClient,removed,,RemoveAlias|Low,potential,Remove alias (elasticsearch.client): QueryRulesetClient => elasticsearch._sync.client.query_ruleset.QueryRulesetClient
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.AsyncElasticsearch.msearch,other,include_named_queries_score,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.AsyncElasticsearch.msearch): include_named_queries_score.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.AsyncElasticsearch.search,other,include_named_queries_score,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.AsyncElasticsearch.search): include_named_queries_score.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.Elasticsearch.msearch,other,include_named_queries_score,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.Elasticsearch.msearch): include_named_queries_score.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.Elasticsearch.search,other,include_named_queries_score,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.Elasticsearch.search): include_named_queries_score.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._async.client.inference.InferenceClient.delete_model,removed,,RemoveMethod|Low,potential,Remove method (elasticsearch._async.client.inference.InferenceClient): delete_model
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._async.client.inference.InferenceClient.get_model,removed,,RemoveMethod|Low,potential,Remove method (elasticsearch._async.client.inference.InferenceClient): get_model
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._async.client.inference.InferenceClient.put_model,removed,,RemoveMethod|Low,potential,Remove method (elasticsearch._async.client.inference.InferenceClient): put_model
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._async.client.security.SecurityClient.put_role,other,description,AddOptionalParameter|Low,potential,Add Keyword parameter (elasticsearch._async.client.security.SecurityClient.put_role): description.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._sync.client.inference.InferenceClient.delete_model,removed,,RemoveMethod|High,yes,Remove method (elasticsearch._sync.client.inference.InferenceClient): delete_model
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._sync.client.inference.InferenceClient.get_model,removed,,RemoveMethod|High,yes,Remove method (elasticsearch._sync.client.inference.InferenceClient): get_model
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._sync.client.inference.InferenceClient.put_model,removed,,RemoveMethod|High,yes,Remove method (elasticsearch._sync.client.inference.InferenceClient): put_model
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.client.SecurityClient.put_role,other,description,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.client.SecurityClient.put_role): description.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._async.embedding_service.AsyncElasticsearchEmbeddings.__init__,other,user_agent,ChangeParameterDefault|Medium,potential,Change parameter default (elasticsearch.helpers.vectorstore._async.embedding_service.AsyncElasticsearchEmbeddings.__init__): user_agent: str('elasticsearch-py-es/8.14.0') -> str('elasticsearch-py-es/8.15.0').
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.__init__,other,custom_index_settings,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.__init__): custom_index_settings.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.__init__,other,user_agent,ChangeParameterDefault|Medium,potential,Change parameter default (elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.__init__): user_agent: str('elasticsearch-py-vs/8.14.0') -> str('elasticsearch-py-vs/8.15.0').
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.max_marginal_relevance_search,other,query_embedding,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.max_marginal_relevance_search): query_embedding.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.max_marginal_relevance_search,other,embedding_service,AddParameterDefault|Medium,potential,Switch parameter optional (elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.max_marginal_relevance_search): embedding_service: False -> True.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.max_marginal_relevance_search,other,query,AddParameterDefault|Medium,potential,Switch parameter optional (elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.max_marginal_relevance_search): query: False -> True.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.search,other,query,AddParameterDefault|Medium,potential,Switch parameter optional (elasticsearch.helpers.vectorstore._async.vectorstore.AsyncVectorStore.search): query: False -> True.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._sync.embedding_service.ElasticsearchEmbeddings.__init__,other,user_agent,ChangeParameterDefault|Medium,potential,Change parameter default (elasticsearch.helpers.vectorstore._sync.embedding_service.ElasticsearchEmbeddings.__init__): user_agent: str('elasticsearch-py-es/8.14.0') -> str('elasticsearch-py-es/8.15.0').
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.__init__,other,custom_index_settings,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.__init__): custom_index_settings.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.__init__,other,user_agent,ChangeParameterDefault|Medium,potential,Change parameter default (elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.__init__): user_agent: str('elasticsearch-py-vs/8.14.0') -> str('elasticsearch-py-vs/8.15.0').
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.max_marginal_relevance_search,other,query_embedding,AddOptionalParameter|Medium,potential,Add Keyword parameter (elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.max_marginal_relevance_search): query_embedding.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.max_marginal_relevance_search,other,embedding_service,AddParameterDefault|Medium,potential,Switch parameter optional (elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.max_marginal_relevance_search): embedding_service: False -> True.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.max_marginal_relevance_search,other,query,AddParameterDefault|Medium,potential,Switch parameter optional (elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.max_marginal_relevance_search): query: False -> True.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.search,other,query,AddParameterDefault|Medium,potential,Switch parameter optional (elasticsearch.helpers.vectorstore._sync.vectorstore.VectorStore.search): query: False -> True.
+3,elasticsearch,8.14.0,8.15.0,elasticsearch._otel.TYPE_CHECKING,removed,,RemoveAttribute|Low,potential,Remove attribute (elasticsearch._otel): TYPE_CHECKING.
+4,build,1.1.1,1.2.1,build._exceptions.textwrap,removed,,RemoveExternalAlias|Low,potential,Remove alias (build._exceptions): textwrap => textwrap
+4,build,1.1.1,1.2.1,build.env.Protocol,removed,,RemoveExternalAlias|Low,potential,Remove alias (build.env): Protocol => typing.Protocol
+4,build,1.1.1,1.2.1,build.env._logger,removed,,RemoveExternalAlias|Low,potential,Remove alias (build.env): _logger => logging.<instance (<class 'logging.Logger'>)>
+4,build,1.1.1,1.2.1,build.env.logging,removed,,RemoveExternalAlias|Low,potential,Remove alias (build.env): logging => logging
+4,build,1.1.1,1.2.1,build.env.warnings,removed,,RemoveExternalAlias|Low,potential,Remove alias (build.env): warnings => warnings
+4,build,1.1.1,1.2.1,build.util.RunnerType,removed,,RemoveExternalAlias|Low,potential,Remove alias (build.util): RunnerType => typing.Callable
+4,build,1.1.1,1.2.1,build.util.PathType,removed,,RemoveExternalAlias|Low,potential,Remove alias (build.util): PathType => typing.Union
+4,build,1.1.1,1.2.1,build.ProjectBuilder.__init__,other,self,ChangeParameterType|Medium,potential,Change parameter type (build.ProjectBuilder.__init__): self: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.ProjectBuilder._call_backend,other,self,ChangeParameterType|Low,potential,Change parameter type (build.ProjectBuilder._call_backend): self: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.ProjectBuilder._handle_backend,other,self,ChangeParameterType|Low,potential,Change parameter type (build.ProjectBuilder._handle_backend): self: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.ProjectBuilder.build,other,self,ChangeParameterType|Medium,potential,Change parameter type (build.ProjectBuilder.build): self: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.ProjectBuilder.check_dependencies,other,self,ChangeParameterType|Medium,potential,Change parameter type (build.ProjectBuilder.check_dependencies): self: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.ProjectBuilder.get_requires_for_build,other,self,ChangeParameterType|Medium,potential,Change parameter type (build.ProjectBuilder.get_requires_for_build): self: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.ProjectBuilder.metadata_path,other,self,ChangeParameterType|Medium,potential,Change parameter type (build.ProjectBuilder.metadata_path): self: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.ProjectBuilder.prepare,other,self,ChangeParameterType|Medium,potential,Change parameter type (build.ProjectBuilder.prepare): self: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.env.DefaultIsolatedEnv._pip_args,removed,,RemoveMethod|Low,potential,Remove method (build.env.DefaultIsolatedEnv): _pip_args
+4,build,1.1.1,1.2.1,build.env.DefaultIsolatedEnv.log,removed,,RemoveFunction|High,yes,Remove function (build.env.DefaultIsolatedEnv): log.
+4,build,1.1.1,1.2.1,build.env._create_isolated_env_venv,removed,,RemoveFunction|Low,potential,Remove function (build.env): _create_isolated_env_venv.
+4,build,1.1.1,1.2.1,build.env._create_isolated_env_virtualenv,removed,,RemoveFunction|Low,potential,Remove function (build.env): _create_isolated_env_virtualenv.
+4,build,1.1.1,1.2.1,build.env._has_valid_pip,removed,,RemoveFunction|Low,potential,Remove function (build.env): _has_valid_pip.
+4,build,1.1.1,1.2.1,build.env._minimum_pip_version,removed,,RemoveFunction|Low,potential,Remove function (build.env): _minimum_pip_version.
+4,build,1.1.1,1.2.1,build.env._should_use_virtualenv,removed,,RemoveFunction|Low,potential,Remove function (build.env): _should_use_virtualenv.
+4,build,1.1.1,1.2.1,build.env._subprocess,removed,,RemoveFunction|Low,potential,Remove function (build.env): _subprocess.
+4,build,1.1.1,1.2.1,build.env._valid_global_pip,removed,,RemoveFunction|Low,potential,Remove function (build.env): _valid_global_pip.
+4,build,1.1.1,1.2.1,build.util._project_wheel_metadata,other,,ChangeReturnType|Low,potential,Change return type (build.util._project_wheel_metadata): importlib.metadata._meta.PackageMetadata => any
+4,build,1.1.1,1.2.1,build.util._project_wheel_metadata,other,builder,ChangeParameterType|Low,potential,Change parameter type (build.util._project_wheel_metadata): builder: build.ProjectBuilder => build._builder.ProjectBuilder
+4,build,1.1.1,1.2.1,build.util.project_wheel_metadata,other,,ChangeReturnType|Medium,potential,Change return type (build.util.project_wheel_metadata): importlib.metadata._meta.PackageMetadata => any
+4,build,1.1.1,1.2.1,build.env.DefaultIsolatedEnv._python_executable,removed,,RemoveInstanceAttribute|Low,potential,Remove instance attribute (build.env.DefaultIsolatedEnv): _python_executable
+4,build,1.1.1,1.2.1,build.env.DefaultIsolatedEnv._scripts_dir,removed,,RemoveInstanceAttribute|Low,potential,Remove instance attribute (build.env.DefaultIsolatedEnv): _scripts_dir
+5,gspread,5.10.0,5.11.0,gspread.CellNotFound,removed,,RemoveAlias|High,yes,Remove alias (gspread): CellNotFound => gspread.exceptions.CellNotFound
+5,gspread,5.10.0,5.11.0,gspread.exceptions.CellNotFound,removed,,RemoveClass|High,yes,Remove class (gspread.exceptions): CellNotFound.
+5,gspread,5.10.0,5.11.0,gspread.client.Client._get_file_drive_metadata,removed,,RemoveMethod|Low,potential,Remove method (gspread.client.Client): _get_file_drive_metadata
+6,pytest-mock,3.16.1,3.17.0,pytest_mock.plugin._unpack_expected_call,removed,,RemoveFunction|Low,potential,Remove function (pytest_mock.plugin): _unpack_expected_call.
+6,pytest-mock,3.16.1,3.17.0,pytest_mock.plugin.assert_has_calls_wrapper,removed,,RemoveFunction|High,yes,Remove function (pytest_mock.plugin): assert_has_calls_wrapper.
+7,synchronicity,0.6.7,0.7.0,synchronicity.type_stubs.Generic,removed,,RemoveExternalAlias|Low,potential,Remove alias (synchronicity.type_stubs): Generic => typing.Generic
+7,synchronicity,0.6.7,0.7.0,synchronicity.type_stubs.ReprObj,removed,,RemoveClass|High,yes,Remove class (synchronicity.type_stubs): ReprObj.
+7,synchronicity,0.6.7,0.7.0,synchronicity.type_stubs.StubEmitter._get_dual_function_source,other,parent_generic_type_vars,AddOptionalParameter|Low,potential,Add PositionalOrKeyword parameter (synchronicity.type_stubs.StubEmitter._get_dual_function_source): parent_generic_type_vars.
+8,trio,0.22.2,0.23.0,trio._channel.TypeVar,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._channel): TypeVar => typing.TypeVar
+8,trio,0.22.2,0.23.0,trio._core._generated_io_epoll.Instrument,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._generated_io_epoll): Instrument => trio.abc.Instrument
+8,trio,0.22.2,0.23.0,trio._core._generated_io_kqueue.Instrument,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._generated_io_kqueue): Instrument => trio.abc.Instrument
+8,trio,0.22.2,0.23.0,trio._core._generated_io_windows.Instrument,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._generated_io_windows): Instrument => trio.abc.Instrument
+8,trio,0.22.2,0.23.0,trio._core._generated_run.Instrument,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._generated_run): Instrument => trio.abc.Instrument
+8,trio,0.22.2,0.23.0,trio._core._io_epoll.Dict,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._core._io_epoll): Dict => typing.Dict
+8,trio,0.22.2,0.23.0,trio._core._local.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._local): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._core._mock_clock.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._mock_clock): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._core._multierror.print_exception,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._core._multierror): print_exception => traceback.print_exception
+8,trio,0.22.2,0.23.0,trio._core._multierror.warnings,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._core._multierror): warnings => warnings
+8,trio,0.22.2,0.23.0,trio._core._parking_lot.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._parking_lot): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._core._thread_cache.Tuple,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._core._thread_cache): Tuple => typing.Tuple
+8,trio,0.22.2,0.23.0,trio._core._thread_cache.Optional,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._core._thread_cache): Optional => typing.Optional
+8,trio,0.22.2,0.23.0,trio._core._unbounded_queue.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._unbounded_queue): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._dtls.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._dtls): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._highlevel_generic.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._highlevel_generic): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._highlevel_socket.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._highlevel_socket): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._path.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._path): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._ssl.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._ssl): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._sync.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._sync): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._subprocess.Optional,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._subprocess): Optional => typing.Optional
+8,trio,0.22.2,0.23.0,trio._tests.test_scheduler_determinism,removed,,RemoveModule|Low,potential,Remove module (trio._tests): test_scheduler_determinism.
+8,trio,0.22.2,0.23.0,trio._threads.TOKEN_LOCAL,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._threads): TOKEN_LOCAL => _thread.<instance (<class '_thread._local'>)>
+8,trio,0.22.2,0.23.0,trio._threads.Optional,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio._threads): Optional => typing.Optional
+8,trio,0.22.2,0.23.0,trio._unix_pipes.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio._unix_pipes): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.Final,removed,,RemoveAlias|Low,potential,Remove alias (trio.testing._fake_net): Final => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.Optional,removed,,RemoveExternalAlias|Low,potential,Remove alias (trio.testing._fake_net): Optional => typing.Optional
+8,trio,0.22.2,0.23.0,trio.CancelScope.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.CancelScope): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._util.Final,removed,,RemoveClass|High,yes,Remove class (trio._util): Final.
+8,trio,0.22.2,0.23.0,trio._util.NoPublicConstructor,other,,RemoveBaseClass|Low,potential,Remove base class (trio._util.NoPublicConstructor): trio._util.Final
+8,trio,0.22.2,0.23.0,trio.CapacityLimiter.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.CapacityLimiter): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.Condition.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.Condition): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.DTLSEndpoint.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.DTLSEndpoint): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.Event.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.Event): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.Lock.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.Lock): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._path.AsyncAutoWrapperType,other,,RemoveBaseClass|Low,potential,Remove base class (trio._path.AsyncAutoWrapperType): trio._util.Final
+8,trio,0.22.2,0.23.0,trio.SSLListener.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.SSLListener): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.SSLStream.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.SSLStream): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.Semaphore.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.Semaphore): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.SocketListener.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.SocketListener): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.SocketStream.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.SocketStream): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.StapledStream.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.StapledStream): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.StrictFIFOLock.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.StrictFIFOLock): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.testing.MockClock.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.testing.MockClock): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.lowlevel.ParkingLot.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.lowlevel.ParkingLot): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.lowlevel.RunVar.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.lowlevel.RunVar): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.lowlevel.UnboundedQueue.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.lowlevel.UnboundedQueue): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio._core._run.GuestState._value_factory,removed,,RemoveAlias|Low,potential,Remove alias (trio._core._run.GuestState): _value_factory => trio._core._run.GuestState.<lambda>
+8,trio,0.22.2,0.23.0,trio._core._run._RunStatistics,removed,,RemoveClass|Low,potential,Remove class (trio._core._run): _RunStatistics.
+8,trio,0.22.2,0.23.0,trio._core._local._RunVarToken,removed,,RemoveClass|Low,potential,Remove class (trio._core._local): _RunVarToken.
+8,trio,0.22.2,0.23.0,trio._core._parking_lot._ParkingLotStatistics,removed,,RemoveClass|Low,potential,Remove class (trio._core._parking_lot): _ParkingLotStatistics.
+8,trio,0.22.2,0.23.0,trio._core._unbounded_queue._UnboundedQueueStats,removed,,RemoveClass|Low,potential,Remove class (trio._core._unbounded_queue): _UnboundedQueueStats.
+8,trio,0.22.2,0.23.0,trio._sync._CapacityLimiterStatistics,removed,,RemoveClass|Low,potential,Remove class (trio._sync): _CapacityLimiterStatistics.
+8,trio,0.22.2,0.23.0,trio._sync._ConditionStatistics,removed,,RemoveClass|Low,potential,Remove class (trio._sync): _ConditionStatistics.
+8,trio,0.22.2,0.23.0,trio._sync._EventStatistics,removed,,RemoveClass|Low,potential,Remove class (trio._sync): _EventStatistics.
+8,trio,0.22.2,0.23.0,trio._sync._LockStatistics,removed,,RemoveClass|Low,potential,Remove class (trio._sync): _LockStatistics.
+8,trio,0.22.2,0.23.0,trio.lowlevel.FdStream.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.lowlevel.FdStream): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.testing.MemoryReceiveStream.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.testing.MemoryReceiveStream): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.testing.MemorySendStream.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.testing.MemorySendStream): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.testing.Sequencer.__class__,removed,,RemoveAlias|High,yes,Remove alias (trio.testing.Sequencer): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeNet.__class__,removed,,RemoveAlias|Low,potential,Remove alias (trio.testing._fake_net.FakeNet): __class__ => trio._util.Final
+8,trio,0.22.2,0.23.0,trio.DTLSChannel.__exit__,required_param_added,exc_type,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.DTLSChannel.__exit__): exc_type.
+8,trio,0.22.2,0.23.0,trio.DTLSChannel.__exit__,required_param_added,exc_value,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.DTLSChannel.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio.DTLSChannel.__exit__,required_param_added,traceback,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.DTLSChannel.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio.DTLSChannel.__exit__,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.DTLSChannel.__exit__): args.
+8,trio,0.22.2,0.23.0,trio.DTLSEndpoint.__exit__,required_param_added,exc_type,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.DTLSEndpoint.__exit__): exc_type.
+8,trio,0.22.2,0.23.0,trio.DTLSEndpoint.__exit__,required_param_added,exc_value,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.DTLSEndpoint.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio.DTLSEndpoint.__exit__,required_param_added,traceback,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.DTLSEndpoint.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio.DTLSEndpoint.__exit__,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.DTLSEndpoint.__exit__): args.
+8,trio,0.22.2,0.23.0,trio.MemoryReceiveChannel.__exit__,required_param_added,exc_value,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.MemoryReceiveChannel.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio.MemoryReceiveChannel.__exit__,required_param_added,traceback,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.MemoryReceiveChannel.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio.MemoryReceiveChannel.__exit__,param_removed,exc_val,RemoveRequiredParameter|High,yes,Remove PositionalOrKeyword parameter (trio.MemoryReceiveChannel.__exit__): exc_val.
+8,trio,0.22.2,0.23.0,trio.MemoryReceiveChannel.__exit__,param_removed,exc_tb,RemoveRequiredParameter|High,yes,Remove PositionalOrKeyword parameter (trio.MemoryReceiveChannel.__exit__): exc_tb.
+8,trio,0.22.2,0.23.0,trio.MemorySendChannel.__exit__,required_param_added,exc_value,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.MemorySendChannel.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio.MemorySendChannel.__exit__,required_param_added,traceback,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.MemorySendChannel.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio.MemorySendChannel.__exit__,param_removed,exc_val,RemoveRequiredParameter|High,yes,Remove PositionalOrKeyword parameter (trio.MemorySendChannel.__exit__): exc_val.
+8,trio,0.22.2,0.23.0,trio.MemorySendChannel.__exit__,param_removed,exc_tb,RemoveRequiredParameter|High,yes,Remove PositionalOrKeyword parameter (trio.MemorySendChannel.__exit__): exc_tb.
+8,trio,0.22.2,0.23.0,trio.Path.absolute,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.absolute): args.
+8,trio,0.22.2,0.23.0,trio.Path.absolute,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.absolute): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.chmod,required_param_added,mode,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.chmod): mode.
+8,trio,0.22.2,0.23.0,trio.Path.chmod,other,follow_symlinks,AddOptionalParameter|Medium,potential,Add Keyword parameter (trio.Path.chmod): follow_symlinks.
+8,trio,0.22.2,0.23.0,trio.Path.chmod,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.chmod): args.
+8,trio,0.22.2,0.23.0,trio.Path.chmod,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.chmod): kwargs.
+8,trio,0.22.2,0.23.0,trio._path.Path.cwd,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio._path.Path.cwd): args.
+8,trio,0.22.2,0.23.0,trio._path.Path.cwd,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio._path.Path.cwd): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.exists,other,follow_symlinks,AddOptionalParameter|Medium,potential,Add Keyword parameter (trio.Path.exists): follow_symlinks.
+8,trio,0.22.2,0.23.0,trio.Path.exists,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.exists): args.
+8,trio,0.22.2,0.23.0,trio.Path.exists,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.exists): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.expanduser,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.expanduser): args.
+8,trio,0.22.2,0.23.0,trio.Path.expanduser,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.expanduser): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.glob,required_param_added,pattern,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.glob): pattern.
+8,trio,0.22.2,0.23.0,trio.Path.glob,other,case_sensitive,AddOptionalParameter|Medium,potential,Add Keyword parameter (trio.Path.glob): case_sensitive.
+8,trio,0.22.2,0.23.0,trio.Path.glob,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.glob): args.
+8,trio,0.22.2,0.23.0,trio.Path.glob,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.glob): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.group,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.group): args.
+8,trio,0.22.2,0.23.0,trio.Path.group,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.group): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.hardlink_to,required_param_added,target,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.hardlink_to): target.
+8,trio,0.22.2,0.23.0,trio.Path.hardlink_to,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.hardlink_to): args.
+8,trio,0.22.2,0.23.0,trio.Path.hardlink_to,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.hardlink_to): kwargs.
+8,trio,0.22.2,0.23.0,trio._path.Path.home,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio._path.Path.home): args.
+8,trio,0.22.2,0.23.0,trio._path.Path.home,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio._path.Path.home): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_block_device,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_block_device): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_block_device,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_block_device): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_char_device,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_char_device): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_char_device,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_char_device): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_dir,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_dir): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_dir,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_dir): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_fifo,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_fifo): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_fifo,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_fifo): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_file,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_file): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_file,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_file): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_junction,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_junction): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_junction,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_junction): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_mount,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_mount): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_mount,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_mount): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_socket,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_socket): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_socket,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_socket): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.is_symlink,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.is_symlink): args.
+8,trio,0.22.2,0.23.0,trio.Path.is_symlink,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.is_symlink): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.iterdir,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.iterdir): args.
+8,trio,0.22.2,0.23.0,trio.Path.iterdir,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.iterdir): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.lchmod,required_param_added,mode,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.lchmod): mode.
+8,trio,0.22.2,0.23.0,trio.Path.lchmod,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.lchmod): args.
+8,trio,0.22.2,0.23.0,trio.Path.lchmod,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.lchmod): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.lstat,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.lstat): args.
+8,trio,0.22.2,0.23.0,trio.Path.lstat,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.lstat): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.mkdir,other,mode,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.mkdir): mode.
+8,trio,0.22.2,0.23.0,trio.Path.mkdir,other,parents,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.mkdir): parents.
+8,trio,0.22.2,0.23.0,trio.Path.mkdir,other,exist_ok,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.mkdir): exist_ok.
+8,trio,0.22.2,0.23.0,trio.Path.mkdir,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.mkdir): args.
+8,trio,0.22.2,0.23.0,trio.Path.mkdir,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.mkdir): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.owner,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.owner): args.
+8,trio,0.22.2,0.23.0,trio.Path.owner,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.owner): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.read_bytes,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.read_bytes): args.
+8,trio,0.22.2,0.23.0,trio.Path.read_bytes,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.read_bytes): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.read_text,other,encoding,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.read_text): encoding.
+8,trio,0.22.2,0.23.0,trio.Path.read_text,other,errors,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.read_text): errors.
+8,trio,0.22.2,0.23.0,trio.Path.read_text,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.read_text): args.
+8,trio,0.22.2,0.23.0,trio.Path.read_text,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.read_text): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.readlink,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.readlink): args.
+8,trio,0.22.2,0.23.0,trio.Path.readlink,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.readlink): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.rename,required_param_added,target,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.rename): target.
+8,trio,0.22.2,0.23.0,trio.Path.rename,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.rename): args.
+8,trio,0.22.2,0.23.0,trio.Path.rename,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.rename): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.replace,required_param_added,target,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.replace): target.
+8,trio,0.22.2,0.23.0,trio.Path.replace,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.replace): args.
+8,trio,0.22.2,0.23.0,trio.Path.replace,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.replace): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.resolve,other,strict,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.resolve): strict.
+8,trio,0.22.2,0.23.0,trio.Path.resolve,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.resolve): args.
+8,trio,0.22.2,0.23.0,trio.Path.resolve,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.resolve): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.rglob,required_param_added,pattern,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.rglob): pattern.
+8,trio,0.22.2,0.23.0,trio.Path.rglob,other,case_sensitive,AddOptionalParameter|Medium,potential,Add Keyword parameter (trio.Path.rglob): case_sensitive.
+8,trio,0.22.2,0.23.0,trio.Path.rglob,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.rglob): args.
+8,trio,0.22.2,0.23.0,trio.Path.rglob,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.rglob): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.rmdir,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.rmdir): args.
+8,trio,0.22.2,0.23.0,trio.Path.rmdir,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.rmdir): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.samefile,required_param_added,other_path,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.samefile): other_path.
+8,trio,0.22.2,0.23.0,trio.Path.samefile,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.samefile): args.
+8,trio,0.22.2,0.23.0,trio.Path.samefile,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.samefile): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.stat,other,follow_symlinks,AddOptionalParameter|Medium,potential,Add Keyword parameter (trio.Path.stat): follow_symlinks.
+8,trio,0.22.2,0.23.0,trio.Path.stat,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.stat): args.
+8,trio,0.22.2,0.23.0,trio.Path.stat,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.stat): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.symlink_to,required_param_added,target,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.symlink_to): target.
+8,trio,0.22.2,0.23.0,trio.Path.symlink_to,other,target_is_directory,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.symlink_to): target_is_directory.
+8,trio,0.22.2,0.23.0,trio.Path.symlink_to,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.symlink_to): args.
+8,trio,0.22.2,0.23.0,trio.Path.symlink_to,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.symlink_to): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.touch,other,mode,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.touch): mode.
+8,trio,0.22.2,0.23.0,trio.Path.touch,other,exist_ok,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.touch): exist_ok.
+8,trio,0.22.2,0.23.0,trio.Path.touch,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.touch): args.
+8,trio,0.22.2,0.23.0,trio.Path.touch,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.touch): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.unlink,other,missing_ok,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.unlink): missing_ok.
+8,trio,0.22.2,0.23.0,trio.Path.unlink,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.unlink): args.
+8,trio,0.22.2,0.23.0,trio.Path.unlink,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.unlink): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.walk,other,top_down,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.walk): top_down.
+8,trio,0.22.2,0.23.0,trio.Path.walk,other,on_error,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.walk): on_error.
+8,trio,0.22.2,0.23.0,trio.Path.walk,other,follow_symlinks,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.walk): follow_symlinks.
+8,trio,0.22.2,0.23.0,trio.Path.walk,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.walk): args.
+8,trio,0.22.2,0.23.0,trio.Path.walk,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.walk): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.write_bytes,required_param_added,data,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.write_bytes): data.
+8,trio,0.22.2,0.23.0,trio.Path.write_bytes,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.write_bytes): args.
+8,trio,0.22.2,0.23.0,trio.Path.write_bytes,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.write_bytes): kwargs.
+8,trio,0.22.2,0.23.0,trio.Path.write_text,required_param_added,data,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.Path.write_text): data.
+8,trio,0.22.2,0.23.0,trio.Path.write_text,other,encoding,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.write_text): encoding.
+8,trio,0.22.2,0.23.0,trio.Path.write_text,other,errors,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.write_text): errors.
+8,trio,0.22.2,0.23.0,trio.Path.write_text,other,newline,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.Path.write_text): newline.
+8,trio,0.22.2,0.23.0,trio.Path.write_text,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.Path.write_text): args.
+8,trio,0.22.2,0.23.0,trio.Path.write_text,varkw_removed,kwargs,RemoveVarKeyword|High,yes,Remove VarKeyword parameter (trio.Path.write_text): kwargs.
+8,trio,0.22.2,0.23.0,trio.SocketStream.setsockopt,other,length,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (trio.SocketStream.setsockopt): length.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiError.derive,required_param_added,self,AddRequiredParameter|High,yes,Add Positional parameter (trio._core._multierror.MultiError.derive): self.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiError.derive,required_param_added,excs,AddRequiredParameter|High,yes,Add Positional parameter (trio._core._multierror.MultiError.derive): excs.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiError.derive,param_removed,_MultiError__excs,RemoveRequiredParameter|High,yes,Remove PositionalOrKeyword parameter (trio._core._multierror.MultiError.derive): _MultiError__excs.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiError.derive,became_positional_only,self,RemoveRequiredParameter|High,yes,Remove PositionalOrKeyword parameter (trio._core._multierror.MultiError.derive): self.
+8,trio,0.22.2,0.23.0,trio.abc.AsyncResource.__aexit__,required_param_added,exc_type,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.abc.AsyncResource.__aexit__): exc_type.
+8,trio,0.22.2,0.23.0,trio.abc.AsyncResource.__aexit__,required_param_added,exc_value,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.abc.AsyncResource.__aexit__): exc_value.
+8,trio,0.22.2,0.23.0,trio.abc.AsyncResource.__aexit__,required_param_added,traceback,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (trio.abc.AsyncResource.__aexit__): traceback.
+8,trio,0.22.2,0.23.0,trio.abc.AsyncResource.__aexit__,vararg_removed,args,RemoveVarPositional|High,yes,Remove VarPositional parameter (trio.abc.AsyncResource.__aexit__): args.
+8,trio,0.22.2,0.23.0,trio.abc.SocketFactory.socket,other,family,ChangeParameterDefault|Medium,potential,Change parameter default (trio.abc.SocketFactory.socket): family: None -> AddressFamily('2').
+8,trio,0.22.2,0.23.0,trio.abc.SocketFactory.socket,other,type,ChangeParameterDefault|Medium,potential,Change parameter default (trio.abc.SocketFactory.socket): type: None -> SocketKind('1').
+8,trio,0.22.2,0.23.0,trio.abc.SocketFactory.socket,other,proto,ChangeParameterDefault|Medium,potential,Change parameter default (trio.abc.SocketFactory.socket): proto: None -> int('0').
+8,trio,0.22.2,0.23.0,trio._util.generic_function.__getitem__,required_param_added,subscript,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._util.generic_function.__getitem__): subscript.
+8,trio,0.22.2,0.23.0,trio._util.generic_function.__getitem__,param_removed,_,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._util.generic_function.__getitem__): _.
+8,trio,0.22.2,0.23.0,trio._core._run.GuestState.<lambda>,removed,,RemoveFunction|Low,potential,Remove function (trio._core._run.GuestState): <lambda>.
+8,trio,0.22.2,0.23.0,trio._core._run.NurseryManager.__exit__,required_param_added,exc_type,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._core._run.NurseryManager.__exit__): exc_type.
+8,trio,0.22.2,0.23.0,trio._core._run.NurseryManager.__exit__,required_param_added,exc_value,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._core._run.NurseryManager.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio._core._run.NurseryManager.__exit__,required_param_added,traceback,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._core._run.NurseryManager.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,became_keyword_only,system_context,RemoveOptionalParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._core._run.Runner.__init__): system_context.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,default_removed,system_context,RemoveParameterDefault|Low,potential,Switch parameter optional (trio._core._run.Runner.__init__): system_context: True -> False.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,is_guest,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): is_guest: 20 -> 19.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,clock_autojump_threshold,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): clock_autojump_threshold: 19 -> 18.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,asyncgens,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): asyncgens: 18 -> 17.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,trio_token,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): trio_token: 17 -> 16.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,ki_pending,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): ki_pending: 22 -> 21.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,main_task,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): main_task: 14 -> 13.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,guest_tick_scheduled,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): guest_tick_scheduled: 21 -> 20.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,waiting_for_idle,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): waiting_for_idle: 23 -> 22.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,entry_queue,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): entry_queue: 16 -> 15.
+8,trio,0.22.2,0.23.0,trio._core._run.Runner.__init__,positional_reordered,main_task_outcome,MoveParameter|Low,potential,Move parameter (trio._core._run.Runner.__init__): main_task_outcome: 15 -> 14.
+8,trio,0.22.2,0.23.0,trio._core._io_epoll.EpollIOManager.__init__,other,registered,ChangeParameterType|Low,potential,"Change parameter type (trio._core._io_epoll.EpollIOManager.__init__): registered: builtins.dict<builtins.int , trio._core._io_epoll.EpollWaiters> => collections.defaultdict<builtins.int , trio._core._io_epoll.EpollWaiters>"
+8,trio,0.22.2,0.23.0,trio._core._run._TaskStatus.__init__,param_removed,called_started,RemoveOptionalParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._core._run._TaskStatus.__init__): called_started.
+8,trio,0.22.2,0.23.0,trio._core._run._TaskStatus.__init__,other,value,ChangeParameterDefault|Low,potential,Change parameter default (trio._core._run._TaskStatus.__init__): value: None -> None.
+8,trio,0.22.2,0.23.0,trio._core._run._TaskStatus.__init__,positional_reordered,value,MoveParameter|Low,potential,Move parameter (trio._core._run._TaskStatus.__init__): value: 5 -> 4.
+8,trio,0.22.2,0.23.0,trio._core._generated_io_windows.wait_overlapped,required_param_added,handle_,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._core._generated_io_windows.wait_overlapped): handle_.
+8,trio,0.22.2,0.23.0,trio._core._generated_io_windows.wait_overlapped,param_removed,handle,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._core._generated_io_windows.wait_overlapped): handle.
+8,trio,0.22.2,0.23.0,trio._core._io_epoll._EpollStatistics.__init__,param_removed,backend,RemoveOptionalParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._core._io_epoll._EpollStatistics.__init__): backend.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiErrorCatcher.__exit__,required_param_added,exc_type,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._core._multierror.MultiErrorCatcher.__exit__): exc_type.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiErrorCatcher.__exit__,required_param_added,exc_value,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._core._multierror.MultiErrorCatcher.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiErrorCatcher.__exit__,required_param_added,traceback,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._core._multierror.MultiErrorCatcher.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiErrorCatcher.__exit__,param_removed,etype,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._core._multierror.MultiErrorCatcher.__exit__): etype.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiErrorCatcher.__exit__,param_removed,exc,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._core._multierror.MultiErrorCatcher.__exit__): exc.
+8,trio,0.22.2,0.23.0,trio._core._multierror.MultiErrorCatcher.__exit__,param_removed,tb,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._core._multierror.MultiErrorCatcher.__exit__): tb.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType.__dir__,removed,,RemoveMethod|Low,potential,Remove method (trio._socket._SocketType): __dir__
+8,trio,0.22.2,0.23.0,trio._socket._SocketType.__exit__,required_param_added,exc_type,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._socket._SocketType.__exit__): exc_type.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType.__exit__,required_param_added,exc_value,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._socket._SocketType.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType.__exit__,required_param_added,traceback,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._socket._SocketType.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType.__exit__,vararg_removed,exc_info,RemoveVarPositional|Low,potential,Remove VarPositional parameter (trio._socket._SocketType.__exit__): exc_info.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType.__getattr__,removed,,RemoveMethod|Low,potential,Remove method (trio._socket._SocketType): __getattr__
+8,trio,0.22.2,0.23.0,trio._socket._SocketType._nonblocking_helper,param_removed,args,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._socket._SocketType._nonblocking_helper): args.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType._nonblocking_helper,param_removed,kwargs,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._socket._SocketType._nonblocking_helper): kwargs.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType._nonblocking_helper,positional_reordered,wait_fn,MoveParameter|Low,potential,Move parameter (trio._socket._SocketType._nonblocking_helper): wait_fn: 5 -> 2.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType._nonblocking_helper,positional_reordered,fn,MoveParameter|Low,potential,Move parameter (trio._socket._SocketType._nonblocking_helper): fn: 2 -> 3.
+8,trio,0.22.2,0.23.0,trio._socket._make_simple_sock_method_wrapper,required_param_added,fn,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._socket._make_simple_sock_method_wrapper): fn.
+8,trio,0.22.2,0.23.0,trio._socket._make_simple_sock_method_wrapper,param_removed,methname,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._socket._make_simple_sock_method_wrapper): methname.
+8,trio,0.22.2,0.23.0,trio._socket._try_sync.__aexit__,required_param_added,exc_type,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._socket._try_sync.__aexit__): exc_type.
+8,trio,0.22.2,0.23.0,trio._socket._try_sync.__aexit__,required_param_added,exc_value,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._socket._try_sync.__aexit__): exc_value.
+8,trio,0.22.2,0.23.0,trio._socket._try_sync.__aexit__,required_param_added,traceback,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._socket._try_sync.__aexit__): traceback.
+8,trio,0.22.2,0.23.0,trio._socket._try_sync.__aexit__,param_removed,etype,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._socket._try_sync.__aexit__): etype.
+8,trio,0.22.2,0.23.0,trio._socket._try_sync.__aexit__,param_removed,value,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._socket._try_sync.__aexit__): value.
+8,trio,0.22.2,0.23.0,trio._socket._try_sync.__aexit__,param_removed,tb,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio._socket._try_sync.__aexit__): tb.
+8,trio,0.22.2,0.23.0,trio._util.ConflictDetector.__exit__,required_param_added,exc_type,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._util.ConflictDetector.__exit__): exc_type.
+8,trio,0.22.2,0.23.0,trio._util.ConflictDetector.__exit__,required_param_added,exc_value,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._util.ConflictDetector.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio._util.ConflictDetector.__exit__,required_param_added,traceback,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._util.ConflictDetector.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio._util.ConflictDetector.__exit__,vararg_removed,args,RemoveVarPositional|Low,potential,Remove VarPositional parameter (trio._util.ConflictDetector.__exit__): args.
+8,trio,0.22.2,0.23.0,trio._signals.SignalReceiver._pending_signal_count,removed,,RemoveMethod|Low,potential,Remove method (trio._signals.SignalReceiver): _pending_signal_count
+8,trio,0.22.2,0.23.0,trio._sync.AsyncContextManagerMixin.__aexit__,required_param_added,exc_type,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._sync.AsyncContextManagerMixin.__aexit__): exc_type.
+8,trio,0.22.2,0.23.0,trio._sync.AsyncContextManagerMixin.__aexit__,required_param_added,exc_value,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._sync.AsyncContextManagerMixin.__aexit__): exc_value.
+8,trio,0.22.2,0.23.0,trio._sync.AsyncContextManagerMixin.__aexit__,required_param_added,traceback,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio._sync.AsyncContextManagerMixin.__aexit__): traceback.
+8,trio,0.22.2,0.23.0,trio._sync.AsyncContextManagerMixin.__aexit__,vararg_removed,args,RemoveVarPositional|Low,potential,Remove VarPositional parameter (trio._sync.AsyncContextManagerMixin.__aexit__): args.
+8,trio,0.22.2,0.23.0,trio._threads._run_fn_as_system_task,removed,,RemoveFunction|Low,potential,Remove function (trio._threads): _run_fn_as_system_task.
+8,trio,0.22.2,0.23.0,trio.testing._check_streams._ForceCloseBoth.__aexit__,required_param_added,exc_type,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._check_streams._ForceCloseBoth.__aexit__): exc_type.
+8,trio,0.22.2,0.23.0,trio.testing._check_streams._ForceCloseBoth.__aexit__,required_param_added,exc_value,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._check_streams._ForceCloseBoth.__aexit__): exc_value.
+8,trio,0.22.2,0.23.0,trio.testing._check_streams._ForceCloseBoth.__aexit__,required_param_added,traceback,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._check_streams._ForceCloseBoth.__aexit__): traceback.
+8,trio,0.22.2,0.23.0,trio.testing._check_streams._ForceCloseBoth.__aexit__,vararg_removed,args,RemoveVarPositional|Low,potential,Remove VarPositional parameter (trio.testing._check_streams._ForceCloseBoth.__aexit__): args.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.__exit__,required_param_added,exc_type,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.__exit__): exc_type.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.__exit__,required_param_added,exc_value,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.__exit__): exc_value.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.__exit__,required_param_added,traceback,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.__exit__): traceback.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.__exit__,vararg_removed,exc_info,RemoveVarPositional|Low,potential,Remove VarPositional parameter (trio.testing._fake_net.FakeSocket.__exit__): exc_info.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.__init__,other,family,ChangeParameterType|Low,potential,Change parameter type (trio.testing._fake_net.FakeSocket.__init__): family: builtins.int => socket.AddressFamily
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.__init__,other,type,ChangeParameterType|Low,potential,Change parameter type (trio.testing._fake_net.FakeSocket.__init__): type: builtins.int => socket.SocketKind
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.getsockopt,required_param_added,self,AddRequiredParameter|Low,potential,Add Positional parameter (trio.testing._fake_net.FakeSocket.getsockopt): self.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.getsockopt,required_param_added,optname,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.getsockopt): optname.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.getsockopt,other,buflen,AddOptionalParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.getsockopt): buflen.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.getsockopt,param_removed,item,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.getsockopt): item.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.getsockopt,became_positional_only,self,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.getsockopt): self.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.setsockopt,required_param_added,self,AddRequiredParameter|Low,potential,Add Positional parameter (trio.testing._fake_net.FakeSocket.setsockopt): self.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.setsockopt,required_param_added,optname,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.setsockopt): optname.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.setsockopt,other,optlen,AddOptionalParameter|Low,potential,Add PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.setsockopt): optlen.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.setsockopt,param_removed,item,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.setsockopt): item.
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.setsockopt,became_positional_only,self,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (trio.testing._fake_net.FakeSocket.setsockopt): self.
+8,trio,0.22.2,0.23.0,trio._channel.MemoryChannelState.max_buffer_size,other,,ChangeAttributeType|Low,potential,Change attribute type (trio._channel.MemoryChannelState.max_buffer_size): builtins.int => [builtins.int | builtins.float]
+8,trio,0.22.2,0.23.0,trio._channel.MemoryChannelStats.max_buffer_size,other,,ChangeAttributeType|Low,potential,Change attribute type (trio._channel.MemoryChannelStats.max_buffer_size): builtins.int => [builtins.int | builtins.float]
+8,trio,0.22.2,0.23.0,trio._channel.SelfT,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._channel): SelfT.
+8,trio,0.22.2,0.23.0,trio.lowlevel.RunVar._NO_DEFAULT,removed,,RemoveAttribute|Low,potential,Remove attribute (trio.lowlevel.RunVar): _NO_DEFAULT.
+8,trio,0.22.2,0.23.0,trio._core._run.TASK_STATUS_IGNORED,other,,ChangeAttributeType|Low,potential,Change attribute type (trio._core._run.TASK_STATUS_IGNORED): trio._core._run._TaskStatusIgnored => trio._core._run.TaskStatus<any>
+8,trio,0.22.2,0.23.0,trio._core._io_epoll.EpollIOManager._registered,other,,ChangeAttributeType|Low,potential,"Change attribute type (trio._core._io_epoll.EpollIOManager._registered): builtins.dict<builtins.int , trio._core._io_epoll.EpollWaiters> => collections.defaultdict<builtins.int , trio._core._io_epoll.EpollWaiters>"
+8,trio,0.22.2,0.23.0,trio._core._run.current_async_library_cvar,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._core._run): current_async_library_cvar.
+8,trio,0.22.2,0.23.0,trio._core._generated_instrumentation._NO_SEND,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._core._generated_instrumentation): _NO_SEND.
+8,trio,0.22.2,0.23.0,trio._core._generated_io_epoll._NO_SEND,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._core._generated_io_epoll): _NO_SEND.
+8,trio,0.22.2,0.23.0,trio._core._generated_io_kqueue._NO_SEND,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._core._generated_io_kqueue): _NO_SEND.
+8,trio,0.22.2,0.23.0,trio._core._generated_io_windows._NO_SEND,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._core._generated_io_windows): _NO_SEND.
+8,trio,0.22.2,0.23.0,trio._core._io_epoll._EpollStatistics.backend,other,,ChangeAttributeType|Low,potential,"Change attribute type (trio._core._io_epoll._EpollStatistics.backend): builtins.str => ""'epoll'"""
+8,trio,0.22.2,0.23.0,trio._core._multierror.have_tproxy,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._core._multierror): have_tproxy.
+8,trio,0.22.2,0.23.0,trio._highlevel_open_tcp_listeners.inf,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._highlevel_open_tcp_listeners): inf.
+8,trio,0.22.2,0.23.0,trio._socket.IPPROTO_IPV6,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._socket): IPPROTO_IPV6.
+8,trio,0.22.2,0.23.0,trio._socket._SocketType._forward,removed,,RemoveAttribute|Low,potential,Remove attribute (trio._socket._SocketType): _forward.
+8,trio,0.22.2,0.23.0,trio._path.AsyncAutoWrapperType._forward,removed,,RemoveInstanceAttribute|Low,potential,Remove instance attribute (trio._path.AsyncAutoWrapperType): _forward
+8,trio,0.22.2,0.23.0,trio._core._thread_cache.WorkerThread._job,other,,ChangeAttributeType|Low,potential,"Change attribute type (trio._core._thread_cache.WorkerThread._job): [((any , any) -> any , (any , any) -> any , builtins.str) | none] => [(() -> any , (outcome._impl.Outcome<any>) -> builtins.object , [builtins.str | none]) | none]"
+8,trio,0.22.2,0.23.0,trio.testing._check_streams._ForceCloseBoth._both,removed,,RemoveInstanceAttribute|Low,potential,Remove instance attribute (trio.testing._check_streams._ForceCloseBoth): _both
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.family,other,,ChangeAttributeType|Low,potential,Change attribute type (trio.testing._fake_net.FakeSocket.family): builtins.int => socket.AddressFamily
+8,trio,0.22.2,0.23.0,trio.testing._fake_net.FakeSocket.type,other,,ChangeAttributeType|Low,potential,Change attribute type (trio.testing._fake_net.FakeSocket.type): builtins.int => socket.SocketKind
+9,starlette,0.27.0,0.28.0,starlette.middleware.exceptions.Message,removed,,RemoveExternalAlias|Low,potential,Remove alias (starlette.middleware.exceptions): Message => typing.MutableMapping
+9,starlette,0.27.0,0.28.0,starlette.middleware.exceptions.is_async_callable,removed,,RemoveAlias|High,yes,Remove alias (starlette.middleware.exceptions): is_async_callable => starlette._utils.is_async_callable
+9,starlette,0.27.0,0.28.0,starlette.middleware.exceptions.run_in_threadpool,removed,,RemoveAlias|High,yes,Remove alias (starlette.middleware.exceptions): run_in_threadpool => starlette.concurrency.run_in_threadpool
+9,starlette,0.27.0,0.28.0,starlette.middleware.exceptions.ExceptionMiddleware._lookup_exception_handler,removed,,RemoveMethod|Low,potential,Remove method (starlette.middleware.exceptions.ExceptionMiddleware): _lookup_exception_handler
+9,starlette,0.27.0,0.28.0,starlette.templating.Jinja2Templates.__init__,other,env,AddOptionalParameter|Medium,potential,Add Keyword parameter (starlette.templating.Jinja2Templates.__init__): env.
+9,starlette,0.27.0,0.28.0,starlette.templating.Jinja2Templates.__init__,became_keyword_only,context_processors,RemoveOptionalParameter|High,yes,Remove PositionalOrKeyword parameter (starlette.templating.Jinja2Templates.__init__): context_processors.
+9,starlette,0.27.0,0.28.0,starlette.templating.Jinja2Templates.__init__,other,directory,AddParameterDefault|Medium,potential,Switch parameter optional (starlette.templating.Jinja2Templates.__init__): directory: False -> True.
+10,apscheduler,3.10.4,3.11.0,apscheduler.executors.asyncio.absolute_import,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.executors.asyncio): absolute_import => __future__.<instance (<class '__future__._Feature'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.executors.base.six,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.executors.base): six => six
+10,apscheduler,3.10.4,3.11.0,apscheduler.executors.base.utc,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.executors.base): utc => pytz.<instance (<class 'pytz.UTC'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.executors.base_py3,removed,,RemoveModule|High,yes,Remove module (apscheduler.executors): base_py3.
+10,apscheduler,3.10.4,3.11.0,apscheduler.executors.twisted.absolute_import,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.executors.twisted): absolute_import => __future__.<instance (<class '__future__._Feature'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.job.six,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.job): six => six
+10,apscheduler,3.10.4,3.11.0,apscheduler.job.repr_escape,removed,,RemoveAlias|High,yes,Remove alias (apscheduler.job): repr_escape => apscheduler.util.repr_escape
+10,apscheduler,3.10.4,3.11.0,apscheduler.jobstores.base.six,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.jobstores.base): six => six
+10,apscheduler,3.10.4,3.11.0,apscheduler.jobstores.memory.absolute_import,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.jobstores.memory): absolute_import => __future__.<instance (<class '__future__._Feature'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.schedulers.asyncio.absolute_import,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.schedulers.asyncio): absolute_import => __future__.<instance (<class '__future__._Feature'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.schedulers.background.absolute_import,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.schedulers.background): absolute_import => __future__.<instance (<class '__future__._Feature'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.schedulers.base.six,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.schedulers.base): six => six
+10,apscheduler,3.10.4,3.11.0,apscheduler.schedulers.base.print_function,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.schedulers.base): print_function => __future__.<instance (<class '__future__._Feature'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.schedulers.base.timedelta_seconds,removed,,RemoveAlias|High,yes,Remove alias (apscheduler.schedulers.base): timedelta_seconds => apscheduler.util.timedelta_seconds
+10,apscheduler,3.10.4,3.11.0,apscheduler.schedulers.blocking.absolute_import,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.schedulers.blocking): absolute_import => __future__.<instance (<class '__future__._Feature'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.triggers.base.six,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.triggers.base): six => six
+10,apscheduler,3.10.4,3.11.0,apscheduler.triggers.cron.six,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.triggers.cron): six => six
+10,apscheduler,3.10.4,3.11.0,apscheduler.triggers.cron.normalize,removed,,RemoveAlias|High,yes,Remove alias (apscheduler.triggers.cron): normalize => apscheduler.util.normalize
+10,apscheduler,3.10.4,3.11.0,apscheduler.triggers.cron.localize,removed,,RemoveAlias|High,yes,Remove alias (apscheduler.triggers.cron): localize => apscheduler.util.localize
+10,apscheduler,3.10.4,3.11.0,apscheduler.triggers.cron.fields.six,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.triggers.cron.fields): six => six
+10,apscheduler,3.10.4,3.11.0,apscheduler.triggers.interval.normalize,removed,,RemoveAlias|High,yes,Remove alias (apscheduler.triggers.interval): normalize => apscheduler.util.normalize
+10,apscheduler,3.10.4,3.11.0,apscheduler.triggers.interval.timedelta_seconds,removed,,RemoveAlias|High,yes,Remove alias (apscheduler.triggers.interval): timedelta_seconds => apscheduler.util.timedelta_seconds
+10,apscheduler,3.10.4,3.11.0,apscheduler.util.division,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.util): division => __future__.<instance (<class '__future__._Feature'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.util.utc,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.util): utc => pytz.<instance (<class 'pytz.UTC'>)>
+10,apscheduler,3.10.4,3.11.0,apscheduler.util.FixedOffset,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.util): FixedOffset => pytz.FixedOffset
+10,apscheduler,3.10.4,3.11.0,apscheduler.util.six,removed,,RemoveExternalAlias|Low,potential,Remove alias (apscheduler.util): six => six
+10,apscheduler,3.10.4,3.11.0,apscheduler.job.Job.__unicode__,removed,,RemoveMethod|High,yes,Remove method (apscheduler.job.Job): __unicode__
+10,apscheduler,3.10.4,3.11.0,apscheduler.util.repr_escape,removed,,RemoveFunction|High,yes,Remove function (apscheduler.util): repr_escape.
+10,apscheduler,3.10.4,3.11.0,apscheduler.schedulers.base.EVENT_SCHEDULER_START,removed,,RemoveAttribute|High,yes,Remove attribute (apscheduler.schedulers.base): EVENT_SCHEDULER_START.
+10,apscheduler,3.10.4,3.11.0,apscheduler.util.TIMEOUT_MAX,removed,,RemoveAttribute|High,yes,Remove attribute (apscheduler.util): TIMEOUT_MAX.
+11,execnet,2.0.2,2.1.0,execnet.gateway.execnet,removed,,RemoveAlias|Low,potential,Remove alias (execnet.gateway): execnet => execnet
+11,execnet,2.0.2,2.1.0,execnet.gateway.sys,removed,,RemoveExternalAlias|Low,potential,Remove alias (execnet.gateway): sys => sys
+11,execnet,2.0.2,2.1.0,execnet.gateway.os,removed,,RemoveExternalAlias|Low,potential,Remove alias (execnet.gateway): os => os
+11,execnet,2.0.2,2.1.0,execnet.gateway_bootstrap.Gateway,removed,,RemoveAlias|Low,potential,Remove alias (execnet.gateway_bootstrap): Gateway => execnet.gateway.Gateway
+11,execnet,2.0.2,2.1.0,execnet.gateway_io.os,removed,,RemoveExternalAlias|Low,potential,Remove alias (execnet.gateway_io): os => os
+11,execnet,2.0.2,2.1.0,execnet.multi.sys,removed,,RemoveExternalAlias|Low,potential,Remove alias (execnet.multi): sys => sys
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.BaseGateway.exc_info,removed,,RemoveExternalAlias|Low,potential,Remove alias (execnet.gateway_base.BaseGateway): exc_info => sys.exc_info
+11,execnet,2.0.2,2.1.0,execnet.rsync.RSync._send_item,required_param_added,modified_rel_path_components,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (execnet.rsync.RSync._send_item): modified_rel_path_components.
+11,execnet,2.0.2,2.1.0,execnet.rsync.RSync._send_item,required_param_added,checksum,AddRequiredParameter|Low,potential,Add PositionalOrKeyword parameter (execnet.rsync.RSync._send_item): checksum.
+11,execnet,2.0.2,2.1.0,execnet.rsync.RSync._send_item,param_removed,data,RemoveRequiredParameter|Low,potential,Remove PositionalOrKeyword parameter (execnet.rsync.RSync._send_item): data.
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.EventletExecModel.fdopen,other,closefd,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (execnet.gateway_base.EventletExecModel.fdopen): closefd.
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.ExecModel.fdopen,other,closefd,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (execnet.gateway_base.ExecModel.fdopen): closefd.
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.GeventExecModel.fdopen,other,closefd,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (execnet.gateway_base.GeventExecModel.fdopen): closefd.
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.ThreadExecModel.fdopen,other,closefd,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (execnet.gateway_base.ThreadExecModel.fdopen): closefd.
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.geterrortext,required_param_added,exc,AddRequiredParameter|High,yes,Add PositionalOrKeyword parameter (execnet.gateway_base.geterrortext): exc.
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.geterrortext,param_removed,excinfo,RemoveRequiredParameter|High,yes,Remove PositionalOrKeyword parameter (execnet.gateway_base.geterrortext): excinfo.
+11,execnet,2.0.2,2.1.0,execnet.gateway_bootstrap.fix_pid_for_jython_popen,removed,,RemoveFunction|High,yes,Remove function (execnet.gateway_bootstrap): fix_pid_for_jython_popen.
+11,execnet,2.0.2,2.1.0,execnet.gateway_io.killpopen,removed,,RemoveFunction|High,yes,Remove function (execnet.gateway_io): killpopen.
+11,execnet,2.0.2,2.1.0,execnet.script.socketserver.get_fcntl,removed,,RemoveFunction|High,yes,Remove function (execnet.script.socketserver): get_fcntl.
+11,execnet,2.0.2,2.1.0,execnet.xspec.XSpec.chdir,other,,ChangeAttributeType|Medium,potential,Change attribute type (execnet.xspec.XSpec.chdir): none => [builtins.str | none]
+11,execnet,2.0.2,2.1.0,execnet.xspec.XSpec.dont_write_bytecode,other,,ChangeAttributeType|Medium,potential,Change attribute type (execnet.xspec.XSpec.dont_write_bytecode): none => [builtins.bool | none]
+11,execnet,2.0.2,2.1.0,execnet.xspec.XSpec.execmodel,other,,ChangeAttributeType|Medium,potential,Change attribute type (execnet.xspec.XSpec.execmodel): none => [builtins.str | none]
+11,execnet,2.0.2,2.1.0,execnet.xspec.XSpec.nice,other,,ChangeAttributeType|Medium,potential,Change attribute type (execnet.xspec.XSpec.nice): none => [builtins.str | none]
+11,execnet,2.0.2,2.1.0,execnet.xspec.XSpec.popen,other,,ChangeAttributeType|Medium,potential,Change attribute type (execnet.xspec.XSpec.popen): none => [builtins.bool | none]
+11,execnet,2.0.2,2.1.0,execnet.xspec.XSpec.python,other,,ChangeAttributeType|Medium,potential,Change attribute type (execnet.xspec.XSpec.python): none => [builtins.str | none]
+11,execnet,2.0.2,2.1.0,execnet.xspec.XSpec.socket,other,,ChangeAttributeType|Medium,potential,Change attribute type (execnet.xspec.XSpec.socket): none => [builtins.str | none]
+11,execnet,2.0.2,2.1.0,execnet.xspec.XSpec.ssh,other,,ChangeAttributeType|Medium,potential,Change attribute type (execnet.xspec.XSpec.ssh): none => [builtins.str | none]
+11,execnet,2.0.2,2.1.0,execnet.gateway.importdir,removed,,RemoveAttribute|High,yes,Remove attribute (execnet.gateway): importdir.
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.Reply._excinfo,removed,,RemoveInstanceAttribute|Low,potential,Remove instance attribute (execnet.gateway_base.Reply): _excinfo
+11,execnet,2.0.2,2.1.0,execnet.gateway_base.WorkerPool._primary_thread_task,removed,,RemoveInstanceAttribute|Low,potential,Remove instance attribute (execnet.gateway_base.WorkerPool): _primary_thread_task
+12,nbconvert,7.3.1,7.4.0,nbconvert.writers.files.ensure_dir_exists,removed,,RemoveAlias|High,yes,Remove alias (nbconvert.writers.files): ensure_dir_exists => nbconvert.utils.io.ensure_dir_exists
+12,nbconvert,7.3.1,7.4.0,nbconvert.writers.files.FilesWriter._makedir,other,mode,AddOptionalParameter|Low,potential,Add PositionalOrKeyword parameter (nbconvert.writers.files.FilesWriter._makedir): mode.
+12,nbconvert,7.3.1,7.4.0,nbconvert.utils.io.ensure_dir_exists,removed,,RemoveFunction|High,yes,Remove function (nbconvert.utils.io): ensure_dir_exists.
+13,gitpython,3.1.56,3.1.57,git.index.base.IndexFile.checkout,other,allow_unsafe_options,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (git.index.base.IndexFile.checkout): allow_unsafe_options.
+13,gitpython,3.1.56,3.1.57,git.refs.tag.TagReference.create,other,allow_unsafe_options,AddOptionalParameter|Medium,potential,Add PositionalOrKeyword parameter (git.refs.tag.TagReference.create): allow_unsafe_options.
+27,requirements-parser,0.10.2,0.11.0,requirements.requirement.__warningregistry__,removed,,RemoveAttribute|High,yes,Remove attribute (requirements.requirement): __warningregistry__.

@@ -1,0 +1,516 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage[margin=0.75in,columnsep=0.25in]{geometry}
+\usepackage{mathptmx}
+\renewcommand{\ttdefault}{pcr}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{balance}
+\usepackage{graphicx}
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true,columns=fullflexible,frame=single,framerule=0.3pt}
+\setlength{\parskip}{0pt}
+\raggedbottom
+\title{\Large\bfseries PyPI API Drift: A Release-Level Record of Public API Changes\\in {{projects}} Popular Python Libraries, with a Checker and a Benchmark\\for Version-Aware Code Generation}
+\author{Pushkar Devanahalli Gopalakrishna\\Independent Researcher, USA}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Ask a code assistant to append a row to a pandas DataFrame and it may write \texttt{df.append(row)}, a method removed
+in pandas 2.0. Models trained on code from many releases cannot tell which API exists in the version a user has
+installed, and benchmarks of this problem are small and frozen. We present \emph{PyPI API Drift}, a release-level
+record of the public APIs of the {{projects}} most-downloaded Python libraries: up to 80 recent final releases each
+({{releases_ok}} releases, 2021--{{snapshot_month}}), with signatures, {{change_events}} release-to-release changes and
+{{breaking_representative}} deduplicated breaking changes. Extraction is static and import-free, reads only the
+needed bytes of each wheel, separates names that were truly removed from names that merely left the documented API,
+and marks with confidence labels and a coverage layer where static analysis cannot see. It is a high-precision,
+low-recall record: in two held-out runtime audits by AI agents isolated from the pipeline (on earlier data versions),
+{{precision_high}} and {{a4_prec}} of high-confidence breaking changes were confirmed, while recall over all runtime-visible changes is limited ({{rec_all_k_b}} of
+{{rec_all_n_b}}). On top of it we release an offline checker, lookup tools with a Model Context Protocol (MCP) server for coding agents, and
+VersionProbe, a benchmark of {{probe_pairs}} valid/invalid snippet pairs. In a preregistered code-repair experiment,
+repeated across {{mm_n_models}} models from one model family, API history from the dataset raised the share of API-compatible,
+intent-preserving migrations (under our evaluation protocol) to {{mm_haiku_c}}--{{mm_fable_c}} for every model, from
+{{mm_haiku_a}}--{{mm_opus_a}} unaided and {{mm_haiku_b}}--{{mm_fable_b}} with the new release's documentation.
+{{patch_pct}} of patch releases contain at least one breaking change.
+\end{abstract}
+
+\section{Introduction}
+Python libraries evolve quickly. Functions are deprecated and removed, parameters are renamed or made
+keyword-only, and modules are reorganized. For developers this causes upgrade failures; for LLM-based code
+assistants it causes a subtler failure: models trained on a mix of old and new code confidently produce calls that
+are valid for some version of a library but not the one installed. Typical examples include
+\texttt{DataFrame.append} (removed in pandas 2.0), \texttt{read\_csv(error\_bad\_lines=...)},
+\texttt{Retry(method\_whitelist=...)} (removed in urllib3 2.0) and \texttt{from flask import escape} (removed in
+Flask 3.0).
+
+Recent benchmarks measure this weakness \cite{versicode,gitchameleon,gitchameleon2,wang2024deprecated}, but they
+are small, hand-curated or frozen at a point in time. What is missing is \emph{infrastructure}: a large, accurate,
+continuously refreshable record of which public API existed in which release of which library. This paper
+contributes:
+\begin{itemize}\setlength\itemsep{0pt}
+\item \textbf{A dataset} of public-API snapshots and changes for {{projects}} libraries and {{releases_ok}} releases,
+with signature-level detail, deduplication across inheritance and re-exports, confidence labels and a coverage layer
+that marks where static analysis cannot see (Sections~\ref{sec:method}--\ref{sec:dataset});
+\item \textbf{An extraction method} that is cheap (range reads of only the Python members of wheels), import-free,
+and conservative about what counts as a removal (Section~\ref{sec:method});
+\item \textbf{Tools}: \texttt{apidrift-check}, a version-aware checker for Python code; \texttt{apidrift-lookup} and an
+MCP (Model Context Protocol) server that give coding agents the same record; and \textbf{VersionProbe}, a paired benchmark of {{probe_pairs}}
+valid/invalid snippet pairs (Section~\ref{sec:tools});
+\item \textbf{A validation} by runtime audits that AI agents isolated from the pipeline carried out of precision, benchmark labels and recall, a comparison
+with two existing tools, and real upgrade failures (Section~\ref{sec:validation});
+\item \textbf{An evaluation of the record's effect on code models}: a preregistered code-repair experiment, repeated across
+{{mm_n_models}} models from one family (Section~\ref{sec:models});
+\item \textbf{Findings} on breaking changes and semantic versioning in the Python ecosystem (Section~\ref{sec:findings}).
+\end{itemize}
+The dataset was built in successive versions (v1.0 to v1.3), each fully re-extracted after audits exposed
+systematic errors; Appendix~\ref{sec:history} lists the changes. Figures describe the released version
+({{data_version}}); Appendix~\ref{sec:history} also lists the version each validation study and experiment
+used.
+
+\section{Related Work}
+\textbf{Version-aware code generation.} VersiCode~\cite{versicode} covers over 300 libraries and 2,000 versions
+up to 2023, labelling API changes at the name level. GitChameleon~\cite{gitchameleon} and GitChameleon~2.0
+\cite{gitchameleon2} provide 116 and 328 executable, version-conditioned problems. Wang et
+al.~\cite{wang2024deprecated} study deprecated API usage by LLMs over 145 API mappings in eight libraries. Our work
+is complementary: it supplies signature-level API records across far more libraries and recent releases, from
+which such benchmarks can be generated and refreshed.
+
+\textbf{API evolution and breaking changes.} AexPy~\cite{aexpy} detects breaking changes in Python packages by
+combining static and dynamic analysis; it imports each release. griffe~\cite{griffe} loads Python APIs statically
+and reports breaking changes between two versions, for documentation and release checks. Section~\ref{sec:recall}
+compares both with this dataset on the same release pairs. In the Java ecosystem, Raemaekers et al.~\cite{raemaekers2014}
+reported that about one third of Maven releases introduce a breaking change, regardless of version increment, while
+Ochoa et al.~\cite{ochoa2022} found higher semantic-versioning compliance in a later replication. We provide a large,
+open, release-level dataset for Python, together with measured precision.
+
+\section{Method}\label{sec:method}
+\subsection{Release selection}
+We take the top {{top_n}} projects by recent downloads from the public top-PyPI-packages list ({{top_date}}),
+and for each the final (non-pre-release, non-yanked) releases uploaded since 2021-01-01 that ship a wheel,
+capped at the 80 most recent releases per project. For every release we pick one wheel, preferring a pure-Python
+wheel, then a CPython \texttt{manylinux} x86\_64 wheel for the newest interpreter. Releases are ordered by version
+number; placeholder versions (\texttt{0.0.0}, \texttt{0}, \texttt{0.0}) uploaded after a project's real releases are
+excluded, because version order would place them first and diff them against unrelated builds. This yields
+{{releases}} releases of {{projects}} projects ({{pure_pct}} pure-Python wheels), of which {{releases_ok}} were analysed
+({{skipped_releases}} releases of packages with more than 8,000 modules were skipped); {{projects_usable}} projects have
+at least one analysed release.
+
+\subsection{Range reads}
+Wheels are ZIP files. We read the end-of-central-directory record and the central directory with HTTP range
+requests, select \texttt{.py} and \texttt{.pyi} members (excluding \texttt{tests}, \texttt{test},
+\texttt{conftest} and metadata), and fetch only members whose CRC changed since the previous release of the same
+project. Replaying this fetch logic over the full histories of {{tr_projects}} randomly chosen projects
+({{tr_releases}} releases) downloads {{tr_share}} of the wheels' bytes (95\% bootstrap CI {{tr_share_ci}} over
+projects), about {{tr_gb}}\,GB ({{tr_gb_ci}}\,GB) for the whole dataset instead of the {{tr_total_gb}}\,GB needed to
+download every wheel. The saving comes from wheels of 1\,MB or more ({{tr_big_bytes}} of the bytes, of which
+{{tr_big_share}} is fetched); small pure-Python wheels consist mostly of the files we need anyway ({{tr_small_share}}
+fetched). The median release costs {{tr_med_kb}}\,KB and two requests, and only {{tr_crc_members}} of
+\texttt{.py}/\texttt{.pyi} members have to be fetched at all.
+
+\subsection{Static extraction}
+Each module is parsed with Python's \texttt{ast}; nothing is imported or executed, so untrusted package code never
+runs. Per module we record definitions (functions with full signatures, classes with members, including instance
+attributes set through \texttt{self}), imports, star imports, a statically evaluable \texttt{\_\_all\_\_}, and the
+behaviour of a module-level \texttt{\_\_getattr\_\_}. The extractor handles the Python idioms that most often mislead static analysis: conditional and \texttt{try/except} imports (fallback branches never
+override the primary binding); PEP~484 positional-only parameters written as \texttt{\_\_x} (normalized to PEP~570
+form); \texttt{@overload} declarations; runtime source taking precedence over \texttt{.pyi} stubs; names deleted with
+\texttt{del}; classes created by calls (\texttt{TypedDict(...)}, \texttt{namedtuple(...)}); typing Protocols (members
+excluded); namespaces populated dynamically (\texttt{globals()} writes, \texttt{exec}, protobuf builders), which are
+treated as unknown; and classes whose constructor a decorator generates (\texttt{@dataclass}, attrs, factories), whose
+inherited constructor signature is discarded.
+
+\textbf{Module \texttt{\_\_getattr\_\_}.} Many libraries serve names lazily or through deprecation shims. A name counts
+as served when \texttt{\_\_getattr\_\_} compares the requested name against a literal, or looks it up in a module-level
+container whose contents can be followed statically (literals, \texttt{X["k"] = ...}, \texttt{X.update(...)} with a
+literal or a comprehension over a literal list) \emph{and} the branch returns an object; it is marked deprecated when
+that branch warns. A name the function explicitly rejects (e.g.\ NumPy's \texttt{\_\_former\_attrs\_\_}) is known to
+be absent.
+
+\textbf{Public API.} The public API of a release is the set of paths reachable from public modules (no
+underscore-prefixed segment) through \texttt{\_\_all\_\_} or, when absent, public definitions and (in packages)
+re-exports, resolved through relative imports, star imports and inheritance from classes defined in the same
+distribution, plus names served by module \texttt{\_\_getattr\_\_}.
+
+\subsection{Diffing, the accessibility test and confidence}
+Consecutive releases are diffed per path. Signature changes are classified into \texttt{param\_removed},
+\texttt{param\_renamed} (positional match), \texttt{required\_param\_added}, \texttt{became\_keyword\_only},
+\texttt{became\_positional\_only}, \texttt{default\_removed}, \texttt{vararg\_removed}, \texttt{varkw\_removed} and
+\texttt{positional\_reordered} (breaking), and several non-breaking types. The key design decision concerns removals:
+a path that disappears from the public API is recorded as \texttt{removed} only if an \emph{accessibility test} on
+the new release proves it unreachable by attribute access. If it is still reachable (e.g., dropped from
+\texttt{\_\_all\_\_}, now an alias of an external object, served lazily) or reachability cannot be decided statically
+(compiled modules, an open \texttt{\_\_getattr\_\_}), it is recorded once as non-breaking \texttt{left\_public\_api} and
+carried forward. If it later becomes provably absent, the removal is recorded at that release; because the name may
+already have been unavailable earlier, such removals are labelled medium confidence and their detail gives the earliest
+possible release (NumPy dropped \texttt{float} in 1.24.0 but rejects it explicitly only from 1.24.2).
+
+The same change often appears under every subclass and re-export path; one row per underlying change is flagged
+\texttt{representative}, and counts in this paper use those rows. Changes are labelled \texttt{high} or
+\texttt{medium} confidence; medium covers members missing from classes with bases in other packages, stub-derived
+symbols, removed \texttt{**kwargs} or forwarded \texttt{*args}, classes rebound as aliases, constructor signatures of
+decorator-built classes, and removals dated by provability as above.
+
+\section{Dataset}\label{sec:dataset}
+Table~\ref{tab:files} lists the released tables and Table~\ref{tab:types} the breaking changes by type. The data covers
+{{releases_ok}} analysed releases, {{modules_parsed}} parsed modules ({{parse_fail}} unparseable), {{signatures}}
+distinct signatures, {{change_events}} change events and {{breaking_representative}} deduplicated breaking changes
+({{breaking_representative_high}} high-confidence; Fig.~\ref{fig:overview}). Each project's history covers at most its 80 most recent final
+releases, so it is not a complete history of every release since 2021.
+
+\begin{table}[t]\centering\small
+\caption{Released tables (Parquet).}\label{tab:files}
+\begin{tabular}{@{}lrl@{}}\toprule
+File & Rows & Grain \\\midrule
+releases & {{releases}} & release \\
+api\_history & {{api_history_rows}} & path $\times$ state $\times$ release range \\
+changes & {{change_events}} & change between releases \\
+signatures & {{signatures}} & distinct signature \\
+module\_coverage & {{cov_rows}} & module $\times$ coverage $\times$ range \\\bottomrule
+\end{tabular}\end{table}
+
+\begin{table}[t]\centering\small
+\caption{Deduplicated breaking changes by type (high confidence). Kind changed: a symbol changed kind in a way that breaks callers, e.g.\ a method became a property.}\label{tab:types}
+\begin{tabular}{@{}lr@{}}\toprule
+Change type & Count \\\midrule
+{{type_rows}}
+\midrule Total & {{breaking_representative_high}} \\\bottomrule
+\end{tabular}\end{table}
+
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{fig_overview.pdf}
+\caption{Left: deduplicated high-confidence breaking changes by year of the breaking release. Because each project's
+history is capped at its 80 most recent releases, frequently releasing projects contribute only recent years, so the
+rise in 2025--2026 partly reflects coverage. Right: share of release transitions (calendar-versioned releases
+excluded) with at least one breaking change, by version increment.}\label{fig:overview}
+\end{figure*}
+
+\textbf{Coverage layer.} Absence from the dataset is not proof that a name does not exist. A separate pass over every
+analysed wheel records, per module and release range, whether the module was parsed from Python source, only a
+\texttt{.pyi} stub ships, the module serves names dynamically (an open module \texttt{\_\_getattr\_\_},
+\texttt{globals()} injection, a runtime \texttt{\_\_all\_\_}), or it binds names from compiled extension modules
+({{cov_rows}} rows in \texttt{module\_coverage}). Each \texttt{api\_history} row carries the resulting
+\texttt{coverage\_status}: {{cov_static}} static, {{cov_compiled_boundary}} compiled boundary, {{cov_dynamic_module}}
+dynamic module and {{cov_stub_only}} stub only. The coverage pass uses a deliberately broad notion of ``dynamic'' (any
+\texttt{globals()} use), so it errs toward warning.
+
+\textbf{Integrity.} \texttt{validate\_dataset.py} runs {{checks_n}} checks on every build: key uniqueness, version order
+(including the placeholder rule), interval consistency (no overlaps, indices matching versions, no interval spanning
+unanalysed releases), every signature hash resolving, change rows matching their releases, label domains, benchmark
+provenance (each pair traces to a breaking change between its two releases), and a recomputation of every headline
+count; the released build passes all of them. A regression suite of {{tests_n}} tests covers each false-positive pattern
+found by the audits, and the released files are pinned by SHA-256 in a manifest that the tools verify.
+
+\section{Tools and Benchmark}\label{sec:tools}
+\textbf{apidrift-check} parses Python code, resolves imports and simple constructor-based types
+(\texttt{df = pd.DataFrame(); df.append(...)}), and checks each referenced path and keyword argument against the
+API of the pinned release. By default it reports only names and keywords that were public in \emph{some}
+analysed release but not the pinned one, each with a hint (``last present in 1.5.3'', ``accepted up to
+1.26.20''). On {{fp_files}} source files of {{fp_pkgs}} widely used packages, checked against their own installed
+dependency versions, it raised {{fp_flags}} findings. Six point to APIs that really are absent in the installed
+versions, inside version-guarded or unused code paths. The rest are false alarms: parameters still accepted
+through compatibility decorators (e.g.\ SciPy's \texttt{seed}$\to$\texttt{rng} transition), attributes set
+dynamically, a method inherited from a compiled base class, and one name that was removed and later re-added outside
+the public API. The checker skips \texttt{if TYPE\_CHECKING:} blocks and postponed annotations, which never run; a
+strict mode additionally flags names never seen in the API and checks arity. It reads only the Parquet row groups of
+the pinned libraries and the signatures they reference: a cold start (one file, one pin) takes {{perf_cold_cpu}}\,s of
+CPU and about {{perf_rss}}\,MB of memory, and checking all {{perf_big_files}} files of pandas against its installed
+dependencies takes {{perf_big_cpu}}\,s of CPU on a shared two-core machine. It reads lockfiles (\texttt{uv.lock},
+Poetry, \texttt{pylock.toml}, Pipfile), writes SARIF for GitHub code scanning, and ships as an experimental GitHub
+Action whose inputs reach the checker only as validated arguments.
+
+\textbf{apidrift-lookup and an MCP server.} \texttt{apidrift-lookup} answers one-line queries offline: the history
+of a symbol (\texttt{history pandas DataFrame.append}) and the breaking differences between any two analysed releases
+(\texttt{diff flask 2.3.3 3.0.0}), computed from the two API snapshots, each change listed once with its confidence
+label. \texttt{apidrift-mcp} exposes these lookups and the checker as read-only tools of a Model Context Protocol
+server, so coding agents can consult the record before or after generating code. Every answer carries the coverage
+status of the rows it rests on, and a name that is not found is reported with the reminder that absence is weaker
+evidence than a recorded change.
+
+\textbf{VersionProbe} contains {{probe_pairs}} pairs from {{probe_projects}} libraries in the released version. Each pair is one snippet
+that is valid in release $A$ and invalid in the next release $B$, derived from a high-confidence
+\texttt{removed}, \texttt{param\_removed} or \texttt{param\_renamed} event and verified with the checker in both
+directions. Items carry the release date of $B$, so evaluations can be split before and after a model's training
+cutoff. A model is asked whether the snippet is valid for the stated version; a constant predictor scores 50\%.
+\emph{VersionProbe-verified} is the subset of {{ver_pairs}} pairs ({{ver_items}} items, {{ver_libs}} libraries) whose
+labels were confirmed at runtime by the benchmark audits of Section~\ref{sec:benchlabels} and that remain in the
+released benchmark; it is the split to rank models on.
+
+\section{Validation}\label{sec:validation}
+\textbf{Protocol.} Every validation study used \emph{pipeline-isolated, AI-agent-conducted runtime checks}: an agent
+(an LLM with shell access, not a human annotator) that never saw the pipeline or the dataset received only the claims
+to check, installed the releases in isolated virtual environments, imported modules, walked attributes and compared
+\texttt{inspect.signature}, falling back to reading released sources when installation was impossible. The
+independence comes from that isolation, not from a separate human researcher, and disputed cases were not
+adjudicated by humans; these audits are a systematic, reproducible spot check, not human-annotated ground truth.
+Claims were drawn by stratified random sampling (at most two per library). The studies ran on the data version current
+at the time; Appendix~\ref{sec:history} lists what changed afterwards.
+
+\subsection{Precision of breaking changes}
+Table~\ref{tab:audit} summarizes four audit rounds. Rounds 1 and 2 were \emph{development} audits: they revealed
+recurring false-positive patterns (names still reachable after leaving \texttt{\_\_all\_\_}, re-exports of external
+objects, lazy module attributes, \texttt{try/except} fallbacks, the \texttt{\_\_x} convention, stub/runtime
+disagreement, typing overloads, dynamically generated namespaces, synthetic classes), each fixed generally in the
+method of Section~\ref{sec:method}. Rounds 3 and 4 were \emph{held-out} audits on libraries never used in any earlier
+audit, study or fix, so they estimate precision out of sample; round 3 ran on v1.0 of the data and round 4 on v1.2.
+
+\begin{table}[t]\centering\small
+\caption{Runtime audits of claimed breaking changes.}\label{tab:audit}
+\begin{tabular}{@{}lllr@{}}\toprule
+Round & Use & Claims (libs) & Result \\\midrule
+1 & dev. & 60 & 37\% false pos. \\
+2 & dev. & 60 & 25\% false pos. \\
+3 & held-out & {{audit3_n}} ({{audit3_libs}}) & high: {{precision_high}} \\
+ & & & medium: {{precision_medium}} \\
+4 & held-out & {{a4_n}} high ({{a4_libs}}) & {{a4_prec}} \\\bottomrule
+\multicolumn{4}{@{}l@{}}{\footnotesize CIs in the text. Round 3 ran on v1.0 data, round 4 on v1.2.}
+\end{tabular}\end{table}
+
+In round 3, high-confidence claims were {{precision_high}} correct (Wilson 95\% CI {{ci_high}}, n={{audit_n_high}}) and
+medium-confidence claims {{precision_medium}} ({{ci_medium}}, n={{audit_n_medium}}); removals scored {{prec_removed}}
+(n={{n_removed_audit}}) and signature changes {{prec_sig}} (n={{n_sig_audit}}), and all {{n_kind_audit}} sampled kind
+changes were wrong. Round 4 audited {{a4_n}} new high-confidence claims from {{a4_libs}} further libraries, stratified
+into claims that were new in v1.2 ({{a4_new_n}}) and claims unchanged since v1.1 ({{a4_old_n}}). Precision was {{a4_prec}}
+overall (CI {{a4_ci}}): {{a4_new_prec}} for the new claims and {{a4_old_prec}} for the unchanged ones; removals scored {{a4_rem_prec}} (n={{a4_rem_n}}) and signature changes {{a4_sig_prec}}
+(n={{a4_sig_n}}). Claims checked at runtime were 92.0\% correct (115/125) and claims checked from source 91.4\%
+(32/35); in round 3 the source-checked claims, from packages that could not be installed, were much weaker (36.4\%,
+4/11, against 97.1\% at runtime). The remaining false positives come from names served by \texttt{\_\_getattr\_\_} or
+compiled star imports, circular wildcard imports, stub-only declarations, inheritance from another distribution and
+\texttt{**kwargs} that still accept a renamed keyword. The out-of-sample precision estimates for high-confidence
+breaking changes are therefore {{precision_high}} (v1.0) and {{a4_prec}} (v1.2). All samples, verdicts, evidence and the protocol
+are published, together with a 200-item kit for repeating the round-4 sample with human labellers.
+
+\subsection{Benchmark labels}\label{sec:benchlabels}
+Two samples of VersionProbe pairs were verified by resolving every name and keyword in both releases at runtime
+(never executing the snippet). The first ({{bench_check_n}} pairs, one per library) found {{bench_check_ok}} correct
+({{bench_check_prec}}, CI {{bench_check_ci}}) and led to two exclusions (instance-only attributes, type-checking-only
+names). A second, \emph{fresh} sample of {{b2_n}} pairs was drawn from the benchmark with these exclusions applied (v1.1), restricted to
+{{b2_libs}} libraries never used in any earlier audit, study or fix: {{b2_ok}} were correct, {{b2_prec}} (CI {{b2_ci}});
+removals {{b2_removed_prec}} (n={{b2_removed_n}}), removed parameters {{b2_param_removed_prec}}
+(n={{b2_param_removed_n}}), renamed parameters {{b2_param_renamed_prec}} (n={{b2_param_renamed_n}}). The ``invalid after''
+half held in {{b2_after_invalid}} of pairs and the ``valid before'' half in {{b2_before_valid}}: almost every error is a
+name that looks present statically but does not exist at runtime (deleted with \texttt{del}, defined only in an
+\texttt{if False:} branch, present only in a stub), plus two pairs built on a placeholder release. The method of Section~\ref{sec:method} handles both causes.
+
+\subsection{Recall and comparison with existing tools}\label{sec:recall}
+An agent introspected both releases of 30 random release pairs at runtime and listed 99 breaking changes. Within the
+dataset's definition of public API, recall was {{rec_def_b}} ({{rec_def_k_b}}/{{rec_def_n_b}}, CI {{rec_def_ci_b}}). Over
+all runtime-visible changes it was {{rec_nt_b}} excluding one outlier (\texttt{trio}, whose 72 wrapper methods were
+generated at runtime) and {{rec_all_b}} including it; most other misses are helper names imported into modules for
+internal use. The dataset is thus a high-precision, low-recall record. Table~\ref{tab:tools} scores griffe and AexPy on
+the same pairs with the same matching rule. AexPy, which imports every release, finds most runtime-generated changes;
+within the shared public-API definition the three methods are close, and what distinguishes the dataset is its scale
+and its precomputed history across releases, which needs no installation. The runtime reference set itself is incomplete (some changes found by both this
+dataset and AexPy are absent from it), so we report agreement rather than precision for the tools' extra claims.
+
+\begin{table}[t]\centering\small
+\caption{Breaking changes detected on the 30 recall pairs (runtime reference set).}\label{tab:tools}
+\begin{tabular}{@{}lccc@{}}\toprule
+ & PyPI API Drift & griffe & AexPy \\\midrule
+Within API-Drift definition & {{t_ours_def}} & {{t_griffe_def}} & {{t_aexpy_def}} \\
+Runtime-visible, w/o trio & {{t_ours_nt}} & {{t_griffe_nt}} & {{t_aexpy_nt}} \\
+All runtime-visible & {{t_ours_all}} & {{t_griffe_all}} & {{t_aexpy_all}} \\
+Pairs analysed & {{t_ours_pairs}} & {{t_griffe_pairs}} & {{t_aexpy_pairs}} \\
+Median s / pair & {{t_ours_sec}} & {{t_griffe_sec}} & {{t_aexpy_sec}} \\\bottomrule
+\multicolumn{4}{@{}l@{}}{\footnotesize Time per pair: extracting both releases (range reads; griffe downloads}\\
+\multicolumn{4}{@{}l@{}}{\footnotesize wheels; AexPy installs both releases). One AexPy pair ran out of memory.}\\
+\multicolumn{4}{@{}l@{}}{\footnotesize trio: one library whose 72 wrapper methods are generated at runtime.}
+\end{tabular}\end{table}
+
+\subsection{Real upgrade failures}
+\textbf{Pilot.} An agent ran the test suites of 12 real projects (9 breaking dependency upgrades, 3 controls) before and
+after the upgrade and found {{ds_api_b}} API-caused failures. \texttt{apidrift-check} produced {{ds_find_b}} findings, all
+real, with none on the old environments or controls, but predicted only {{ds_pred_b}} of the failures.
+
+\textbf{Unseen upgrades.} We then froze the checker and the v1.0 data and had two agents, who never ran the checker, collect
+{{u_f_cases}} new cases ({{u_breaks}} expected breaks, {{u_controls}} controls, {{u_libs}} libraries, including compiled
+packages and lazily loaded APIs). {{u_f_checked}} were scored (the other library versions were never analysed, and the
+checker reports that instead of guessing). With the frozen checker, {{u_f_findok}} of {{u_f_find}} findings pointed at
+real incompatible code ({{u_f_fprec}}, CI {{u_f_fprec_ci}}), including code that the tests never exercise, and it
+predicted {{u_f_pred}} of {{u_f_fail}} API-caused test failures ({{u_f_rec}}, CI {{u_f_rec_ci}}); it raised findings on
+{{u_f_flag_nonbrk}} of {{u_f_nonbrk}} upgrades with no API failure (two of them real but untested incompatibilities).
+With the released data and checker it predicts {{u_a_pred}} of {{u_a_fail}}, and {{u_a_findok}} of its
+{{u_a_find}} findings match what the agents observed. These figures are in-sample, because several rules of
+Section~\ref{sec:method} were introduced after studying these misses; the frozen figures are the out-of-sample ones.
+The remaining misses include a module re-exporting an external package (\texttt{lxml.html.clean}), dunder names
+(skipped by design), a call through a subclass, and NumPy's \texttt{float} in 1.24.0, which disappeared without an
+explicit rejection and so cannot be proven absent statically.
+
+\section{Does the Record Help Code Models?}\label{sec:models}
+\subsection{Classification baseline}
+On VersionProbe-verified, items were shuffled and asked one at a time (``is this snippet valid in exactly version
+$v$?''). A Claude model (\texttt{claude-opus-5-5}), run as an agent allowed only to read the questions and write
+answers, scored {{mb_a_item}} item accuracy (CI {{mb_a_item_ci}}) and {{mb_a_pair}} pair accuracy from its own
+knowledge, against 50\% and 0\% for a constant answer. It accepted most valid snippets ({{mb_a_valid}}) but recognized
+only {{mb_a_invalid}} of invalid ones, and was weaker on changes released after its training cutoff ({{mb_a_after}},
+n={{mb_after_n}}, against {{mb_a_before}}). Given API history retrieved from the dataset for every name and keyword
+in the snippet (the releases in which each existed or was accepted; no label), it scored {{mb_b_item}}. This is
+essentially an oracle condition: it shows only that the answer is in the record when retrieved, not that models
+benefit in general, which the repair experiment tests.
+
+\subsection{Code repair}
+We ran a preregistered repair experiment (task list hashed before any model output). {{rp_n}} real breaking changes
+from {{rp_libs}} libraries (removals with a recorded new location, renamed and removed parameters; 7 more tasks were
+excluded because the original snippet already resolved and bound in the new release) were given to the model as code
+written for the old release, with the instruction to update it for the new release while keeping its purpose. Three
+conditions: closed book; \emph{documentation}, an API reference page for the imported module(s) generated with griffe
+from the new release's wheel; and \emph{PyPI API Drift}, the dataset's history, recorded change and new signatures for
+the snippet's names. Each answer was checked at runtime in an environment with only the new release installed (every
+name resolves and every call's arguments bind to its signature; the call is not executed, and missing required
+arguments are not checked), and a separate model, blind to the condition, judged whether it preserved the snippet's
+intent rather than deleting or substituting the call. ``Success'' means both checks passed under this protocol; it is
+not evidence of behavioural equivalence, and the intent check is an AI judgement, not a human verification.
+
+\begin{table}[t]\centering\small
+\caption{Code repair on {{rp_n}} real breaking changes (preregistered run, \texttt{claude-opus-5-5}).}\label{tab:repair}
+\begin{tabular}{@{}lccc@{}}\toprule
+ & Closed book & Docs & API Drift \\\midrule
+API-compatible & {{rp_a_valid}} & {{rp_b_valid}} & {{rp_c_valid}} \\
+Intent (AI judge) & {{rp_a_faith}} & {{rp_b_faith}} & {{rp_c_faith}} \\
+\textbf{Both} & \textbf{{{rp_a_succ}}} & \textbf{{{rp_b_succ}}} & \textbf{{{rp_c_succ}}} \\
+\quad removed parameter & {{rp_prm_a}} & {{rp_prm_b}} & {{rp_prm_c}} \\
+\quad renamed parameter & {{rp_prn_a}} & {{rp_prn_b}} & {{rp_prn_c}} \\
+\quad moved/removed name & {{rp_rem_a}} & {{rp_rem_b}} & {{rp_rem_c}} \\\bottomrule
+\end{tabular}\end{table}
+
+With API history the model succeeded on {{rp_c_succ}} of tasks (CI {{rp_c_succ_ci}}), against {{rp_a_succ}} closed book
+(exact McNemar $p={{rp_ca_p}}$; {{rp_ca_w}} tasks fixed only with the history, {{rp_ca_l}} only without) and
+{{rp_b_succ}} with documentation ($p={{rp_cb_p}}$; {{rp_cb_w}} vs {{rp_cb_l}}). The gain comes from validity: answers
+written against the dataset's record were API-compatible far more often, while slightly more were judged unfaithful,
+mostly where a ``still available as'' hint pointed to a same-named but different object. Both preregistered
+hypotheses hold and survive a Holm correction for the two comparisons (adjusted $p={{rp_ca_p_holm}}$ and
+${{rp_cb_p_holm}}$); under the more conservative Bonferroni correction the documentation comparison would not
+($p={{rp_cb_p_bonf}}$). In a post-hoc sensitivity check (not preregistered), every answer was re-verified in fresh
+environments with full argument binding (\texttt{Signature.bind} instead of \texttt{bind\_partial}, so a missing
+required argument fails); the re-run reproduced every
+preregistered verdict, and full binding removed {{rs_lost_total}} successes ({{rs_a_lost}} closed book, {{rs_b_lost}}
+documentation, {{rs_c_lost}} API Drift), giving {{rs_a_succ}}, {{rs_b_succ}} and {{rs_c_succ}} ($p={{rs_ca_p}}$ and
+$p={{rs_cb_p}}$).
+
+\subsection{Replication across models}
+We then repeated both experiments, unchanged, with three more Claude models (\texttt{claude-sonnet-5-5},
+\texttt{claude-haiku-5-5} and \texttt{claude-fable-5-1}): the same 984 VersionProbe-verified items, and the same 150
+repair tasks ({{rp_n}} scored after the same exclusion), runtime check and blind judge (\texttt{claude-opus-5-5}),
+with every answer verified under both the partial and the full binding check. The ordering closed book $<$ documentation $<$ API Drift holds for every model
+(Table~\ref{tab:models}). With API history the models end up close together: closed-book success ranged from {{mm_haiku_a}} to
+{{mm_opus_a}} (the smallest model left {{mm_haiku_unch_a}} of snippets unchanged without help), but with the history
+all four reached {{mm_haiku_c}}--{{mm_fable_c}}. API history beat documentation for all
+{{mm_n_models}} models, with unadjusted exact McNemar $p<0.05$ for {{mm_sig_b}} (the exception has
+$p={{mm_fable_cb_p}}$), and closed book for
+all {{mm_n_models}}; full binding removed {{mm_strict_lost_c}} API Drift successes. On VersionProbe the smaller models
+are close to the 50\% of a constant answer. The models are of one family, so this replicates the protocol, not the
+result across model families; with {{rp_n}} tasks per model, each rate has a 95\% interval of roughly $\pm$7--8 points.
+
+\begin{table}[t]\centering\small
+\caption{Replication: VersionProbe-verified (closed book) and code repair success per condition.}\label{tab:models}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lcccccc@{}}\toprule
+ & \multicolumn{2}{c}{VersionProbe} & \multicolumn{3}{c}{Repair success} & $p$ vs \\
+Model & item & pair & closed & docs & API Drift & docs \\\midrule
+opus-5-5$^\ast$ & {{mm_opus_pi}} & {{mm_opus_pp}} & {{mm_opus_a}} & {{mm_opus_b}} & \textbf{{{mm_opus_c}}} & {{mm_opus_cb_p}} \\
+sonnet-5-5 & {{mm_sonnet_pi}} & {{mm_sonnet_pp}} & {{mm_sonnet_a}} & {{mm_sonnet_b}} & \textbf{{{mm_sonnet_c}}} & {{mm_sonnet_cb_p}} \\
+haiku-5-5 & {{mm_haiku_pi}} & {{mm_haiku_pp}} & {{mm_haiku_a}} & {{mm_haiku_b}} & \textbf{{{mm_haiku_c}}} & {{mm_haiku_cb_p}} \\
+fable-5-1 & {{mm_fable_pi}} & {{mm_fable_pp}} & {{mm_fable_a}} & {{mm_fable_b}} & \textbf{{{mm_fable_c}}} & {{mm_fable_cb_p}} \\\bottomrule
+\multicolumn{7}{@{}l@{}}{\footnotesize $^\ast$preregistered run; $p$: exact McNemar, API Drift vs documentation.}\\
+\end{tabular}\end{table}
+
+\section{Findings}\label{sec:findings}
+
+\textbf{Semantic versioning.} Excluding calendar-versioned releases, {{major_pct}} of major, {{minor_pct}} of minor and {{patch_pct}} of patch increments include at least one
+breaking change. {{projects_with_breaking_in_patch}} of the {{projects_usable}} libraries with analysed releases shipped at least one
+breaking patch release. These rates count any public-API break, including rarely used members, so they overstate how often a typical user
+is affected (consistent with the Maven observation that most breaking changes affect code few clients
+use~\cite{ochoa2022}), while missing the breaks that static analysis cannot see (Section~\ref{sec:recall}). A version bump is not a promise, so we also split projects by the policy their PyPI
+description states (pattern match, every match reviewed by hand): {{sv_projects}} say they follow SemVer,
+{{sv_not}} say they do not, {{sv_calver}} use calendar versions, and {{sv_unknown}} state nothing there. Among the
+SemVer projects' stable ($\geq$1.0) releases, {{sv_patch_pct}} of {{sv_patch_n}} patch releases
+({{sv_patch_proj}} of {{sv_patch_projects}} projects) and {{sv_minor_pct}} of minor releases contain a high-confidence
+breaking change; these are candidate SemVer violations, subject to the audited precision and to the caveat above.
+
+\textbf{Deprecation before removal.} Only {{depr_pct}} of removed functions, classes and methods carried a
+statically detectable deprecation marker (decorator, docstring directive or unconditional warning) in an earlier
+analysed release. Deprecation is often communicated through changelogs or conditional warnings rather than
+markers that tools can see.
+
+\textbf{Recency.} {{breaking_2025}} high-confidence breaking changes were released from 2025 onward
+(Fig.~\ref{fig:overview}; the per-year counts are affected by the 80-release cap). Code models whose training data
+predates them cannot know these changes without retrieval, which motivates checking generated code against
+version-specific API records.
+
+\section{Limitations}
+PyPI API Drift is a high-precision, low-recall record, not complete ground truth. The analysis is static: compiled
+extensions are visible only through stubs, parameters altered by decorators are not modelled, and names created at
+runtime are often missing. This matters most for the libraries users try first: among the 100 most-downloaded
+libraries, {{ct_top_100_static}} of API-history rows come from fully static modules ({{ct_top_100_dyn}} dynamic,
+{{ct_top_100_comp}} compiled boundary), against {{ct_rank_101_500_static}} for ranks 101--500; the
+\texttt{coverage\_status} column marks every such row. Inheritance from classes in other distributions is not
+resolved (these cases are labelled medium). The history covers at most the 80 most recent final releases per
+project, so year-over-year counts are shaped by the cap, and release order follows version numbers. Behavioural
+changes with unchanged signatures are out of scope, and statically detectable deprecation markers cover only a small
+share of removals. All validation used samples checked by AI agents isolated from the pipeline, without human
+adjudication; the released labelling kit allows this to be repeated by people. The held-out audits ran on v1.0 and v1.2; the v1.3
+changes (Appendix~\ref{sec:history}) both added and relabelled claims and have not been re-audited. Recall depends on
+the public-API definition, and a tool that imports releases (AexPy) finds far more of the runtime-visible changes.
+The model experiments use {{mm_n_models}} models of one family; the repair study checks names and signatures at
+runtime and intent with an AI judge, not program behaviour. The checker infers types only for objects constructed and
+assigned in the same scope, follows \texttt{super()} calls into library base classes but no other calls through
+subclasses, and never flags private or dunder names, which limits its recall on real upgrades.
+
+\section{Availability}
+Code and tools (Apache-2.0), validation material and the benchmark:
+\url{https://github.com/pushkardg/pypi-api-drift}. Data (CC BY 4.0, release {{data_version}}, with SHA-256 manifest):
+\url{https://huggingface.co/datasets/pushkar87dg/pypi-api-drift}. The pipeline is incremental and is intended to be
+re-run regularly, so new releases are added as they appear.
+
+\section*{Acknowledgment}
+AI assistance was used for parts of the data-processing code and for editing this manuscript; the author reviewed
+all content and is responsible for it.
+
+\balance
+\begin{thebibliography}{9}\footnotesize
+\bibitem{versicode} T.~Wu \emph{et al.}, ``VersiCode: Towards version-controllable code generation,'' arXiv:2406.07411, 2024.
+\bibitem{gitchameleon} N.~Islah, J.~Gehring, D.~Misra, E.~Muller, I.~Rish, T.~Y.~Zhuo, and M.~Caccia, ``GitChameleon: Unmasking the version-switching capabilities of code generation models,'' arXiv:2411.05830, 2024.
+\bibitem{gitchameleon2} D.~Misra \emph{et al.}, ``GitChameleon 2.0: Evaluating AI code generation against Python library version incompatibilities,'' arXiv:2507.12367, 2025.
+\bibitem{wang2024deprecated} C.~Wang, K.~Huang, J.~Zhang, Y.~Feng, L.~Zhang, Y.~Liu, and X.~Peng, ``LLMs meet library evolution: Evaluating deprecated API usage in LLM-based code completion,'' arXiv:2406.09834, 2024.
+\bibitem{griffe} T.~Mazzucotelli, ``griffe: Signatures for entire Python programs,'' \url{https://mkdocstrings.github.io/griffe/}, 2026.
+\bibitem{aexpy} X.~Du and J.~Ma, ``AexPy: Detecting API breaking changes in Python packages,'' in \emph{Proc. IEEE 33rd Int. Symp. Software Reliability Engineering (ISSRE)}, 2022, pp.~470--481.
+\bibitem{raemaekers2014} S.~Raemaekers, A.~van~Deursen, and J.~Visser, ``Semantic versioning versus breaking changes: A study of the Maven repository,'' in \emph{Proc. IEEE 14th Int. Working Conf. Source Code Analysis and Manipulation (SCAM)}, 2014, pp.~215--224.
+\bibitem{ochoa2022} L.~Ochoa, T.~Degueule, J.-R.~Falleri, and J.~Vinju, ``Breaking bad? Semantic versioning and impact of breaking changes in Maven Central,'' \emph{Empirical Software Engineering}, vol.~27, 2022.
+\end{thebibliography}
+
+\appendix
+\section{Release History}\label{sec:history}
+The data was revised as audits and reviews exposed defects; each version was rebuilt in full and passed the integrity
+checks.
+
+\textbf{Which version each study used.} v1.0: precision audits 1--3 (rounds 1--2 on development builds), the
+first benchmark-label sample, the upgrade pilot, the frozen unseen-upgrade study and the checker false-alarm test. v1.1:
+the fresh 400-pair benchmark audit and the classification baseline on VersionProbe-verified. v1.2: precision audit 4,
+the code-repair experiment and its replications (history supplied from v1.2), the tool comparison and the re-scored
+recall study (unchanged from its first run). v1.3: the released counts, figures and benchmark, and the re-scored
+unseen-upgrade results.
+
+\textbf{v1.0 to v1.1.} {{po_fixed}} renames of positional-only parameters had been labelled breaking; {{gen_events}}
+constructor-signature events concerned decorator-built classes (now medium, signature dropped from {{sig_dropped}}
+history rows); intervals of two projects extended over releases too large to analyse ({{clamped}} rows); module-to-distribution mapping used only the latest release; the coverage layer was added.
+
+\textbf{v1.2.} Three over-cautious rules hid removals: any use of \texttt{globals()} marked a module as dynamic (NumPy
+2.0's \texttt{bool8}), a runtime-built \texttt{\_\_all\_\_} blocked attribute checks (SciPy's \texttt{simps}), and
+star-import chains were abandoned (NetworkX); names deleted with \texttt{del} were kept. After re-extraction,
+high-confidence breaking changes went from {{v12_high_before}} to {{v12_high_after}}, {{v12_dropped_pairs}} VersionProbe
+pairs whose change no longer held were dropped (including {{v12_fresh_wrong_dropped}} that the fresh benchmark audit had
+judged wrong), and the round-3 claims still labelled high confidence under the new rules ({{audit_n_high_final}} of 80) were
+{{precision_high_final}} correct (in-sample). The checker gained \texttt{super()} checks.
+
+\textbf{v1.3.} {{ph_releases}} placeholder releases were removed ({{ph_changes}} change events, {{ph_pairs}}
+VersionProbe pairs); module \texttt{\_\_getattr\_\_} containers are followed ({{v13_projects}} libraries re-extracted,
+{{v13_paths_added}} more public paths); and {{v13_late}} high-confidence removals dated by provability became medium,
+with {{v13_late_pairs}} VersionProbe pairs dropped. High-confidence breaking changes went from {{v12_high_after}} (v1.2) to
+{{v13_high_after}}; the unseen-upgrade results were unchanged.
+
+\end{document}

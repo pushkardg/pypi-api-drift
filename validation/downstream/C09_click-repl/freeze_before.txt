@@ -1,0 +1,10 @@
+click==6.7
+click-repl @ file:///tmp/claude-0/-home-claude/0359666d-f4bf-5f83-9bbd-c4ff1fd22d9c/scratchpad/src/click-repl
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+prompt-toolkit==2.0.10
+Pygments==2.21.0
+pytest==9.1.1
+six==1.17.0
+wcwidth==0.9.3

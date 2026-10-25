@@ -1,0 +1,20 @@
+betamax==0.9.0
+certifi==2026.10.19
+cffi==2.1.1
+charset-normalizer==3.5.2
+cryptography==50.0.2
+idna==3.20
+iniconfig==2.3.1
+ndg-httpsclient==0.5.1
+packaging==26.3
+pluggy==1.7.0
+pyasn1==0.6.4
+pycparser==3.11
+Pygments==2.21.0
+pyOpenSSL==26.4.0
+pytest==9.1.1
+requests==2.34.2
+requests-toolbelt @ file:///tmp/claude-0/-home-claude/0359666d-f4bf-5f83-9bbd-c4ff1fd22d9c/scratchpad/src/requests-toolbelt-0.10.1
+trustme==1.2.1
+typing_extensions==4.16.0
+urllib3==2.0.7

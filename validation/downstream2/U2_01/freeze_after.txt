@@ -1,0 +1,6 @@
+iniconfig==2.3.1
+packaging==22.0
+-e file:///home/claude/apidrift/validation/downstream2/part2/U2_01/pip-requirements-parser-31.2.0
+pluggy==1.7.0
+pygments==2.21.0
+pytest==8.4.2

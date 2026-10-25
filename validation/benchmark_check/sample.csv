@@ -1,0 +1,303 @@
+id,project,version_before,version_after,snippet,symbol,change_type,param
+1,sphinx,6.1.3,6.2.0,from sphinx.util.images import guess_mimetype_for_stream,sphinx.util.images.guess_mimetype_for_stream,removed,
+2,cyclonedx-python-lib,5.2.0,6.0.0,"from cyclonedx.output import Bom
+Bom.from_parser",cyclonedx.output.Bom.from_parser,removed,
+3,poetry,1.8.5,2.0.0,from poetry.inspection.lazy_wheel import U,poetry.inspection.lazy_wheel.U,removed,
+4,dbt-core,1.10.23,1.11.2,"from dbt.task.run import RunTask
+RunTask.original_invocation_started_at",dbt.task.run.RunTask.original_invocation_started_at,removed,
+5,setuptools,75.3.4,75.4.0,from setuptools.command.bdist_wheel import remove_readonly,setuptools.command.bdist_wheel.remove_readonly,removed,
+6,opentelemetry-proto,1.9.0,1.9.1,from opentelemetry.proto.metrics.v1.metrics_pb2 import global___IntGauge,opentelemetry.proto.metrics.v1.metrics_pb2.global___IntGauge,removed,
+7,jupyter-builder,0.0.3,0.0.4,from jupyter_builder.jlpm import execvp,jupyter_builder.jlpm.execvp,removed,
+8,gql,3.5.3,4.0.0,from gql.utils import extract_files,gql.utils.extract_files,removed,
+9,shapely,1.8.5.post1,2.0.0,from shapely.geos import WKBWriter,shapely.geos.WKBWriter,removed,
+10,pypdf,3.17.4,4.0.0,"from pypdf import PdfReader
+PdfReader.getFormTextFields",pypdf.PdfReader.getFormTextFields,removed,
+11,nexus-rpc,1.1.0,1.2.0,"from nexusrpc.handler import OperationHandler
+OperationHandler.fetch_result",nexusrpc.handler.OperationHandler.fetch_result,removed,
+12,networkx,3.4.2,3.5,from networkx.algorithms.d_separation import d_separated,networkx.algorithms.d_separation.d_separated,removed,
+13,modal,1.5.5,1.6.0,"from modal.types import FunctionStats
+FunctionStats.backlog",modal.types.FunctionStats.backlog,removed,
+14,isort,5.10.0,5.10.1,from isort.settings import FILE_SKIP_RE,isort.settings.FILE_SKIP_RE,removed,
+15,psycopg,3.0.12,3.0.13,from psycopg.types.array import MixedItemsListDumper,psycopg.types.array.MixedItemsListDumper,removed,
+16,selenium,4.39.0,4.40.0,"from selenium.webdriver import Proxy
+Proxy.ftpProxy",selenium.webdriver.Proxy.ftpProxy,removed,
+17,polars,0.20.16,0.20.17,"from polars.dataframe.group_by import DynamicGroupBy
+DynamicGroupBy.by",polars.dataframe.group_by.DynamicGroupBy.by,removed,
+18,google-cloud-spanner,3.11.1,3.12.0,from google.cloud.spanner_dbapi.parser import EXPR,google.cloud.spanner_dbapi.parser.EXPR,removed,
+19,kubernetes,21.7.0,22.6.0,from kubernetes.client import V1beta1CustomResourceValidation,kubernetes.client.V1beta1CustomResourceValidation,removed,
+20,mlflow-tracing,3.5.1,3.6.0,from mlflow.utils import IS_PYDANTIC_V2_OR_NEWER,mlflow.utils.IS_PYDANTIC_V2_OR_NEWER,removed,
+21,imageio,2.10.5,2.11.0,from imageio.plugins.pillow_legacy import SPECIAL_FORMATS,imageio.plugins.pillow_legacy.SPECIAL_FORMATS,removed,
+22,litellm,1.101.6,1.102.0,"from litellm.llms.watsonx.completion.transformation import IBMWatsonXAIConfig
+IBMWatsonXAIConfig.atransform_request",litellm.llms.watsonx.completion.transformation.IBMWatsonXAIConfig.atransform_request,removed,
+23,accelerate,0.20.3,0.21.0,"from accelerate import FullyShardedDataParallelPlugin
+FullyShardedDataParallelPlugin.load_model",accelerate.FullyShardedDataParallelPlugin.load_model,removed,
+24,pathlib-abc,0.2.0,0.3.0,from pathlib_abc import glob,pathlib_abc.glob,removed,
+25,bitarray,3.3.1,3.3.2,from bitarray.test_bitarray import SequenceMethodsTests,bitarray.test_bitarray.SequenceMethodsTests,removed,
+26,numba,0.55.2,0.56.0,from numba.np.arrayobj import numpy_ones_like_dtype_nd,numba.np.arrayobj.numpy_ones_like_dtype_nd,removed,
+27,markdownify,0.14.1,1.0.0,from markdownify import all_whitespace_re,markdownify.all_whitespace_re,removed,
+28,databricks-sdk,0.78.0,0.79.0,"from databricks.sdk.service.postgres import EndpointStatus
+EndpointStatus.start_time",databricks.sdk.service.postgres.EndpointStatus.start_time,removed,
+29,pymupdf,1.24.1,1.24.2,from fitz.extra import JM_get_annot_xref_list2,fitz.extra.JM_get_annot_xref_list2,removed,
+30,omegaconf,2.1.2,2.2.1,"from omegaconf import OmegaConf
+OmegaConf.get_resolver",omegaconf.OmegaConf.get_resolver,removed,
+31,snowballstemmer,3.0.1,3.1.0,from snowballstemmer.arabic_stemmer import lab31,snowballstemmer.arabic_stemmer.lab31,removed,
+32,mlflow,3.1.0,3.1.1,from mlflow.store.artifact.databricks_sdk_models_artifact_repo import DOWNLOAD_CHUNK_SIZE,mlflow.store.artifact.databricks_sdk_models_artifact_repo.DOWNLOAD_CHUNK_SIZE,removed,
+33,fpdf2,2.8.2,2.8.3,"from fpdf import FPDF
+FPDF.images_used_per_page_number",fpdf.FPDF.images_used_per_page_number,removed,
+34,jira,3.0.1,3.1.1,"from jira import JIRA
+JIRA.logging",jira.JIRA.logging,removed,
+35,datasets,2.8.0,2.9.0,from datasets.iterable_dataset import ShardShuffledExamplesIterable,datasets.iterable_dataset.ShardShuffledExamplesIterable,removed,
+36,langsmith,0.14.1,0.14.2,"from langsmith import trace
+trace.agent_id",langsmith.trace.agent_id,removed,
+37,torch,2.6.0,2.7.0,"from torch.distributed.pipelining import PipelineStage
+PipelineStage.prev_rank",torch.distributed.pipelining.PipelineStage.prev_rank,removed,
+38,dask,2025.2.0,2025.3.0,from dask.array.reductions import partial_reduce,dask.array.reductions.partial_reduce,removed,
+39,weasyprint,59.0,60.0,"from weasyprint.layout.page import OrientedBox
+OrientedBox.shrink_to_fit",weasyprint.layout.page.OrientedBox.shrink_to_fit,removed,
+40,fonttools,4.39.3,4.39.4,from fontTools.ttLib import main,fontTools.ttLib.main,removed,
+41,twilio,9.4.2,9.4.3,"from twilio.rest.numbers.v1 import V1
+V1.porting_webhook_configuration_fetch",twilio.rest.numbers.v1.V1.porting_webhook_configuration_fetch,removed,
+42,flake8,3.9.2,4.0.0,from flake8.exceptions import MercurialQRefreshHookAlreadyExists,flake8.exceptions.MercurialQRefreshHookAlreadyExists,removed,
+43,deptry,0.2.17,0.3.1,"from deptry.config import Config
+Config.extend_exclude",deptry.config.Config.extend_exclude,removed,
+44,wrapt,1.15.0,1.16.0,from wrapt.wrappers import function_wrapper,wrapt.wrappers.function_wrapper,removed,
+45,pyiceberg,0.2.1,0.3.0,from pyiceberg.avro.reader import primitive_reader,pyiceberg.avro.reader.primitive_reader,removed,
+46,anthropic,0.115.0,0.115.1,from anthropic.types.beta import BetaWebhookMemoryStoreDeletedEventData,anthropic.types.beta.BetaWebhookMemoryStoreDeletedEventData,removed,
+47,redis,4.1.0,4.1.1,"from redis.cluster import NodesManager
+NodesManager.cluster_require_full_coverage",redis.cluster.NodesManager.cluster_require_full_coverage,removed,
+48,great-expectations,1.12.3,1.13.0,from great_expectations.data_context.store import TupleS3StoreBackend,great_expectations.data_context.store.TupleS3StoreBackend,removed,
+49,msgspec,0.21.1,0.22.0,from msgspec.structs import S,msgspec.structs.S,removed,
+50,email-validator,1.3.1,2.0.0,from email_validator import ATEXT,email_validator.ATEXT,removed,
+51,swebench,4.1.0,5.0.0,from swebench.harness.utils import load_cached_environment_yml,swebench.harness.utils.load_cached_environment_yml,removed,
+52,onnxruntime,1.8.1,1.9.0,"from onnxruntime.transformers.machine_info import MachineInfo
+MachineInfo.get_onnxruntime_tools_info",onnxruntime.transformers.machine_info.MachineInfo.get_onnxruntime_tools_info,removed,
+53,datadog-api-client,2.12.0,2.13.0,from datadog_api_client.v2.models import MetricBulkTagConfigEmailList,datadog_api_client.v2.models.MetricBulkTagConfigEmailList,removed,
+54,pymongo,4.0.2,4.1.0,from pymongo.errors import InvalidStringData,pymongo.errors.InvalidStringData,removed,
+55,pylint,2.15.10,2.16.0,"from pylint.checkers.typecheck import TypeChecker
+TypeChecker.visit_extslice",pylint.checkers.typecheck.TypeChecker.visit_extslice,removed,
+56,setuptools-scm,7.1.0,8.0.1,from setuptools_scm import trace,setuptools_scm.trace,removed,
+57,statsmodels,0.12.2,0.13.0,"from statsmodels.tsa.arima_model import ARMAResults
+ARMAResults.maroots",statsmodels.tsa.arima_model.ARMAResults.maroots,removed,
+58,poetry-core,2.0.1,2.1.0,from poetry.core.constraints.generic.parser import parse_single_constraint,poetry.core.constraints.generic.parser.parse_single_constraint,removed,
+59,pytest-asyncio,0.25.3,0.26.0,from pytest_asyncio.plugin import FactoryFixtureFunction,pytest_asyncio.plugin.FactoryFixtureFunction,removed,
+60,twisted,22.8.0,22.10.0,from twisted.protocols import deprecatedModuleAttribute,twisted.protocols.deprecatedModuleAttribute,removed,
+61,azure-core,1.26.1,1.26.2,"from azure.core.pipeline.policies import HttpLoggingPolicy
+HttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST",azure.core.pipeline.policies.HttpLoggingPolicy.DEFAULT_HEADERS_WHITELIST,removed,
+62,portalocker,3.2.0,4.0.0,"from portalocker.portalocker import FlockLocker
+FlockLocker.LOCKER",portalocker.portalocker.FlockLocker.LOCKER,removed,
+63,respx,0.17.1,0.18.0,from respx.types import SyncResponse,respx.types.SyncResponse,removed,
+64,langgraph-checkpoint,2.0.15,2.0.16,from langgraph.checkpoint.serde.jsonplus import ENC_POOL,langgraph.checkpoint.serde.jsonplus.ENC_POOL,removed,
+65,dbt-common,1.8.0,1.9.0,from dbt_common.events.types import BehaviorDeprecationEvent,dbt_common.events.types.BehaviorDeprecationEvent,removed,
+66,jupyter-events,0.1.0,0.2.0,from jupyter_events.logger import yaml,jupyter_events.logger.yaml,removed,
+67,datamodel-code-generator,0.54.1,0.55.0,from datamodel_code_generator.util import Model,datamodel_code_generator.util.Model,removed,
+68,ijson,3.2.3,3.3.0,from ijson.compat import IS_PY35,ijson.compat.IS_PY35,removed,
+69,streamlit,1.44.1,1.45.0,"from streamlit.runtime import Runtime
+Runtime.message_cache",streamlit.runtime.Runtime.message_cache,removed,
+70,mypy,1.12.1,1.13.0,from mypy.util import is_sub_path,mypy.util.is_sub_path,removed,
+71,postgrest,1.1.0,1.1.1,from postgrest.utils import is_valid_jwt,postgrest.utils.is_valid_jwt,removed,
+72,pyyaml,5.4.1,6.0,from yaml import load_warning,yaml.load_warning,removed,
+73,sqlglot,30.0.3,30.1.0,from sqlglot.dialects.presto import DATE_ADD_OR_SUB,sqlglot.dialects.presto.DATE_ADD_OR_SUB,removed,
+74,coverage,7.0.3,7.0.4,from coverage.types import TConfigSection,coverage.types.TConfigSection,removed,
+75,django,6.0,6.0.1,from django.contrib.auth.management import rename_permissions,django.contrib.auth.management.rename_permissions,removed,
+76,pillow,9.0.1,9.1.0,"from PIL.BlpImagePlugin import BLP1Decoder
+BLP1Decoder.tile",PIL.BlpImagePlugin.BLP1Decoder.tile,removed,
+77,djangorestframework,3.13.1,3.14.0,from rest_framework.fields import NullBooleanField,rest_framework.fields.NullBooleanField,removed,
+78,charset-normalizer,2.1.1,3.0.0,"from charset_normalizer import CharsetMatch
+CharsetMatch.coherence_non_latin",charset_normalizer.CharsetMatch.coherence_non_latin,removed,
+79,matplotlib,3.10.9,3.11.0,"from matplotlib.widgets import Cursor
+Cursor.background",matplotlib.widgets.Cursor.background,removed,
+80,google-cloud-bigtable,2.13.2,2.14.0,from google.cloud.bigtable_v2 import ReadIteratorStats,google.cloud.bigtable_v2.ReadIteratorStats,removed,
+81,confection,1.0.0,1.1.0,"from confection import Promise
+Promise.validate",confection.Promise.validate,removed,
+82,wheel,0.44.0,0.45.0,from wheel.cli.convert import wininst2wheel,wheel.cli.convert.wininst2wheel,removed,
+83,moto,5.1.5,5.1.6,from moto.iam.responses import UPDATE_OPEN_ID_CONNECT_PROVIDER_THUMBPRINT,moto.iam.responses.UPDATE_OPEN_ID_CONNECT_PROVIDER_THUMBPRINT,removed,
+84,nltk,3.8.1,3.9,from nltk.corpus.reader.api import PickleCorpusView,nltk.corpus.reader.api.PickleCorpusView,removed,
+85,sqlmodel,0.0.18,0.0.19,from sqlmodel.sql.expression import SelectBase,sqlmodel.sql.expression.SelectBase,removed,
+86,amazon-ion,0.9.3,0.10.0,from amazon.ion.util import Enum,amazon.ion.util.Enum,removed,
+87,sentencepiece,0.1.96,0.1.97,from sentencepiece import EncoderVersion_kOptimized,sentencepiece.EncoderVersion_kOptimized,removed,
+88,testcontainers,4.3.1,4.3.2,from testcontainers.core.docker_client import read_tc_properties,testcontainers.core.docker_client.read_tc_properties,removed,
+89,ipython,9.10.1,9.11.0,from IPython.core.magic import on_off,IPython.core.magic.on_off,removed,
+90,distlib,0.3.3,0.3.4,from distlib.util import HTTPS,distlib.util.HTTPS,removed,
+91,kafka-python,3.0.2,3.0.4,"from kafka.net import NetworkSelector
+NetworkSelector.unschedule",kafka.net.NetworkSelector.unschedule,removed,
+92,pydot,1.4.2,2.0.0,from pydot import str_type,pydot.str_type,removed,
+93,pandas,1.4.4,1.5.0,from pandas.core.dtypes.cast import astype_array_safe,pandas.core.dtypes.cast.astype_array_safe,removed,
+94,pyathena,3.15.0,3.16.0,from pyathena.sqlalchemy.base import RESERVED_WORDS,pyathena.sqlalchemy.base.RESERVED_WORDS,removed,
+95,mistralai,2.10.1,3.0.0,from mistralai.client.models.deploymentworkerspecresponse import DeploymentWorkerSpecResponseBackendSpecTypedDict,mistralai.client.models.deploymentworkerspecresponse.DeploymentWorkerSpecResponseBackendSpecTypedDict,removed,
+96,trino,0.306.0,0.307.0,"from trino.auth import Authentication
+Authentication.handle_err",trino.auth.Authentication.handle_err,removed,
+97,thinc,7.4.6,8.0.0,"from thinc import registry
+registry.make_schedule",thinc.registry.make_schedule,removed,
+98,time-machine,3.2.0,3.3.0,from time_machine import now,time_machine.now,removed,
+99,cython,3.1.8,3.2.0,"from Cython.Compiler.Optimize import OptimizeBuiltinCalls
+OptimizeBuiltinCalls.PyBytes_GetItemInt_func_type",Cython.Compiler.Optimize.OptimizeBuiltinCalls.PyBytes_GetItemInt_func_type,removed,
+100,hypothesis,6.157.1,6.157.2,from hypothesis.internal.floats import STRUCT_FORMATS,hypothesis.internal.floats.STRUCT_FORMATS,removed,
+101,temporalio,1.32.0,1.33.0,"from temporalio.client import ActivityExecutionDescription
+ActivityExecutionDescription.eager_execution_requested",temporalio.client.ActivityExecutionDescription.eager_execution_requested,removed,
+102,flit-core,3.4.0,3.5.0,"from flit_core.common import Module
+Module.directory",flit_core.common.Module.directory,removed,
+103,yfinance,0.2.36,0.2.37,from yfinance.const import price_colnames,yfinance.const.price_colnames,removed,
+104,spacy,3.2.6,3.3.0,"from spacy import Errors
+Errors.E081",spacy.Errors.E081,removed,
+105,fsspec,2022.5.0,2022.7.0,from fsspec.asyn import lock,fsspec.asyn.lock,removed,
+106,dask-expr,1.1.21,2.0.0,from dask_expr import read_table,dask_expr.read_table,removed,
+107,typer,0.12.5,0.13.0,"from typer.models import OptionInfo
+OptionInfo.is_flag",typer.models.OptionInfo.is_flag,removed,
+108,realtime,1.0.6,2.0.0,from realtime import timetz,realtime.timetz,removed,
+109,pygments,2.8.1,2.9.0,"from pygments.lexers.jvm import ScalaLexer
+ScalaLexer.upper",pygments.lexers.jvm.ScalaLexer.upper,removed,
+110,rapidfuzz,2.0.11,2.0.12,from rapidfuzz.process import ResultType,rapidfuzz.process.ResultType,removed,
+111,google-genai,1.75.0,2.0.0,from google.genai.interactions import URLContextCallContentParam,google.genai.interactions.URLContextCallContentParam,removed,
+112,ddtrace,4.13.3,4.14.0,from ddtrace.internal.remoteconfig.client import Role,ddtrace.internal.remoteconfig.client.Role,removed,
+113,diff-cover,9.2.4,9.3.0,from diff_cover.diff_cover_tool import JSON_REPORT_HELP,diff_cover.diff_cover_tool.JSON_REPORT_HELP,removed,
+114,sqlalchemy,2.0.36,2.0.37,from sqlalchemy.util.typing import de_stringify_union_elements,sqlalchemy.util.typing.de_stringify_union_elements,removed,
+115,openpyxl,3.1.4,3.1.5,from openpyxl.packaging.extended import get_version,openpyxl.packaging.extended.get_version,removed,
+116,requests,2.27.1,2.28.0,from requests.compat import bytes,requests.compat.bytes,removed,
+117,sqlalchemy-utils,0.42.1,0.43.0,from sqlalchemy_utils.types.uuid import sqlalchemy_version,sqlalchemy_utils.types.uuid.sqlalchemy_version,removed,
+118,lark,0.12.0,1.0.0,from lark.parsers.lalr_interactive_parser import ParserPuppet,lark.parsers.lalr_interactive_parser.ParserPuppet,removed,
+119,click-repl,0.2.0,0.3.0,from click_repl import text_type,click_repl.text_type,removed,
+120,opencv-python,4.14.0.94,5.0.0.93,from cv2.typing import GProtoInputArgs,cv2.typing.GProtoInputArgs,removed,
+121,mashumaro,3.2,3.3,from mashumaro.core.meta.helpers import resolve_type_vars,mashumaro.core.meta.helpers.resolve_type_vars,removed,
+122,jupyter-client,8.3.1,8.4.0,from jupyter_client.utils import UTC,jupyter_client.utils.UTC,removed,
+123,werkzeug,3.0.6,3.1.0,from werkzeug.datastructures.headers import D,werkzeug.datastructures.headers.D,removed,
+124,graphene,2.1.9,3.0,from graphene import AbstractType,graphene.AbstractType,removed,
+125,flask-cors,3.0.10,4.0.0,from flask_cors.decorator import get_app_kwarg_dict,flask_cors.decorator.get_app_kwarg_dict,removed,
+126,langchain,1.0.2,1.0.3,from langchain.tools.tool_node import tools_condition,langchain.tools.tool_node.tools_condition,removed,
+127,fastapi,0.139.2,0.140.0,"from fastapi.dependencies.models import Dependant
+Dependant.cache_key",fastapi.dependencies.models.Dependant.cache_key,removed,
+128,blinker,1.8.2,1.9.0,from blinker.base import PNamespaceSignal,blinker.base.PNamespaceSignal,removed,
+129,pathable,0.4.4,0.5.0,"from pathable import DictPath
+DictPath.iteritems",pathable.DictPath.iteritems,removed,
+130,fastapi-cloud-cli,0.24.0,0.25.0,from fastapi_cloud_cli.commands.teams import TeamsListOutput,fastapi_cloud_cli.commands.teams.TeamsListOutput,removed,
+131,babel,2.17.0,2.18.0,from babel.numbers import NUMBER_PATTERN,babel.numbers.NUMBER_PATTERN,removed,
+132,pyee,11.1.1,12.0.0,from pyee import ExecutorEventEmitter,pyee.ExecutorEventEmitter,removed,
+133,peewee,4.0.1,4.0.2,from playhouse.sqlite_ext import SQLITE_DBSTATUS_CACHE_USED,playhouse.sqlite_ext.SQLITE_DBSTATUS_CACHE_USED,removed,
+134,websockets,15.0.1,16.0,"from websockets.sync.connection import Connection
+Connection.acknowledge_pending_pings",websockets.sync.connection.Connection.acknowledge_pending_pings,removed,
+135,seaborn,0.12.2,0.13.0,from seaborn import factorplot,seaborn.factorplot,removed,
+136,pypdfium2,4.30.0,5.0.0,"from pypdfium2 import PdfImage
+PdfImage.get_size",pypdfium2.PdfImage.get_size,removed,
+137,openai,2.45.0,2.46.0,from openai.types.beta.beta_response_input_item import MultiAgentCallOutputOutputAnnotationsUnionMember0,openai.types.beta.beta_response_input_item.MultiAgentCallOutputOutputAnnotationsUnionMember0,removed,
+138,jsonpath-python,1.0.6,1.1.0,from jsonpath import create_logger,jsonpath.create_logger,removed,
+139,xlsxwriter,3.2.4,3.2.5,from xlsxwriter.utility import compare_xlsx_files,xlsxwriter.utility.compare_xlsx_files,removed,
+140,aws-lambda-powertools,2.43.1,3.0.0,from aws_lambda_powertools.utilities.feature_flags.schema import HOUR_MIN_SEPARATOR,aws_lambda_powertools.utilities.feature_flags.schema.HOUR_MIN_SEPARATOR,removed,
+141,triton,3.1.0,3.2.0,"from triton.language.extra.libdevice import cospi
+cospi(arg0=..., _builder=...)",triton.language.extra.libdevice.cospi,param_removed,_builder
+142,narwhals,1.26.0,1.27.1,"from narwhals import Expr
+Expr(to_compliant_expr=..., is_order_dependent=..., changes_length=..., aggregates=...)",narwhals.Expr,param_removed,aggregates
+143,inquirerpy,0.2.4,0.3.0,"from InquirerPy.base import BaseListPrompt
+BaseListPrompt(message=..., height=...)",InquirerPy.base.BaseListPrompt,param_removed,height
+144,pyarrow,20.0.0,21.0.0,"from pyarrow import RecordBatchFileWriter
+RecordBatchFileWriter(sink=..., schema=..., use_legacy_format=...)",pyarrow.RecordBatchFileWriter,param_removed,use_legacy_format
+145,mlflow-skinny,2.10.2,2.11.0,"from mlflow.models.docker_utils import generate_dockerfile
+generate_dockerfile(output_dir=..., entrypoint=..., env_manager=..., disable_env_creation=...)",mlflow.models.docker_utils.generate_dockerfile,param_removed,disable_env_creation
+146,authlib,0.15.4,0.15.5,"from authlib.oauth2.rfc6750 import InsufficientScopeError
+InsufficientScopeError(state=...)",authlib.oauth2.rfc6750.InsufficientScopeError,param_removed,state
+147,pillow-heif,0.1.11,0.2.4,"from pillow_heif import HeifThumbnail
+HeifThumbnail(size=..., has_alpha=..., data=..., stride=..., bit_depth=...)",pillow_heif.HeifThumbnail,param_removed,bit_depth
+148,scikit-image,0.24.0,0.25.0,"from skimage.filters import gaussian
+gaussian(image=..., output=...)",skimage.filters.gaussian,param_removed,output
+149,virtualenv,20.34.0,20.35.2,"from virtualenv.discovery.cached_py_info import clear
+clear(cache=...)",virtualenv.discovery.cached_py_info.clear,param_removed,cache
+150,optuna,4.9.0,5.0.0,"from optuna.importance import PedAnovaImportanceEvaluator
+PedAnovaImportanceEvaluator(baseline_quantile=...)",optuna.importance.PedAnovaImportanceEvaluator,param_removed,baseline_quantile
+151,flask,2.0.3,2.1.0,"from flask.cli import locate_app
+locate_app(module_name=..., app_name=..., script_info=...)",flask.cli.locate_app,param_removed,script_info
+152,google-cloud-firestore,2.26.0,2.27.0,"from google.cloud.firestore_v1.pipeline_expressions import AggregateFunction
+AggregateFunction(name=..., params=..., use_infix_repr=...)",google.cloud.firestore_v1.pipeline_expressions.AggregateFunction,param_removed,use_infix_repr
+153,scikit-learn,1.5.2,1.6.0,"from sklearn.utils.estimator_checks import check_estimators_fit_returns_self
+check_estimators_fit_returns_self(name=..., estimator_orig=..., readonly_memmap=...)",sklearn.utils.estimator_checks.check_estimators_fit_returns_self,param_removed,readonly_memmap
+154,scipy,1.11.4,1.12.0,"from scipy.stats.qmc import LatinHypercube
+LatinHypercube(d=..., centered=...)",scipy.stats.qmc.LatinHypercube,param_removed,centered
+155,incremental,24.7.2,24.11.0,"from incremental.update import run
+run(package=..., path=..., patch=..., rc=..., post=..., dev=..., create=..., newversion=...)",incremental.update.run,param_removed,newversion
+156,google-api-core,1.34.1,2.0.0,"from google.api_core.exceptions import Redirection
+Redirection(message=..., details=...)",google.api_core.exceptions.Redirection,param_removed,details
+157,dulwich,0.21.5,0.21.6,"from dulwich.index import index_entry_from_stat
+index_entry_from_stat(stat_val=..., hex_sha=..., flags=...)",dulwich.index.index_entry_from_stat,param_removed,flags
+158,huggingface-hub,1.11.0,1.12.0,"from huggingface_hub.cli.buckets import info
+info(bucket_id=..., quiet=...)",huggingface_hub.cli.buckets.info,param_removed,quiet
+159,oracledb,1.4.2,2.0.0,"from oracledb import create_pool
+create_pool(sessionCallback=...)",oracledb.create_pool,param_removed,sessionCallback
+160,ipykernel,5.5.6,6.0.2,"from ipykernel import get_connection_info
+get_connection_info(profile=...)",ipykernel.get_connection_info,param_removed,profile
+161,awswrangler,3.6.0,3.7.0,"from awswrangler.catalog import get_table_types
+get_table_types(database=..., table=..., transaction_id=...)",awswrangler.catalog.get_table_types,param_removed,transaction_id
+162,cachecontrol,0.12.11,0.12.13,"from cachecontrol.caches import FileCache
+FileCache(directory=..., use_dir_lock=...)",cachecontrol.caches.FileCache,param_removed,use_dir_lock
+163,curl-cffi,0.14.0,0.15.0,"from curl_cffi import AsyncWebSocket
+AsyncWebSocket(session=..., curl=..., retry_on_recv_error=...)",curl_cffi.AsyncWebSocket,param_removed,retry_on_recv_error
+164,pygithub,2.5.0,2.6.0,"from github.Auth import AppAuth
+AppAuth(app_id=..., private_key=..., jwt_algorithm=...)",github.Auth.AppAuth,param_removed,jwt_algorithm
+165,langgraph,0.3.34,0.4.0,"from langgraph.pregel.io import map_command
+map_command(cmd=..., pending_writes=...)",langgraph.pregel.io.map_command,param_removed,pending_writes
+166,marshmallow,3.26.2,4.0.0,"from marshmallow import SchemaOpts
+SchemaOpts(meta=..., ordered=...)",marshmallow.SchemaOpts,param_removed,ordered
+167,uuid-utils,0.18.0,1.0.0,"from uuid_utils.compat import uuid7
+uuid7(timestamp=...)",uuid_utils.compat.uuid7,param_removed,timestamp
+168,cbor2,5.9.0,6.0.0,"from cbor2.tool import tag_hook
+tag_hook(tag=..., decoder=...)",cbor2.tool.tag_hook,param_removed,decoder
+169,click,8.0.4,8.1.0,"from click import Parameter
+Parameter(autocompletion=...)",click.Parameter,param_removed,autocompletion
+170,httpx,0.27.2,0.28.0,"from httpx import create_ssl_context
+create_ssl_context(http2=...)",httpx.create_ssl_context,param_removed,http2
+171,pydantic-ai-slim,2.4.0,2.5.0,"from pydantic_ai.durable_exec.prefect import PrefectModel
+PrefectModel(model=..., task_config=..., event_stream_handler=...)",pydantic_ai.durable_exec.prefect.PrefectModel,param_removed,event_stream_handler
+172,pathvalidate,3.1.0,3.2.0,"from pathvalidate import FileNameSanitizer
+FileNameSanitizer(check_reserved=...)",pathvalidate.FileNameSanitizer,param_removed,check_reserved
+173,aioitertools,0.10.0,0.11.0,"from aioitertools.asyncio import as_completed
+as_completed(aws=..., loop=...)",aioitertools.asyncio.as_completed,param_removed,loop
+174,storage3,0.3.1,0.3.2,"from storage3 import create_client
+create_client(url=..., is_async=..., key=...)",storage3.create_client,param_removed,key
+175,mako,1.1.6,1.2.0,"from mako.template import ModuleTemplate
+ModuleTemplate(module=..., disable_unicode=...)",mako.template.ModuleTemplate,param_removed,disable_unicode
+176,py-key-value-aio,0.2.1,0.2.2,"from key_value.aio.wrappers.passthrough_cache import PassthroughCacheWrapper
+PassthroughCacheWrapper(primary_store=..., cache_store=...)",key_value.aio.wrappers.passthrough_cache.PassthroughCacheWrapper,param_renamed,cache_store
+177,docutils,0.18,0.18.1,"from docutils.parsers.rst.roles import unimplemented_role
+unimplemented_role(role=..., rawtext=..., text=..., lineno=..., inliner=..., attributes=...)",docutils.parsers.rst.roles.unimplemented_role,param_renamed,attributes
+178,mdit-py-plugins,0.3.5,0.4.0,"from mdit_py_plugins.texmath.index import dollar_pre
+dollar_pre(beg=..., str=...)",mdit_py_plugins.texmath.index.dollar_pre,param_renamed,str
+179,pytest-cov,6.1.0,6.1.1,"from pytest_cov.plugin import TestContextPlugin
+TestContextPlugin(cov=...)",pytest_cov.plugin.TestContextPlugin,param_renamed,cov
+180,safetensors,0.2.3,0.2.4,"from safetensors.flax import load
+load(buffer=...)",safetensors.flax.load,param_renamed,buffer
+181,opentelemetry-exporter-otlp-proto-grpc,1.11.0,1.11.1,"from opentelemetry.exporter.otlp.proto.grpc.exporter import get_resource_data
+get_resource_data(resource_class=..., name=..., sdk_resource_instrumentation_library_data=...)",opentelemetry.exporter.otlp.proto.grpc.exporter.get_resource_data,param_renamed,sdk_resource_instrumentation_library_data
+182,pymdown-extensions,12.1,12.2,"from pymdownx.delimiterprocessor import DelimiterProcessor
+DelimiterProcessor(tags=..., md=..., token=...)",pymdownx.delimiterprocessor.DelimiterProcessor,param_renamed,token
+183,smart-open,4.1.2,5.0.0,"from smart_open.s3 import open
+open(bucket_id=..., key_id=..., mode=..., multipart_upload_kwargs=...)",smart_open.s3.open,param_renamed,multipart_upload_kwargs
+184,prometheus-client,0.10.1,0.11.0,"from prometheus_client.core import Info
+Info(name=..., documentation=..., labelvalues=...)",prometheus_client.core.Info,param_renamed,labelvalues
+185,elastic-transport,7.16.0,8.0.0,"from elastic_transport import Transport
+Transport(connection_pool_class=...)",elastic_transport.Transport,param_renamed,connection_pool_class
+186,gevent,22.10.2,23.7.0,"from gevent.ssl import wrap_socket
+wrap_socket(_sock=...)",gevent.ssl.wrap_socket,param_renamed,_sock
+187,supabase-auth,2.22.3,2.22.4,"from supabase_auth.helpers import parse_user_response
+parse_user_response(data=...)",supabase_auth.helpers.parse_user_response,param_renamed,data
+188,trio-websocket,0.9.2,0.10.0,"from trio_websocket import WebSocketConnection
+WebSocketConnection(stream=..., wsproto=...)",trio_websocket.WebSocketConnection,param_renamed,wsproto
+189,ghapi,1.1.1,2.0.0,"from ghapi.all import print_summary
+print_summary(req=...)",ghapi.all.print_summary,param_renamed,req
+190,libcst,0.4.2,0.4.3,"from libcst.helpers import get_absolute_module_for_import_or_raise
+get_absolute_module_for_import_or_raise(import_node=..., current_package=...)",libcst.helpers.get_absolute_module_for_import_or_raise,param_renamed,current_package
+191,jsonlines,2.0.0,3.0.0,"from jsonlines import open
+open(name=...)",jsonlines.open,param_renamed,name
+192,zope-interface,6.4.post2,7.0.1,"from zope.interface.document import asReStructuredText
+asReStructuredText(I=...)",zope.interface.document.asReStructuredText,param_renamed,I
+193,maturin,1.8.6,1.8.7,"from maturin.bootstrap import get_requires_for_build_wheel
+get_requires_for_build_wheel(_config_settings=...)",maturin.bootstrap.get_requires_for_build_wheel,param_renamed,_config_settings
+194,aenum,3.1.15,3.1.16,"from aenum import is_single_bit
+is_single_bit(value=...)",aenum.is_single_bit,param_renamed,value
+195,makefun,1.10.2,1.11.0,"from makefun.main import gen_partial_sig
+gen_partial_sig(preset_pos_args=..., preset_kwargs=..., f=...)",makefun.main.gen_partial_sig,param_renamed,f
+196,send2trash,1.8.3,2.0.0,"from send2trash.plat_other import check_create
+check_create(dir=...)",send2trash.plat_other.check_create,param_renamed,dir
+197,simple-salesforce,1.12.7,1.12.8,"from simple_salesforce import SalesforceAuthenticationFailed
+SalesforceAuthenticationFailed(code=..., message=...)",simple_salesforce.SalesforceAuthenticationFailed,param_renamed,message
+198,pyproj,3.0.1,3.1.0,"from pyproj import Transformer
+Transformer(base_transformer=...)",pyproj.Transformer,param_renamed,base_transformer
+199,tree-sitter,0.20.4,0.21.0,"from tree_sitter import Language
+Language(name=..., library_path=...)",tree_sitter.Language,param_renamed,library_path
+200,pytest-django,4.4.0,4.5.0,"from pytest_django.fixtures import transactional_db
+transactional_db(django_db_setup=..., django_db_blocker=..., request=...)",pytest_django.fixtures.transactional_db,param_renamed,request

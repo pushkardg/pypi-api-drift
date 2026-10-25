@@ -1,0 +1,11 @@
+iniconfig==2.3.1
+numpy==1.26.4
+packaging==26.3
+pandas==1.5.3
+pandas_schema @ file:///tmp/claude-0/-home-claude/0359666d-f4bf-5f83-9bbd-c4ff1fd22d9c/scratchpad/src/pandas_schema-0.3.6
+pluggy==1.7.0
+Pygments==2.21.0
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+pytz==2026.5
+six==1.17.0

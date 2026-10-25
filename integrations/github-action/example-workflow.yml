@@ -1,0 +1,18 @@
+# .github/workflows/apidrift.yml  (the action is EXPERIMENTAL)
+name: API drift
+on:
+  pull_request:
+    paths: ["**.py", "uv.lock", "poetry.lock", "requirements*.txt", "Pipfile.lock"]
+permissions:
+  contents: read
+  security-events: write   # needed to upload SARIF to code scanning
+jobs:
+  apidrift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pushkardg/pypi-api-drift/integrations/github-action@v1.3
+        with:
+          paths: |
+            src
+          data-url: https://huggingface.co/datasets/pushkar87dg/pypi-api-drift/resolve/main/data

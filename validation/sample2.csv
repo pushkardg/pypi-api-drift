@@ -1,0 +1,61 @@
+id,project,from_version,to_version,path,symbol_kind,change_type,param,detail,popularity_rank
+1,jupyter-server,2.0.6,2.1.0,jupyter_server.gateway.managers.GatewayMappingKernelManager.start_kernel,method,became_keyword_only,path,,555
+2,jupyter-server,2.0.6,2.1.0,jupyter_server.gateway.managers.GatewayMappingKernelManager.start_kernel,method,became_keyword_only,kernel_id,,555
+3,pydantic-settings,1.99,2.0.0,pydantic_settings.DotEnvSettingsSource,class,param_renamed,env_prefix_len,env_prefix_len -> env_prefix,79
+4,pydantic-settings,1.99,2.0.0,pydantic_settings.main.env_file_sentinel,attribute,removed,,,79
+5,tenacity,8.1.0,8.2.0,tenacity.wait.wait_unit_type,attribute,removed,,,81
+6,tenacity,8.1.0,8.2.0,tenacity.wait.to_seconds,function,removed,,,81
+7,unidiff,0.7.5,1.0.0,unidiff.patch.PY2,attribute,removed,,,579
+8,unidiff,0.7.5,1.0.0,unidiff.patch.implements_to_string,function,removed,,,579
+9,mypy-boto3-s3,1.36.9,1.36.15,mypy_boto3_s3.type_defs.AbortMultipartUploadRequestRequestTypeDef,class_open,removed,,,507
+10,mypy-boto3-s3,1.28.27,1.28.36,mypy_boto3_s3.type_defs.PutBucketOwnershipControlsRequestRequestTypeDef,attribute,kind_changed,,class_open -> attribute,507
+11,requests-toolbelt,0.10.1,1.0.0,requests_toolbelt.exceptions.IgnoringGAECertificateValidation,class_open,removed,,,144
+12,sqlparse,0.4.3,0.4.4,sqlparse.keywords.FLAGS,attribute,removed,,,252
+13,sqlparse,0.4.3,0.4.4,sqlparse.keywords.is_keyword,function,removed,,,252
+14,protobuf,4.25.9,5.26.0,google.protobuf.descriptor_pool.DescriptorPool.AddServiceDescriptor,method,removed,,,32
+15,protobuf,4.25.9,5.26.0,google.protobuf.internal.decoder.SetRecursionLimit,function,removed,,,32
+16,backports-zstd,0.4.0,0.5.0,backports.zstd.zipfile.ZipFile.data_offset,property,removed,,,426
+17,backports-zstd,1.3.0,1.4.0,backports.zstd.tarfile.TarFile,class,param_removed,stream,,426
+18,google-cloud-audit-log,0.2.5,0.3.0,google.cloud.audit.audit_log_pb2.AuthorizationInfo,attribute,removed,,,559
+19,google-cloud-audit-log,0.2.5,0.3.0,google.cloud.audit.audit_log_pb2.ResourceLocation,attribute,removed,,,559
+20,pycryptodome,3.24.1,4.0.0,Crypto.Hash.cSHAKE128.cSHAKE_XOF,class,required_param_added,capacity,PK,336
+21,pycryptodome,3.24.1,4.0.0,Crypto.SelfTest.PublicKey.test_RSA.RSATest,class_open,removed,,,336
+22,asgiref,3.8.1,3.9.0,asgiref.sync.AsyncToSync.main_wrap,method,required_param_added,awaitable,PK,238
+23,asgiref,3.11.1,3.12.0,asgiref.sync.AsyncToSync.main_event_loop,attribute,removed,,,238
+24,redshift-connector,2.1.9,2.1.10,redshift_connector.connect,function,param_removed,replication,,459
+25,redshift-connector,2.1.8,2.1.9,redshift_connector.Connection.handle_COPY_IN_RESPONSE,method,removed,,,459
+26,shellingham,1.5.0.post1,1.5.2,shellingham.posix.proc.STAT_TTY,attribute,removed,,,110
+27,shellingham,1.5.0.post1,1.5.2,shellingham.posix.ps.get_process_mapping,function,removed,,,110
+28,webcolors,1.12,1.13,webcolors.SUPPORTED_SPECIFICATIONS,attribute,removed,,still available as webcolors.constants.SUPPORTED_SPECIFICATIONS,503
+29,webcolors,1.13,24.6.0,webcolors.CSS3_NAMES_TO_HEX,attribute,removed,,,503
+30,debugpy,1.8.21,1.8.22,debugpy.server.api.wait_for_client,attribute,kind_changed,,class -> attribute,305
+31,debugpy,1.8.21,1.8.22,debugpy.common.singleton.ThreadSafeSingleton.assert_locked,method,param_removed,self,,305
+32,fastmcp,2.14.7,3.0.0,fastmcp.server.proxy.ProxyManagerMixin,class,removed,,,400
+33,fastmcp,2.5.2,2.6.0,fastmcp.settings.ServerSettings.auth,attribute,removed,,still available as fastmcp.FastMCP.auth,400
+34,altair,5.4.1,5.5.0,altair.Latitude.timeUnit,method,became_keyword_only,binned,,506
+35,altair,5.4.1,5.5.0,altair.Latitude.timeUnit,method,became_keyword_only,unit,,506
+36,azure-storage-blob,12.21.0,12.22.0,azure.storage.blob.aio.BlobClient.query_blob,method,removed,,still available as azure.storage.blob.BlobClient.query_blob,270
+37,joserfc,1.2.2,1.3.0,joserfc.jwe.JWEEncModel,class,removed,,still available as joserfc.jwa.JWEEncModel,266
+38,joserfc,0.1.0,0.2.0,joserfc.rfc7518.jwe_algs.AESAlgModel.decrypt_recipient,method,removed,,still available as joserfc.rfc7516.models.JWEAlgModel.decrypt_recipient,266
+39,msal-extensions,1.1.0,1.2.0,msal_extensions.PersistedTokenCache.find,method,removed,,,251
+40,psutil,6.1.1,7.0.0,psutil.test,function,removed,,,103
+41,psutil,6.1.1,7.0.0,psutil.long,attribute,removed,,,103
+42,reportlab,4.2.5,4.3.0,reportlab.lib.rl_accel.hex32,function,removed,,,339
+43,reportlab,4.2.5,4.3.0,reportlab.lib.rl_accel.fp_str,function,removed,,,339
+44,playwright,1.59.0,1.60.0,playwright.sync_api.Page.expose_binding,method,param_removed,handle,,275
+45,playwright,1.57.0,1.58.0,playwright.sync_api.BrowserType.launch_persistent_context,method,param_removed,devtools,,275
+46,snowflake-connector-python,3.17.3,3.17.4,snowflake.connector.vendored.urllib3.util.url.IPV6_ADDRZ_RE,attribute,removed,,,261
+47,snowflake-connector-python,4.8.0,5.0.0,snowflake.connector.telemetry.TelemetryField.KEY_OOB_ERROR_CODE,attribute,removed,,,261
+48,cyclopts,3.24.0,4.0.0,cyclopts.help.HelpEntry.name,attribute,removed,,still available as cyclopts.Parameter.name,335
+49,cyclopts,4.23.3,4.24.0,cyclopts.argument.utils.get_choices_from_hint,function,removed,,still available as cyclopts.argument.get_choices_from_hint,335
+50,jupyter-core,5.5.0,5.5.1,jupyter_core.version_info,attribute,removed,,still available as jupyter_core.version.version_info,312
+51,jupyter-core,5.5.0,5.5.1,jupyter_core.migrate.pjoin,attribute,removed,,still available as jupyter_core.paths.pjoin,312
+52,xgboost,1.7.6,2.0.0,xgboost.spark.core.SparkXGBRegressorModel,class_open,removed,,still available as xgboost.spark.SparkXGBRegressorModel,590
+53,xgboost,2.0.3,2.1.0,xgboost.RabitTracker.host_ip,attribute,removed,,,590
+54,databricks-sql-connector,4.2.1,4.2.2,databricks.sql.CursorAlreadyClosedError,class_open,became_keyword_only,session_id_hex,,513
+55,databricks-sql-connector,3.7.5,4.0.0,databricks.sql.client.Cursor.execute,method,param_removed,enforce_embedded_schema_correctness,,513
+56,alembic,1.10.4,1.11.0,alembic.op.execute,function,became_keyword_only,execution_options,,154
+57,alembic,1.10.4,1.11.0,alembic.operations.ops.CreatePrimaryKeyOp,class,became_keyword_only,schema,,154
+58,httptools,0.7.1,0.8.0,httptools.HTTPProtocol.on_url,method,required_param_added,url,PK,134
+59,httptools,0.7.1,0.8.0,httptools.URL,class,removed,,still available as httptools.parser.url_parser.URL,134
+60,pyzmq,24.0.1,25.0.0,zmq.sugar.context.Context,class_open,varkw_removed,kwargs,,284

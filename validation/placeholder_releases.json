@@ -1,0 +1,50 @@
+{
+ "affected": {
+  "deepmerge": {
+   "placeholder": "0.0.0",
+   "next": "0.2.1"
+  },
+  "duckdb": {
+   "placeholder": "0.0.0",
+   "next": "0.2.4"
+  },
+  "pystache": {
+   "placeholder": "0.0.0",
+   "next": "0.6.4"
+  },
+  "pytest-xdist": {
+   "placeholder": "0.0.0",
+   "next": "2.2.1"
+  },
+  "python-daemon": {
+   "placeholder": "0.0",
+   "next": "2.3.0"
+  }
+ },
+ "releases_dropped": 5,
+ "changes_dropped": 1761,
+ "breaking_representative_dropped": 70,
+ "api_history": {
+  "dropped_placeholder_only": 119,
+  "restarted": 2230
+ },
+ "module_coverage": {
+  "dropped_placeholder_only": 40,
+  "restarted": 44
+ },
+ "top_level_modules_dropped": 0,
+ "benchmark_pairs_dropped": {
+  "versionprobe": [
+   "pytest-xdist:2.2.1:xdist.newhooks.pytest_handlecrashitem:removed:",
+   "pytest-xdist:2.2.1:xdist.plugin.PYTEST_GTE_7:removed:",
+   "pytest-xdist:2.2.1:xdist.plugin.pytest_xdist_auto_num_workers:param_removed:config",
+   "pytest-xdist:2.2.1:xdist.remote.Producer:removed:",
+   "pytest-xdist:2.2.1:xdist.remote.WorkerInteractor.pytest_collection_modifyitems:removed:",
+   "pytest-xdist:2.2.1:xdist.scheduler.LoadGroupScheduling:removed:"
+  ],
+  "versionprobe_lite": [
+   "pytest-xdist:2.2.1:xdist.newhooks.pytest_handlecrashitem:removed:"
+  ],
+  "versionprobe_verified": []
+ }
+}

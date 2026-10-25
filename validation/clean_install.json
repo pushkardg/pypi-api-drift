@@ -1,0 +1,63 @@
+{
+ "passed": true,
+ "python": "3.13.16",
+ "platform": "Linux-6.18.44-fc-v140-x86_64-with-glibc2.39",
+ "data": "/tmp/claude-0/-home-claude/0359666d-f4bf-5f83-9bbd-c4ff1fd22d9c/scratchpad/downloaded_data",
+ "steps": [
+  {
+   "step": "install (pip install '.[mcp]' pytest)",
+   "returncode": 0,
+   "seconds": 57.0,
+   "tail": [
+    "[notice] A new release of pip is available: 26.2.1 -> 26.2.2",
+    "[notice] To update, run: /tmp/apidrift_smoke_m52c6ft7/venv/bin/python -m pip install --upgrade pip"
+   ]
+  },
+  {
+   "step": "import from site-packages",
+   "returncode": 0,
+   "seconds": 0.4,
+   "tail": []
+  },
+  {
+   "step": "test suite (incl. data-level regressions)",
+   "returncode": 0,
+   "seconds": 10.4,
+   "tail": [
+    "................x....................................................... [ 91%]",
+    "..............                                                           [100%]",
+    "157 passed, 1 xfailed in 9.12s"
+   ]
+  },
+  {
+   "step": "verify data against DATA_MANIFEST.json",
+   "returncode": 0,
+   "seconds": 0.9,
+   "tail": [
+    "OK       signatures.parquet",
+    "OK       top_level_modules.parquet",
+    "2026.10-v1.3: 6/6 files verified"
+   ]
+  },
+  {
+   "step": "apidrift-check on examples/llm_generated_example.py",
+   "returncode": 0,
+   "seconds": 2.7,
+   "tail": [
+    "{\"file\": \"/tmp/apidrift_smoke_m52c6ft7/src/examples/llm_generated_example.py\", \"issues\": [{\"line\": 3, \"col\": 0, \"kind\": \"missing\", \"symbol\": \"flask.escape\", \"project\": \"flask\", \"version\": \"3.0.0\", \"message\": \"flask.escape does not exist in flask==3.0.0 (last present in 2.3.3)\"}, {\"line\": 3, \"col\": 0, \"kind\": \"missing\", \"symbol\": \"flask.Markup\", \"project\": \"flask\", \"version\": \"3.0.0\", \"message\": \"flask.Markup does not exist in flask==3.0.0 (last present in 2.3.3)\"}, {\"line\": 7, \"col\": 5, \"kind\": \"missing\", \"symbol\": \"pandas.DataFrame.append\", \"project\": \"pandas\", \"version\": \"2.2.0\", \"message\": \"pandas.DataFrame.append does not exist in pandas==2.2.0 (last present in 1.5.3)\"}, {\"line\": 8, \"col\": 12, \"kind\": \"missing\", \"symbol\": \"pandas.DataFrame.iteritems\", \"project\": \"pandas\", \"version\": \"2.2.0\", \"message\": \"pandas.DataFrame.iteritems does not exist in pandas==2.2.0 (last present in 1.5.3)\"}, {\"line\": 11, \"col\": 6, \"kind\": \"bad_call\", \"symbol\": \"pandas.DataFrame.to_csv\", \"project\": \"pandas\", \"version\": \"2.2.0\", \"message\": \"pandas.DataFrame.to_csv has no parameter 'line_terminator' in pandas==2.2.0 (accepted up to 1.4.4)\"}, {\"line\": 12, \"col\": 8, \"kind\": \"bad_call\", \"symbol\": \"urllib3.util.retry.Retry\", \"project\": \"urllib3\", \"version\": \"2.2.0\", \"message\": \"urllib3.util.retry.Retry has no parameter 'method_whitelist' in urllib3==2.2.0 (accepted up to 1.26.20)\"}, {\"line\": 17, \"col\": 6, \"kind\": \"missing\", \"symbol\": \"flask.Flask.env\", \"project\": \"flask\", \"version\": \"3.0.0\", \"message\": \"flask.Flask.env does not exist in flask==3.0.0 (last present in 2.2.5)\"}, {\"line\": 18, \"col\": 4, \"kind\": \"bad_call\", \"symbol\": \"pandas.read_csv\", \"project\": \"pandas\", \"version\": \"2.2.0\", \"message\": \"pandas.read_csv has no parameter 'error_bad_lines' in pandas==2.2.0 (accepted up to 1.5.3)\"}]}"
+   ],
+   "findings": 8,
+   "expected_missing": []
+  },
+  {
+   "step": "MCP server end to end (installed apidrift-mcp over stdio)",
+   "returncode": 0,
+   "seconds": 3.8,
+   "tail": [
+    "[ok] check_code ['flask.escape', 'pandas.DataFrame.append']",
+    "[ok] errors are returned, not raised 'not-a-real-package' is not in the dataset",
+    "MCP SMOKE TEST PASSED"
+   ]
+  }
+ ]
+}

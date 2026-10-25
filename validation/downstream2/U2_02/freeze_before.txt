@@ -1,0 +1,14 @@
+cffi==2.1.1
+cryptography==3.0
+ecdsa==0.14.1
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pyasn1==0.6.4
+pycparser==3.11
+pycryptodome==3.9.8
+pygments==2.21.0
+pytest==8.4.2
+-e file:///home/claude/apidrift/validation/downstream2/part2/U2_02/python-jose-3.2.0
+rsa==4.9.1
+six==1.17.0

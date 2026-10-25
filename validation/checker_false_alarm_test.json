@@ -1,0 +1,110 @@
+{
+ "files": 1823,
+ "packages": 14,
+ "flags": {
+  "missing": 13,
+  "bad_call": 7
+ },
+ "examples": [
+  [
+   "pandas/core/groupby/ops.py",
+   40,
+   "pandas.core.dtypes.common.ensure_uint64 does not exist in pandas==3.0.5 (last present in 1.3.5)"
+  ],
+  [
+   "pandas/core/groupby/ops.py",
+   247,
+   "pandas.core.dtypes.common.ensure_uint64 does not exist in pandas==3.0.5 (last present in 1.3.5)"
+  ],
+  [
+   "sklearn/externals/array_api_compat/common/_helpers.py",
+   577,
+   "jax.experimental.array_api does not exist in jax==0.12.0 (last present in 0.4.38)"
+  ],
+  [
+   "sklearn/externals/array_api_compat/common/_helpers.py",
+   924,
+   "jax.experimental.array_api does not exist in jax==0.12.0 (last present in 0.4.38)"
+  ],
+  [
+   "sklearn/utils/fixes.py",
+   412,
+   "scipy.sparse.random_array has no parameter 'random_state' in scipy==1.18.1 (accepted up to 1.14.1)"
+  ],
+  [
+   "scipy/stats/_sensitivity_analysis.py",
+   81,
+   "scipy.stats.qmc.Sobol has no parameter 'seed' in scipy==1.18.1 (accepted up to 1.14.1)"
+  ],
+  [
+   "scipy/special/_testutils.py",
+   170,
+   "numpy.finfo.eps does not exist in numpy==2.5.3 (last present in 2.3.5)"
+  ],
+  [
+   "scipy/_external/array_api_compat/common/_helpers.py",
+   571,
+   "jax.experimental.array_api does not exist in jax==0.12.0 (last present in 0.4.38)"
+  ],
+  [
+   "scipy/_external/array_api_compat/common/_helpers.py",
+   906,
+   "jax.experimental.array_api does not exist in jax==0.12.0 (last present in 0.4.38)"
+  ],
+  [
+   "scipy/io/_idl.py",
+   262,
+   "numpy.rec.recarray.reshape does not exist in numpy==2.5.3 (last present in 1.26.4)"
+  ],
+  [
+   "scipy/io/_harwell_boeing/_fortran_format_parser.py",
+   124,
+   "numpy.finfo.precision does not exist in numpy==2.5.3 (last present in 1.26.4)"
+  ],
+  [
+   "scipy/io/_harwell_boeing/_fortran_format_parser.py",
+   126,
+   "numpy.finfo.maxexp does not exist in numpy==2.5.3 (last present in 1.26.4)"
+  ],
+  [
+   "scipy/io/_harwell_boeing/_fortran_format_parser.py",
+   126,
+   "numpy.finfo.minexp does not exist in numpy==2.5.3 (last present in 1.26.4)"
+  ],
+  [
+   "scipy/optimize/_differentialevolution.py",
+   1089,
+   "scipy.stats.qmc.LatinHypercube has no parameter 'seed' in scipy==1.18.1 (accepted up to 1.14.1)"
+  ],
+  [
+   "scipy/optimize/_differentialevolution.py",
+   1091,
+   "scipy.stats.qmc.Sobol has no parameter 'seed' in scipy==1.18.1 (accepted up to 1.14.1)"
+  ],
+  [
+   "scipy/optimize/_differentialevolution.py",
+   1093,
+   "scipy.stats.qmc.Halton has no parameter 'seed' in scipy==1.18.1 (accepted up to 1.14.1)"
+  ],
+  [
+   "scipy/optimize/_shgo.py",
+   741,
+   "scipy.stats.qmc.Sobol has no parameter 'seed' in scipy==1.18.1 (accepted up to 1.14.1)"
+  ],
+  [
+   "scipy/optimize/_shgo.py",
+   745,
+   "scipy.stats.qmc.Halton has no parameter 'seed' in scipy==1.18.1 (accepted up to 1.14.1)"
+  ],
+  [
+   "pydantic/v1/_hypothesis_plugin.py",
+   94,
+   "pydantic.color.r_rgba does not exist in pydantic==2.13.5 (last present in 1.10.26)"
+  ],
+  [
+   "pydantic/v1/_hypothesis_plugin.py",
+   96,
+   "pydantic.color.r_hsla does not exist in pydantic==2.13.5 (last present in 1.10.26)"
+  ]
+ ]
+}

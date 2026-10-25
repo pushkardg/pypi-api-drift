@@ -1,0 +1,30 @@
+{
+ "dataset": "pypi-api-drift",
+ "data_version": "2026.10-v1.3",
+ "files": {
+  "api_history.parquet": {
+   "sha256": "11413f52924b09ef2ec0527ffcbfd589b81b1fd50724f32fa8ed5201674de09d",
+   "bytes": 128737438
+  },
+  "changes.parquet": {
+   "sha256": "2d3ffd2f896200d8b5b8e69d004d5e934d8c33d99a8902650ec9d51f003287cd",
+   "bytes": 138389437
+  },
+  "module_coverage.parquet": {
+   "sha256": "ffff57a59deb25b902e04e0076307add62af9866686a2a36ff5c354be4d44d60",
+   "bytes": 2748485
+  },
+  "releases.parquet": {
+   "sha256": "ca6064d4daec6a512665c70fd0fefe2d089106356e5952ba5dbba0a9de1efd5f",
+   "bytes": 1587736
+  },
+  "signatures.parquet": {
+   "sha256": "45225bc4517fa853ef0bf9682af06e4df7225172b36bf76053ed49b040d101ec",
+   "bytes": 56053486
+  },
+  "top_level_modules.parquet": {
+   "sha256": "70d75faca76aa23900d91ef94473490b2e0cd23d2a274566b0054499b383b0d5",
+   "bytes": 1496235
+  }
+ }
+}

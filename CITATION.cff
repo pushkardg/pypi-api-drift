@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this dataset or its tools, please cite it as below."
+type: dataset
+title: "PyPI API Drift: a release-level record of public API changes in 1,872 popular Python libraries"
+authors:
+  - family-names: "Devanahalli Gopalakrishna"
+    given-names: "Pushkar"
+    affiliation: "Independent Researcher, USA"
+version: "2026.10-v1.3"
+date-released: "2026-10-22"
+license: CC-BY-4.0
+repository-code: "https://github.com/pushkardg/pypi-api-drift"
+url: "https://huggingface.co/datasets/pushkar87dg/pypi-api-drift"
+keywords:
+  - Python
+  - PyPI
+  - API evolution
+  - breaking changes
+  - semantic versioning
+  - code generation
+  - large language models
+  - benchmark
+abstract: >-
+  Public-API snapshots and release-to-release changes for the 1,872 most-downloaded Python libraries
+  (55,565 releases, 2021-2026), with signature-level detail, deduplication, confidence labels, a coverage layer and
+  AI-agent runtime audits; plus apidrift-check (an offline version-aware checker), apidrift-lookup and an MCP server,
+  and the VersionProbe benchmark.

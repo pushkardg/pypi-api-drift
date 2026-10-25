@@ -1,0 +1,43 @@
+id,project,from_version,to_version,path,symbol_kind,change_type,param,detail,confidence,popularity_rank
+4,compressed-tensors,0.15.0.1,0.16.0,compressed_tensors.disable_offload,function,removed,,,high,1978
+6,timm,0.5.4,0.6.5,timm.models.CspNet,class_open,param_removed,aa_layer,,high,1146
+11,azure-mgmt-cdn,13.1.1,14.0.0,azure.mgmt.cdn.models.CookiesMatchConditionParametersTypeName,class_open,removed,,,high,1872
+14,discord-py,1.7.3,2.0.0,discord.ext.commands.Context,class,required_param_added,view,KO,high,1794
+18,rich-argparse,1.7.0,1.7.1,rich_argparse.MetavarTypeRichHelpFormatter,class_open,became_keyword_only,console,,high,925
+20,pint,0.18,0.20,pint.testsuite.test_compat_downcast.test_array_quantity_creation_by_multiplication,function,required_param_added,local_registry,PK,high,1666
+24,yt-dlp,2023.7.6,2023.9.24,yt_dlp.compat.passthrough_module,function,removed,,still available as yt_dlp.compat.compat_utils.passthrough_module,high,1043
+29,apache-airflow,1.10.15,2.0.1,airflow.configuration.mkdir_p,function,removed,,,high,1383
+30,llama-index-workflows,0.1.0,0.2.0,workflows.utils.import_module_from_qualified_name,function,removed,,still available as workflows.context.utils.import_module_from_qualified_name,high,1789
+34,azure-mgmt-monitor,6.0.2,7.0.0,azure.mgmt.monitor.v2022_10_01,module,removed,,,high,1653
+39,azure-mgmt-containerregistry,14.0.0,15.0.0,azure.mgmt.containerregistry.models.PrivateEndpointConnectionListResult,class,removed,,,high,1434
+40,discord-py,1.7.3,2.0.0,discord.Relationship,class,removed,,,high,1794
+42,jaxlib,0.5.3,0.6.0,jaxlib.triton.dialect.experimental_descriptor_scatter,function,removed,,,high,1286
+45,minio,7.2.19,7.2.20,minio.Minio.append_object,method,param_removed,filename,,high,1226
+47,types-boto3-s3,1.36.9,1.36.15,types_boto3_s3.type_defs.GetBucketOwnershipControlsRequestRequestTypeDef,class_open,removed,,,high,1667
+49,azure-mgmt-web,10.1.0,11.0.0,azure.mgmt.web.models.ScaleRule,class,removed,,,high,1717
+54,pygit2,1.13.3,1.14.0,pygit2.GIT_DIFF_FIND_ALL,attribute,removed,,,high,1828
+55,aws-cdk-lib,2.223.0,2.224.0,aws_cdk.aws_cloudfront.VpcOriginReference,class,removed,,still available as aws_cdk.interfaces.aws_cloudfront.VpcOriginReference,high,1502
+57,faiss-cpu,1.8.0.post1,1.9.0,faiss.knn_extra_metrics,function,required_param_added,indexes,PK,high,1068
+70,azure-mgmt-eventhub,11.2.0,12.0.0,azure.mgmt.eventhub.models.AuthorizationRuleListResult,class,removed,,,high,1833
+73,mypy-boto3-glue,1.35.3,1.35.18,mypy_boto3_glue.type_defs.EncryptionConfigurationExtraOutputTypeDef,class_open,removed,,,high,1550
+75,azure-functions,1.23.0,1.24.0,azure.functions.decorators.openai.EmbeddingsInput,class,param_renamed,model,model -> ai_connection_name,high,1869
+79,bokeh,3.1.0,3.1.1,bokeh.server.tornado.BokehTornado,class_open,became_keyword_only,stats_log_frequency_milliseconds,,high,1685
+86,pyairtable,1.5.0,2.0.0,pyairtable.orm.fields.LookupField,class,param_renamed,model,model -> validate_type,high,1960
+87,apache-airflow,1.10.15,2.0.1,airflow.operators.generic_transfer.GenericTransfer,class,became_keyword_only,destination_conn_id,,high,1383
+88,mkdocstrings-python,1.6.2,1.6.3,mkdocstrings_handlers.python.get_handler,function,became_keyword_only,config_file_path,,high,1560
+89,ortools,9.14.6206,9.15.6755,ortools.constraint_solver.pywrapcp.GlobalVehicleBreaksConstraint,class,removed,,,high,1553
+93,azure-mgmt-recoveryservicesbackup,10.0.0,11.0.0,azure.mgmt.recoveryservicesbackup.models.BMSBackupEnginesQueryObject,class,removed,,,high,1894
+104,yt-dlp,2026.3.17,2026.6.9,yt_dlp.extractor.googlepodcasts,module,removed,,,high,1043
+107,ray,2.40.0,2.41.0,ray.util.state.state_manager.StateDataSourceClient.get_task_info,method,removed,,,high,1008
+110,faiss-cpu,1.13.2,1.14.2,faiss.swigfaiss.RaBitQStats,class,removed,,still available as faiss.RaBitQStats,high,1068
+113,newrelic,11.4.0,11.5.0,newrelic.core.adaptive_sampler,module,removed,,still available as newrelic.core.samplers.adaptive_sampler,high,1990
+114,ray,2.42.1,2.43.0,ray.thirdparty_files.psutil.long,attribute,removed,,,high,1008
+121,jaxlib,0.9.0.1,0.9.1,jaxlib.mlir.dialects.arith.DenormalMode,class_open,removed,,,high,1286
+128,google-analytics-admin,0.24.1,0.25.0,google.analytics.admin_v1alpha.services.analytics_admin_service.transports.AnalyticsAdminServiceGrpcAsyncIOTransport.set_automated_ga4_configuration_opt_out,property,removed,,,high,1584
+130,python-gitlab,3.15.0,4.0.0,gitlab.NOTIFICATION_LEVEL_WATCH,attribute,removed,,still available as gitlab.const.NOTIFICATION_LEVEL_WATCH,high,1082
+135,azure-mgmt-servicefabric,2.0.0,2.1.0,azure.mgmt.servicefabric.models.Enum14,class_open,removed,,,high,1971
+140,propcache,0.1.0,0.2.0,propcache.cached_property,attribute,removed,,still available as propcache.api.cached_property,high,55
+150,elementpath,3.0.1,3.0.2,elementpath.xpath31.xpath31_parser.infixr,attribute,removed,,,high,1392
+151,harbor-rewardkit,0.1.7,0.2.0,rewardkit.agents.ClaudeCodeCLI,class,removed,,,high,1537
+155,azure-mgmt-recoveryservicesbackup,10.0.0,11.0.0,azure.mgmt.recoveryservicesbackup.operations.DeletedProtectionContainersOperations.list,method,became_keyword_only,filter,,high,1894
+156,bokeh,3.3.4,3.4.0,bokeh.models.Divider,class_open,removed,,,high,1685

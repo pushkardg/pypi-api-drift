@@ -1,0 +1,12 @@
+exceptiongroup==1.1.2
+greenlet==2.0.2
+iniconfig==2.0.0
+packaging==23.1
+pluggy==1.2.0
+pydantic==1.10.9
+pytest==7.4.0
+sqlalchemy==1.4.41
+sqlalchemy2-stubs==0.0.2a34
+sqlmodel @ file:///home/claude/apidrift/validation/downstream2/part1/U1_02/src
+tomli==2.0.1
+typing-extensions==4.7.1

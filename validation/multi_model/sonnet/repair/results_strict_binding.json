@@ -1,0 +1,61 @@
+{
+ "note": "post-hoc sensitivity analysis, not preregistered; same answers and judge verdicts, full binding",
+ "tasks_scored_preregistered": 143,
+ "tasks_rechecked": 143,
+ "env_failures_on_recheck": [],
+ "conditions": {
+  "a": {
+   "name": "closed book",
+   "success_preregistered": 0.4196,
+   "valid_strict": 0.4336,
+   "success_strict": 59,
+   "success_strict_rate": 0.4126,
+   "success_strict_ci": [
+    33.5,
+    49.5
+   ],
+   "lost_to_missing_required_args": 1
+  },
+  "b": {
+   "name": "documentation",
+   "success_preregistered": 0.5664,
+   "valid_strict": 0.6224,
+   "success_strict": 80,
+   "success_strict_rate": 0.5594,
+   "success_strict_ci": [
+    47.8,
+    63.8
+   ],
+   "lost_to_missing_required_args": 1
+  },
+  "c": {
+   "name": "PyPI API Drift",
+   "success_preregistered": 0.6923,
+   "valid_strict": 0.7902,
+   "success_strict": 99,
+   "success_strict_rate": 0.6923,
+   "success_strict_ci": [
+    61.2,
+    76.2
+   ],
+   "lost_to_missing_required_args": 0
+  }
+ },
+ "mcnemar_strict": {
+  "c_vs_a": {
+   "c_only": 47,
+   "other_only": 7,
+   "p": 0.0
+  },
+  "c_vs_b": {
+   "c_only": 27,
+   "other_only": 8,
+   "p": 0.0019
+  }
+ },
+ "rerun_agreement": {
+  "a": 1.0,
+  "b": 1.0,
+  "c": 1.0
+ }
+}

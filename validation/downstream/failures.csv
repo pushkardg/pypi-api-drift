@@ -1,0 +1,14 @@
+case_id,file,line,library_api,param,category,evidence
+C01_requests-toolbelt,requests_toolbelt/_compat.py,48,urllib3.contrib.appengine,,api,`from requests.packages.urllib3.contrib import appengine` (requests.packages aliases urllib3) raises ImportError on urllib3 2.0 (module removed); all 23 test modules fail at collection.
+C01_requests-toolbelt,requests_toolbelt/_compat.py,50,urllib3.contrib.appengine,,api,"The fallback `from urllib3.contrib import appengine` in the except branch also raises ImportError, so the error propagates; same 161 tests."
+C02_pandas_schema,pandas_schema/schema.py,67,pandas.DataFrame.iteritems,,api,`df.iteritems()` raises AttributeError: 'DataFrame' object has no attribute 'iteritems' (removed in pandas 2.0); test_schema.py::OrderedSchema::test_mixed_columns.
+C03_flask-sqlalchemy,flask_sqlalchemy/__init__.py,14,flask._app_ctx_stack,,api,"`from flask import _app_ctx_stack` raises ImportError on Flask 3.0 (removed after 2.3 deprecation); tests/conftest.py cannot import, so all 72 tests fail."
+C04_flask-login,flask_login/utils.py,14,werkzeug.urls.url_decode,,api,`from werkzeug.urls import url_decode` raises ImportError on Werkzeug 3.0; test_login.py fails at import (all 98 tests).
+C05_dataset,dataset/database.py,109,sqlalchemy.MetaData,bind,api,"`MetaData(schema=..., bind=self.executable)` raises TypeError: unexpected keyword argument 'bind' (removed in SQLAlchemy 2.0); all 54 tests hit this via Database.metadata."
+C06_lmfit,lmfit/model.py,201,numpy.asfarray,,api,`np.asfarray(x)` in Model._coerce_array raises AttributeError (removed in NumPy 2.0); 232 tests.
+C06_lmfit,lmfit/model.py,203,numpy.asfarray,,api,"`np.asfarray(x, dtype=np.complex128)` raises AttributeError on NumPy 2.0; 12 complex-input tests."
+C06_lmfit,lmfit/minimizer.py,2407,numpy.asfarray,,api,"`np.asfarray(arr, dtype=np.float64)` in _nan_policy raises AttributeError; 128 tests directly, plus 5 shgo tests (fail with x=None at minimizer.py:526, pass when asfarray is shimmed) and test_brute::test_nfev_workers (raised in worker process)."
+C07_jinjasql,jinjasql/core.py,6,jinja2.utils.Markup,,api,`from jinja2.utils import Markup` raises ImportError on Jinja2 3.1 (Markup re-export removed); both test modules fail at collection (11 tests).
+C08_marshmallow-jsonschema,marshmallow_jsonschema/base.py,11,marshmallow.utils._Missing,,api,`from marshmallow.utils import _Missing` raises ImportError on marshmallow 4.0 (moved to marshmallow.constants; private name); all 5 test modules (63 tests) fail at import.
+C09_click-repl,click_repl/__init__.py,6,click._bashcomplete,,api,`import click._bashcomplete` raises ModuleNotFoundError on click 8.0 (private module replaced by click.shell_completion); all 3 test modules fail at import.
+C11_click-default-group_control,test.py,33,click.exceptions.NoSuchOption,,other,"Test asserts lowercase 'no such option' in the output, but click 8.0 prints 'No such option: -x' (message wording change, not an API removal)."

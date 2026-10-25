@@ -1,0 +1,15 @@
+{
+ "module_coverage_rows": 289735,
+ "module_coverage_projects": 1800,
+ "generated_init_class_paths": 79234,
+ "clamped": 342126,
+ "sig_dropped": 9373,
+ "status_static": 12315035,
+ "status_compiled_boundary": 132781,
+ "status_dynamic_module": 2778778,
+ "status_stub_only": 361460,
+ "positional_only_renames_unflagged": 77,
+ "generated_constructor_events_medium": 369,
+ "top_level_modules_rows": 211244,
+ "adjacent_intervals_merged": 2358
+}

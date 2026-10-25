@@ -1,0 +1,84 @@
+{
+ "items": 984,
+ "pairs": 492,
+ "libraries": 375,
+ "cutoff": "2026-07-01",
+ "closed_book": {
+  "answered": 984,
+  "item_acc": 0.5843,
+  "item_ci": [
+   55.3,
+   61.5
+  ],
+  "pair_acc": 0.2663,
+  "pair_ci": [
+   22.9,
+   30.7
+  ],
+  "acc_on_valid": 0.7276,
+  "acc_on_invalid": 0.4411,
+  "by_type": {
+   "param_removed": 0.6218,
+   "param_renamed": 0.5211,
+   "removed": 0.5889
+  },
+  "before_cutoff": {
+   "n": 888,
+   "item_acc": 0.5912
+  },
+  "after_cutoff": {
+   "n": 96,
+   "item_acc": 0.5208
+  },
+  "by_year": {
+   "2021": 0.5932,
+   "2022": 0.5793,
+   "2023": 0.6344,
+   "2024": 0.5946,
+   "2025": 0.5934,
+   "2026": 0.5161
+  }
+ },
+ "with_api_history": {
+  "answered": 984,
+  "item_acc": 1.0,
+  "item_ci": [
+   99.6,
+   100.0
+  ],
+  "pair_acc": 1.0,
+  "pair_ci": [
+   99.2,
+   100.0
+  ],
+  "acc_on_valid": 1.0,
+  "acc_on_invalid": 1.0,
+  "by_type": {
+   "param_removed": 1.0,
+   "param_renamed": 1.0,
+   "removed": 1.0
+  },
+  "before_cutoff": {
+   "n": 888,
+   "item_acc": 1.0
+  },
+  "after_cutoff": {
+   "n": 96,
+   "item_acc": 1.0
+  },
+  "by_year": {
+   "2021": 1.0,
+   "2022": 1.0,
+   "2023": 1.0,
+   "2024": 1.0,
+   "2025": 1.0,
+   "2026": 1.0
+  }
+ },
+ "mcnemar": {
+  "fixed_by_history": 409,
+  "broken_by_history": 0,
+  "chi2": 407.0,
+  "p_lt_0.001": true
+ }
+}

@@ -1,0 +1,101 @@
+id,project,from_version,to_version,path,symbol_kind,change_type,param,detail,confidence,popularity_rank
+1,stripe,12.5.1,13.0.0,stripe.AccountService.UpdateParamsIndividualVerification,class,removed,,,high,522
+2,stripe,12.5.1,13.0.0,stripe.AccountService.UpdateParamsDocumentsProofOfAddress,class,removed,,,high,522
+3,librt,0.7.8,0.8.0,librt.internal.write_int,function,became_positional_only,value,,high,235
+4,librt,0.7.8,0.8.0,librt.strings.BytesWriter.append,method,became_positional_only,x,,high,235
+5,psycopg-pool,3.2.8,3.3.0,psycopg_pool.base.BasePool,class,required_param_added,close_returns,KO,high,510
+6,psycopg-pool,3.1.5,3.1.6,psycopg_pool.AsyncNullConnectionPool,class,vararg_removed,args,,high,510
+7,agent-client-protocol,0.10.1,0.11.0,acp.schema.DisableProvidersResponse,class_open,removed,,,high,741
+8,agent-client-protocol,0.7.1,0.8.0,acp.schema.SessionUpdate2,attribute,removed,,,high,741
+9,pybase64,1.2.3,1.3.0,pybase64.distutils,module,removed,,,high,836
+10,rich,13.0.1,13.1.0,rich.traceback.Traceback.from_exception,classmethod,became_keyword_only,locals_max_length,,high,52
+11,rich,13.0.1,13.1.0,rich.traceback.Traceback.from_exception,classmethod,became_keyword_only,max_frames,,high,52
+12,jsonschema-path,0.3.4,0.4.0,jsonschema_path.accessors.ResolverAccessor,class_open,removed,,,high,349
+13,jsonschema-path,0.3.4,0.4.0,jsonschema_path.SchemaAccessor,class_open,param_renamed,lookup,lookup -> schema,high,349
+14,joblib,1.4.2,1.5.0,joblib.Memory,class,param_removed,bytes_limit,,high,168
+15,joblib,1.3.2,1.4.0,joblib.MemorizedResult,class,param_removed,args_id,,high,168
+16,firebase-admin,6.9.0,7.0.0,firebase_admin.messaging.send_all,function,removed,,,high,926
+17,firebase-admin,6.9.0,7.0.0,firebase_admin.messaging.send_multicast,function,removed,,,high,926
+18,langfuse,4.14.5,4.14.6,langfuse.api.models.client.ModelsClient.create,method,default_removed,unit,was OMIT,high,706
+19,langfuse,4.18.0,5.0.1,langfuse.api.datasets.client.DatasetsClient.get_runs,method,removed,,still available as langfuse.api.resources.datasets.client.DatasetsClient.get_runs,high,706
+20,importlib-resources,5.13.0,6.0.0,importlib_resources.contents,function,removed,,,high,350
+21,importlib-resources,5.13.0,6.0.0,importlib_resources.path,function,removed,,,high,350
+22,pdfplumber,0.10.4,0.11.0,pdfplumber.utils.text.WordExtractor.char_begins_new_word,method,required_param_added,direction,PK,high,485
+23,pdfplumber,0.10.4,0.11.0,pdfplumber.utils.text.WordExtractor,class,positional_reordered,,"['x_tolerance', 'y_tolerance', 'x_tolerance_ratio', 'y_tolerance_ratio', 'keep_blank_chars', 'use_text_flow', 'horizontal_ltr', 'vertical_ttb', 'extra_attrs', 'split_at_punctuation', 'expand_ligatures'] -> ['x_tolerance', 'y_tolerance', 'x_tolerance_ratio', 'y_tolerance_ratio', 'keep_blank_chars', 'use_text_flow', 'vertical_ttb', 'horizontal_ltr', 'extra_attrs', 'split_at_punctuation', 'expand_ligatures']",high,485
+24,sentence-transformers,4.1.0,5.0.0,sentence_transformers.models.CNN.save,method,became_keyword_only,safe_serialization,,high,715
+25,sentence-transformers,5.3.0,5.4.0,sentence_transformers.sparse_encoder.losses.CSRLoss.normalized_mean_squared_error,function,removed,,still available as sentence_transformers.sparse_encoder.losses.csr.normalized_mean_squared_error,high,715
+26,aiobotocore,3.7.0,3.8.0,aiobotocore.response.HttpxStreamingBody,attribute,kind_changed,,class_open -> attribute,high,31
+27,aiobotocore,3.7.0,3.8.0,aiobotocore.httpchecksum.StreamingChecksumBody,attribute,kind_changed,,class_open -> attribute,high,31
+28,tifffile,2026.5.15,2026.6.1,tifffile.NullContext,class,removed,,,high,820
+29,tifffile,2026.4.11,2026.5.2,tifffile.zarr.ZarrTiffStore,class_open,param_removed,squeeze,,high,820
+30,wandb,0.21.0,0.21.1,wandb.integration.metaflow.wandb_log,function,became_positional_only,func,,high,961
+31,wandb,0.15.12,0.16.0,wandb.sdk.launch.builder.abstract.AbstractBuilder.from_config,classmethod,param_removed,verify,,high,961
+32,gunicorn,24.0.0,24.1.0,gunicorn.http.Request.parse_proxy_protocol,method,removed,,,high,265
+33,gunicorn,25.1.0,25.2.0,gunicorn.asgi.websocket.WebSocketProtocol.reader,attribute,removed,,still available as gunicorn.http.body.Body.reader,high,265
+34,langchain-google-genai,3.0.3,3.1.0,langchain_google_genai.genai_aqa,module,removed,,,high,996
+35,langchain-google-genai,1.0.3,1.0.4,langchain_google_genai.GoogleGenerativeAIEmbeddings.embed_documents,method,param_renamed,batch_size,batch_size -> task_type,high,996
+36,google-ads,31.1.0,33.0.0,google.ads.googleads.v22,module,removed,,,high,991
+37,google-ads,31.1.0,33.0.0,google.ads.googleads.interceptors.AsyncUnaryUnaryMetadataInterceptor,class_open,param_removed,use_cloud_org_for_api_access,,high,991
+38,confluent-kafka,2.11.0,2.11.1,confluent_kafka.schema_registry.rules.encryption.encrypt_executor.FieldEncryptionExecutorTransform,class,param_removed,dek_expiry_days,,high,471
+39,confluent-kafka,2.10.0,2.10.1,confluent_kafka.schema_registry.protobuf.protobufToDecimal,function,removed,,,high,471
+40,pycodestyle,2.10.0,2.11.0,pycodestyle.TESTSUITE_PATH,attribute,removed,,,high,381
+41,pycodestyle,2.10.0,2.11.0,pycodestyle.missing_whitespace_around_operator,function,removed,,,high,381
+42,azure-servicebus,7.11.4,7.12.0,azure.servicebus.ServiceBusConnectionStringProperties,class,required_param_added,fully_qualified_namespace,KO,high,895
+43,azure-servicebus,7.11.4,7.12.0,azure.servicebus.ServiceBusConnectionStringProperties,class,required_param_added,endpoint,KO,high,895
+44,langchain-protocol,0.0.8,0.0.9,langchain_protocol.ServerToolCallResultBlock,class_open,removed,,,high,411
+45,langchain-protocol,0.0.8,0.0.9,langchain_protocol.VideoBlock,class_open,removed,,,high,411
+46,tornado,6.4.2,6.5,tornado.platform.twisted.TwistedResolver,class,removed,,,high,262
+47,tornado,6.4.2,6.5,tornado.httputil.HTTPServerRequest,class,param_removed,host,,high,262
+48,beartype,0.20.2,0.21.0,beartype.BeartypeConf.is_check_pep557,property,removed,,,high,333
+49,beartype,0.11.0,0.12.0,beartype.roar.BeartypeDoorHintViolation,class_open,required_param_added,culprits,PK,high,333
+50,jeepney,0.8.0,0.9.0,jeepney.bindgen.generate,function,removed,,,high,202
+51,jeepney,0.8.0,0.9.0,jeepney.routing,module,removed,,,high,202
+52,bandit,1.8.2,1.8.3,bandit.plugins.pytorch_load_save,module,removed,,,high,675
+53,bandit,1.7.4,1.7.5,bandit.core.manager.BanditManager.progress,attribute,removed,,,high,675
+54,opentelemetry-api,1.15.0,1.16.0,opentelemetry.context.iter_entry_points,external_reexport,removed,,,high,60
+55,opentelemetry-api,1.42.1,1.43.0,opentelemetry.propagate.entry_points,function,removed,,,high,60
+56,import-linter,2.14,2.15,importlinter.domain.dotfile.Edge.emphasized,attribute,removed,,,high,781
+57,import-linter,1.12.1,2.0,importlinter.contracts.layers.LayersContract.flattened_layers,attribute,removed,,,high,781
+58,fastcore,1.14.5,2.0.0,fastcore.foundation.save_config_file,function,removed,,still available as fastcore.all.save_config_file,high,525
+59,fastcore,1.14.5,2.0.0,fastcore.utils.run_procs,function,removed,,still available as fastcore.all.run_procs,high,525
+60,torchvision,0.15.2,0.16.0,torchvision.transforms.v2.functional.clamp_bounding_box,function,removed,,,high,887
+61,torchvision,0.15.2,0.16.0,torchvision.transforms.v2.functional.horizontal_flip_image_pil,attribute,removed,,,high,887
+62,uvicorn,0.50.2,0.51.0,uvicorn.supervisors.Multiprocess.target,attribute,removed,,still available as uvicorn.supervisors.ChangeReload.target,high,46
+63,uvicorn,0.29.0,0.30.0,uvicorn.supervisors.Multiprocess.shutdown,method,removed,,still available as uvicorn.Server.shutdown,high,46
+64,boltons,24.0.0,24.1.0,boltons.timeutils.EPOCH_NAIVE,attribute,removed,,,high,730
+65,boltons,23.1.1,24.0.0,boltons.urlutils.unichr,attribute,removed,,,high,730
+66,openapi-pydantic,0.4.1,0.5.0,openapi_pydantic.v3.v3_1_0,module,removed,,,high,412
+67,openapi-pydantic,0.3.2,0.4.0,openapi_pydantic.v3.v3_0_3.header.LiteralEmptyString,attribute,removed,,,high,412
+68,sendgrid,6.12.0,6.12.1,sendgrid.PublicKey,external_reexport,removed,,,high,783
+69,sendgrid,6.12.0,6.12.1,sendgrid.Signature,external_reexport,removed,,,high,783
+70,h3,3.7.7,4.1.0,h3.polyfill,attribute,removed,,,high,968
+71,h3,3.7.7,4.1.0,h3.get_res0_indexes,attribute,removed,,,high,968
+72,gcsfs,2025.12.0,2026.1.0,gcsfs.zonal_file.ZonalFile,class_open,vararg_removed,args,,high,640
+73,gcsfs,2026.5.0,2026.6.0,gcsfs.prefetcher.PrefetchConsumer.on_error,attribute,removed,,,high,640
+74,jsonconversion,1.0.0,1.0.1,source.jsonconversion,module,removed,,still available as jsonconversion,high,847
+75,jsonconversion,1.1.2,1.2.0,jsonconversion.DistributionNotFound,external_reexport,removed,,,high,847
+76,jinja2,3.1.4,3.1.5,jinja2.sandbox.SandboxedEnvironment.format_string,method,removed,,,high,41
+77,jinja2,3.1.4,3.1.5,jinja2.sandbox.inspect_format_method,function,removed,,,high,41
+78,python-multipart,0.0.8,0.0.9,multipart.multipart.DecodeError,class_open,removed,,still available as multipart.exceptions.DecodeError,high,83
+79,python-multipart,0.0.8,0.0.9,multipart.multipart.STATE_FIELD_DATA,attribute,removed,,,high,83
+80,pyproject-hooks,1.0.0,1.1.0,pyproject_hooks.BackendInvalid,attribute,kind_changed,,class_open -> attribute,high,273
+81,astroid,4.1.2,4.3.0,astroid.nodes.Subscript.infer_lhs,method,varkw_removed,kwargs,,medium,500
+82,astroid,4.1.2,4.3.0,astroid.nodes.If.infer,method,varkw_removed,kwargs,,medium,500
+83,chardet,5.2.0,6.0.0,chardet.enums.LanguageFilter.NONE,attribute,removed,,,medium,166
+84,groq,0.6.0,0.7.0,groq.types.EmbeddingCreateParams.dimensions,attribute,removed,,,medium,874
+85,groq,0.32.0,0.33.0,groq.types.chat.completion_create_params.Document.text,attribute,removed,,still available as groq.types.audio.Translation.text,medium,874
+86,attrs,25.4.0,26.1.0,attr.exceptions.FrozenError.args,attribute,removed,,,medium,29
+87,universal-pathlib,0.1.4,0.2.0,upath.UPath.is_absolute,method,removed,,,medium,766
+88,universal-pathlib,0.2.6,0.3.0,upath.implementations.local.LocalPath.is_reserved,method,removed,,still available as upath.UPath.is_reserved,medium,766
+89,langchain-community,0.2.0,0.2.1,langchain_community.embeddings.OctoAIEmbeddings.query_instruction,attribute,removed,,still available as langchain_community.embeddings.OllamaEmbeddings.query_instruction,medium,631
+90,langchain-community,0.0.37,0.0.38,langchain_community.vectorstores.Yellowbrick.create_table_if_not_exists,method,removed,,still available as langchain_community.vectorstores.Relyt.create_table_if_not_exists,medium,631
+91,urllib3,1.26.20,2.0.2,urllib3.connection.HTTPConnection.auto_open,attribute,removed,,,medium,5
+92,urllib3,1.26.20,2.0.2,urllib3.HTTPResponse.from_httplib,classmethod,removed,,,medium,5
+93,pytest,7.4.4,8.0.0,pytest.Package.getmodpath,method,removed,,still available as pytest.Class.getmodpath,medium,24
+94,pytest,7.4.4,8.0.0,pytest.Package.istestclass,method,removed,,still available as pytest.Class.istestclass,medium,24
+95,sphinxcontrib-htmlhelp,2.0.1,2.0.2,sphinxcontrib.htmlhelp.HTMLHelpBuilder.default_translator_class,property,removed,,,medium,877
+96,jaraco-context,5.0.0,5.1.0,jaraco.context.on_interrupt.action,attribute,removed,,,medium,206
+97,jaraco-context,5.0.0,5.1.0,jaraco.context.on_interrupt.code,attribute,removed,,,medium,206
+98,mysql-connector-python,8.4.0,9.0.0,mysql.connector.opentelemetry.instrumentation.TracedMySQLConnection.autocommit,property,varkw_removed,kwargs,,medium,606
+99,mysql-connector-python,8.4.0,9.0.0,mysql.connector.opentelemetry.instrumentation.TracedMySQLConnection.database,property,varkw_removed,kwargs,,medium,606
+100,bytecode,0.15.0,0.15.1,bytecode.instr.Intrinsic1Op.INSTRINSIC_1_INVALID,attribute,removed,,,medium,491

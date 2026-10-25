@@ -1,0 +1,7 @@
+cerberus @ file:///home/claude/apidrift/validation/downstream2/part1/U1_04/src
+iniconfig==2.3.0
+packaging==26.0
+pluggy==1.6.0
+pygments==2.19.2
+pytest==9.0.2
+setuptools==82.0.0

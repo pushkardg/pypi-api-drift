@@ -1,0 +1,23 @@
+attrs==26.1.0
+bcrypt==5.0.0
+certifi==2026.10.19
+cffi==2.1.1
+charset-normalizer==3.5.2
+cryptography==50.0.2
+-e file:///home/claude/apidrift/validation/downstream2/part2/U2_16/docker-6.0.1
+idna==3.20
+iniconfig==2.3.1
+packaging==26.3
+paramiko==2.11.0
+pluggy==1.7.0
+py==1.11.0
+pycparser==3.11
+pynacl==1.6.2
+pytest==7.1.2
+pytest-timeout==2.1.0
+requests==2.31.0
+six==1.17.0
+tomli==2.5.0
+typing-extensions==4.16.0
+urllib3==1.26.12
+websocket-client==1.4.1

@@ -1,0 +1,94 @@
+name: tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.9", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e . pytest
+      - run: python -m pytest -q tests   # data-level tests are skipped unless data/ is present
+
+  clean-install:
+    # non-editable install into a fresh venv, test suite from site-packages, CLI run on the bundled example
+    # against the fixture data (the published data is checked the same way with: python smoke_test.py DATA_DIR)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m venv /tmp/v && /tmp/v/bin/pip install ".[mcp]" pytest
+      - run: cd /tmp && /tmp/v/bin/python -c "import apidrift; assert 'site-packages' in apidrift.__file__"
+      - run: /tmp/v/bin/python -m pytest -q -p no:cacheprovider tests
+      - run: |
+          /tmp/v/bin/apidrift-check "tests/fixtures/project/bad file.py" -r tests/fixtures/project/requirements.txt \
+            --data tests/fixtures/data --json > /tmp/out.jsonl || test $? -eq 1
+          python -c "import json; n=sum(len(json.loads(l)['issues']) for l in open('/tmp/out.jsonl')); assert n == 2, n; print(n, 'findings')"
+      - name: MCP server answers over stdio (fixture data)
+        run: |
+          APIDRIFT_DATA=tests/fixtures/data /tmp/v/bin/python - <<'PY'
+          import asyncio, json
+          from mcp import ClientSession, StdioServerParameters
+          from mcp.client.stdio import stdio_client
+          async def main():
+              p = StdioServerParameters(command="/tmp/v/bin/apidrift-mcp", args=[], env={"APIDRIFT_DATA": "tests/fixtures/data", "PATH": "/usr/bin:/bin"})
+              async with stdio_client(p) as (r, w):
+                  async with ClientSession(r, w) as s:
+                      await s.initialize()
+                      res = await s.call_tool("check_code", {"code": "from demo import old_helper\n", "pins": ["demo-lib==2.0.0"]})
+                      sc = getattr(res, "structured_content", None) or getattr(res, "structuredContent", None)
+                      out = sc or json.loads(res.content[0].text)
+                      out = out.get("result", out)
+                      assert out["n_issues"] == 1, out
+                      print("MCP ok:", out["issues"][0]["message"])
+          asyncio.run(main())
+          PY
+
+  action:
+    # exercises the composite action end to end on the fixture project (file name with a space) and dataset
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pin the fixture dataset in DATA_MANIFEST.json (the real file pins the published release)
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          d = "tests/fixtures/data"
+          files = {f: {"sha256": hashlib.sha256(open(os.path.join(d, f), "rb").read()).hexdigest()}
+                   for f in os.listdir(d) if f.endswith(".parquet")}
+          json.dump({"data_version": "fixture", "files": files}, open("DATA_MANIFEST.json", "w"))
+          PY
+      - uses: ./integrations/github-action
+        with:
+          paths: |
+            tests/fixtures/project
+          requirements: tests/fixtures/project/requirements.txt
+          data-url: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/tests/fixtures/data
+          data-version: fixture-${{ github.sha }}
+      - name: Check the SARIF report
+        run: |
+          python - <<'PY'
+          import json
+          r = json.load(open("apidrift.sarif"))["runs"][0]["results"]
+          assert len(r) == 2, r
+          print("SARIF ok:", [x["message"]["text"] for x in r])
+          PY
+      - name: Hostile input must be rejected
+        id: hostile
+        continue-on-error: true
+        uses: ./integrations/github-action
+        with:
+          data-url: https://example.org/data
+          data-version: "$(touch /tmp/pwned)"
+      - run: test "${{ steps.hostile.outcome }}" = "failure" && test ! -e /tmp/pwned

@@ -1,0 +1,7 @@
+- id: apidrift-check
+  name: apidrift-check
+  description: Flag APIs that don't exist in your pinned dependency versions
+  entry: apidrift-check
+  language: python
+  types: [python]
+  args: [--no-deprecations]

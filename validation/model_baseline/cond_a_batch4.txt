@@ -1,0 +1,1384 @@
+### q0003
+You are given a Python snippet and an installed library version.
+Library: django-filter==25.1
+```python
+from django_filters.rest_framework import DjangoFilterBackend
+DjangoFilterBackend.get_schema_operation_parameters
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0009
+You are given a Python snippet and an installed library version.
+Library: datasets==2.9.0
+```python
+from datasets.iterable_dataset import ShardShuffledExamplesIterable
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0015
+You are given a Python snippet and an installed library version.
+Library: holidays==0.34
+```python
+from holidays.groups import HinduCalendarHolidays
+HinduCalendarHolidays(calendar=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0021
+You are given a Python snippet and an installed library version.
+Library: google-cloud-secret-manager==1.0.2
+```python
+from google.cloud.secretmanager_v1.types import names
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0027
+You are given a Python snippet and an installed library version.
+Library: yfinance==0.2.37
+```python
+from yfinance.const import price_colnames
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0033
+You are given a Python snippet and an installed library version.
+Library: zstandard==0.16.0
+```python
+from zstandard.backend_cffi import HASHLOG3_MAX
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0039
+You are given a Python snippet and an installed library version.
+Library: cattrs==23.2.2
+```python
+from cattrs.gen import generate_unique_filename
+generate_unique_filename(cls=..., func_name=..., reserve=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0045
+You are given a Python snippet and an installed library version.
+Library: lazy-object-proxy==1.7.1
+```python
+from lazy_object_proxy.compat import PY2
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0051
+You are given a Python snippet and an installed library version.
+Library: installer==0.6.0
+```python
+from installer.records import RecordEntry
+RecordEntry.to_line
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0057
+You are given a Python snippet and an installed library version.
+Library: pymysql==1.2.0
+```python
+from pymysql.converters import escape_bytes_prefixed
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0063
+You are given a Python snippet and an installed library version.
+Library: truststore==0.3.0
+```python
+from truststore import TruststoreSSLContext
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0069
+You are given a Python snippet and an installed library version.
+Library: pydyf==0.11.0
+```python
+from pydyf import Stream
+Stream.transform
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0075
+You are given a Python snippet and an installed library version.
+Library: scikit-image==0.24.0
+```python
+from skimage.filters import gaussian
+gaussian(image=..., output=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0081
+You are given a Python snippet and an installed library version.
+Library: pydantic-extra-types==2.9.0
+```python
+from pydantic_extra_types.phone_numbers import GeneratorCallableStr
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0087
+You are given a Python snippet and an installed library version.
+Library: mistune==2.1.0
+```python
+from mistune.plugins import PLUGINS
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0093
+You are given a Python snippet and an installed library version.
+Library: click-repl==0.2.0
+```python
+from click_repl import text_type
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0099
+You are given a Python snippet and an installed library version.
+Library: pytest-split==0.10.0
+```python
+from pytest_split.algorithms import least_duration
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0105
+You are given a Python snippet and an installed library version.
+Library: openapi-spec-validator==0.7.0
+```python
+from openapi_spec_validator.validation.validators import SpecValidator
+SpecValidator(schema_validator=..., value_validator_class=..., value_validator_format_checker=..., resolver_handlers=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0111
+You are given a Python snippet and an installed library version.
+Library: openapi-schema-validator==0.3.0
+```python
+from openapi_schema_validator.validators import BaseOAS30Validator
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0117
+You are given a Python snippet and an installed library version.
+Library: python-docx==1.1.1
+```python
+from docx.opc.shared import lazyproperty
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0123
+You are given a Python snippet and an installed library version.
+Library: click==8.0.4
+```python
+from click import Parameter
+Parameter(autocompletion=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0129
+You are given a Python snippet and an installed library version.
+Library: skops==0.11.0
+```python
+from skops.card import Card
+Card(model=..., metadata=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0135
+You are given a Python snippet and an installed library version.
+Library: pydantic-ai-slim==2.5.0
+```python
+from pydantic_ai.durable_exec.prefect import PrefectModel
+PrefectModel(model=..., task_config=..., event_stream_handler=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0141
+You are given a Python snippet and an installed library version.
+Library: pytokens==0.0.0
+```python
+from pytokens import greet
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0147
+You are given a Python snippet and an installed library version.
+Library: pydantic==2.8.2
+```python
+from pydantic.functional_serializers import FuncType
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0153
+You are given a Python snippet and an installed library version.
+Library: python-utils==3.6.1
+```python
+from python_utils.decorators import P
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0159
+You are given a Python snippet and an installed library version.
+Library: einops==0.8.0
+```python
+from einops.experimental.indexing import CompositionDecomposition
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0165
+You are given a Python snippet and an installed library version.
+Library: textual==5.3.0
+```python
+from textual.widgets import Label
+Label(renderable=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0171
+You are given a Python snippet and an installed library version.
+Library: vcs-versioning==1.1.1
+```python
+from vcs_versioning.overrides import get_debug_level
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0177
+You are given a Python snippet and an installed library version.
+Library: pybind11==3.1.0
+```python
+from pybind11.setup_helpers import no_recompile
+no_recompile(src=..., obg=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0183
+You are given a Python snippet and an installed library version.
+Library: websockets==16.0
+```python
+from websockets.sync.connection import Connection
+Connection.acknowledge_pending_pings
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0189
+You are given a Python snippet and an installed library version.
+Library: mpmath==1.4.0
+```python
+from mpmath import runtests
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0195
+You are given a Python snippet and an installed library version.
+Library: progressbar2==4.3.0
+```python
+from progressbar.widgets import wrapper
+wrapper(function=..., wrapper=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0201
+You are given a Python snippet and an installed library version.
+Library: flatbuffers==25.9.23
+```python
+from flatbuffers import Builder
+Builder.growByteBuffer
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0207
+You are given a Python snippet and an installed library version.
+Library: tox==4.59.0
+```python
+from tox.tox_env.package import locked
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0213
+You are given a Python snippet and an installed library version.
+Library: litellm==1.101.6
+```python
+from litellm.llms.watsonx.completion.transformation import IBMWatsonXAIConfig
+IBMWatsonXAIConfig.atransform_request
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0219
+You are given a Python snippet and an installed library version.
+Library: paramiko==2.12.0
+```python
+from paramiko.util import deflate_zero
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0225
+You are given a Python snippet and an installed library version.
+Library: executing==1.0.0
+```python
+from executing.executing import ReloadCacheFinder
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0231
+You are given a Python snippet and an installed library version.
+Library: secretstorage==3.5.0
+```python
+from secretstorage.dhcrypto import int_to_bytes
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0237
+You are given a Python snippet and an installed library version.
+Library: twine==6.1.0
+```python
+from twine.repository import KEYWORDS_TO_NOT_FLATTEN
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0243
+You are given a Python snippet and an installed library version.
+Library: mergedeep==1.3.2
+```python
+from mergedeep.mergedeep import KT
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0249
+You are given a Python snippet and an installed library version.
+Library: prometheus-client==0.10.1
+```python
+from prometheus_client.core import Info
+Info(name=..., documentation=..., labelvalues=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0255
+You are given a Python snippet and an installed library version.
+Library: scipy==1.11.4
+```python
+from scipy.stats.qmc import LatinHypercube
+LatinHypercube(d=..., centered=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0261
+You are given a Python snippet and an installed library version.
+Library: plotly==6.9.0
+```python
+from plotly.offline import plot
+plot(figure_or_data=..., show_link=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0267
+You are given a Python snippet and an installed library version.
+Library: clickhouse-connect==1.0.0
+```python
+from clickhouse_connect.driver.query import QueryContext
+QueryContext(utc_tz_aware=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0273
+You are given a Python snippet and an installed library version.
+Library: narwhals==1.27.1
+```python
+from narwhals import Expr
+Expr(to_compliant_expr=..., is_order_dependent=..., changes_length=..., aggregates=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0279
+You are given a Python snippet and an installed library version.
+Library: watchdog==5.0.0
+```python
+from watchdog.observers.winapi import FILE_NOTIFY_INFORMATION
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0285
+You are given a Python snippet and an installed library version.
+Library: validators==0.21.1
+```python
+from validators import ValidationFailure
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0291
+You are given a Python snippet and an installed library version.
+Library: tldextract==5.1.2
+```python
+from tldextract.remote import looks_like_ipv6
+looks_like_ipv6(maybe_ip=..., pton=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0297
+You are given a Python snippet and an installed library version.
+Library: jupyter-events==0.2.0
+```python
+from jupyter_events.logger import yaml
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0303
+You are given a Python snippet and an installed library version.
+Library: ipywidgets==8.0.0
+```python
+from ipywidgets.widgets.widget_upload import content_from_json
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0309
+You are given a Python snippet and an installed library version.
+Library: limits==2.5.2
+```python
+from limits.util import get_dependency
+get_dependency(dep=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0315
+You are given a Python snippet and an installed library version.
+Library: genai-prices==0.0.1
+```python
+from genai_prices.types import Provider
+Provider.is_match
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0321
+You are given a Python snippet and an installed library version.
+Library: fastmcp-slim==3.3.0
+```python
+from fastmcp.server.auth.authorization import logger
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0327
+You are given a Python snippet and an installed library version.
+Library: pymupdf==1.24.1
+```python
+from fitz.extra import JM_get_annot_xref_list2
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0333
+You are given a Python snippet and an installed library version.
+Library: db-dtypes==1.3.0
+```python
+from db_dtypes import JSONArray
+JSONArray(values=..., dtype=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0339
+You are given a Python snippet and an installed library version.
+Library: plotly==7.0.0
+```python
+from plotly.offline import plot
+plot(figure_or_data=..., show_link=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0345
+You are given a Python snippet and an installed library version.
+Library: graphql-relay==3.1.2
+```python
+from graphql_relay import node_definitions
+node_definitions(id_fetcher=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0351
+You are given a Python snippet and an installed library version.
+Library: pyathena==3.16.0
+```python
+from pyathena.sqlalchemy.base import RESERVED_WORDS
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0357
+You are given a Python snippet and an installed library version.
+Library: mammoth==1.4.16
+```python
+from mammoth.docx.complex_fields import hyperlink
+hyperlink(href=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0363
+You are given a Python snippet and an installed library version.
+Library: narwhals==1.26.0
+```python
+from narwhals import Expr
+Expr(to_compliant_expr=..., is_order_dependent=..., changes_length=..., aggregates=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0369
+You are given a Python snippet and an installed library version.
+Library: face==24.0.0
+```python
+from face.utils import unicode
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0375
+You are given a Python snippet and an installed library version.
+Library: docker==6.1.3
+```python
+from docker.utils import kwargs_from_env
+kwargs_from_env(assert_hostname=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0381
+You are given a Python snippet and an installed library version.
+Library: kombu==5.5.0
+```python
+from kombu.utils.text import version_string_as_tuple
+version_string_as_tuple(version=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0387
+You are given a Python snippet and an installed library version.
+Library: langchain-core==0.3.86
+```python
+from langchain_core.load.load import Reviver
+Reviver(init_validator=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0393
+You are given a Python snippet and an installed library version.
+Library: fastmcp-slim==3.4.9
+```python
+from fastmcp.server.context import ResultT
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0399
+You are given a Python snippet and an installed library version.
+Library: dacite==1.8.0
+```python
+from dacite.dataclasses import create_instance
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0405
+You are given a Python snippet and an installed library version.
+Library: dbt-adapters==1.4.0
+```python
+from dbt.adapters.record import QueryRecordParams
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0411
+You are given a Python snippet and an installed library version.
+Library: agate==1.6.3
+```python
+from agate.columns import xrange
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0417
+You are given a Python snippet and an installed library version.
+Library: genai-prices==0.0.72
+```python
+from genai_prices.types import providers_schema
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0423
+You are given a Python snippet and an installed library version.
+Library: tzlocal==4.3.1
+```python
+from tzlocal.utils import ZoneInfoNotFoundError
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0429
+You are given a Python snippet and an installed library version.
+Library: google-cloud-kms==2.3.0
+```python
+from google.cloud.kms import KeyManagementServiceClient
+KeyManagementServiceClient(client_config=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0435
+You are given a Python snippet and an installed library version.
+Library: sshtunnel==0.4.0
+```python
+from sshtunnel import get_connection_id
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0441
+You are given a Python snippet and an installed library version.
+Library: db-dtypes==1.4.3
+```python
+from db_dtypes.pandas_backports import NDArrayBackedExtensionArray
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0447
+You are given a Python snippet and an installed library version.
+Library: huey==2.6.0
+```python
+from huey.storage import to_bytes
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0453
+You are given a Python snippet and an installed library version.
+Library: pytest-asyncio==0.26.0
+```python
+from pytest_asyncio.plugin import FactoryFixtureFunction
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0459
+You are given a Python snippet and an installed library version.
+Library: ml-dtypes==0.2.0
+```python
+from ml_dtypes import float8_e4m3b11
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0465
+You are given a Python snippet and an installed library version.
+Library: flatbuffers==25.9.23
+```python
+from flatbuffers.builder import vtableEqual
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0471
+You are given a Python snippet and an installed library version.
+Library: itsdangerous==2.1.0
+```python
+from itsdangerous import TimedJSONWebSignatureSerializer
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0477
+You are given a Python snippet and an installed library version.
+Library: pytest-httpx==0.31.0
+```python
+from pytest_httpx import assert_all_responses_were_requested
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0483
+You are given a Python snippet and an installed library version.
+Library: partd==1.3.0
+```python
+from partd import ignoring
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0489
+You are given a Python snippet and an installed library version.
+Library: langgraph==0.3.34
+```python
+from langgraph.pregel.io import map_command
+map_command(cmd=..., pending_writes=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0495
+You are given a Python snippet and an installed library version.
+Library: levenshtein==0.24.0
+```python
+from Levenshtein.StringMatcher import jaro
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0501
+You are given a Python snippet and an installed library version.
+Library: imageio==2.10.5
+```python
+from imageio.plugins.pillow_legacy import SPECIAL_FORMATS
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0507
+You are given a Python snippet and an installed library version.
+Library: graphql-relay==3.1.5
+```python
+from graphql_relay import resolve_maybe_thunk
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0513
+You are given a Python snippet and an installed library version.
+Library: jupyterlab==4.6.0
+```python
+from jupyterlab.labextensions import WatchLabExtensionApp
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0519
+You are given a Python snippet and an installed library version.
+Library: aiohttp==3.10.11
+```python
+from aiohttp import ClientWebSocketResponse
+ClientWebSocketResponse(reader=..., writer=..., protocol=..., response=..., timeout=..., autoclose=..., autoping=..., loop=..., receive_timeout=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0525
+You are given a Python snippet and an installed library version.
+Library: aws-xray-sdk==2.12.0
+```python
+from aws_xray_sdk.core.utils.compat import PY35
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0531
+You are given a Python snippet and an installed library version.
+Library: cbor2==6.0.0
+```python
+from cbor2.tool import tag_hook
+tag_hook(tag=..., decoder=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0537
+You are given a Python snippet and an installed library version.
+Library: jsonpath-python==1.0.6
+```python
+from jsonpath import create_logger
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0543
+You are given a Python snippet and an installed library version.
+Library: simple-websocket==1.0.0
+```python
+from simple_websocket import Client
+Client(url=..., selector_class=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0549
+You are given a Python snippet and an installed library version.
+Library: pyyaml==6.0
+```python
+from yaml import load_warning
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0555
+You are given a Python snippet and an installed library version.
+Library: langchain-google-vertexai==2.1.2
+```python
+from langchain_google_vertexai import GemmaChatLocalHF
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0561
+You are given a Python snippet and an installed library version.
+Library: docstring-parser==0.17.0
+```python
+from docstring_parser.attrdoc import ast_constant_attr
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0567
+You are given a Python snippet and an installed library version.
+Library: mlflow-tracing==3.5.1
+```python
+from mlflow.utils import IS_PYDANTIC_V2_OR_NEWER
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0573
+You are given a Python snippet and an installed library version.
+Library: wcwidth==0.2.8
+```python
+from wcwidth.wcwidth import ZERO_WIDTH_CF
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0579
+You are given a Python snippet and an installed library version.
+Library: opencv-python-headless==5.0.0.93
+```python
+from cv2.detail import ArgKind_GOBJREF
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0585
+You are given a Python snippet and an installed library version.
+Library: grpcio-health-checking==1.65.5
+```python
+from grpc_health.v1.health_pb2_grpc import SCHEDULED_RELEASE_DATE
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0591
+You are given a Python snippet and an installed library version.
+Library: emoji==2.11.1
+```python
+from emoji.unicode_codes import get_aliases_unicode_dict
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0597
+You are given a Python snippet and an installed library version.
+Library: grpcio-health-checking==1.66.0
+```python
+from grpc_health.v1.health_pb2_grpc import SCHEDULED_RELEASE_DATE
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0603
+You are given a Python snippet and an installed library version.
+Library: google-cloud-monitoring==2.0.1
+```python
+from google.cloud.monitoring import MetricServiceClient
+MetricServiceClient(channel=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0609
+You are given a Python snippet and an installed library version.
+Library: partd==1.3.0
+```python
+from partd.utils import do_nothing
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0615
+You are given a Python snippet and an installed library version.
+Library: mysqlclient==2.3.0
+```python
+from MySQLdb.cursors import SSCursor
+SSCursor.next
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0621
+You are given a Python snippet and an installed library version.
+Library: glom==23.3.0
+```python
+from glom.core import PY2
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0627
+You are given a Python snippet and an installed library version.
+Library: stevedore==5.0.0
+```python
+from stevedore.extension import Extension
+Extension.extras
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0633
+You are given a Python snippet and an installed library version.
+Library: deprecated==3.0.0
+```python
+from deprecated.classic import string_types
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0639
+You are given a Python snippet and an installed library version.
+Library: google-cloud-storage==3.4.0
+```python
+from google.cloud.storage import Blob
+Blob(name=..., bucket=..., crc32c_checksum=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0645
+You are given a Python snippet and an installed library version.
+Library: onnxruntime==1.8.1
+```python
+from onnxruntime.transformers.machine_info import MachineInfo
+MachineInfo.get_onnxruntime_tools_info
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0651
+You are given a Python snippet and an installed library version.
+Library: strands-agents==1.58.0
+```python
+from strands.bidi import BidiAgent
+BidiAgent(load_tools_from_directory=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0657
+You are given a Python snippet and an installed library version.
+Library: datadog==0.54.0
+```python
+from datadog import DogStatsd
+DogStatsd(socket_connect_timeout=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0663
+You are given a Python snippet and an installed library version.
+Library: cssselect==1.5.0
+```python
+from cssselect.parser import Relation
+Relation(selector=..., subselector=..., combinator=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0669
+You are given a Python snippet and an installed library version.
+Library: google-cloud-kms==2.3.0
+```python
+from google.cloud.kms import KeyManagementServiceClient
+KeyManagementServiceClient.location_path
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0675
+You are given a Python snippet and an installed library version.
+Library: simple-salesforce==1.12.7
+```python
+from simple_salesforce import SalesforceAuthenticationFailed
+SalesforceAuthenticationFailed(code=..., message=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0681
+You are given a Python snippet and an installed library version.
+Library: graphql-core==3.1.5
+```python
+from graphql.language.block_string import get_block_string_indentation
+get_block_string_indentation(lines=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0687
+You are given a Python snippet and an installed library version.
+Library: opentelemetry-exporter-otlp-proto-grpc==1.11.1
+```python
+from opentelemetry.exporter.otlp.proto.grpc.exporter import get_resource_data
+get_resource_data(resource_class=..., name=..., sdk_resource_instrumentation_library_data=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0693
+You are given a Python snippet and an installed library version.
+Library: nvidia-ml-py==12.570.86
+```python
+from pynvml import nvmlDeviceGetMinMaxClockOfPState
+nvmlDeviceGetMinMaxClockOfPState(device=..., pstate=..., minClockMHz=..., maxClockMHz=..., type=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0699
+You are given a Python snippet and an installed library version.
+Library: snowflake-sqlalchemy==1.7.2
+```python
+from snowflake.sqlalchemy.snowdialect import extract_parameters
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0705
+You are given a Python snippet and an installed library version.
+Library: ruamel-yaml==0.17.21
+```python
+from ruamel.yaml.main import safe_dump_all
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0711
+You are given a Python snippet and an installed library version.
+Library: packageurl-python==0.17.4
+```python
+from packageurl.contrib.purl2url import build_qpkg_download_url
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0717
+You are given a Python snippet and an installed library version.
+Library: readme-renderer==33.0
+```python
+from readme_renderer.clean import clean
+clean(html=..., styles=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0723
+You are given a Python snippet and an installed library version.
+Library: unidecode==1.3.2
+```python
+from unidecode.util import PY3
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0729
+You are given a Python snippet and an installed library version.
+Library: pip-audit==0.0.2
+```python
+from pip_audit.dependency_source.resolvelib.pypi_provider import get_metadata_for_wheel
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0735
+You are given a Python snippet and an installed library version.
+Library: dnspython==2.2.0
+```python
+from dns.zone import Transaction
+Transaction(zone=..., replacement=..., read_only=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0741
+You are given a Python snippet and an installed library version.
+Library: nvidia-ml-py==12.560.30
+```python
+from pynvml import nvmlDeviceGetMinMaxClockOfPState
+nvmlDeviceGetMinMaxClockOfPState(device=..., pstate=..., minClockMHz=..., maxClockMHz=..., type=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0747
+You are given a Python snippet and an installed library version.
+Library: pycryptodomex==3.20.0
+```python
+from Cryptodome.SelfTest.IO.test_PBES import is_bytes
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0753
+You are given a Python snippet and an installed library version.
+Library: poetry-core==2.1.0
+```python
+from poetry.core.constraints.generic.parser import parse_single_constraint
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0759
+You are given a Python snippet and an installed library version.
+Library: llvmlite==0.48.0
+```python
+from llvmlite.binding import PipelineTuningOptions
+PipelineTuningOptions(size_level=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0765
+You are given a Python snippet and an installed library version.
+Library: scramp==1.4.6
+```python
+from scramp.utils import hi
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0771
+You are given a Python snippet and an installed library version.
+Library: accelerate==0.20.3
+```python
+from accelerate import FullyShardedDataParallelPlugin
+FullyShardedDataParallelPlugin.load_model
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0777
+You are given a Python snippet and an installed library version.
+Library: curl-cffi==0.14.0
+```python
+from curl_cffi import AsyncWebSocket
+AsyncWebSocket(session=..., curl=..., retry_on_recv_error=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0783
+You are given a Python snippet and an installed library version.
+Library: pyarrow==21.0.0
+```python
+from pyarrow import RecordBatchFileWriter
+RecordBatchFileWriter(sink=..., schema=..., use_legacy_format=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0789
+You are given a Python snippet and an installed library version.
+Library: pdf2image==1.16.0
+```python
+from pdf2image import pdfinfo_from_bytes
+pdfinfo_from_bytes(pdf_file=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0795
+You are given a Python snippet and an installed library version.
+Library: pyspnego==0.10.2
+```python
+from spnego.sspi import SSPI_IMP_ERR
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0801
+You are given a Python snippet and an installed library version.
+Library: google-cloud-kms==1.4.2
+```python
+from google.cloud.kms import KeyManagementServiceClient
+KeyManagementServiceClient.location_path
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0807
+You are given a Python snippet and an installed library version.
+Library: ruamel-yaml==0.17.22
+```python
+from ruamel.yaml.main import safe_dump_all
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0813
+You are given a Python snippet and an installed library version.
+Library: sympy==1.12.1
+```python
+from sympy.core.numbers import igcd_lehmer
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0819
+You are given a Python snippet and an installed library version.
+Library: ipython==9.11.0
+```python
+from IPython.core.magic import on_off
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0825
+You are given a Python snippet and an installed library version.
+Library: msal==1.22.0
+```python
+from msal.authority import canonicalize
+canonicalize(authority_url=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0831
+You are given a Python snippet and an installed library version.
+Library: msal==1.35.1
+```python
+from msal.authority import AZURE_CHINA
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0837
+You are given a Python snippet and an installed library version.
+Library: vcs-versioning==2.0.1
+```python
+from vcs_versioning.overrides import get_debug_level
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0843
+You are given a Python snippet and an installed library version.
+Library: databricks-labs-blueprint==0.0.6
+```python
+from databricks.labs.blueprint.entrypoint import find_project_root
+find_project_root(current=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0849
+You are given a Python snippet and an installed library version.
+Library: uncalled-for==0.1.2
+```python
+from uncalled_for import without_dependencies
+without_dependencies(fn=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0855
+You are given a Python snippet and an installed library version.
+Library: setuptools==75.3.4
+```python
+from setuptools.command.bdist_wheel import remove_readonly
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0861
+You are given a Python snippet and an installed library version.
+Library: litellm==1.102.0
+```python
+from litellm.llms.watsonx.completion.transformation import IBMWatsonXAIConfig
+IBMWatsonXAIConfig.atransform_request
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0867
+You are given a Python snippet and an installed library version.
+Library: matplotlib-inline==0.1.5
+```python
+from matplotlib_inline.backend_inline import draw_if_interactive
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0873
+You are given a Python snippet and an installed library version.
+Library: huggingface-hub==1.11.0
+```python
+from huggingface_hub.cli.buckets import info
+info(bucket_id=..., quiet=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0879
+You are given a Python snippet and an installed library version.
+Library: supabase-auth==2.22.4
+```python
+from supabase_auth.helpers import parse_user_response
+parse_user_response(data=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0885
+You are given a Python snippet and an installed library version.
+Library: scramp==1.4.7
+```python
+from scramp.utils import hi
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0891
+You are given a Python snippet and an installed library version.
+Library: langchain-google-vertexai==3.0.0
+```python
+from langchain_google_vertexai import VectorSearchVectorStore
+VectorSearchVectorStore(searcher=..., document_storage=..., embbedings=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0897
+You are given a Python snippet and an installed library version.
+Library: python-socketio==5.9.0
+```python
+from socketio import BaseManager
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0903
+You are given a Python snippet and an installed library version.
+Library: nodeenv==1.7.0
+```python
+from nodeenv import get_env_dir
+get_env_dir(args=..., opt=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0909
+You are given a Python snippet and an installed library version.
+Library: more-itertools==11.0.1
+```python
+from more_itertools.more import running_max
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0915
+You are given a Python snippet and an installed library version.
+Library: docstring-parser==0.16
+```python
+from docstring_parser.attrdoc import ast_constant_attr
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0921
+You are given a Python snippet and an installed library version.
+Library: oauthlib==4.0.0
+```python
+from oauthlib.oauth2 import RevocationEndpoint
+RevocationEndpoint(request_validator=..., enable_jsonp=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0927
+You are given a Python snippet and an installed library version.
+Library: jupyter-lsp==1.4.0
+```python
+from jupyter_lsp.session import SKIP_JSON_SPEC
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0933
+You are given a Python snippet and an installed library version.
+Library: feedparser==6.0.12
+```python
+from feedparser.api import endbracket
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0939
+You are given a Python snippet and an installed library version.
+Library: opentelemetry-sdk==1.41.0
+```python
+from opentelemetry.sdk.trace import Tracer
+Tracer(sampler=..., resource=..., span_processor=..., id_generator=..., instrumentation_info=..., span_limits=..., instrumentation_scope=..., _tracer_provider=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0945
+You are given a Python snippet and an installed library version.
+Library: redis==4.1.0
+```python
+from redis.cluster import NodesManager
+NodesManager.cluster_require_full_coverage
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0951
+You are given a Python snippet and an installed library version.
+Library: pytest-cov==6.1.0
+```python
+from pytest_cov.plugin import TestContextPlugin
+TestContextPlugin(cov=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0957
+You are given a Python snippet and an installed library version.
+Library: sqlmodel==0.0.18
+```python
+from sqlmodel.sql.expression import SelectBase
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0963
+You are given a Python snippet and an installed library version.
+Library: linkify-it-py==2.1.1
+```python
+from linkify_it.main import Match
+Match(linkifyit=..., shift=...)
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0969
+You are given a Python snippet and an installed library version.
+Library: jsonref==1.0.0
+```python
+from jsonref import JsonLoader
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0975
+You are given a Python snippet and an installed library version.
+Library: json5==0.9.23
+```python
+from json5.lib import long
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+
+### q0981
+You are given a Python snippet and an installed library version.
+Library: opencv-python==4.14.0.94
+```python
+from cv2.typing import GProtoInputArgs
+```
+Ignoring the placeholder `...` argument values, is every library name, attribute and keyword argument used here valid in exactly this version? Answer with one word: valid or invalid.
+

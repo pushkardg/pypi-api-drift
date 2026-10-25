@@ -1,0 +1,401 @@
+id,project,before_ok,after_broken,label_correct,method,evidence
+1,agate,yes,yes,yes,runtime,before[ok]: agate.columns.xrange:type | after[broken]: ImportError: cannot import name 'xrange' from agate.columns
+2,aiohappyeyeballs,yes,yes,yes,runtime,0.3.0: names/keywords resolve; 0.4.0: create_connection() got an unexpected keyword argument 'all_errors'
+3,aiohttp,yes,yes,yes,runtime,before 3.10.11: all names resolve and keywords bind; after 3.11.0: ClientWebSocketResponse rejected: got an unexpected keyword argument 'receive_timeout'
+4,aiohttp,yes,yes,yes,runtime,before 3.13.2: all names resolve and keywords bind; after 3.13.3: aiohttp.compression_utils.ZlibBaseHandler missing: cannot import name ZlibBaseHandler from aiohttp.compression_utils
+5,anyio,yes,yes,yes,runtime,before[ok]: anyio.abc.TestRunner:ABCMeta; TestRunner.close:function | after[broken]: AttributeError: TestRunner has no attribute 'close'
+6,anyio,yes,yes,yes,runtime,before[ok]: anyio.maybe_async_cm:function | after[broken]: ImportError: cannot import name 'maybe_async_cm' from anyio
+7,asttokens,yes,yes,yes,runtime,2.4.1: names/keywords resolve; 3.0.0: cannot import name 'AstConstant' from asttokens.util
+8,async-lru,yes,yes,yes,runtime,before 1.0.3: all names resolve and keywords bind; after 2.0.0: alru_cache rejected: got an unexpected keyword argument 'cache_exceptions'
+9,async-lru,yes,yes,yes,runtime,before 1.0.3: all names resolve and keywords bind; after 2.0.0: alru_cache rejected: got an unexpected keyword argument 'fn'
+10,av,no,yes,no,runtime,av 12.1.0 has no top-level VideoFormatComponent (only av.video.format.VideoFormatComponent); it appears top-level only through av/__init__.pyi star-imports
+11,av,yes,yes,yes,source,"av.open is compiled (no runtime signature); av/container/core.py source: 18.1.0 open() has metadata_errors and no **kwargs, 19.0.0 open() drops it"
+12,aws-xray-sdk,yes,yes,yes,runtime,2.12.0: names/keywords resolve; 2.12.1: cannot import name 'PY35' from aws_xray_sdk.core.utils.compat
+13,awscrt,yes,yes,yes,runtime,before 0.34.1: all names resolve and keywords bind; after 0.35.0: Connection rejected: got an unexpected keyword argument 'enable_metrics'
+14,bidict,yes,yes,yes,runtime,before[ok]: bidict.NamedBidictBase:type | after[broken]: ImportError: cannot import name 'NamedBidictBase' from bidict
+15,billiard,yes,yes,yes,runtime,3.6.4.0: names/keywords resolve; 4.0.0: cannot import name 'buf_t' from billiard.compat
+16,bleach,yes,yes,yes,runtime,before 4.1.0: all names resolve and keywords bind; after 5.0.0: bleach.html5lib_shim.PARSEERROR_TYPE missing: cannot import name PARSEERROR_TYPE from bleach.html5lib_shim
+17,bleach,yes,yes,yes,runtime,before 4.1.0: all names resolve and keywords bind; after 5.0.0: Cleaner rejected: got an unexpected keyword argument 'styles'
+18,cachetools,yes,yes,yes,runtime,before[ok]: cachetools.MRUCache:ABCMeta | after[broken]: ImportError: cannot import name 'MRUCache' from cachetools
+19,cachetools,yes,yes,yes,runtime,before[ok]: cachetools.func.mru_cache:function | after[broken]: ImportError: cannot import name 'mru_cache' from cachetools.func
+20,catalogue,yes,yes,yes,runtime,1.0.2: names/keywords resolve; 2.0.2: cannot import name 'basestring_' from catalogue
+21,cattrs,yes,yes,yes,runtime,before 23.2.2: all names resolve and keywords bind; after 23.2.3: generate_unique_filename rejected: got an unexpected keyword argument 'reserve'
+22,cattrs,yes,yes,yes,runtime,before 24.1.3: all names resolve and keywords bind; after 25.1.0: cattrs.gen.DictStructureFn missing: cannot import name DictStructureFn from cattrs.gen
+23,celery,yes,no,no,runtime,"control is a click CeleryCommand whose __call__(*args, **kwargs) accepts any keyword in both versions; only the wrapped callback renamed action->command (5.3.6 def control(ctx, action, ...) vs 5.4.0 def control(ctx, command, ...))"
+24,celery,yes,yes,yes,runtime,before[ok]: celery.worker.consumer.Consumer:type; Consumer.cancel_all_unacked_requests:function | after[broken]: AttributeError: Consumer has no attribute 'cancel_all_unacked_requests'
+25,certifi,no,yes,no,runtime,"certifi 2025.4.26 defines core.Package only in the sys.version_info<3.7 fallback branch, so it is absent on every supported Python 3.7+ (runtime 3.11 ImportError; source confirms)"
+26,certifi,no,yes,no,runtime,"certifi 2025.4.26 defines core.Resource only in the sys.version_info<3.7 fallback branch, so it is absent on every Python 3.7+ (runtime 3.11 ImportError; source confirms)"
+27,cffi,no,yes,no,runtime,cffi.api has 'try: callable / except NameError: callable = ...'; on Python 3 the builtin exists so cffi.api.callable is never a module attribute in 2.0.0 (nor 2.1.0).
+28,clickhouse-connect,yes,yes,yes,runtime,before[ok]: clickhouse_connect.driver.query.format_query_value:function | after[broken]: ImportError: cannot import name 'format_query_value' from clickhouse_connect.driver.query
+29,clickhouse-connect,yes,yes,yes,runtime,"before[ok]: clickhouse_connect.driver.query.QueryContext:type; QueryContext(query: Union[str, bytes] = '', parameters: Optional[Dict[str, Any]] = None,  | after[broken]: TypeError: QueryContext(query: str | bytes = '', parameters: dict[str, typing.Any] | None = None, settings: dict[str, typing.Any] | None = None, query_formats: "
+30,cloudpathlib,yes,yes,yes,runtime,0.9.0: names/keywords resolve; 0.10.0: cannot import name 'AnyPathMeta' from cloudpathlib.anypath
+31,cloudpathlib,yes,yes,yes,runtime,0.3.0: names/keywords resolve; 0.4.0: cannot import name 'OverwriteDirtyFile' from cloudpathlib
+32,colorama,yes,no,no,runtime,"colorama 0.4.6 still sets atexit_done via _wipe_internal_state_for_tests() (global stmt inside a function, called at import); import works in both."
+33,colorama,yes,no,no,runtime,"colorama 0.4.6 still sets wrapped_stderr via _wipe_internal_state_for_tests() (global stmt inside a function, called at import); import works in both."
+34,colorlog,yes,yes,yes,runtime,before[ok]: colorlog.escape_codes.parse_colors:function; parse_colors(sequence) | after[broken]: TypeError: parse_colors(string: str) -> str rejects ['sequence']: got an unexpected keyword argument 'sequence'
+35,contourpy,yes,yes,yes,runtime,1.1.1: names/keywords resolve; 1.2.0: cannot import name 'mpl_codes_to_offsets' from contourpy.util.mpl_util
+36,contourpy,yes,yes,yes,runtime,1.1.1: names/keywords resolve; 1.2.0: cannot import name 'offsets_to_mpl_codes' from contourpy.util.mpl_util
+37,cron-descriptor,yes,yes,yes,runtime,before 1.4.5: all names resolve and keywords bind; after 2.0.3: cron_descriptor.FormatException missing: cannot import name FormatException from cron_descriptor
+38,cron-descriptor,yes,yes,yes,runtime,before 1.4.5: all names resolve and keywords bind; after 2.0.3: cron_descriptor.MissingFieldException missing: cannot import name MissingFieldException from cron_descriptor
+39,croniter,no,yes,no,runtime,"bad_length is a class attribute of croniter.croniter.croniter (the class), not a module-level name in croniter.croniter, in both versions"
+40,cryptography,no,yes,no,runtime,Runtime ObjectIdentifier(val=...) raises TypeError unexpected keyword 'val' in 44.0.3 (real param is 'value'); 'val' exists only in the _rust .pyi stub
+41,cryptography,yes,yes,yes,runtime,48.0.1: names/keywords resolve; 49.0.0: cannot import name 'CERTIFICATE_PRIVATE_KEY_TYPES' from cryptography.hazmat.primitives.asymmetric.types
+42,cssselect,yes,yes,yes,runtime,before 1.5.0: all names resolve and keywords bind; after 1.6.0: Relation rejected: got an unexpected keyword argument 'combinator'
+43,cssselect,yes,yes,yes,runtime,before 1.5.0: all names resolve and keywords bind; after 1.6.0: Relation rejected: got an unexpected keyword argument 'subselector'
+44,cssselect2,yes,yes,yes,runtime,before[ok]: cssselect2.SORT_KEY:itemgetter | after[broken]: ImportError: cannot import name 'SORT_KEY' from cssselect2
+45,dacite,yes,yes,yes,runtime,1.7.0: names/keywords resolve; 1.8.0: cannot import name 'create_instance' from dacite.dataclasses
+46,databricks-labs-blueprint,yes,yes,yes,runtime,before 0.0.5: all names resolve and keywords bind; after 0.0.6: find_project_root rejected: got an unexpected keyword argument 'current'
+47,dataclasses-json,yes,yes,yes,runtime,before[ok]: dataclasses_json.api.B:TypeVar | after[broken]: ImportError: cannot import name 'B' from dataclasses_json.api
+48,datadog,yes,yes,yes,runtime,0.53.0: names/keywords resolve; 0.54.0: DogStatsd() got an unexpected keyword argument 'socket_connect_timeout'
+49,dateparser,yes,yes,yes,runtime,1.1.1 (with GitPython) imports most_common_locales (list); 1.1.2 wheel source only defines most_common_locales as a local inside a function (module also needs undeclared parsel/requests).
+50,dateparser,yes,yes,yes,runtime,before 1.3.0: all names resolve and keywords bind; after 1.4.0: dateparser.timezone_parser.current_hash missing: cannot import name current_hash from dateparser.timezone_parser
+51,db-dtypes,yes,yes,yes,runtime,"before[ok]: db_dtypes.JSONArray:type; JSONArray(values, dtype=None, copy=False) -> 'None' | after[broken]: TypeError: JSONArray(values) -> 'None' rejects ['values', 'dtype']: got an unexpected keyword argument 'dtype'"
+52,db-dtypes,yes,yes,yes,runtime,before[ok]: db_dtypes.pandas_backports.NDArrayBackedExtensionArray:type | after[broken]: ImportError: cannot import name 'NDArrayBackedExtensionArray' from db_dtypes.pandas_backports
+53,dbt-adapters,yes,yes,yes,runtime,1.3.2: names/keywords resolve; 1.4.0: cannot import name 'QueryRecord' from dbt.adapters.record
+54,dbt-adapters,yes,yes,yes,runtime,1.3.2: names/keywords resolve; 1.4.0: cannot import name 'QueryRecordParams' from dbt.adapters.record
+55,deepdiff,yes,yes,yes,runtime,before 8.1.1: all names resolve and keywords bind; after 8.2.0: deepdiff.serialization.csv missing: cannot import name csv from deepdiff.serialization
+56,deprecated,yes,yes,yes,runtime,before[ok]: deprecated.classic.string_types:tuple | after[broken]: ImportError: cannot import name 'string_types' from deprecated.classic
+57,dill,no,yes,no,runtime,"dill 0.3.4 only assigns msg inside an except ImportError branch that then re-raises, so dill.msg never exists at runtime"
+58,dill,yes,yes,yes,runtime,0.3.5.1: names/keywords resolve; 0.3.6: trace() got an unexpected keyword argument 'boolean'
+59,diskcache,yes,yes,yes,runtime,before 5.2.1: all names resolve and keywords bind; after 5.3.0: diskcache.core.WindowsError missing: cannot import name WindowsError from diskcache.core
+60,distro,no,yes,no,runtime,"distro 1.6.0 defines InfoDict only inside 'if False:' (type-checking block), so it never exists at runtime"
+61,django-cors-headers,yes,yes,yes,runtime,3.14.0: names/keywords resolve; 4.0.0: Settings has no attribute 'CORS_REPLACE_HTTPS_REFERER'
+62,django-cors-headers,yes,yes,yes,runtime,3.14.0: names/keywords resolve; 4.0.0: cannot import name 'CorsPostCsrfMiddleware' from corsheaders.middleware
+63,django-filter,yes,yes,yes,runtime,before 23.5: all names resolve and keywords bind; after 24.1: django_filters.compat.TestCase missing: cannot import name TestCase from django_filters.compat
+64,django-filter,yes,yes,yes,runtime,before 24.3: all names resolve and keywords bind; after 25.1: DjangoFilterBackend.get_schema_operation_parameters missing: AttributeError: DjangoFilterBackend has no get_schema_operation_parameters
+65,dnspython,yes,yes,yes,runtime,"before[ok]: dns.zone.Transaction:type; Transaction(zone, replacement, read_only) | after[broken]: TypeError: Transaction(zone, replacement, version=None, make_immutable=False) rejects ['zone', 'replacement', 'read_only']: got an unexpected keyword argument '"
+66,dnspython,no,yes,no,runtime,"dns.rdtypes.txtbase defines only TXTBase in 2.2.1 (TXT lives in dns.rdtypes.ANY.TXT), so the name never existed there"
+67,docker,yes,yes,yes,runtime,5.0.0 (with six installed): UnixHTTPResponse resolves; 5.0.1: cannot import name 'UnixHTTPResponse'
+68,docker,yes,yes,yes,runtime,6.1.3: names/keywords resolve; 7.0.0: kwargs_from_env() got an unexpected keyword argument 'assert_hostname'
+69,docstring-parser,yes,yes,yes,runtime,before 0.16: all names resolve and keywords bind; after 0.17.0: docstring_parser.attrdoc.ast_constant_attr missing: cannot import name ast_constant_attr from docstring_parser.attrdoc
+70,duckdb,no,yes,no,runtime,duckdb 0.8.1 has no duckdb.experimental module at all; 0.9.0 has experimental.spark.sql.functions but no substr either
+71,einops,yes,yes,yes,runtime,"0.6.1: all 7 keywords bind; 0.7.0: TransformRecipe signature rewritten, so ellipsis_position_in_lhs (and 2 other keywords) are rejected with TypeError"
+72,einops,yes,yes,yes,runtime,0.8.0: names/keywords resolve; 0.8.1: cannot import name 'CompositionDecomposition' from einops.experimental.indexing
+73,emoji,yes,yes,yes,runtime,before 2.11.1: all names resolve and keywords bind; after 2.12.0: emoji.unicode_codes.get_aliases_unicode_dict missing: cannot import name get_aliases_unicode_dict from emoji.unicode_codes
+74,emoji,yes,yes,yes,runtime,before 1.2.0: all names resolve and keywords bind; after 2.8.0: emoji.UNICODE_EMOJI_SPANISH missing: cannot import name UNICODE_EMOJI_SPANISH from emoji
+75,envier,yes,yes,yes,runtime,before[ok]: envier.sphinx.RST_PARSER_SETTINGS:Values | after[broken]: ImportError: cannot import name 'RST_PARSER_SETTINGS' from envier.sphinx
+76,eval-type-backport,yes,yes,yes,runtime,0.0.1: names/keywords resolve; 0.1.0: cannot import name 'UnionTransformer' from eval_type_backport.eval_type_backport
+77,executing,yes,yes,yes,runtime,before 0.10.0: all names resolve and keywords bind; after 1.0.0: executing.executing.ReloadCacheFinder missing: cannot import name ReloadCacheFinder from executing.executing
+78,executing,yes,yes,yes,runtime,before 0.10.0: all names resolve and keywords bind; after 1.0.0: executing.executing.all_subclasses missing: cannot import name all_subclasses from executing.executing
+79,face,yes,yes,yes,runtime,before[ok]: face.utils.unicode:type | after[broken]: ImportError: cannot import name 'unicode' from face.utils
+80,faker,yes,yes,yes,runtime,40.17.0: names/keywords resolve; 40.18.0: cannot import name 'PhoneNumberProvider' from faker.providers.phone_number.fr_DZ
+81,faker,yes,yes,yes,runtime,40.32.0: names/keywords resolve; 40.33.0: company_id_checksum() got an unexpected keyword argument 'digits'
+82,fastapi-cli,yes,yes,yes,runtime,before 0.0.16: all names resolve and keywords bind; after 0.0.17: fastapi_cli.config.PYDANTIC_VERSION_MINOR_TUPLE missing: cannot import name PYDANTIC_VERSION_MINOR_TUPLE from fastapi_cli.config
+83,fastavro,yes,yes,yes,runtime,before[ok]: fastavro.io.json_decoder.AvroJSONDecoder:type; AvroJSONDecoder.read_object_start:function | after[broken]: AttributeError: AvroJSONDecoder has no attribute 'read_object_start'
+84,fastavro,yes,yes,yes,runtime,"before[ok]: fastavro.utils.gen_data:function; gen_data(schema: Union[str, List, Dict], named_schemas: Dict[str, Dict], index: int) -> Any | after[broken]: TypeError: gen_data(schema: Union[str, List, Dict], named_schemas: Dict[str, Dict]) -> Any rejects ['schema', 'named_schemas', 'index']: got an unexpected keywo"
+85,fastmcp-slim,yes,yes,yes,runtime,With fastmcp-slim[server]: 3.3.0 resolves logger; 3.3.1: cannot import name 'logger' from fastmcp.server.auth.authorization
+86,fastmcp-slim,yes,yes,yes,runtime,With fastmcp-slim[server]: 3.4.9 resolves ResultT; 4.0.0: cannot import name 'ResultT' from fastmcp.server.context
+87,feedparser,yes,yes,yes,runtime,before 6.0.12: all names resolve and keywords bind; after 6.0.13: feedparser.api.endbracket missing: cannot import name endbracket from feedparser.api
+88,findpython,yes,yes,yes,runtime,before[ok]: findpython.utils.subprocess_output:_lru_cache_wrapper | after[broken]: ImportError: cannot import name 'subprocess_output' from findpython.utils
+89,findpython,yes,yes,yes,runtime,before[ok]: findpython.providers.winreg.SYS_ARCHITECTURE:str | after[broken]: ImportError: cannot import name 'SYS_ARCHITECTURE' from findpython.providers.winreg
+90,flatbuffers,yes,yes,yes,runtime,25.9.23: names/keywords resolve; 25.12.19: Builder has no attribute 'growByteBuffer'
+91,flatbuffers,yes,yes,yes,runtime,25.9.23: names/keywords resolve; 25.12.19: cannot import name 'vtableEqual' from flatbuffers.builder
+92,freezegun,yes,yes,yes,runtime,before 1.1.0: all names resolve and keywords bind; after 1.2.0: freezegun.api.iscoroutinefunction missing: cannot import name iscoroutinefunction from freezegun.api
+93,frozendict,yes,yes,yes,runtime,before[ok]: frozendict.core.checkPosition:function | after[broken]: ImportError: cannot import name 'checkPosition' from frozendict.core
+94,ftfy,yes,yes,yes,runtime,6.2.0: names/keywords resolve; 6.2.1: cannot import name 'PY26' from ftfy.bad_codecs.sloppy
+95,genai-prices,yes,yes,yes,runtime,before 0: all names resolve and keywords bind; after 0.0.1: Provider.is_match missing: AttributeError: Provider has no is_match
+96,genai-prices,yes,yes,yes,runtime,before 0.0.72: all names resolve and keywords bind; after 0.0.73: genai_prices.types.providers_schema missing: cannot import name providers_schema from genai_prices.types
+97,geopandas,yes,yes,yes,runtime,before[ok]: geopandas.io.file.to_file:function | after[broken]: ImportError: cannot import name 'to_file' from geopandas.io.file
+98,glom,yes,yes,yes,runtime,23.1.1: names/keywords resolve; 23.3.0: cannot import name 'PY2' from glom.core
+99,google-auth-oauthlib,yes,yes,yes,runtime,before 0.8.0: all names resolve and keywords bind; after 1.0.0: InstalledAppFlow.run_console missing: AttributeError: InstalledAppFlow has no run_console
+100,google-cloud-aiplatform,yes,yes,yes,runtime,before[ok]: vertexai.preview.reasoning_engines.templates.adk.get_adk_major_version:function | after[broken]: ImportError: cannot import name 'get_adk_major_version' from vertexai.preview.reasoning_engines.templates.adk
+101,google-cloud-bigquery,yes,yes,yes,runtime,2.34.4 (py3.9): resolves; 3.0.1 (py3.8): cannot import name 'LegacyBigQueryStorageError' from google.cloud.bigquery
+102,google-cloud-bigquery,yes,yes,yes,runtime,2.34.4 (py3.9): resolves; 3.0.1 (py3.8): cannot import name 'SqlParameterScalarTypes' from google.cloud.bigquery.enums
+103,google-cloud-bigquery-storage,yes,yes,yes,runtime,"1.1.2 (py3.9) has BigQueryReadClient.project_path; 2.2.0 (py3.11, +six which it imports undeclared) BigQueryReadClient has no project_path."
+104,google-cloud-bigquery-storage,yes,yes,yes,runtime,"1.1.2 constructor accepts client_config; 2.2.0 (+six) constructor is (*, credentials, transport, client_options, client_info) and rejects client_config."
+105,google-cloud-kms,yes,yes,yes,runtime,before[ok]: google.cloud.kms.KeyManagementServiceClient:type; KeyManagementServiceClient.location_path:method | after[broken]: AttributeError: KeyManagementServiceClient has no attribute 'location_path'
+106,google-cloud-kms,yes,yes,yes,runtime,"before[ok]: google.cloud.kms.KeyManagementServiceClient:type; KeyManagementServiceClient(transport=None, channel=None, credentials=None, client_config=N | after[broken]: TypeError: KeyManagementServiceClient(*, credentials: Optional[google.auth.credentials.Credentials] = None, transport: Union[str, google.cloud.kms_v1.services.k"
+107,google-cloud-logging,yes,yes,yes,runtime,1.15.3: names/keywords resolve; 2.1.0: cannot import name 'LoggingServiceV2Client' from google.cloud.logging_v2
+108,google-cloud-logging,yes,yes,yes,runtime,1.15.3: names/keywords resolve; 2.1.0: cannot import name 'MetricsServiceV2Client' from google.cloud.logging_v2
+109,google-cloud-monitoring,yes,yes,yes,runtime,before 1.1.2: all names resolve and keywords bind; after 2.0.1: MetricServiceClient rejected: got an unexpected keyword argument 'channel'
+110,google-cloud-secret-manager,yes,yes,yes,runtime,"before[ok]: google.cloud.secretmanager.SecretManagerServiceClient:type; SecretManagerServiceClient(transport=None, channel=None, credentials=None, clien | after[broken]: TypeError: SecretManagerServiceClient(*, credentials: Optional[google.auth.credentials.Credentials] = None, transport: Union[str, google.cloud.secretmanager_v1."
+111,google-cloud-secret-manager,yes,yes,yes,runtime,before[ok]: google.cloud.secretmanager_v1.types.names:list | after[broken]: ImportError: cannot import name 'names' from google.cloud.secretmanager_v1.types
+112,google-cloud-speech,yes,no,no,runtime,SpeechClient.long_running_recognize resolves in both 1.3.4 and 2.1.0 (2.x generated client in speech_v1/services/speech/client.py still defines it)
+113,google-cloud-speech,yes,yes,yes,runtime,1.3.4: names/keywords resolve; 2.1.0: cannot import name 'names' from google.cloud.speech_v1.types
+114,google-cloud-storage,yes,yes,yes,runtime,before 2.7.0: all names resolve and keywords bind; after 2.8.0: google.cloud.storage.transfer_manager.DEFAULT_CHUNK_SIZE missing: cannot import name DEFAULT_CHUNK_SIZE from google.cloud.storage.transfer_manager
+115,google-cloud-storage,yes,yes,yes,runtime,before 3.4.0: all names resolve and keywords bind; after 3.4.1: Blob rejected: got an unexpected keyword argument 'crc32c_checksum'
+116,google-cloud-tasks,yes,yes,yes,runtime,"before[ok]: google.cloud.tasks.CloudTasksClient:type; CloudTasksClient(transport=None, channel=None, credentials=None, client_config=None, client_info=N | after[broken]: TypeError: CloudTasksClient(*, credentials: Optional[google.auth.credentials.Credentials] = None, transport: Union[str, google.cloud.tasks_v2.services.cloud_tas"
+117,graphql-core,yes,yes,yes,runtime,3.1.4: names/keywords resolve; 3.1.5: get_block_string_indentation() got an unexpected keyword argument 'lines'
+118,graphql-core,yes,yes,yes,runtime,3.2.13: names/keywords resolve; 3.3.0: ExtendSchemaImpl has no attribute 'build_interfaces'
+119,graphql-relay,yes,yes,yes,runtime,before 3.1.1: all names resolve and keywords bind; after 3.1.2: node_definitions rejected: got an unexpected keyword argument 'id_fetcher'
+120,graphql-relay,yes,yes,yes,runtime,before 3.1.5: all names resolve and keywords bind; after 3.2.0: graphql_relay.resolve_maybe_thunk missing: cannot import name resolve_maybe_thunk from graphql_relay
+121,graphviz,yes,yes,yes,runtime,before[ok]: graphviz.backend.FORMATTERS:set | after[broken]: ImportError: cannot import name 'FORMATTERS' from graphviz.backend
+122,gremlinpython,yes,yes,yes,runtime,3.5.8: names/keywords resolve; 3.6.0: cannot import name 'min' from gremlin_python.process.graph_traversal
+123,grimp,yes,yes,yes,runtime,before 3.9: all names resolve and keywords bind; after 3.11: grimp.domain.valueobjects.ValueObject missing: cannot import name ValueObject from grimp.domain.valueobjects
+124,grimp,yes,yes,yes,runtime,before 3.12: all names resolve and keywords bind; after 3.13: ImportGraph.find_all_simple_chains missing: AttributeError: ImportGraph has no find_all_simple_chains
+125,grpcio-health-checking,yes,yes,yes,runtime,before[ok]: grpc_health.v1.health_pb2_grpc.EXPECTED_ERROR_RELEASE:str | after[broken]: ImportError: cannot import name 'EXPECTED_ERROR_RELEASE' from grpc_health.v1.health_pb2_grpc
+126,grpcio-health-checking,yes,yes,yes,runtime,before[ok]: grpc_health.v1.health_pb2_grpc.SCHEDULED_RELEASE_DATE:str | after[broken]: ImportError: cannot import name 'SCHEDULED_RELEASE_DATE' from grpc_health.v1.health_pb2_grpc
+127,h2,yes,yes,yes,runtime,4.2.0: names/keywords resolve; 4.3.0: cannot import name 'UPPER_RE' from h2.utilities
+128,holidays,yes,yes,yes,runtime,before 0.34: all names resolve and keywords bind; after 0.35: HinduCalendarHolidays rejected: got an unexpected keyword argument 'calendar'
+129,holidays,yes,yes,yes,runtime,before 0.97: all names resolve and keywords bind; after 0.98: holidays.calendars.tibetan.WINTER_SOLSTICE missing: cannot import name WINTER_SOLSTICE from holidays.calendars.tibetan
+130,httplib2,yes,yes,yes,runtime,before[ok]: httplib2.auth.RedirectMissingLocation:type | after[broken]: ImportError: cannot import name 'RedirectMissingLocation' from httplib2.auth
+131,httplib2,yes,yes,yes,runtime,before[ok]: httplib2.auth.RelativeURIError:type | after[broken]: ImportError: cannot import name 'RelativeURIError' from httplib2.auth
+132,huey,yes,yes,yes,runtime,2.6.0: names/keywords resolve; 3.0.0: KyotoTycoonStorage has no attribute 'prefix_key'
+133,huey,yes,yes,yes,runtime,2.6.0: names/keywords resolve; 3.0.0: cannot import name 'to_bytes' from huey.storage
+134,humanize,yes,yes,yes,runtime,before 3.12.0: all names resolve and keywords bind; after 3.13.0: ngettext rejected: got an unexpected keyword argument 'num'
+135,hvac,yes,yes,yes,runtime,before[ok]: hvac.api.auth_methods.Mfa:ABCMeta | after[broken]: ImportError: cannot import name 'Mfa' from hvac.api.auth_methods
+136,inflect,yes,yes,yes,runtime,6.2.0: names/keywords resolve; 7.0.0: cannot import name 'print3' from inflect
+137,inflect,yes,yes,yes,runtime,7.0.0: names/keywords resolve; 7.2.0: cannot import name 'same_method' from inflect
+138,installer,yes,yes,yes,runtime,before 0.5.1: all names resolve and keywords bind; after 0.6.0: RecordEntry.to_line missing: AttributeError: RecordEntry has no to_line
+139,invoke,yes,yes,yes,runtime,"before[ok]: invoke.parser.context.flag_key:function; flag_key(x) | after[broken]: TypeError: flag_key(arg: invoke.parser.argument.Argument) -> List[Union[int, str]] rejects ['x']: got an unexpected keyword argument 'x'"
+140,ipywidgets,yes,yes,yes,runtime,7.8.5: names/keywords resolve; 8.0.0: register() got an unexpected keyword argument 'name'
+141,ipywidgets,yes,yes,yes,runtime,7.8.5: names/keywords resolve; 8.0.0: cannot import name 'content_from_json' from ipywidgets.widgets.widget_upload
+142,itsdangerous,yes,yes,yes,runtime,before 2.0.1: all names resolve and keywords bind; after 2.1.0: itsdangerous.TimedJSONWebSignatureSerializer missing: cannot import name TimedJSONWebSignatureSerializer from itsdangerous
+143,jaraco-functools,yes,yes,yes,runtime,before[ok]: jaraco.functools.CallableT:TypeVar | after[broken]: ImportError: cannot import name 'CallableT' from jaraco.functools
+144,json-repair,yes,yes,yes,runtime,0.46.1: names/keywords resolve; 0.46.2: StringFileWrapper() got an unexpected keyword argument 'CHUNK_LENGTH'
+145,json5,yes,yes,yes,runtime,before 0.9.28: all names resolve and keywords bind; after 0.10.0: Host.print_ missing: AttributeError: Host has no print_
+146,json5,yes,yes,yes,runtime,before 0.9.22: all names resolve and keywords bind; after 0.9.23: json5.lib.long missing: cannot import name long from json5.lib
+147,jsonpatch,yes,yes,yes,runtime,before[ok]: jsonpatch.DiffBuilder:type; DiffBuilder.iter_from:function | after[broken]: AttributeError: DiffBuilder has no attribute 'iter_from'
+148,jsonpath-ng,yes,yes,yes,runtime,1.9.1: names/keywords resolve; 1.10.0: cannot import name 'LIST_KEY' from jsonpath_ng.parser
+149,jsonpath-ng,yes,yes,yes,runtime,1.7.0: names/keywords resolve; 1.8.0: Index() got an unexpected keyword argument 'index'
+150,jsonpickle,yes,yes,yes,runtime,before 2.2.0: all names resolve and keywords bind; after 3.0.0: jsonpickle.compat.PY3_ORDERED_DICT missing: cannot import name PY3_ORDERED_DICT from jsonpickle.compat
+151,jsonpickle,yes,yes,yes,runtime,before 3.3.0: all names resolve and keywords bind; after 3.4.0: jsonpickle.unpickler.loadmodule missing: cannot import name loadmodule from jsonpickle.unpickler
+152,jsonpointer,yes,yes,yes,runtime,before[ok]: jsonpointer.encode_str:function | after[broken]: ImportError: cannot import name 'encode_str' from jsonpointer
+153,jsonpointer,no,yes,no,runtime,jsonpointer 2.4 sets str = unicode only in a Python 2 try branch; on Python 3 the module never defines str
+154,jsonref,yes,yes,yes,runtime,0.3.0: names/keywords resolve; 1.0.0: cannot import name 'JsonLoader' from jsonref
+155,jupyter-lsp,yes,yes,yes,runtime,before 1.3.0: all names resolve and keywords bind; after 1.4.0: jupyter_lsp.session.SKIP_JSON_SPEC missing: cannot import name SKIP_JSON_SPEC from jupyter_lsp.session
+156,jupyterlab,yes,yes,yes,runtime,"before[ok]: jupyterlab.upgrade_extension.update_extension:function; update_extension(target, branch='3.0', interactive=True) | after[broken]: TypeError: update_extension(target: str, vcs_ref: Optional[str] = None, interactive: bool = True) -> None rejects ['target', 'branch']: got an unexpected keywor"
+157,jupyterlab,yes,yes,yes,runtime,before[ok]: jupyterlab.labextensions.WatchLabExtensionApp:MetaHasTraits | after[broken]: ImportError: cannot import name 'WatchLabExtensionApp' from jupyterlab.labextensions
+158,jupyterlab-server,yes,yes,yes,runtime+source,"2.16.6 (openapi-core 0.14): wrap_request resolves; 2.17.0 not importable with era deps, but its released test_utils.py has no wrap_request (source)"
+159,jupyterlab-server,yes,yes,yes,runtime,2.18.0: names/keywords resolve; 2.19.0: TranslationBundle() got an unexpected keyword argument 'locale'
+160,jupyterlab-widgets,yes,yes,yes,runtime,before 3.0.5: all names resolve and keywords bind; after 3.0.6: jupyterlab_widgets.data missing: cannot import name data from jupyterlab_widgets
+161,kombu,yes,yes,yes,runtime,before[ok]: kombu.utils.text.version_string_as_tuple:function; version_string_as_tuple(version: 'str') -> 'version_info_t' | after[broken]: TypeError: version_string_as_tuple(s: 'str') -> 'version_info_t' rejects ['version']: got an unexpected keyword argument 'version'
+162,langchain-anthropic,yes,yes,yes,runtime,0.3.22: names/keywords resolve; 1.0.0: cannot import name 'Anthropic' from langchain_anthropic
+163,langchain-anthropic,yes,yes,yes,runtime,0.3.22: names/keywords resolve; 1.0.0: cannot import name 'ChatAnthropicTools' from langchain_anthropic.experimental
+164,langchain-core,yes,yes,yes,runtime,before 0.3.86: all names resolve and keywords bind; after 1.0.0: Reviver rejected: got an unexpected keyword argument 'init_validator'
+165,langchain-core,yes,yes,yes,runtime,before 0.3.86: all names resolve and keywords bind; after 1.0.0: langchain_core.tracers.schemas.TracerSessionV1 missing: cannot import name TracerSessionV1 from langchain_core.tracers.schemas
+166,langchain-google-vertexai,yes,yes,yes,runtime,before[ok]: langchain_google_vertexai.GemmaChatLocalHF:ModelMetaclass | after[broken]: ImportError: cannot import name 'GemmaChatLocalHF' from langchain_google_vertexai
+167,langchain-google-vertexai,yes,yes,yes,runtime,"before[ok]: langchain_google_vertexai.VectorSearchVectorStore:ABCMeta; VectorSearchVectorStore(searcher: langchain_google_vertexai.vectorstores._searche | after[broken]: TypeError: VectorSearchVectorStore(searcher: langchain_google_vertexai.vectorstores._searcher.Searcher, document_storage: langchain_google_vertexai.vectorstores"
+168,langchain-text-splitters,yes,yes,yes,runtime,0.3.5: names/keywords resolve; 0.3.6: HTMLHeaderTextSplitter has no attribute 'aggregate_elements_to_chunks'
+169,lazy-object-proxy,yes,yes,yes,runtime,before 1.7.1: all names resolve and keywords bind; after 1.8.0: lazy_object_proxy.compat.PY2 missing: cannot import name PY2 from lazy_object_proxy.compat
+170,lazy-object-proxy,yes,yes,yes,runtime,before 1.7.1: all names resolve and keywords bind; after 1.8.0: lazy_object_proxy.compat.PY3 missing: cannot import name PY3 from lazy_object_proxy.compat
+171,leather,yes,yes,yes,runtime,before[ok]: leather.utils.formatwarning_orig:function | after[broken]: ImportError: cannot import name 'formatwarning_orig' from leather.utils
+172,levenshtein,yes,yes,yes,runtime,0.24.0: names/keywords resolve; 0.25.0: cannot import name 'jaro' from Levenshtein.StringMatcher
+173,levenshtein,yes,yes,yes,runtime,0.24.0: names/keywords resolve; 0.25.0: cannot import name 'subtract_edit' from Levenshtein.StringMatcher
+174,lightgbm,yes,yes,yes,runtime,before 3.3.5: all names resolve and keywords bind; after 4.0.0: lightgbm.basic.C_API_MATRIX_TYPE_CSR missing: cannot import name C_API_MATRIX_TYPE_CSR from lightgbm.basic
+175,lightgbm,yes,yes,yes,runtime,before 4.5.0: all names resolve and keywords bind; after 4.6.0: train rejected: got an unexpected keyword argument 'categorical_feature'
+176,limits,yes,yes,yes,runtime,"before[ok]: limits.util.get_dependency:function; get_dependency(dep) -> Tuple[Any, packaging.version.Version] | after[broken]: TypeError: get_dependency(module_path: str) -> Tuple[Optional[module], Optional[packaging.version.Version]] rejects ['dep']: got an unexpected keyword argument "
+177,limits,yes,yes,yes,runtime,before[ok]: limits.typing.ScriptP:_ProtocolMeta | after[broken]: ImportError: cannot import name 'ScriptP' from limits.typing
+178,linkify-it-py,yes,yes,yes,runtime,1.0.3: names/keywords resolve; 2.0.0: cannot import name 'SRC_HOST_TERMINATOR' from linkify_it.ucre
+179,linkify-it-py,yes,yes,yes,runtime,2.1.0: names/keywords resolve; 2.1.1: Match() got an unexpected keyword argument 'linkifyit'
+180,llvmlite,yes,no,no,runtime,In 0.44.0 add_reverse_post_order_function_attrs_pass moved to base class PassManager; ModulePassManager still inherits it (runtime getattr ok).
+181,llvmlite,yes,yes,yes,runtime,before 0.47.0: all names resolve and keywords bind; after 0.48.0: PipelineTuningOptions rejected: got an unexpected keyword argument 'size_level'
+182,magika,yes,yes,yes,runtime,before[ok]: magika.types.FeedbackReport:type | after[broken]: ImportError: cannot import name 'FeedbackReport' from magika.types
+183,magika,yes,yes,yes,runtime,before[ok]: magika.cli.magika_client.get_magika_result_from_stdin:function | after[broken]: ImportError: cannot import name 'get_magika_result_from_stdin' from magika.cli.magika_client
+184,mammoth,yes,yes,yes,runtime,1.4.16: names/keywords resolve; 1.4.17: hyperlink() got an unexpected keyword argument 'href'
+185,mammoth,yes,yes,yes,runtime,1.5.1: names/keywords resolve; 1.6.0: cannot import name 'Handler' from mammoth.docx.xmlparser
+186,markdown,yes,yes,yes,runtime,before 3.3.4: all names resolve and keywords bind; after 3.3.6: slugify rejected: got an unexpected keyword argument 'encoding'
+187,markdown-it-py,yes,yes,yes,runtime,"before[ok]: markdown_it.helpers.parseLinkTitle:function; parseLinkTitle(string: str, pos: int, maximum: int) -> markdown_it.helpers.parse_link_title._Re | after[broken]: TypeError: parseLinkTitle(string: str, start: int, maximum: int, prev_state: markdown_it.helpers.parse_link_title._State | None = None) -> markdown_it.helpers.p"
+188,markupsafe,yes,yes,yes,runtime,2.0.1: names/keywords resolve; 2.1.0: cannot import name 'soft_unicode' from markupsafe
+189,matplotlib-inline,yes,yes,yes,runtime,With matplotlib+ipython installed: 0.1.3 backend_inline.draw_if_interactive exists; 0.1.5 cannot import it.
+190,maxminddb,yes,no,no,runtime,maxminddb.extension (C module) still exports InvalidDatabaseError in 2.6.0 (PyModule_AddObject in maxminddb.c); only the extension.pyi stub dropped the re-export
+191,mcp-types,yes,yes,yes,runtime,0.2.0: names/keywords resolve; 2.0.0: cannot import name 'ElicitResultMeta' from mcp_types
+192,mcp-types,yes,yes,yes,runtime,0.2.0: names/keywords resolve; 2.0.0: cannot import name 'ListResourcesRequestParams' from mcp_types
+193,mergedeep,yes,yes,yes,runtime,before 1.3.1: all names resolve and keywords bind; after 1.3.2: mergedeep.mergedeep.KT missing: cannot import name KT from mergedeep.mergedeep
+194,mergedeep,yes,yes,yes,runtime,before 1.3.1: all names resolve and keywords bind; after 1.3.2: mergedeep.mergedeep.VT missing: cannot import name VT from mergedeep.mergedeep
+195,mistune,yes,yes,yes,runtime,before[ok]: mistune.plugins.PLUGINS:dict | after[broken]: ImportError: cannot import name 'PLUGINS' from mistune.plugins
+196,ml-dtypes,yes,yes,yes,runtime,0.2.0: names/keywords resolve; 0.3.0: cannot import name 'float8_e4m3b11' from ml_dtypes
+197,mmh3,no,unknown,no,runtime,"Builtin mmh3.hash_bytes(key, seed, x64arch) called with key=b'x', signed=True raises ""'signed' is an invalid keyword argument"" in both 4.0.1 and 4.1.0."
+198,more-itertools,yes,yes,yes,runtime,"before[ok]: more_itertools.iter_except:function; iter_except(func, exception, first=None) | after[broken]: TypeError: iter_except(function, exception, first=None) rejects ['exception', 'func']: got an unexpected keyword argument 'func'"
+199,more-itertools,yes,yes,yes,runtime,before[ok]: more_itertools.more.running_max:function | after[broken]: ImportError: cannot import name 'running_max' from more_itertools.more
+200,mpmath,yes,yes,yes,runtime,1.3.0: names/keywords resolve; 1.4.0: cannot import name 'MAX_EULER_CACHE' from mpmath.libmp.libintmath
+201,mpmath,yes,yes,yes,runtime,1.3.0: names/keywords resolve; 1.4.0: cannot import name 'runtests' from mpmath
+202,msal,yes,yes,yes,runtime,before 1.21.0: all names resolve and keywords bind; after 1.22.0: canonicalize rejected: got an unexpected keyword argument 'authority_url'
+203,msal,yes,yes,yes,runtime,before 1.35.0: all names resolve and keywords bind; after 1.35.1: msal.authority.AZURE_CHINA missing: cannot import name AZURE_CHINA from msal.authority
+204,msgpack,yes,yes,yes,runtime,before[ok]: msgpack.fallback.unicode:type | after[broken]: ImportError: cannot import name 'unicode' from msgpack.fallback
+205,msgpack,yes,yes,yes,runtime,before[ok]: msgpack.fallback.StringIO:type | after[broken]: ImportError: cannot import name 'StringIO' from msgpack.fallback
+206,multiprocess,no,yes,no,runtime,BufferWrapper.get_address absent in 0.70.12.2 on py3.9 (and in its py3.x wheels); it exists only in the sdist's py2.x/py3.1/py3.2 trees
+207,mysqlclient,yes,yes,yes,source,"No wheels and no libmysqlclient to build; sdist src/MySQLdb/cursors.py: 2.2.8 CursorUseResultMixIn defines next(), 2.3.0 only __next__ (SSCursor.next gone)."
+208,natsort,yes,yes,yes,runtime,"before[ok]: natsort.utils.sep_inserter:function; sep_inserter(iterable, sep) | after[broken]: TypeError: sep_inserter(iterator: Iterator[Any], sep: Union[str, bytes]) -> Iterator[Any] rejects ['sep', 'iterable']: got an unexpected keyword argument 'itera"
+209,natsort,yes,yes,yes,runtime,before[ok]: natsort.utils.TwoBlankTuple:_GenericAlias | after[broken]: ImportError: cannot import name 'TwoBlankTuple' from natsort.utils
+210,nbclient,yes,yes,yes,runtime,0.7.0: names/keywords resolve; 0.7.1: cannot import name 'check_ipython' from nbclient.util
+211,nbformat,yes,yes,yes,runtime,before 5.10.4: all names resolve and keywords bind; after 5.11.0: validate rejected: got an unexpected keyword argument 'repair_duplicate_cell_ids'
+212,nbformat,yes,yes,yes,runtime,before 5.10.4: all names resolve and keywords bind; after 5.11.0: validate rejected: got an unexpected keyword argument 'strip_invalid_metadata'
+213,ninja,no,yes,no,runtime,"ninja 1.11.1 __init__ does 'from ._version import get_versions' then 'del get_versions', so it is never a module attribute"
+214,nodeenv,yes,yes,yes,runtime,1.6.0: names/keywords resolve; 1.7.0: get_env_dir() got an unexpected keyword argument 'opt'
+215,nodeenv,yes,yes,yes,runtime,1.6.0: names/keywords resolve; 1.7.0: install_packages() got an unexpected keyword argument 'opt'
+216,nvidia-ml-py,yes,yes,yes,runtime,before 12.560.30: all names resolve and keywords bind; after 12.570.86: nvmlDeviceGetMinMaxClockOfPState rejected: got an unexpected keyword argument 'type'
+217,oauthlib,yes,yes,yes,runtime,"before[ok]: oauthlib.oauth2.RevocationEndpoint:type; RevocationEndpoint(request_validator, supported_token_types=None, enable_jsonp=False) | after[broken]: TypeError: RevocationEndpoint(request_validator, supported_token_types=None) rejects ['request_validator', 'enable_jsonp']: got an unexpected keyword argument '"
+218,openapi-schema-validator,yes,yes,yes,runtime,0.3.0: names/keywords resolve; 0.3.1: cannot import name 'BaseOAS30Validator' from openapi_schema_validator.validators
+219,openapi-schema-validator,yes,yes,yes,runtime,0.3.0: names/keywords resolve; 0.3.1: cannot import name 'BaseOAS31Validator' from openapi_schema_validator.validators
+220,openapi-spec-validator,yes,yes,yes,runtime,before 0.6.0: all names resolve and keywords bind; after 0.7.0: SpecValidator rejected: got an unexpected keyword argument 'schema_validator'
+221,opencv-python-headless,yes,yes,yes,runtime,before[ok]: cv2.detail.ArgKind_GOBJREF:int | after[broken]: ImportError: cannot import name 'ArgKind_GOBJREF' from cv2.detail
+222,opencv-python-headless,yes,yes,yes,runtime,before[ok]: cv2.fisheye.CALIB_RECOMPUTE_EXTRINSIC:int | after[broken]: ImportError: cannot import name 'CALIB_RECOMPUTE_EXTRINSIC' from cv2.fisheye
+223,opensearch-py,yes,yes,yes,runtime,1.0.0: names/keywords resolve; 1.1.0: CatClient has no attribute 'ml_jobs'
+224,opensearch-py,yes,no,no,runtime,"OpenSearch.delete_point_in_time still resolves in 2.4.0 (moved to client/_patch.py and imported into the class body, deprecated not removed)"
+225,opentelemetry-sdk,yes,yes,yes,runtime,before 1.0.0: all names resolve and keywords bind; after 1.1.0: opentelemetry.sdk.resources.CLOUD_ZONE missing: cannot import name CLOUD_ZONE from opentelemetry.sdk.resources
+226,opentelemetry-sdk,yes,yes,yes,runtime,before 1.40.0: all names resolve and keywords bind; after 1.41.0: Tracer rejected: got an unexpected keyword argument '_tracer_provider'
+227,overrides,yes,yes,yes,runtime,"before[ok]: overrides.enforce.ensure_return_type_compatibility:function; ensure_return_type_compatibility(super_sig, sub_sig) | after[broken]: TypeError: ensure_return_type_compatibility(super_type_hints, sub_type_hints) rejects ['super_sig', 'sub_sig']: got an unexpected keyword argument 'super_sig'"
+228,overrides,yes,yes,yes,runtime,before[ok]: overrides.enforce.ensure_no_extra_args_in_sub:function | after[broken]: ImportError: cannot import name 'ensure_no_extra_args_in_sub' from overrides.enforce
+229,packageurl-python,yes,yes,yes,runtime,0.10.2: names/keywords resolve; 0.10.3: purl_to_lookups() got an unexpected keyword argument 'purl'
+230,packageurl-python,yes,yes,yes,runtime,0.17.4: names/keywords resolve; 0.17.5: cannot import name 'build_qpkg_download_url' from packageurl.contrib.purl2url
+231,packaging,yes,yes,yes,runtime,before 21.3: all names resolve and keywords bind; after 22.0: packaging.requirements.MARKER_SEPARATOR missing: cannot import name MARKER_SEPARATOR from packaging.requirements
+232,pandas-gbq,yes,yes,yes,runtime,"before[ok]: pandas_gbq.gbq.InvalidSchema:type; InvalidSchema(message: str, local_schema: Dict[str, Any], remote_schema: Dict[str, Any]) | after[broken]: TypeError: InvalidSchema(message: str) rejects ['message', 'local_schema', 'remote_schema']: got an unexpected keyword argument 'local_schema'"
+233,pandas-gbq,yes,yes,yes,runtime,before[ok]: pandas_gbq.auth.CLIENT_SECRET:str | after[broken]: ImportError: cannot import name 'CLIENT_SECRET' from pandas_gbq.auth
+234,paramiko,yes,yes,yes,runtime,2.12.0: names/keywords resolve; 3.0.0: cannot import name 'deflate_zero' from paramiko.util
+235,paramiko,yes,yes,yes,runtime,4.0.0: names/keywords resolve; 5.0.0: Transport() got an unexpected keyword argument 'gss_deleg_creds'
+236,partd,yes,yes,yes,runtime,before 1.2.0: all names resolve and keywords bind; after 1.3.0: partd.ignoring missing: cannot import name ignoring from partd
+237,partd,yes,yes,yes,runtime,before 1.2.0: all names resolve and keywords bind; after 1.3.0: partd.utils.do_nothing missing: cannot import name do_nothing from partd.utils
+238,patsy,yes,yes,yes,runtime,before[ok]: patsy.test_highlevel.test_future:function | after[broken]: ImportError: cannot import name 'test_future' from patsy.test_highlevel
+239,pbr,yes,yes,yes,runtime,6.1.1 on py3.9 with optional nose installed: NoseTest resolves (defined in try: from nose import commands); 7.0.0: cannot import name 'NoseTest'
+240,pbs-installer,yes,yes,yes,runtime,before 2024.2.26: all names resolve and keywords bind; after 2024.3.22: download rejected: got an unexpected keyword argument 'session'
+241,pbs-installer,yes,yes,yes,runtime,before 2024.2.26: all names resolve and keywords bind; after 2024.3.22: install rejected: got an unexpected keyword argument 'session'
+242,pdf2image,yes,yes,yes,runtime,"before[ok]: pdf2image.pdfinfo_from_bytes:function; pdfinfo_from_bytes(pdf_file, userpw=None, poppler_path=None, rawdates=False, timeout=None) | after[broken]: TypeError: pdfinfo_from_bytes(pdf_bytes: bytes, userpw: str = None, ownerpw: str = None, poppler_path: str = None, rawdates: bool = False, timeout: int = None) "
+243,pdfminer-six,yes,yes,yes,runtime,20231228: names/keywords resolve; 20240706: LTChar has no attribute 'is_compatible'
+244,pdfminer-six,yes,yes,yes,runtime,20251230: names/keywords resolve; 20260107: CMapParser has no attribute 'poll'
+245,pg8000,yes,yes,yes,runtime,before 1.31.3: all names resolve and keywords bind; after 1.31.4: composite_out rejected: got an unexpected keyword argument 'ar'
+246,pgvector,yes,yes,yes,runtime,before[ok]: pgvector.utils.from_db_binary:function | after[broken]: ImportError: cannot import name 'from_db_binary' from pgvector.utils
+247,pip,yes,yes,yes,runtime,21.0.1: names/keywords resolve; 21.1: cannot import name 'MYPY_CHECK_RUNNING' from pip
+248,pip-api,yes,yes,yes,runtime,before 0.0.34: all names resolve and keywords bind; after 0.0.35: Version.major missing: AttributeError: LegacyVersion has no major
+249,pip-api,yes,yes,yes,runtime,before 0.0.34: all names resolve and keywords bind; after 0.0.35: Version.minor missing: AttributeError: LegacyVersion has no minor
+250,pip-audit,yes,yes,yes,runtime,before[ok]: pip_audit.dependency_source.resolvelib.pypi_provider.get_metadata_for_wheel:function | after[broken]: ImportError: cannot import name 'get_metadata_for_wheel' from pip_audit.dependency_source.resolvelib.pypi_provider
+251,pkginfo,no,yes,no,runtime,"ParsedOptions exists only in pkginfo/commandline.pyi stub (type alias), never in commandline.py, in both 1.11.0 and 1.11.1"
+252,platformdirs,yes,yes,yes,runtime,before 4.9.4: all names resolve and keywords bind; after 4.9.6: platformdirs.version.TYPE_CHECKING missing: cannot import name TYPE_CHECKING from platformdirs.version
+253,platformdirs,yes,yes,yes,runtime,before 4.9.4: all names resolve and keywords bind; after 4.9.6: platformdirs.version.VERSION_TUPLE missing: cannot import name VERSION_TUPLE from platformdirs.version
+254,plotly,yes,yes,yes,runtime,"before[ok]: plotly.offline.plot:function; plot(figure_or_data, show_link=False, link_text='Export to plot.ly', validate=True, output_type='file', includ | after[broken]: TypeError: plot(figure_or_data, validate=True, output_type='file', include_plotlyjs=True, filename='temp-plot.html', auto_open=True, image=None, image_filename="
+255,progressbar2,yes,yes,yes,runtime,4.2.0: names/keywords resolve; 4.3.0: wrapper() got an unexpected keyword argument 'wrapper'
+256,puremagic,yes,yes,yes,runtime,before 2.0.0: all names resolve and keywords bind; after 2.0.1: puremagic.scanners.python_scanner.is_substantial_python_code missing: cannot import name is_substantial_python_code from puremagic.scanners.python_scanner
+257,py-partiql-parser,yes,yes,yes,runtime,"before[ok]: py_partiql_parser.QueryMetadata:type; QueryMetadata(tables: Dict[str, str], where_clauses: List[Tuple[List[str], str]] = None) | after[broken]: TypeError: QueryMetadata(tables: Dict[str, str], where_clause: Optional[ForwardRef('AbstractWhereClause')] = None) rejects ['tables', 'where_clauses']: got an u"
+258,pybind11,yes,yes,yes,runtime,3.0.4: names/keywords resolve; 3.1.0: no_recompile() got an unexpected keyword argument 'obg'
+259,pycares,no,yes,no,runtime,"pycares 4.5.0 __init__.py ends with 'del exported_pycares_symbols, exported_pycares_symbols_map', so the name is never importable (import fails in both versions)."
+260,pycares,yes,yes,yes,runtime,before 4.11.0: all names resolve and keywords bind; after 5.0.0: Channel rejected: got an unexpected keyword argument 'event_thread'
+261,pycountry,yes,yes,yes,runtime,before[ok]: pycountry.Subdivision:type | after[broken]: ImportError: cannot import name 'Subdivision' from pycountry
+262,pycparser,yes,yes,yes,runtime,2.23: names/keywords resolve; 3.0: CParser has no attribute 'p_block_item_list'
+263,pycryptodomex,yes,yes,yes,runtime,before 3.19.1: all names resolve and keywords bind; after 3.20.0: Cryptodome.SelfTest.IO.test_PBES.is_bytes missing: cannot import name is_bytes from Cryptodome.SelfTest.IO.test_PBES
+264,pydantic,yes,yes,yes,runtime,before[ok]: pydantic.functional_serializers.FuncType:TypeVar | after[broken]: ImportError: cannot import name 'FuncType' from pydantic.functional_serializers
+265,pydantic-core,yes,yes,yes,runtime,2.29.0: names/keywords resolve; 2.30.0: arguments_schema() got an unexpected keyword argument 'populate_by_name'
+266,pydantic-extra-types,yes,yes,yes,runtime,With phonenumbers installed: 2.9.0 phone_numbers.GeneratorCallableStr imports; 2.10.0 cannot import it.
+267,pydata-google-auth,yes,yes,yes,runtime,before[ok]: pydata_google_auth.auth.CLIENT_ID:str | after[broken]: ImportError: cannot import name 'CLIENT_ID' from pydata_google_auth.auth
+268,pydeck,yes,yes,yes,runtime,0.7.1: names/keywords resolve; 0.8.0: cannot import name 'DeckGLWidget' from pydeck
+269,pydyf,yes,yes,yes,runtime,before 0.10.0: all names resolve and keywords bind; after 0.11.0: PDF rejected: got an unexpected keyword argument 'version'
+270,pydyf,yes,yes,yes,runtime,before 0.11.0: all names resolve and keywords bind; after 0.12.0: Stream.transform missing: AttributeError: Stream has no transform
+271,pyflakes,yes,yes,yes,runtime,"before[ok]: pyflakes.checker.Checker:type; Checker(tree, filename='(none)', builtins=None, withDoctest=False, file_tokens=()) | after[broken]: TypeError: Checker(tree, filename='(none)', builtins=None, withDoctest=False) rejects ['tree', 'file_tokens']: got an unexpected keyword argument 'file_tokens'"
+272,pyjwt,yes,yes,yes,runtime,2.11.0 (with cryptography installed): ALLOWED_EC_KEY_TYPES resolves; 2.12.0: cannot import name
+273,pyjwt,yes,yes,yes,runtime,2.11.0 (with cryptography installed): ALLOWED_KEY_TYPES resolves; 2.12.0: cannot import name
+274,pymssql,no,yes,no,runtime,Cursor.getrow is a Cython 'cdef' method (not Python-visible) in both 2.3.12 and 2.3.13; only the 2.3.12 .pyi stub listed it. AttributeError in both.
+275,pymysql,yes,yes,yes,runtime,before[ok]: pymysql.connections.Connection:type; Connection.escape_string:function | after[broken]: AttributeError: Connection has no attribute 'escape_string'
+276,pymysql,yes,yes,yes,runtime,before[ok]: pymysql.converters.escape_bytes_prefixed:function | after[broken]: ImportError: cannot import name 'escape_bytes_prefixed' from pymysql.converters
+277,pyopenssl,yes,yes,yes,runtime,24.2.1: names/keywords resolve; 24.3.0: cannot import name 'dump_crl' from OpenSSL.crypto
+278,pyparsing,yes,no,no,runtime,"pyparsing 3.1.0 delimited_list is a deprecated wrapper over DelimitedList(expr, delim, combine, min, max, ...); called delimited_list(expr=Word('a'), max=2) successfully."
+279,pypdf2,yes,yes,yes,runtime,before[ok]: PyPDF2.utils.PdfReadWarning:type | after[broken]: ImportError: cannot import name 'PdfReadWarning' from PyPDF2.utils
+280,pypdf2,yes,yes,yes,source,"2.2.1 runtime: readHexStringFromStream(stream, forced_encoding) binds; 2.3.0 wheel cannot import (missing PyPDF2._codecs) so checked source: readHexStringFromStream(stream) only, forced_encoding moved to read_hex_string_from_stream"
+281,pyright,yes,yes,yes,runtime,1.1.381: names/keywords resolve; 1.1.382: cannot import name 'Binary' from pyright.types
+282,pyright,yes,yes,yes,runtime,1.1.381: names/keywords resolve; 1.1.382: cannot import name 'Strategy' from pyright.types
+283,pyspnego,yes,yes,yes,runtime,before 0.9.2: all names resolve and keywords bind; after 0.10.2: spnego.sspi.SSPI_IMP_ERR missing: cannot import name SSPI_IMP_ERR from spnego.sspi
+284,pytest-env,yes,yes,yes,runtime,before[ok]: pytest_env.version.TYPE_CHECKING:bool | after[broken]: ImportError: cannot import name 'TYPE_CHECKING' from pytest_env.version
+285,pytest-env,yes,yes,yes,runtime,before[ok]: pytest_env.version.VERSION_TUPLE:type | after[broken]: ImportError: cannot import name 'VERSION_TUPLE' from pytest_env.version
+286,pytest-html,yes,yes,yes,runtime,3.2.0: names/keywords resolve; 4.0.0: cannot import name 'extra' from pytest_html.plugin
+287,pytest-html,yes,yes,yes,runtime,3.2.0: names/keywords resolve; 4.0.0: cannot import name 'ansi_support' from pytest_html.util
+288,pytest-httpx,yes,yes,yes,runtime,before 0.30.0: all names resolve and keywords bind; after 0.31.0: pytest_httpx.assert_all_responses_were_requested missing: cannot import name assert_all_responses_were_requested from pytest_httpx
+289,pytest-httpx,yes,yes,yes,runtime,before 0.30.0: all names resolve and keywords bind; after 0.31.0: pytest_httpx.non_mocked_hosts missing: cannot import name non_mocked_hosts from pytest_httpx
+290,pytest-json-ctrf,yes,yes,yes,runtime,before[ok]: ctrf.Report.Report:type; Report.process_retries:function | after[broken]: AttributeError: Report has no attribute 'process_retries'
+291,pytest-randomly,yes,yes,yes,runtime,4.0.0: names/keywords resolve; 4.0.1: cannot import name 'random_states' from pytest_randomly
+292,pytest-rerunfailures,yes,yes,yes,runtime,before 16.0: all names resolve and keywords bind; after 16.0.1: get_reruns_condition rejected: got an unexpected keyword argument 'report'
+293,pytest-split,yes,yes,yes,runtime,before[ok]: pytest_split.algorithms.least_duration:function | after[broken]: ImportError: cannot import name 'least_duration' from pytest_split.algorithms
+294,pytest-timeout,yes,yes,yes,runtime,timeout_setup importable in 2.0.2; ImportError in 2.1.0.
+295,pytest-timeout,yes,yes,yes,runtime,write_title importable in 2.2.0; ImportError in 2.3.1.
+296,pytest-xdist,no,yes,no,runtime,"pytest-xdist '0.0.0' sdist lacks xdist/_version.py so 'import xdist' fails (ModuleNotFoundError xdist._version); it is a mis-versioned 2022 upload, newer than 2.2.1."
+297,pytest-xdist,no,yes,no,runtime,"pytest-xdist '0.0.0' is not importable (missing xdist._version); its code is a newer upload than 2.2.1, so the before/after direction is inverted."
+298,python-docx,yes,yes,yes,runtime,before[ok]: docx.types.StoryChild:_ProtocolMeta | after[broken]: ImportError: cannot import name 'StoryChild' from docx.types
+299,python-docx,yes,yes,yes,runtime,before[ok]: docx.opc.shared.lazyproperty:function | after[broken]: ImportError: cannot import name 'lazyproperty' from docx.opc.shared
+300,python-dotenv,yes,yes,yes,runtime,dotenv.cli.list importable in 1.1.1 (with click); ImportError in 1.2.0.
+301,python-engineio,yes,yes,yes,source,"uwsgi module only exists inside a uWSGI server; source: 4.4.1 uWSGIWebSocket.__init__(self, app), 4.5.0 __init__(self, handler, server) so app= is rejected."
+302,python-engineio,yes,no,no,runtime,engineio 4.7.1 WebSocketWSGI subclasses SimpleWebSocketWSGI (or defines close in the gevent-websocket branch); WebSocketWSGI.close resolves at runtime.
+303,python-jose,yes,yes,yes,runtime,before[ok]: jose.jwt.utc_now:datetime | after[broken]: ImportError: cannot import name 'utc_now' from jose.jwt
+304,python-json-logger,no,yes,no,runtime,"3.2.0 has no pythonjsonlogger/jsonlogger.py (only a package __getattr__ shim to .json), so the import fails with ModuleNotFoundError in before; 3.2.1 module exists but lacks the name."
+305,python-json-logger,no,yes,no,runtime,"3.2.0 has no pythonjsonlogger/jsonlogger.py (only a __getattr__ shim), so the import fails with ModuleNotFoundError in before; 3.2.1 module exists but lacks merge_record_extra."
+306,python-socketio,yes,yes,yes,runtime,before 5.9.0: all names resolve and keywords bind; after 5.10.0: socketio.BaseManager missing: cannot import name BaseManager from socketio
+307,python-socketio,yes,yes,yes,runtime,before 5.9.0: all names resolve and keywords bind; after 5.10.0: socketio.namespace.BaseNamespace missing: cannot import name BaseNamespace from socketio.namespace
+308,python-utils,yes,yes,yes,runtime,"before[ok]: python_utils.time.timeout_generator:function; timeout_generator(timeout, interval=datetime.timedelta(seconds=1), iterable=<class 'itertools. | after[broken]: TypeError: timeout_generator(timeout, interval=datetime.timedelta(seconds=1), iterable=<class 'itertools.count'>, interval_multiplier=1.0) rejects ['timeout', '"
+309,python-utils,yes,yes,yes,runtime,before[ok]: python_utils.decorators.P:ParamSpec | after[broken]: ImportError: cannot import name 'P' from python_utils.decorators
+310,pytokens,yes,yes,yes,runtime,greet importable in 0.0.0; ImportError in 0.1.0.
+311,pytokens,yes,yes,yes,runtime,TokenIterator.push_fstring_quote exists in 0.1.5; AttributeError in 0.1.7.
+312,pywin32,yes,yes,yes,source,"Windows-only wheels inspected: 307 bulkstamp.walk(arg, dirname, names) accepts all kws; 308 walk(vars, debug, descriptions, dirname, names) has no 'arg' (win32.* resolves as namespace package)."
+313,pywin32,yes,yes,yes,source,"Windows-only wheels inspected: win32/lib/win32con.py defines FILE_ATTRIBUTE_ATOMIC_WRITE = 512 in 311, absent in 312."
+314,readme-renderer,yes,yes,yes,runtime,before[ok]: readme_renderer.clean.ALLOWED_STYLES:list | after[broken]: ImportError: cannot import name 'ALLOWED_STYLES' from readme_renderer.clean
+315,readme-renderer,yes,yes,yes,runtime,"before[ok]: readme_renderer.clean.clean:function; clean(html, tags=None, attributes=None, styles=None) | after[broken]: TypeError: clean(html: str, tags: Optional[List[str]] = None, attributes: Optional[Dict[str, List[str]]] = None) -> Optional[str] rejects ['html', 'styles']: go"
+316,requests-oauthlib,yes,yes,yes,runtime,oauth1_auth.unicode importable in 1.3.1; ImportError in 2.0.0.
+317,resolvelib,yes,yes,yes,runtime,before 0.8.1: all names resolve and keywords bind; after 0.9.0: BaseReporter.backtracking missing: AttributeError: BaseReporter has no backtracking
+318,responses,yes,yes,yes,runtime,before[ok]: responses.test_responses.test_callback_deprecated_argument:function | after[broken]: ImportError: cannot import name 'test_callback_deprecated_argument' from responses.test_responses
+319,responses,yes,yes,yes,runtime,before[ok]: responses.test_responses.test_set_registry_context_manager:function | after[broken]: ImportError: cannot import name 'test_set_registry_context_manager' from responses.test_responses
+320,rich-click,yes,no,no,runtime,"1.7.4 main(args=None) is a function; in 1.8.0 main is a RichCommand whose __call__ forwards to click Command.main(args=...), so args= is still accepted (with click<8.2; newer click fails import with an MRO error, a dependency issue)."
+321,rich-click,yes,yes,yes,runtime,get_rich_options importable in 1.8.9; ImportError in 1.9.0.
+322,ruamel-yaml,yes,yes,yes,runtime,before 0.17.21: all names resolve and keywords bind; after 0.17.22: ruamel.yaml.main.safe_dump_all missing: cannot import name safe_dump_all from ruamel.yaml.main
+323,ruamel-yaml,yes,yes,yes,runtime,before 0.17.32: all names resolve and keywords bind; after 0.17.33: ruamel.yaml.compat.PY2 missing: cannot import name PY2 from ruamel.yaml.compat
+324,scramp,no,yes,no,runtime,scramp 1.4.5 already lacks get_versions (version comes from importlib.metadata); name absent in both versions
+325,scramp,yes,yes,yes,runtime,before[ok]: scramp.utils.hi:function | after[broken]: ImportError: cannot import name 'hi' from scramp.utils
+326,secretstorage,yes,yes,yes,runtime,dhcrypto.int_to_bytes importable in 3.4.1; ImportError in 3.5.0.
+327,sentry-sdk,yes,yes,yes,runtime,before 2.20.0: all names resolve and keywords bind; after 2.21.0: ContinuousScheduler.should_autostart missing: AttributeError: ContinuousScheduler has no should_autostart
+328,sentry-sdk,yes,yes,yes,source,"Module raises DidNotEnable without pydantic-ai, so wheels inspected: 2.46.0 update_invoke_agent_span(span, output), 2.47.0 update_invoke_agent_span(span, result)."
+329,shortuuid,yes,yes,yes,runtime,before[ok]: shortuuid.cli.main:function | after[broken]: ImportError: cannot import name 'main' from shortuuid.cli
+330,simple-websocket,yes,yes,yes,runtime,Client accepts selector_class in 0.10.1; TypeError unexpected keyword in 1.0.0.
+331,skops,yes,yes,yes,runtime,before 0.11.0: all names resolve and keywords bind; after 0.12.0: Card rejected: got an unexpected keyword argument 'metadata'
+332,slack-sdk,yes,yes,yes,runtime,before[ok]: slack_sdk.oauth.installation_store.internals.minor:str | after[broken]: ImportError: cannot import name 'minor' from slack_sdk.oauth.installation_store.internals
+333,smmap,yes,yes,yes,runtime,smmap.util.buffer importable in 3.0.5; ImportError in 4.0.0.
+334,snowflake-sqlalchemy,yes,yes,yes,runtime,before 1.7.1: all names resolve and keywords bind; after 1.7.2: snowflake.sqlalchemy.snowdialect.extract_parameters missing: cannot import name extract_parameters from snowflake.sqlalchemy.snowdialect
+335,snowplow-tracker,yes,yes,yes,runtime,before[ok]: snowplow_tracker.Tracker:type; Tracker.check_form_element:function | after[broken]: AttributeError: Tracker has no attribute 'check_form_element'
+336,snowplow-tracker,yes,yes,yes,runtime,"before[ok]: snowplow_tracker.AsyncEmitter:type; AsyncEmitter(endpoint: str, protocol: Literal['http', 'https'] = 'http', port: Optional[int] = None, met | after[broken]: TypeError: AsyncEmitter(endpoint: str, protocol: Literal['http', 'https'] = 'http', port: Optional[int] = None, method: Literal['get', 'post'] = 'post', batch_s"
+337,srsly,yes,yes,yes,runtime,"write_msgpack(data, location) binds in 1.0.7; 2.4.0 (Python 3.9) rejects location keyword."
+338,srsly,yes,yes,yes,runtime,srsly.cloudpickle.cloudpickle.CloudPickler importable in 2.4.4 (Python 3.10); ImportError in 2.4.5.
+339,sshtunnel,yes,yes,yes,runtime,before 0.4.0: all names resolve and keywords bind; after 0.5.1: sshtunnel.get_connection_id missing: cannot import name get_connection_id from sshtunnel
+340,stevedore,yes,yes,yes,runtime,before[ok]: stevedore.extension.Extension:type; Extension.extras:property | after[broken]: AttributeError: Extension has no attribute 'extras'
+341,strands-agents,yes,yes,yes,runtime,event_loop.initialize_state importable in 0.1.8; ImportError in 0.1.9.
+342,strands-agents,yes,yes,yes,runtime,BidiAgent accepts load_tools_from_directory in 1.57.2; TypeError unexpected keyword in 1.58.0.
+343,supabase,yes,yes,yes,runtime,before 2.0.3: all names resolve and keywords bind; after 2.1.0: supabase.lib.auth_client.SupabaseAuthClient missing: import supabase.lib.auth_client failed: ModuleNotFoundError: No module named 'supabase.lib.auth_client'
+344,supabase,yes,yes,yes,runtime,before 2.6.0: all names resolve and keywords bind; after 2.7.0: supabase.SupabaseRealtimeClient missing: cannot import name SupabaseRealtimeClient from supabase
+345,supabase-functions,yes,yes,yes,runtime,before[ok]: supabase_functions.utils.is_valid_jwt:function | after[broken]: ImportError: cannot import name 'is_valid_jwt' from supabase_functions.utils
+346,sympy,yes,yes,yes,runtime,core.numbers.igcd_lehmer importable in 1.12.1; ImportError in 1.13.0.
+347,sympy,yes,yes,yes,runtime,real_gaunt binds l_1..m_3 in 1.13.3; 1.14.0 rejects the m_* keywords (first failure reported on m_1).
+348,tensorboard,yes,yes,yes,runtime,before 2.12.3: all names resolve and keywords bind; after 2.13.0: tensorboard.default.ExperimentalNpmiPlugin missing: cannot import name ExperimentalNpmiPlugin from tensorboard.default
+349,tensorboard,yes,yes,yes,runtime,before 2.13.0: all names resolve and keywords bind; after 2.14.0: Context rejected: got an unexpected keyword argument 'max_domain_discrete_len'
+350,terminado,yes,yes,yes,runtime,before[ok]: terminado.management.byte_code:function | after[broken]: ImportError: cannot import name 'byte_code' from terminado.management
+351,terminado,yes,yes,yes,runtime,before[ok]: terminado.management.unicode:type | after[broken]: ImportError: cannot import name 'unicode' from terminado.management
+352,textual,yes,yes,yes,runtime,messages.TerminalSupportInBandWindowResize importable in 2.0.4; ImportError in 2.1.0.
+353,textual,yes,yes,yes,runtime,Label accepts renderable in 5.3.0; TypeError unexpected keyword in 6.0.0.
+354,tiktoken,yes,yes,yes,runtime,before 0.4.0: all names resolve and keywords bind; after 0.5.0: tiktoken.model.MODEL_TO_ENCODING missing: cannot import name MODEL_TO_ENCODING from tiktoken.model
+355,tldextract,yes,yes,yes,runtime,"before[ok]: tldextract.remote.looks_like_ipv6:function; looks_like_ipv6(maybe_ip: 'str', pton: 'Callable[[int, str], bytes] | None' = <built-in function | after[broken]: TypeError: looks_like_ipv6(maybe_ip: 'str') -> 'bool' rejects ['maybe_ip', 'pton']: got an unexpected keyword argument 'pton'"
+356,tldextract,yes,yes,yes,runtime,before[ok]: tldextract.cache.md5:function | after[broken]: ImportError: cannot import name 'md5' from tldextract.cache
+357,tomlkit,no,yes,no,runtime,"In 0.11.8 Float.__init__ takes _ but Float.__new__(cls, value, trivia, raw) does not, so Float(_=...) already raises TypeError (verified by calling); also fails in 0.12.0."
+358,tomlkit,yes,yes,yes,runtime,Key.delimiter exists in 0.7.2; AttributeError in 0.8.0.
+359,toolz,no,yes,no,runtime,"toolz 0.11.2 curried/operator.py does 'del should_curry' after use, so it is not importable in either version."
+360,tox,yes,yes,yes,runtime,before[ok]: tox.tox_env.package.locked:bool | after[broken]: ImportError: cannot import name 'locked' from tox.tox_env.package
+361,tox,yes,yes,yes,runtime,"before[ok]: tox.execute.local_sub_process.LocalSubprocessExecuteFailedStatus:ABCMeta; LocalSubprocessExecuteFailedStatus(options: 'ExecuteOptions', out: | after[broken]: TypeError: LocalSubprocessExecuteFailedStatus(options: 'ExecuteOptions', out: 'SyncWrite', err: 'SyncWrite', start_error: 'OSError') -> 'None' rejects ['options"
+362,tqdm,yes,yes,yes,runtime,envwrap accepts literal_eval in 4.66.0; TypeError unexpected keyword in 4.66.1.
+363,tqdm,yes,yes,yes,runtime,envwrap accepts case_sensitive in 4.66.0; TypeError unexpected keyword in 4.66.1.
+364,traitlets,yes,yes,yes,runtime,before 5.8.1: all names resolve and keywords bind; after 5.9.0: KeyValueConfigLoader.argcomplete missing: AttributeError: KeyValueConfigLoader has no argcomplete
+365,truststore,yes,yes,yes,runtime,before[ok]: truststore.TruststoreSSLContext:type | after[broken]: ImportError: cannot import name 'TruststoreSSLContext' from truststore
+366,twine,yes,yes,yes,runtime,check accepts output_stream in 3.8.0; TypeError unexpected keyword in 4.0.0.
+367,twine,yes,yes,yes,runtime,repository.KEYWORDS_TO_NOT_FLATTEN importable in 6.0.1; ImportError in 6.1.0.
+368,typeguard,yes,yes,yes,runtime,before 2.13.3: all names resolve and keywords bind; after 3.0.0: typeguard.TypeWarning missing: cannot import name TypeWarning from typeguard
+369,typeguard,yes,yes,yes,runtime,before 2.13.3: all names resolve and keywords bind; after 3.0.0: typechecked rejected: got an unexpected keyword argument 'always'
+370,tzlocal,yes,yes,yes,runtime,before[ok]: tzlocal.utils.ZoneInfoNotFoundError:type | after[broken]: ImportError: cannot import name 'ZoneInfoNotFoundError' from tzlocal.utils
+371,ua-parser,yes,yes,yes,runtime,OSParser.MatchSpans exists in 0.18.0; AttributeError in 1.0.0.
+372,uncalled-for,yes,yes,yes,runtime,before 0.1.2: all names resolve and keywords bind; after 0.2.0: without_dependencies rejected: got an unexpected keyword argument 'fn'
+373,uncalled-for,yes,yes,yes,runtime,before 0.3.0: all names resolve and keywords bind; after 0.3.1: uncalled_for.get_class_dependencies missing: cannot import name get_class_dependencies from uncalled_for
+374,unidecode,yes,yes,yes,runtime,before[ok]: unidecode.util.PY3:bool | after[broken]: ImportError: cannot import name 'PY3' from unidecode.util
+375,uritemplate,yes,yes,yes,runtime,URIVariable.post_parse exists in 4.1.1; AttributeError in 4.2.0.
+376,validators,yes,yes,yes,runtime,before 0.21.1: all names resolve and keywords bind; after 0.21.2: validators.ValidationFailure missing: cannot import name ValidationFailure from validators
+377,vcrpy,yes,yes,yes,runtime,before[ok]: vcr.patch.ConnectionRemover:type; ConnectionRemover.remove_connection_to_pool_entry:function | after[broken]: AttributeError: ConnectionRemover has no attribute 'remove_connection_to_pool_entry'
+378,vcs-versioning,yes,yes,yes,runtime,overrides.get_debug_level importable in 1.1.1; ImportError in 2.0.1.
+379,vcs-versioning,yes,yes,yes,runtime,overrides.source_epoch_or_utc_now importable in 1.1.1; ImportError in 2.0.1.
+380,wasabi,yes,yes,yes,runtime,before 0.10.1: all names resolve and keywords bind; after 1.1.1: wasabi.util.basestring_ missing: cannot import name basestring_ from wasabi.util
+381,wasabi,yes,yes,yes,runtime,before 0.10.1: all names resolve and keywords bind; after 1.1.1: wasabi.util.zip_longest missing: cannot import name zip_longest from wasabi.util
+382,watchdog,yes,yes,yes,source,"winapi is Windows-only (ctypes.WinDLL) so not importable on Linux; source: 4.0.2 defines class FILE_NOTIFY_INFORMATION, 5.0.0 renames it FileNotifyInformation"
+383,watchdog,yes,yes,yes,runtime,before[ok]: watchdog.utils.echo.is_classmethod:function | after[broken]: ImportError: cannot import name 'is_classmethod' from watchdog.utils.echo
+384,watchfiles,yes,yes,yes,runtime,cli.callback importable in 0.10; ImportError in 0.11.
+385,watchfiles,yes,yes,yes,runtime,main.arun_process importable in 0.10; ImportError in 0.11.
+386,watchtower,yes,yes,yes,runtime,before 1.0.4: all names resolve and keywords bind; after 1.0.5: watchtower.boto_debug_filter missing: cannot import name boto_debug_filter from watchtower
+387,watchtower,yes,yes,yes,runtime,before 1.0.4: all names resolve and keywords bind; after 1.0.5: watchtower.boto_filter missing: cannot import name boto_filter from watchtower
+388,wcmatch,yes,yes,yes,runtime,"before[ok]: wcmatch.util.norm_pattern:function; norm_pattern(pattern: 'AnyStr', normalize: 'bool | None', is_raw_chars: 'bool', ignore_escape: 'bool' =  | after[broken]: TypeError: norm_pattern(pattern: 'AnyStr', normalize: 'bool | None', is_raw_chars: 'bool') -> 'AnyStr' rejects ['pattern', 'normalize', 'is_raw_chars', 'ignore_"
+389,wcwidth,yes,yes,yes,runtime,wcwidth.wcwidth.ZERO_WIDTH_CF importable in 0.2.8; ImportError in 0.2.9.
+390,weasel,yes,yes,yes,runtime,before 0.1.1: all names resolve and keywords bind; after 0.2.0: weasel.schemas.SpacyEnvVars missing: cannot import name SpacyEnvVars from weasel.schemas
+391,websocket-client,yes,yes,yes,runtime,"before[ok]: websocket.ABNF:type; ABNF(fin: int = 0, rsv1: int = 0, rsv2: int = 0, rsv3: int = 0, opcode: int = 1, mask: int = 1, data: Union[str, bytes] | after[broken]: TypeError: ABNF(fin: int = 0, rsv1: int = 0, rsv2: int = 0, rsv3: int = 0, opcode: int = 1, mask_value: int = 1, data: Union[str, bytes, NoneType] = '') -> None"
+392,whitenoise,yes,yes,yes,runtime,compress.main accepts root in 5.3.0; TypeError unexpected keyword in 6.0.0.
+393,whitenoise,yes,yes,yes,runtime,string_utils.decode_if_byte_string importable in 6.3.0; ImportError in 6.4.0.
+394,yamllint,yes,yes,yes,runtime,before 1.33.0: all names resolve and keywords bind; after 1.34.0: yamllint.rules.truthy.TRUTHY missing: cannot import name TRUTHY from yamllint.rules.truthy
+395,youtube-transcript-api,yes,yes,yes,runtime,before[ok]: youtube_transcript_api.CookiePathInvalid:type; CookiePathInvalid(video_id) | after[broken]: TypeError: CookiePathInvalid(cookie_path: pathlib.Path) rejects ['video_id']: got an unexpected keyword argument 'video_id'
+396,youtube-transcript-api,yes,yes,yes,runtime,before[ok]: youtube_transcript_api.TooManyRequests:type | after[broken]: ImportError: cannot import name 'TooManyRequests' from youtube_transcript_api
+397,zeep,yes,yes,yes,runtime,AsyncTransport accepts session in 4.1.0; TypeError unexpected keyword in 4.2.0.
+398,zipp,yes,yes,yes,runtime,before 3.17.0: all names resolve and keywords bind; after 3.18.0: zipp.glob.replace missing: cannot import name replace from zipp.glob
+399,zipp,yes,yes,yes,runtime,before 3.17.0: all names resolve and keywords bind; after 3.18.0: zipp.glob.translate missing: cannot import name translate from zipp.glob
+400,zstandard,yes,yes,yes,source,"backend_cffi needs the zstandard._cffi extension, absent from CPython wheels in both versions; source: 0.16.0 backend_cffi.py defines HASHLOG3_MAX, 0.17.0 does not"

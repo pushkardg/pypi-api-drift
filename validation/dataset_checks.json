@@ -1,0 +1,350 @@
+{
+ "checks": 51,
+ "failed": 0,
+ "results": [
+  {
+   "check": "releases: unique (project, version)",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "releases: unique (project, version_index)",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "releases: version_index is 0..n-1 within each project",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "releases: status in {ok, skipped_too_many_modules, error}",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "releases: bump label domain",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "releases: prev_version is the previous analysed release",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "releases: version_index follows PEP 440 order",
+   "ok": true,
+   "value": 0,
+   "expected": 0
+  },
+  {
+   "check": "releases: no placeholder version (0.0.0) uploaded after the release it precedes",
+   "ok": true,
+   "value": 0,
+   "expected": 0
+  },
+  {
+   "check": "api_history: kind domain",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.2
+  },
+  {
+   "check": "api_history: first_index <= last_index",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.3
+  },
+  {
+   "check": "api_history: indices and versions match releases",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 1.1
+  },
+  {
+   "check": "api_history: intervals only cover analysed releases",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.2
+  },
+  {
+   "check": "api_history: no overlapping intervals for one (project, path)",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 6.4
+  },
+  {
+   "check": "api_history: adjacent intervals differ in state",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 10.0
+  },
+  {
+   "check": "api_history: every sig_hash resolves to a signature",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.7
+  },
+  {
+   "check": "signatures: unique sig_hash",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.1
+  },
+  {
+   "check": "signatures: valid JSON with a params list",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.7
+  },
+  {
+   "check": "changes: change_type domain",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.1
+  },
+  {
+   "check": "changes: confidence domain",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "changes: breaking only for breaking change types",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.1
+  },
+  {
+   "check": "changes: to_version exists with matching index",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.3
+  },
+  {
+   "check": "changes: from_version is the to-release's prev_version",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.3
+  },
+  {
+   "check": "changes: bump matches releases",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.3
+  },
+  {
+   "check": "changes: old_sig/new_sig resolve",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.6
+  },
+  {
+   "check": "changes: representative rows are unique per underlying change",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 2.5
+  },
+  {
+   "check": "changes: release counters match change rows",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 1.9
+  },
+  {
+   "check": "top_level_modules: projects exist",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "top_level_modules: no duplicate rows",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.1
+  },
+  {
+   "check": "module_coverage: source domain",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "module_coverage: indices and versions match releases",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "module_coverage: no overlapping intervals per module",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.1
+  },
+  {
+   "check": "api_history: coverage_status domain",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.1
+  },
+  {
+   "check": "versionprobe: two items per pair, one valid and one invalid",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "versionprobe: item versions are the pair's before/after releases",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "versionprobe: every pair traces to a breaking change row between its releases",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.9
+  },
+  {
+   "check": "versionprobe: unique item_id",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "releases: no nulls in key columns",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "api_history: no nulls in key columns",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.1
+  },
+  {
+   "check": "changes: no nulls in key columns",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "signatures: no nulls in key columns",
+   "ok": true,
+   "value": 0,
+   "expected": 0,
+   "seconds": 0.0
+  },
+  {
+   "check": "stats.json: projects",
+   "ok": true,
+   "value": 1872,
+   "expected": 1872
+  },
+  {
+   "check": "stats.json: releases",
+   "ok": true,
+   "value": 55839,
+   "expected": 55839
+  },
+  {
+   "check": "stats.json: projects_with_ok_release",
+   "ok": true,
+   "value": 1869,
+   "expected": 1869
+  },
+  {
+   "check": "stats.json: change_events",
+   "ok": true,
+   "value": 15200029,
+   "expected": 15200029
+  },
+  {
+   "check": "stats.json: representative_events",
+   "ok": true,
+   "value": 4024167,
+   "expected": 4024167
+  },
+  {
+   "check": "stats.json: breaking_representative",
+   "ok": true,
+   "value": 210379,
+   "expected": 210379
+  },
+  {
+   "check": "stats.json: breaking_representative_high",
+   "ok": true,
+   "value": 181935,
+   "expected": 181935
+  },
+  {
+   "check": "stats.json: breaking_representative_high_2025_plus",
+   "ok": true,
+   "value": 84113,
+   "expected": 84113
+  },
+  {
+   "check": "stats.json: api_history_rows",
+   "ok": true,
+   "value": 15597412,
+   "expected": 15597412
+  },
+  {
+   "check": "stats.json: signatures",
+   "ok": true,
+   "value": 799705,
+   "expected": 799705
+  },
+  {
+   "check": "stats.json: release_transitions",
+   "ok": true,
+   "value": 53696,
+   "expected": 53696
+  }
+ ]
+}

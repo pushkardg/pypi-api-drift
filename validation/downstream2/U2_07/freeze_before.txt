@@ -1,0 +1,19 @@
+aiohttp==3.7.4.post0
+-e file:///home/claude/apidrift/validation/downstream2/part2/U2_07/aioresponses-0.7.2
+async-timeout==3.0.1
+attrs==26.1.0
+chardet==4.0.0
+ddt==1.4.1
+exceptiongroup==1.3.1
+idna==3.20
+iniconfig==2.1.0
+multidict==6.7.1
+packaging==26.3
+pluggy==1.6.0
+propcache==0.4.1
+pygments==2.21.0
+pytest==8.4.2
+setuptools==69.5.1
+tomli==2.5.0
+typing-extensions==4.16.0
+yarl==1.22.0

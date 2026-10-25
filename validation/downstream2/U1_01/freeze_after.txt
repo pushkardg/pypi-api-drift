@@ -1,0 +1,9 @@
+chardet==5.2.0
+cssselect==1.2.0
+iniconfig==2.0.0
+lxml==5.2.0
+packaging==24.0
+pluggy==1.4.0
+pytest==8.1.1
+readability-lxml @ file:///home/claude/apidrift/validation/downstream2/part1/U1_01/src
+timeout-decorator==0.5.0

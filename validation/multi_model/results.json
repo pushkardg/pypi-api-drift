@@ -1,0 +1,295 @@
+{
+ "note": "same 150 tasks, same runtime check and blind AI judge (claude-opus-5-5) for every model; claude-opus-5-5 is the preregistered run, the others are replications run after it",
+ "models": {
+  "claude-opus-5-5": {
+   "versionprobe_verified_closed_book": {
+    "answered": 984,
+    "items": 984,
+    "item_acc": 0.5843,
+    "item_ci": [
+     55.3,
+     61.5
+    ],
+    "pair_acc": 0.2663,
+    "pair_ci": [
+     22.9,
+     30.7
+    ],
+    "acc_on_valid": 0.7276,
+    "acc_on_invalid": 0.4411
+   },
+   "repair": {
+    "tasks_scored": 143,
+    "tasks_excluded": 7,
+    "a": {
+     "valid": 0.5874,
+     "faithful": 0.9301,
+     "success": 0.5664,
+     "success_ci": [
+      48.5,
+      64.5
+     ]
+    },
+    "b": {
+     "valid": 0.6993,
+     "faithful": 0.8601,
+     "success": 0.6014,
+     "success_ci": [
+      52.0,
+      67.8
+     ]
+    },
+    "c": {
+     "valid": 0.8042,
+     "faithful": 0.8811,
+     "success": 0.6853,
+     "success_ci": [
+      60.5,
+      75.6
+     ]
+    },
+    "unchanged_answers": {
+     "a": 0.0667,
+     "b": 0.02,
+     "c": 0.0
+    },
+    "mcnemar_c_vs_a": {
+     "c_only": 29,
+     "other_only": 12,
+     "p": 0.0115
+    },
+    "mcnemar_c_vs_b": {
+     "c_only": 21,
+     "other_only": 9,
+     "p": 0.0428
+    },
+    "strict_binding_success": {
+     "a": 0.5594,
+     "b": 0.5944,
+     "c": 0.6853
+    }
+   }
+  },
+  "claude-fable-5-1": {
+   "versionprobe_verified_closed_book": {
+    "answered": 984,
+    "items": 984,
+    "item_acc": 0.565,
+    "item_ci": [
+     53.4,
+     59.6
+    ],
+    "pair_acc": 0.2236,
+    "pair_ci": [
+     18.9,
+     26.2
+    ],
+    "acc_on_valid": 0.7337,
+    "acc_on_invalid": 0.3963
+   },
+   "repair": {
+    "tasks_scored": 143,
+    "tasks_excluded": 7,
+    "a": {
+     "valid": 0.5245,
+     "faithful": 0.951,
+     "success": 0.4965,
+     "success_ci": [
+      41.6,
+      57.7
+     ]
+    },
+    "b": {
+     "valid": 0.6713,
+     "faithful": 0.9161,
+     "success": 0.6224,
+     "success_ci": [
+      54.1,
+      69.8
+     ]
+    },
+    "c": {
+     "valid": 0.7902,
+     "faithful": 0.8951,
+     "success": 0.6993,
+     "success_ci": [
+      62.0,
+      76.8
+     ]
+    },
+    "unchanged_answers": {
+     "a": 0.1867,
+     "b": 0.0467,
+     "c": 0.0
+    },
+    "mcnemar_c_vs_a": {
+     "c_only": 37,
+     "other_only": 8,
+     "p": 0.0
+    },
+    "mcnemar_c_vs_b": {
+     "c_only": 21,
+     "other_only": 10,
+     "p": 0.0708
+    },
+    "strict_binding_success": {
+     "a": 0.4825,
+     "b": 0.6154,
+     "c": 0.6993
+    }
+   }
+  },
+  "claude-haiku-5-5": {
+   "versionprobe_verified_closed_book": {
+    "answered": 984,
+    "items": 984,
+    "item_acc": 0.4959,
+    "item_ci": [
+     46.5,
+     52.7
+    ],
+    "pair_acc": 0.0915,
+    "pair_ci": [
+     6.9,
+     12.0
+    ],
+    "acc_on_valid": 0.7378,
+    "acc_on_invalid": 0.2541
+   },
+   "repair": {
+    "tasks_scored": 143,
+    "tasks_excluded": 7,
+    "a": {
+     "valid": 0.0699,
+     "faithful": 0.986,
+     "success": 0.0699,
+     "success_ci": [
+      3.8,
+      12.4
+     ]
+    },
+    "b": {
+     "valid": 0.5455,
+     "faithful": 0.8252,
+     "success": 0.4615,
+     "success_ci": [
+      38.2,
+      54.3
+     ]
+    },
+    "c": {
+     "valid": 0.7832,
+     "faithful": 0.8881,
+     "success": 0.6853,
+     "success_ci": [
+      60.5,
+      75.6
+     ]
+    },
+    "unchanged_answers": {
+     "a": 0.8867,
+     "b": 0.24,
+     "c": 0.0
+    },
+    "mcnemar_c_vs_a": {
+     "c_only": 90,
+     "other_only": 2,
+     "p": 0.0
+    },
+    "mcnemar_c_vs_b": {
+     "c_only": 39,
+     "other_only": 7,
+     "p": 0.0
+    },
+    "strict_binding_success": {
+     "a": 0.0699,
+     "b": 0.4545,
+     "c": 0.6853
+    }
+   }
+  },
+  "claude-sonnet-5-5": {
+   "versionprobe_verified_closed_book": {
+    "answered": 984,
+    "items": 984,
+    "item_acc": 0.5427,
+    "item_ci": [
+     51.1,
+     57.4
+    ],
+    "pair_acc": 0.1829,
+    "pair_ci": [
+     15.1,
+     22.0
+    ],
+    "acc_on_valid": 0.6728,
+    "acc_on_invalid": 0.4126
+   },
+   "repair": {
+    "tasks_scored": 143,
+    "tasks_excluded": 7,
+    "a": {
+     "valid": 0.4406,
+     "faithful": 0.9441,
+     "success": 0.4196,
+     "success_ci": [
+      34.2,
+      50.2
+     ]
+    },
+    "b": {
+     "valid": 0.6294,
+     "faithful": 0.8392,
+     "success": 0.5664,
+     "success_ci": [
+      48.5,
+      64.5
+     ]
+    },
+    "c": {
+     "valid": 0.7902,
+     "faithful": 0.8881,
+     "success": 0.6923,
+     "success_ci": [
+      61.2,
+      76.2
+     ]
+    },
+    "unchanged_answers": {
+     "a": 0.2933,
+     "b": 0.1067,
+     "c": 0.0
+    },
+    "mcnemar_c_vs_a": {
+     "c_only": 46,
+     "other_only": 7,
+     "p": 0.0
+    },
+    "mcnemar_c_vs_b": {
+     "c_only": 26,
+     "other_only": 8,
+     "p": 0.0029
+    },
+    "strict_binding_success": {
+     "a": 0.4126,
+     "b": 0.5594,
+     "c": 0.6923
+    }
+   }
+  }
+ },
+ "pooled_c_vs_a": {
+  "c_only": 202,
+  "other_only": 29,
+  "p": 0.0,
+  "models_with_gain": 4,
+  "note": "pooling treats model-task pairs as independent; indicative only"
+ },
+ "pooled_c_vs_b": {
+  "c_only": 107,
+  "other_only": 34,
+  "p": 0.0,
+  "models_with_gain": 4,
+  "note": "pooling treats model-task pairs as independent; indicative only"
+ }
+}

@@ -1,0 +1,61 @@
+tool,tool_version,id,project,status,seconds,notes
+griffe,2.4.0,1,beautifulsoup4,ok,0.6,changes=25; artifacts=beautifulsoup4-4.14.3-py3-none-any.whl | beautifulsoup4-4.15.0-py3-none-any.whl; packages=bs4; fetch_s=0.3; analysis_s=0.3
+griffe,2.4.0,2,fakeredis,ok,1.3,changes=5; artifacts=fakeredis-2.8.0-py3-none-any.whl | fakeredis-2.9.0-py3-none-any.whl; packages=fakeredis; fetch_s=0.8; analysis_s=0.4
+griffe,2.4.0,3,elasticsearch,ok,5.2,changes=2; artifacts=elasticsearch-8.14.0-py3-none-any.whl | elasticsearch-8.15.0-py3-none-any.whl; packages=elasticsearch; fetch_s=0.7; analysis_s=4.4
+griffe,2.4.0,4,build,ok,1.1,changes=2; artifacts=build-1.1.1-py3-none-any.whl | build-1.2.1-py3-none-any.whl; packages=build; fetch_s=0.7; analysis_s=0.2
+griffe,2.4.0,5,gspread,ok,0.5,changes=2; artifacts=gspread-5.10.0-py3-none-any.whl | gspread-5.11.0-py3-none-any.whl; packages=gspread; fetch_s=0.2; analysis_s=0.2
+griffe,2.4.0,6,pytest-mock,ok,0.4,changes=1; artifacts=pytest_mock-3.16.1-py3-none-any.whl | pytest_mock-3.17.0-py3-none-any.whl; packages=pytest_mock; fetch_s=0.2; analysis_s=0.1
+griffe,2.4.0,7,synchronicity,ok,2.0,changes=1; artifacts=synchronicity-0.6.7-py3-none-any.whl | synchronicity-0.7.0-py3-none-any.whl; packages=synchronicity; fetch_s=1.8; analysis_s=0.1
+griffe,2.4.0,8,trio,ok,3.4,changes=2; artifacts=trio-0.22.2-py3-none-any.whl | trio-0.23.0-py3-none-any.whl; packages=trio; fetch_s=2.0; analysis_s=1.3
+griffe,2.4.0,9,starlette,ok,1.2,changes=2; artifacts=starlette-0.27.0-py3-none-any.whl | starlette-0.28.0-py3-none-any.whl; packages=starlette; fetch_s=0.5; analysis_s=0.5
+griffe,2.4.0,10,apscheduler,ok,0.9,changes=14; artifacts=APScheduler-3.10.4-py3-none-any.whl | APScheduler-3.11.0-py3-none-any.whl; packages=apscheduler; fetch_s=0.4; analysis_s=0.3
+griffe,2.4.0,11,execnet,ok,1.3,changes=12; artifacts=execnet-2.0.2-py3-none-any.whl | execnet-2.1.0-py3-none-any.whl; packages=execnet; fetch_s=0.9; analysis_s=0.3
+griffe,2.4.0,12,nbconvert,ok,0.8,changes=3; artifacts=nbconvert-7.3.1-py3-none-any.whl | nbconvert-7.4.0-py3-none-any.whl; packages=nbconvert; fetch_s=0.4; analysis_s=0.4
+griffe,2.4.0,13,gitpython,ok,1.3,changes=2; artifacts=gitpython-3.1.56-py3-none-any.whl | gitpython-3.1.57-py3-none-any.whl; packages=git; fetch_s=0.4; analysis_s=0.7
+griffe,2.4.0,14,phonenumbers,ok,84.0,changes=15; artifacts=phonenumbers-8.13.42-py2.py3-none-any.whl | phonenumbers-8.13.43-py2.py3-none-any.whl; packages=phonenumbers; fetch_s=1.4; analysis_s=82.4
+griffe,2.4.0,15,proto-plus,ok,1.9,changes=1; artifacts=proto_plus-1.28.1-py3-none-any.whl | proto_plus-1.28.2-py3-none-any.whl; packages=proto; fetch_s=1.5; analysis_s=0.2
+griffe,2.4.0,16,python-discovery,ok,1.2,changes=0; artifacts=python_discovery-1.5.2-py3-none-any.whl | python_discovery-1.5.3-py3-none-any.whl; packages=python_discovery; fetch_s=0.7; analysis_s=0.3
+griffe,2.4.0,17,langgraph-sdk,ok,1.0,changes=0; artifacts=langgraph_sdk-0.1.36-py3-none-any.whl | langgraph_sdk-0.1.39-py3-none-any.whl; packages=langgraph_sdk; fetch_s=0.6; analysis_s=0.3
+griffe,2.4.0,18,griffe,ok,2.1,changes=0; artifacts=griffe-1.6.0-py3-none-any.whl | griffe-1.6.1-py3-none-any.whl; packages=griffe; fetch_s=0.6; analysis_s=1.3
+griffe,2.4.0,19,posthog,ok,5.2,changes=2; artifacts=posthog-7.35.4-py3-none-any.whl | posthog-7.35.5-py3-none-any.whl; packages=posthog; fetch_s=0.6; analysis_s=4.4
+griffe,2.4.0,20,yarl,ok,0.7,changes=0; artifacts=yarl-1.17.1-py3-none-any.whl | yarl-1.17.2-py3-none-any.whl; packages=yarl; fetch_s=0.4; analysis_s=0.2
+griffe,2.4.0,21,spacy-legacy,ok,1.0,changes=0; artifacts=spacy_legacy-3.0.11-py2.py3-none-any.whl | spacy_legacy-3.0.12-py2.py3-none-any.whl; packages=spacy_legacy; fetch_s=0.7; analysis_s=0.2
+griffe,2.4.0,22,notebook,ok,3.1,changes=0; artifacts=notebook-7.2.1-py3-none-any.whl | notebook-7.2.2-py3-none-any.whl; packages=notebook; fetch_s=2.8; analysis_s=0.1
+griffe,2.4.0,23,referencing,ok,2.4,changes=0; artifacts=referencing-0.20.4-py3-none-any.whl | referencing-0.21.0-py3-none-any.whl; packages=referencing; fetch_s=1.9; analysis_s=0.3
+griffe,2.4.0,24,pydantic-graph,ok,1.5,changes=0; artifacts=pydantic_graph-2.45.0-py3-none-any.whl | pydantic_graph-2.46.0-py3-none-any.whl; packages=pydantic_graph; fetch_s=0.7; analysis_s=0.5
+griffe,2.4.0,25,logfire-api,ok,1.8,changes=0; artifacts=logfire_api-4.30.0-py3-none-any.whl | logfire_api-4.31.0-py3-none-any.whl; packages=logfire_api; fetch_s=0.5; analysis_s=1.1
+griffe,2.4.0,26,googleapis-common-protos,ok,1.3,changes=2; artifacts=googleapis_common_protos-1.63.2-py2.py3-none-any.whl | googleapis_common_protos-1.64.0-py2.py3-none-any.whl; packages=google; fetch_s=0.6; analysis_s=0.4
+griffe,2.4.0,27,requirements-parser,ok,0.7,changes=0; artifacts=requirements_parser-0.10.2-py3-none-any.whl | requirements_parser-0.11.0-py3-none-any.whl; packages=requirements; fetch_s=0.4; analysis_s=0.1
+griffe,2.4.0,28,pathspec,ok,1.0,changes=2; artifacts=pathspec-1.0.1-py3-none-any.whl | pathspec-1.0.2-py3-none-any.whl; packages=pathspec; fetch_s=0.5; analysis_s=0.4
+griffe,2.4.0,29,botocore,ok,6.5,changes=1; artifacts=botocore-1.43.46-py3-none-any.whl | botocore-1.43.47-py3-none-any.whl; packages=botocore; fetch_s=3.6; analysis_s=2.6
+griffe,2.4.0,30,rich-toolkit,ok,1.6,changes=0; artifacts=rich_toolkit-0.7.0-py3-none-any.whl | rich_toolkit-0.7.1-py3-none-any.whl; packages=rich_toolkit; fetch_s=1.2; analysis_s=0.1
+aexpy,0.4.3,1,beautifulsoup4,ok,60.2,"changes=18 (breaking=9, potential=9); extract_old_s=26.9 py=3.12; extract_new_s=26.5 py=3.12; diff_s=2.2; all_entries_by_rank=Compatible:15,High:9,Low:7,Medium:2"
+aexpy,0.4.3,2,fakeredis,ok,62.7,"changes=14 (breaking=3, potential=11); extract_old_s=29.2 py=3.12; extract_new_s=27.7 py=3.12; diff_s=1.8; all_entries_by_rank=Compatible:6,High:3,Low:11"
+aexpy,0.4.3,3,elasticsearch,ok,121.9,"changes=32 (breaking=3, potential=29); extract_old_s=55.0 py=3.12; extract_new_s=48.0 py=3.12; diff_s=5.3; all_entries_by_rank=Compatible:32,High:3,Low:10,Medium:19"
+aexpy,0.4.3,4,build,ok,42.5,"changes=29 (breaking=1, potential=28); extract_old_s=17.2 py=3.12; extract_new_s=19.5 py=3.12; diff_s=1.5; all_entries_by_rank=Compatible:18,High:1,Low:21,Medium:7,Unknown:20"
+aexpy,0.4.3,5,gspread,ok,114.2,"changes=3 (breaking=2, potential=1); extract_old_s=48.0 py=3.12; extract_new_s=46.2 py=3.12; diff_s=1.5; all_entries_by_rank=Compatible:21,High:2,Low:1"
+aexpy,0.4.3,6,pytest-mock,ok,94.8,"changes=2 (breaking=1, potential=1); extract_old_s=40.6 py=3.12; extract_new_s=38.3 py=3.12; diff_s=1.5; all_entries_by_rank=Compatible:3,High:1,Low:1"
+aexpy,0.4.3,7,synchronicity,ok,55.7,"changes=3 (breaking=1, potential=2); extract_old_s=24.7 py=3.12; extract_new_s=24.8 py=3.12; diff_s=1.4; all_entries_by_rank=Compatible:11,High:1,Low:2"
+aexpy,0.4.3,8,trio,ok,117.4,"changes=299 (breaking=135, potential=164); extract_old_s=45.3 py=3.12; extract_new_s=51.3 py=3.12; diff_s=6.4; all_entries_by_rank=Compatible:545,High:135,Low:139,Medium:25,Unknown:9"
+aexpy,0.4.3,9,starlette,ok,77.2,"changes=7 (breaking=3, potential=4); extract_old_s=35.7 py=3.12; extract_new_s=33.1 py=3.12; diff_s=3.2; all_entries_by_rank=Compatible:11,High:3,Low:2,Medium:2"
+aexpy,0.4.3,10,apscheduler,ok,54.9,"changes=30 (breaking=11, potential=19); extract_old_s=22.9 py=3.12; extract_new_s=25.1 py=3.12; diff_s=1.7; all_entries_by_rank=Compatible:17,High:11,Low:19,Unknown:2"
+aexpy,0.4.3,11,execnet,ok,55.0,"changes=30 (breaking=6, potential=24); extract_old_s=24.1 py=3.12; extract_new_s=24.3 py=3.12; diff_s=2.1; all_entries_by_rank=Compatible:72,High:6,Low:12,Medium:12"
+aexpy,0.4.3,12,nbconvert,ok,140.0,"changes=3 (breaking=2, potential=1); extract_old_s=60.3 py=3.12; extract_new_s=49.3 py=3.12; diff_s=1.7; all_entries_by_rank=Compatible:4,High:2,Low:1"
+aexpy,0.4.3,13,gitpython,ok,76.4,"changes=2 (breaking=0, potential=2); extract_old_s=33.9 py=3.12 [release id GitPython@3.1.56; api=53/125/829/645]; extract_new_s=35.2 py=3.12 [release id GitPython@3.1.57; api=53/125/829/647]; diff_s=3.3; all_entries_by_rank=Compatible:4,Medium:2"
+aexpy,0.4.3,14,phonenumbers,ok,258.4,"changes=0 (breaking=0, potential=0); extract_old_s=113.3 py=3.12; extract_new_s=103.4 py=3.12; diff_s=17.2; all_entries_by_rank="
+aexpy,0.4.3,15,proto-plus,ok,44.0,"changes=0 (breaking=0, potential=0); extract_old_s=20.2 py=3.12; extract_new_s=17.9 py=3.12; diff_s=1.3; all_entries_by_rank=Compatible:2"
+aexpy,0.4.3,16,python-discovery,ok,53.7,"changes=0 (breaking=0, potential=0); extract_old_s=23.7 py=3.12; extract_new_s=23.7 py=3.12; diff_s=2.0; all_entries_by_rank=Compatible:1"
+aexpy,0.4.3,17,langgraph-sdk,ok,71.7,"changes=0 (breaking=0, potential=0); extract_old_s=31.1 py=3.12; extract_new_s=33.8 py=3.12; diff_s=1.6; all_entries_by_rank="
+aexpy,0.4.3,18,griffe,ok,76.9,"changes=0 (breaking=0, potential=0); extract_old_s=35.3 py=3.12; extract_new_s=31.0 py=3.12; diff_s=5.0; all_entries_by_rank=Compatible:1"
+aexpy,0.4.3,19,posthog,ok,141.7,"changes=0 (breaking=0, potential=0); extract_old_s=69.5 py=3.12; extract_new_s=54.5 py=3.12; diff_s=3.0; all_entries_by_rank=Compatible:15"
+aexpy,0.4.3,20,yarl,ok,52.7,"changes=0 (breaking=0, potential=0); extract_old_s=25.7 py=3.12 [api=9/8/70/124]; extract_new_s=21.4 py=3.12 [api=9/8/70/124]; diff_s=1.5; all_entries_by_rank="
+aexpy,0.4.3,21,spacy-legacy,ok,33.9,"changes=0 (breaking=0, potential=0); extract_old_s=13.5 py=3.12; extract_new_s=16.3 py=3.12; diff_s=0.5; all_entries_by_rank=Compatible:1"
+aexpy,0.4.3,22,notebook,ok,355.0,"changes=0 (breaking=0, potential=0); extract_old_s=101.0 py=3.12; extract_new_s=113.2 py=3.12; diff_s=1.3; all_entries_by_rank="
+aexpy,0.4.3,23,referencing,ok,53.7,"changes=0 (breaking=0, potential=0); extract_old_s=26.1 py=3.12; extract_new_s=21.1 py=3.12; diff_s=1.5; all_entries_by_rank=Compatible:5"
+aexpy,0.4.3,24,pydantic-graph,ok,64.9,"changes=0 (breaking=0, potential=0); extract_old_s=31.6 py=3.12; extract_new_s=26.5 py=3.12; diff_s=1.4; all_entries_by_rank=Unknown:1"
+aexpy,0.4.3,25,logfire-api,ok,53.7,"changes=0 (breaking=0, potential=0); extract_old_s=25.2 py=3.12; extract_new_s=23.4 py=3.12; diff_s=1.1; all_entries_by_rank=Compatible:4"
+aexpy,0.4.3,26,googleapis-common-protos,failed,210.3,"changes=0 (breaking=0, potential=0); extract_old_s=71.6 py=3.12 [api=58/174/726/837]; extract_new_s=78.5 py=3.12 [api=58/174/726/837]; diff_s=33.7; diff failed rc=-9: aexpy diff OOM-killed by the sandbox memory cgroup (~4.2 GB anon RSS at kill, dmesg). Each API json is ~700 MB because the `google` namespace also pulls in the installed protobuf dependency (google._upb, google.protobuf) and AexPy stores huge per-entry alias lists. Re-ran once (manually re-extracted, same sizes) - same result. Not worked around, because stripping fields would alter the tool input."
+aexpy,0.4.3,27,requirements-parser,ok,44.1,"changes=1 (breaking=1, potential=0); extract_old_s=20.8 py=3.12 [pre-installed setuptools<81; api=5/1/13/25]; extract_new_s=15.6 py=3.12 [pre-installed setuptools<81; api=5/1/13/24]; diff_s=1.2; all_entries_by_rank=High:1,Unknown:1"
+aexpy,0.4.3,28,pathspec,ok,39.6,"changes=0 (breaking=0, potential=0); extract_old_s=17.1 py=3.12; extract_new_s=17.0 py=3.12; diff_s=1.5; all_entries_by_rank=Unknown:8"
+aexpy,0.4.3,29,botocore,ok,230.5,"changes=0 (breaking=0, potential=0); extract_old_s=104.7 py=3.12; extract_new_s=91.4 py=3.12; diff_s=4.6; all_entries_by_rank="
+aexpy,0.4.3,30,rich-toolkit,ok,54.8,"changes=0 (breaking=0, potential=0); extract_old_s=25.3 py=3.12 [api=11/9/45/43]; extract_new_s=24.6 py=3.12 [api=11/9/45/43]; diff_s=0.9; all_entries_by_rank="

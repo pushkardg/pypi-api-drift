@@ -1,0 +1,98 @@
+case_id,file,line,library_api,param,category,kind,evidence
+U1_01,readability/cleaners.py,35,lxml.html.clean.Cleaner,,api,masked,Module-level Cleaner(...) construction is never reached because the import on line 3 fails
+U1_02,sqlmodel/main.py,27,pydantic.errors.DictError,,api,masked,"Removed in pydantic V2 (PydanticImportError); same import statement, after ConfigError"
+U1_02,sqlmodel/main.py,28,pydantic.fields.SHAPE_SINGLETON,,api,masked,pydantic.fields has no SHAPE_SINGLETON in 2.0
+U1_02,sqlmodel/main.py,30,pydantic.fields.ModelField,,api,masked,pydantic.fields has no ModelField in 2.0
+U1_02,sqlmodel/main.py,30,pydantic.fields.Undefined,,api,masked,pydantic.fields has no Undefined in 2.0 (now pydantic_core.PydanticUndefined)
+U1_02,sqlmodel/main.py,30,pydantic.fields.UndefinedType,,api,masked,pydantic.fields has no UndefinedType in 2.0
+U1_02,sqlmodel/main.py,31,pydantic.main.ModelMetaclass,,api,masked,pydantic.main no longer exposes ModelMetaclass in 2.0 (AttributeError from migration getattr)
+U1_02,sqlmodel/main.py,31,pydantic.main.validate_model,,api,masked,PydanticImportError: pydantic.main:validate_model has been removed in V2
+U1_02,sqlmodel/main.py,32,pydantic.typing.ForwardRef,,api,masked,pydantic.typing (removed module) no longer provides ForwardRef in 2.0
+U1_02,sqlmodel/main.py,32,pydantic.typing.NoArgAnyCallable,,api,masked,PydanticImportError: pydantic.typing:NoArgAnyCallable has been removed in V2
+U1_02,sqlmodel/main.py,32,pydantic.typing.resolve_annotations,,api,masked,PydanticImportError: pydantic.typing:resolve_annotations has been removed in V2
+U1_03,nptyping/typing_.py,54,numpy.object0,,api,masked,numpy 2.0 removed alias numpy.object0; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,66,numpy.int0,,api,masked,numpy 2.0 removed alias numpy.int0; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,80,numpy.uint0,,api,masked,numpy 2.0 removed alias numpy.uint0; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,91,numpy.float_,,api,masked,numpy 2.0 removed alias numpy.float_; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,93,numpy.longfloat,,api,masked,numpy 2.0 removed alias numpy.longfloat; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,98,numpy.singlecomplex,,api,masked,numpy 2.0 removed alias numpy.singlecomplex; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,100,numpy.complex_,,api,masked,numpy 2.0 removed alias numpy.complex_; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,101,numpy.cfloat,,api,masked,numpy 2.0 removed alias numpy.cfloat; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,103,numpy.clongfloat,,api,masked,numpy 2.0 removed alias numpy.clongfloat; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,104,numpy.longcomplex,,api,masked,numpy 2.0 removed alias numpy.longcomplex; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,107,numpy.void0,,api,masked,numpy 2.0 removed alias numpy.void0; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,111,numpy.string_,,api,masked,numpy 2.0 removed alias numpy.string_; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,112,numpy.bytes0,,api,masked,numpy 2.0 removed alias numpy.bytes0; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,113,numpy.unicode_,,api,masked,numpy 2.0 removed alias numpy.unicode_; module-level line never reached because line 51 fails first
+U1_03,nptyping/typing_.py,114,numpy.str0,,api,masked,numpy 2.0 removed alias numpy.str0; module-level line never reached because line 51 fails first
+U1_03,tests/test_ndarray.py,267,numpy.float_,,api,masked_test_code,"Test code uses np.float_, removed in numpy 2.0; module fails at collection before this runs"
+U1_04,cerberus/__init__.py,13,pkg_resources.DistributionNotFound,,api,masked,Same import statement; pkg_resources removed in setuptools 82
+U1_04,cerberus/__init__.py,22,pkg_resources.get_distribution,,api,masked,get_distribution('Cerberus').version call never reached
+U1_04,cerberus/__init__.py,23,pkg_resources.DistributionNotFound,,api,masked,except DistributionNotFound clause never reached
+U1_04,cerberus/tests/test_assorted.py,4,pkg_resources.Distribution,,api,masked_test_code,"Test module imports pkg_resources.Distribution, removed with pkg_resources in setuptools 82"
+U1_04,cerberus/tests/test_assorted.py,4,pkg_resources.DistributionNotFound,,api,masked_test_code,Test module imports pkg_resources.DistributionNotFound
+U1_04,cerberus/tests/test_assorted.py,29,pkg_resources.get_distribution,,api,masked_test_code,"monkeypatch.setattr('pkg_resources.get_distribution', ...) would fail without pkg_resources"
+U1_04,cerberus/tests/test_assorted.py,24,pkg_resources.Distribution,project_name,api,masked_test_code,"Distribution(project_name=..., version=...) constructed in test; class gone with pkg_resources"
+U1_04,cerberus/tests/test_assorted.py,36,pkg_resources.DistributionNotFound,,api,masked_test_code,Raises DistributionNotFound in test helper
+U1_04,cerberus/tests/test_assorted.py,40,pkg_resources.get_distribution,,api,masked_test_code,"monkeypatch.setattr('pkg_resources.get_distribution', ...) target no longer importable"
+U1_05,tests/test_loader.py,23,yaml.YAMLLoadWarning,,api,masked_test_code,yaml.YAMLLoadWarning was removed in PyYAML 6.0; module never collected because of the version gate
+U1_05,tests/test_loader.py,315,yaml.YAMLLoadWarning,,api,masked_test_code,yaml.YAMLLoadWarning was removed in PyYAML 6.0; module never collected because of the version gate
+U1_05,tests/test_loader.py,331,yaml.YAMLLoadWarning,,api,masked_test_code,yaml.YAMLLoadWarning was removed in PyYAML 6.0; module never collected because of the version gate
+U1_05,tests/test_loader.py,24,yaml.load,Loader,api,masked_test_code,yaml.load(stream) without Loader raises TypeError (missing required argument 'Loader') in PyYAML 6.0
+U1_05,tests/test_loader.py,316,yaml.load,Loader,api,masked_test_code,yaml.load(stream) without Loader raises TypeError (missing required argument 'Loader') in PyYAML 6.0
+U1_05,tests/test_loader.py,332,yaml.load,Loader,api,masked_test_code,yaml.load(stream) without Loader raises TypeError (missing required argument 'Loader') in PyYAML 6.0
+U1_05,tests/test_loader.py,26,yaml.load,Loader,api,unexercised,Branch only taken for yaml<5.0; Loader-less yaml.load is rejected by PyYAML 6.0
+U1_05,tests/test_loader.py,318,yaml.load,Loader,api,unexercised,Branch only taken for yaml<5.0; Loader-less yaml.load is rejected by PyYAML 6.0
+U1_05,tests/test_loader.py,334,yaml.load,Loader,api,unexercised,Branch only taken for yaml<5.0; Loader-less yaml.load is rejected by PyYAML 6.0
+U1_06,netrd/utilities/cluster.py,57,networkx.to_numpy_matrix,,api,unexercised,"clusterGraph() calls nx.to_numpy_matrix, removed in networkx 3.0; no test calls clusterGraph"
+U1_08,flask_restx/swagger.py,82,werkzeug.routing.parse_rule,,api,masked,parse_rule(path) call in extract_path is never reached because the import fails
+U1_08,flask_restx/api.py,43,werkzeug.wrappers.BaseResponse,,api,unexercised,Fallback import only taken when werkzeug major version < 2; BaseResponse no longer exists (removed in 2.1)
+U1_08,flask_restx/resource.py,11,werkzeug.wrappers.BaseResponse,,api,unexercised,Fallback import only taken when werkzeug major version < 2; BaseResponse no longer exists (removed in 2.1)
+U1_09,empyrical/tests/test_perf_attrib.py,176,pandas.read_csv,squeeze,api,masked_test_code,"Second read_csv(..., squeeze=True) (keyword on line 177) never reached after line 157 fails"
+U1_09,empyrical/tests/test_perf_attrib.py,192,pandas.util.testing.assert_series_equal,,api,masked_test_code,pd.util.testing removed in pandas 2.0 (AttributeError); not reached because line 157 fails first
+U1_09,empyrical/tests/test_perf_attrib.py,199,pandas.util.testing.assert_series_equal,,api,masked_test_code,pd.util.testing removed in pandas 2.0 (AttributeError); not reached because line 157 fails first
+U1_09,empyrical/tests/test_perf_attrib.py,211,pandas.util.testing.assert_series_equal,,api,masked_test_code,pd.util.testing removed in pandas 2.0; not reached because line 157 fails first
+U1_09,empyrical/tests/test_perf_attrib.py,217,pandas.util.testing.assert_frame_equal,,api,masked_test_code,pd.util.testing removed in pandas 2.0; not reached because line 157 fails first
+U1_09,empyrical/tests/test_perf_attrib.py,69,pandas.util.testing.assert_frame_equal,,api,masked_test_code,"In after venv test_perf_attrib_simple raises AttributeError (pd.util.testing removed) here, but the test already failed before (AssertionError on same line), so it is not a pass-to-fail regression"
+U1_09,empyrical/tests/test_perf_attrib.py,72,pandas.util.testing.assert_frame_equal,,api,masked_test_code,"pd.util.testing removed in pandas 2.0; later line of test_perf_attrib_simple, which stops at line 69 in both venvs"
+U1_09,empyrical/tests/test_perf_attrib.py,104,pandas.util.testing.assert_frame_equal,,api,masked_test_code,"pd.util.testing removed in pandas 2.0; later line of test_perf_attrib_simple, which stops at line 69 in both venvs"
+U1_09,empyrical/tests/test_perf_attrib.py,107,pandas.util.testing.assert_frame_equal,,api,masked_test_code,"pd.util.testing removed in pandas 2.0; later line of test_perf_attrib_simple, which stops at line 69 in both venvs"
+U1_09,empyrical/tests/test_perf_attrib.py,139,pandas.util.testing.assert_frame_equal,,api,masked_test_code,"pd.util.testing removed in pandas 2.0; later line of test_perf_attrib_simple, which stops at line 69 in both venvs"
+U1_09,empyrical/tests/test_perf_attrib.py,142,pandas.util.testing.assert_frame_equal,,api,masked_test_code,"pd.util.testing removed in pandas 2.0; later line of test_perf_attrib_simple, which stops at line 69 in both venvs"
+U1_10,peakutils/peak.py,146,scipy.integrate.simps,,api,masked,simps(...) call in centroid2 never reached because the import on line 7 fails
+U1_10,peakutils/peak.py,147,scipy.integrate.simps,,api,masked,simps(...) call in centroid2 never reached because the import on line 7 fails
+U1_10,peakutils/peak.py,148,scipy.integrate.simps,,api,masked,simps(...) call in centroid2 never reached because the import on line 7 fails
+U1_12,src/related/fields.py,44,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,81,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,100,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,118,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,157,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,175,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,194,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,212,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,247,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U1_12,src/related/fields.py,265,attr.attrib,convert,api,masked,"attrib(..., convert=...) in this field factory is called by tests before but never reached after, since model class creation aborts at an earlier field"
+U2_01,src/pip_requirements_parser.py,2235,packaging.version.LegacyVersion,,api,masked,"Parameter annotation Union[str, LegacyVersion, Version] of _as_version is evaluated at import time and would raise NameError once the import is removed."
+U2_01,src/pip_requirements_parser.py,2236,packaging.version.LegacyVersion,,api,masked,"Return annotation Union[LegacyVersion, Version] of _as_version references the removed class."
+U2_01,src/pip_requirements_parser.py,2240,packaging.version.LegacyVersion,,api,masked,"isinstance(version, (LegacyVersion, Version)) uses the removed class."
+U2_01,src/pip_requirements_parser.py,2245,packaging.version.parse,,other,masked,"With the import stubbed, parse('5.15.2.*') raises InvalidVersion instead of returning a LegacyVersion, failing 6 to_dict/dumps tests (behaviour change)."
+U2_01,src/pip_requirements_parser.py,2757,packaging.requirements.Requirement,,other,masked,"With the import stubbed, stricter PEP 508 parsing in packaging 22 turns several previously accepted requirement lines into InvalidRequirementLine entries, failing the remaining masked parse/dumps tests (behaviour change)."
+U2_02,jose/backends/cryptography_backend.py,18,cryptography.utils.int_from_bytes,,api,masked,"ImportError (cannot import name 'int_from_bytes') is caught by try/except ImportError in jose/backends/__init__.py lines 1-12 and in tests, so tests are skipped instead of failing."
+U2_02,jose/backends/cryptography_backend.py,118,cryptography.utils.int_from_bytes,,api,masked,"CryptographyECKey._der_to_raw calls int_from_bytes(r_bytes, 'big'); unreachable because the module import already fails."
+U2_02,jose/backends/cryptography_backend.py,119,cryptography.utils.int_from_bytes,,api,masked,"Second int_from_bytes call (s component) in _der_to_raw, same masking."
+U2_03,tests/test_environs.py,180,marshmallow.__version_info__,,api,masked_test_code,test_default_set reads ma.__version_info__ directly; with the import-time use stubbed it still fails with AttributeError.
+U2_03,environs/__init__.py,102,marshmallow.fields.Field,missing,api,unexercised,"Fallback branch passes missing= to the field constructor, which marshmallow 4 rejects (TypeError unexpected keyword 'missing'); only reached when the version check is False."
+U2_03,environs/__init__.py,110,marshmallow.fields.Field.missing,,api,unexercised,"Fallback branch reads field.missing, an attribute removed in marshmallow 4; only reached when the version check is False."
+U2_03,environs/__init__.py,105,marshmallow.fields.Field,validate,other,masked,"With the version check stubbed, validators returning False (validate=lambda n: n > 3) no longer raise ValidationError in marshmallow 4, so test_can_add_validator and test_error_message_for_prefixed_var fail (behaviour change)."
+U2_05,tests/test_flask_moment.py,3,jinja2.Markup,,api,masked_test_code,"The test module itself also does 'from jinja2 import Markup' (used for isinstance checks), which would fail at collection once flask_moment is fixed."
+U2_06,flask_babel/__init__.py,183,flask.helpers.locked_cached_property,,api,masked,Babel.domain_instance is decorated with @locked_cached_property; the decorator use depends on the removed helper (unreached because the import fails first).
+U2_08,pytest_describe/plugin.py,55,_pytest.fixtures.FixtureFunctionMarker._pytestfixturefunction,,api,unexercised,"hasattr(obj, '_pytestfixturefunction') relies on the private marker attribute that pytest 8.4 no longer sets on fixtures; it is never reached for fixtures because line 49 filters them out first, but once that is fixed it would return False and fixture names would be wrongly mangled."
+U2_09,src/jinja2/runtime.py,9,markupsafe.soft_unicode,,api,masked,"Second module-level 'from markupsafe import soft_unicode'; when filters.py is stubbed, collection still fails here with the same ImportError."
+U2_09,src/jinja2/utils.py,729,markupsafe.soft_unicode,,api,unexercised,"The deprecated wrapper jinja2.utils.soft_unicode imports markupsafe.soft_unicode lazily inside the function body, so it would fail only when called; the test suite never calls it."
+U2_11,tests/test_requests.py,91,httpx.Client.post,json,other,masked_test_code,"With app= removed, httpx 0.28 serialises json= bodies compactly ('{""a"":""123""}'), so test_request_body asserting '{""a"": ""123""}' fails (behaviour change)."
+U2_11,tests/test_requests.py,112,httpx.Client.post,json,other,masked_test_code,Same compact JSON serialisation change breaks test_request_stream.
+U2_11,tests/middleware/test_wsgi.py,81,httpx.Client.post,json,other,masked_test_code,"Same compact JSON serialisation change breaks test_wsgi_post ('{""example"":123}' != '{""example"": 123}')."
+U2_12,docstrfmt/util.py,122,docutils.utils.roman.toRoman,,api,masked,roman.toRoman(ordinal) for enumerated lists uses the removed module (unreachable because the import fails first).
+U2_12,docstrfmt/util.py,123,docutils.utils.roman.RomanError,,api,masked,'except roman.RomanError' references the removed module's exception class.
+U2_16,docker/transport/sshconn.py,102,urllib3.connectionpool.HTTPConnectionPool._make_request,,other,unexercised,"SSHConnection is also a stdlib http.client.HTTPConnection used as the connection class of SSHConnectionPool, so streamed requests over ssh:// would hit the same chunked= TypeError; unit tests never send a request through it."
+U2_16,docker/transport/npipeconn.py,18,urllib3.connectionpool.HTTPConnectionPool._make_request,,other,unexercised,NpipeHTTPConnection (Windows named pipes) has the same stdlib base-class pattern; untested on Linux.

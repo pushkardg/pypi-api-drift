@@ -1,0 +1,331 @@
+{
+ "cases": [
+  {
+   "case_id": "C01_requests-toolbelt",
+   "downstream": "requests-toolbelt",
+   "library": "urllib3",
+   "upgrade": "1.26.15 -> 2.0.7",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 2,
+   "api_failures_predicted": 2,
+   "other_failures": 0,
+   "findings_after": 1,
+   "findings_after_matching_a_failure": 1,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 3,
+   "findings": [
+    {
+     "file": "requests_toolbelt/_compat.py",
+     "line": 50,
+     "symbol": "urllib3.contrib.appengine",
+     "kind": "missing",
+     "message": "urllib3.contrib.appengine does not exist in urllib3==2.0.7 (last present in 1.26.20)"
+    }
+   ]
+  },
+  {
+   "case_id": "C02_pandas_schema",
+   "downstream": "pandas-schema",
+   "library": "pandas",
+   "upgrade": "1.5.3 -> 2.0.3",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_matching_a_failure": 0,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 0,
+   "findings": []
+  },
+  {
+   "case_id": "C03_flask-sqlalchemy",
+   "downstream": "Flask-SQLAlchemy",
+   "library": "flask",
+   "upgrade": "2.2.5 -> 3.0.0",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_matching_a_failure": 0,
+   "findings_before": 0,
+   "api_failures_on_private_names": [
+    "flask._app_ctx_stack"
+   ],
+   "masked_or_unexercised_sites": 1,
+   "findings": []
+  },
+  {
+   "case_id": "C04_flask-login",
+   "downstream": "Flask-Login",
+   "library": "werkzeug",
+   "upgrade": "2.3.7 -> 3.0.0",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 4,
+   "findings_after_matching_a_failure": 4,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 1,
+   "findings": [
+    {
+     "file": "flask_login/utils.py",
+     "line": 14,
+     "symbol": "werkzeug.urls.url_decode",
+     "kind": "missing",
+     "message": "werkzeug.urls.url_decode does not exist in werkzeug==3.0.0 (last present in 2.3.8)"
+    },
+    {
+     "file": "flask_login/utils.py",
+     "line": 15,
+     "symbol": "werkzeug.urls.url_encode",
+     "kind": "missing",
+     "message": "werkzeug.urls.url_encode does not exist in werkzeug==3.0.0 (last present in 2.3.8)"
+    },
+    {
+     "file": "flask_login/utils.py",
+     "line": 126,
+     "symbol": "werkzeug.urls.url_decode",
+     "kind": "missing",
+     "message": "werkzeug.urls.url_decode does not exist in werkzeug==3.0.0 (last present in 2.3.8)"
+    },
+    {
+     "file": "flask_login/utils.py",
+     "line": 130,
+     "symbol": "werkzeug.urls.url_encode",
+     "kind": "missing",
+     "message": "werkzeug.urls.url_encode does not exist in werkzeug==3.0.0 (last present in 2.3.8)"
+    }
+   ]
+  },
+  {
+   "case_id": "C05_dataset",
+   "downstream": "dataset",
+   "library": "sqlalchemy",
+   "upgrade": "1.4.54 -> 2.0.36",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 1,
+   "findings_after_matching_a_failure": 1,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 12,
+   "findings": [
+    {
+     "file": "dataset/database.py",
+     "line": 109,
+     "symbol": "sqlalchemy.schema.MetaData",
+     "kind": "bad_call",
+     "message": "sqlalchemy.schema.MetaData has no parameter 'bind' in sqlalchemy==2.0.36 (accepted up to 1.4.54)"
+    }
+   ]
+  },
+  {
+   "case_id": "C06_lmfit",
+   "downstream": "lmfit",
+   "library": "numpy",
+   "upgrade": "1.26.4 -> 2.0.2",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 3,
+   "api_failures_predicted": 3,
+   "other_failures": 0,
+   "findings_after": 6,
+   "findings_after_matching_a_failure": 6,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 3,
+   "findings": [
+    {
+     "file": "lmfit/conf_emcee.py",
+     "line": 406,
+     "symbol": "numpy.asfarray",
+     "kind": "missing",
+     "message": "numpy.asfarray does not exist in numpy==2.0.2 (last present in 1.26.4)"
+    },
+    {
+     "file": "lmfit/minimizer.py",
+     "line": 1388,
+     "symbol": "numpy.asfarray",
+     "kind": "missing",
+     "message": "numpy.asfarray does not exist in numpy==2.0.2 (last present in 1.26.4)"
+    },
+    {
+     "file": "lmfit/minimizer.py",
+     "line": 2405,
+     "symbol": "numpy.asfarray",
+     "kind": "missing",
+     "message": "numpy.asfarray does not exist in numpy==2.0.2 (last present in 1.26.4)"
+    },
+    {
+     "file": "lmfit/minimizer.py",
+     "line": 2407,
+     "symbol": "numpy.asfarray",
+     "kind": "missing",
+     "message": "numpy.asfarray does not exist in numpy==2.0.2 (last present in 1.26.4)"
+    },
+    {
+     "file": "lmfit/model.py",
+     "line": 201,
+     "symbol": "numpy.asfarray",
+     "kind": "missing",
+     "message": "numpy.asfarray does not exist in numpy==2.0.2 (last present in 1.26.4)"
+    },
+    {
+     "file": "lmfit/model.py",
+     "line": 203,
+     "symbol": "numpy.asfarray",
+     "kind": "missing",
+     "message": "numpy.asfarray does not exist in numpy==2.0.2 (last present in 1.26.4)"
+    }
+   ]
+  },
+  {
+   "case_id": "C07_jinjasql",
+   "downstream": "jinjasql",
+   "library": "jinja2",
+   "upgrade": "3.0.3 -> 3.1.2",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 2,
+   "findings_after_matching_a_failure": 2,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 1,
+   "findings": [
+    {
+     "file": "jinjasql/core.py",
+     "line": 6,
+     "symbol": "jinja2.utils.Markup",
+     "kind": "missing",
+     "message": "jinja2.utils.Markup does not exist in jinja2==3.1.2 (last present in 3.0.3)"
+    },
+    {
+     "file": "jinjasql/core.py",
+     "line": 97,
+     "symbol": "jinja2.utils.Markup",
+     "kind": "missing",
+     "message": "jinja2.utils.Markup does not exist in jinja2==3.1.2 (last present in 3.0.3)"
+    }
+   ]
+  },
+  {
+   "case_id": "C08_marshmallow-jsonschema",
+   "downstream": "marshmallow-jsonschema",
+   "library": "marshmallow",
+   "upgrade": "3.14.1 -> 4.0.0",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_matching_a_failure": 0,
+   "findings_before": 0,
+   "api_failures_on_private_names": [
+    "marshmallow.utils._Missing"
+   ],
+   "masked_or_unexercised_sites": 4,
+   "findings": []
+  },
+  {
+   "case_id": "C09_click-repl",
+   "downstream": "click-repl",
+   "library": "click",
+   "upgrade": "6.7 -> 8.0.4",
+   "expected": "break",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_matching_a_failure": 0,
+   "findings_before": 0,
+   "api_failures_on_private_names": [
+    "click._bashcomplete"
+   ],
+   "masked_or_unexercised_sites": 2,
+   "findings": []
+  },
+  {
+   "case_id": "C10_flask_control",
+   "downstream": "Flask",
+   "library": "jinja2",
+   "upgrade": "3.0.3 -> 3.1.2",
+   "expected": "control",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_matching_a_failure": 0,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 0,
+   "findings": []
+  },
+  {
+   "case_id": "C11_click-default-group_control",
+   "downstream": "click-default-group",
+   "library": "click",
+   "upgrade": "7.0 -> 8.0.4",
+   "expected": "control",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 1,
+   "findings_after": 0,
+   "findings_after_matching_a_failure": 0,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 0,
+   "findings": []
+  },
+  {
+   "case_id": "C12_numdifftools_control",
+   "downstream": "numdifftools",
+   "library": "numpy",
+   "upgrade": "1.26.4 -> 2.0.2",
+   "expected": "control",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_matching_a_failure": 0,
+   "findings_before": 0,
+   "api_failures_on_private_names": [],
+   "masked_or_unexercised_sites": 0,
+   "findings": []
+  }
+ ],
+ "summary": {
+  "cases": 12,
+  "cases_checked": 12,
+  "api_failures": 12,
+  "api_failures_predicted": 8,
+  "findings_after": 14,
+  "findings_after_matching_a_failure": 14,
+  "findings_in_before_env": 0,
+  "api_failures_on_private_names": 3,
+  "break_cases_flagged": 5,
+  "break_cases": 9,
+  "control_cases_flagged": 0,
+  "control_cases": 3
+ }
+}

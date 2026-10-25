@@ -1,0 +1,101 @@
+id,project,path,change_type,verdict,method,evidence
+1,stripe,stripe.AccountService.UpdateParamsIndividualVerification,removed,confirmed,runtime,Nested class present on stripe.AccountService in 12.5.1; AttributeError in 13.0.0.
+2,stripe,stripe.AccountService.UpdateParamsDocumentsProofOfAddress,removed,confirmed,runtime,Nested class present on stripe.AccountService in 12.5.1; AttributeError in 13.0.0.
+3,librt,librt.internal.write_int,became_positional_only,confirmed,runtime,"write_int(buf, value=1) works in 0.7.8 but raises 'takes no keyword arguments' in 0.8.0 (stub also adds '/')."
+4,librt,librt.strings.BytesWriter.append,became_positional_only,partially,source,"Stubs change append(self, /, x) to append(self, x, /), but librt.strings exposes no BytesWriter at runtime in either version, so no runtime call can break."
+5,psycopg-pool,psycopg_pool.base.BasePool,required_param_added,confirmed,runtime,BasePool.__init__ gains required keyword-only close_returns in 3.3.0 (psycopg installed).
+6,psycopg-pool,psycopg_pool.AsyncNullConnectionPool,vararg_removed,false_positive,source,"3.1.5 *args was only forwarded to AsyncConnectionPool.__init__(conninfo, *, ...), which rejects extra positionals, so no previously working call breaks."
+7,agent-client-protocol,acp.schema.DisableProvidersResponse,removed,confirmed,runtime,"acp.schema.DisableProvidersResponse importable in 0.10.1, missing in 0.11.0."
+8,agent-client-protocol,acp.schema.SessionUpdate2,removed,confirmed,runtime,"acp.schema.SessionUpdate2 present in 0.7.1, missing in 0.8.0."
+9,pybase64,pybase64.distutils,removed,confirmed,runtime,pybase64.distutils submodule imports in 1.2.3; ModuleNotFoundError in 1.3.0.
+10,rich,rich.traceback.Traceback.from_exception,became_keyword_only,confirmed,runtime,locals_max_length is positional-or-keyword in 13.0.1 and keyword-only in 13.1.0.
+11,rich,rich.traceback.Traceback.from_exception,became_keyword_only,confirmed,runtime,max_frames is positional-or-keyword in 13.0.1 and keyword-only in 13.1.0.
+12,jsonschema-path,jsonschema_path.accessors.ResolverAccessor,removed,confirmed,runtime,"jsonschema_path.accessors.ResolverAccessor present in 0.3.4, missing in 0.4.0."
+13,jsonschema-path,jsonschema_path.SchemaAccessor,param_renamed,confirmed,runtime,"SchemaAccessor(lookup, resolver) becomes SchemaAccessor(schema, resolver)."
+14,joblib,joblib.Memory,param_removed,confirmed,runtime,Memory.__init__ loses bytes_limit in 1.5.0 (no **kwargs).
+15,joblib,joblib.MemorizedResult,param_removed,confirmed,runtime,"MemorizedResult(location, func, args_id, ...) becomes (location, call_id, ...); args_id is gone."
+16,firebase-admin,firebase_admin.messaging.send_all,removed,confirmed,runtime,"messaging.send_all present in 6.9.0, missing in 7.0.0."
+17,firebase-admin,firebase_admin.messaging.send_multicast,removed,confirmed,runtime,"messaging.send_multicast present in 6.9.0, missing in 7.0.0."
+18,langfuse,langfuse.api.models.client.ModelsClient.create,default_removed,confirmed,runtime,unit is keyword-only with a default in 4.14.5 and required keyword-only in 4.14.6.
+19,langfuse,langfuse.api.datasets.client.DatasetsClient.get_runs,removed,confirmed,runtime,DatasetsClient.get_runs present in 4.18.0; the class still exists in 5.0.1 but has no get_runs.
+20,importlib-resources,importlib_resources.contents,removed,confirmed,runtime,"importlib_resources.contents present in 5.13.0, missing in 6.0.0."
+21,importlib-resources,importlib_resources.path,removed,confirmed,runtime,"importlib_resources.path present in 5.13.0, missing in 6.0.0."
+22,pdfplumber,pdfplumber.utils.text.WordExtractor.char_begins_new_word,required_param_added,confirmed,runtime,char_begins_new_word gains required positional 'direction' (3rd) in 0.11.0.
+23,pdfplumber,pdfplumber.utils.text.WordExtractor,positional_reordered,confirmed,runtime,horizontal_ltr/vertical_ttb swap positions in 0.11.0 (line_dir etc. also inserted before extra_attrs).
+24,sentence-transformers,sentence_transformers.models.CNN.save,became_keyword_only,partially,source,"safe_serialization became keyword-only, but 5.0.0 adds *args, so old positional calls are silently ignored rather than failing."
+25,sentence-transformers,sentence_transformers.sparse_encoder.losses.CSRLoss.normalized_mean_squared_error,removed,false_positive,source,"5.4.0 renames CSRLoss.py to csr.py but installs a deprecated-import meta-path finder that aliases ...losses.CSRLoss, so the function is still importable."
+26,aiobotocore,aiobotocore.response.HttpxStreamingBody,kind_changed,false_positive,source,"3.8.0 keeps HttpxStreamingBody as a class (alias HttpxStreamingBody = AioHttpxStreamingBody), so it is still a class."
+27,aiobotocore,aiobotocore.httpchecksum.StreamingChecksumBody,kind_changed,false_positive,runtime,3.8.0 keeps StreamingChecksumBody as a class (alias = AioStreamingChecksumBody) with the same constructor signature.
+28,tifffile,tifffile.NullContext,removed,confirmed,runtime,"tifffile.NullContext present in 2026.5.15, missing in 2026.6.1 (py3.12 venv)."
+29,tifffile,tifffile.zarr.ZarrTiffStore,param_removed,confirmed,source,ZarrTiffStore.__init__ keyword-only squeeze is in 2026.4.11 and removed in 2026.5.2 (no **kwargs); 2026.4.11 cannot import against zarr 3.4.
+30,wandb,wandb.integration.metaflow.wandb_log,became_positional_only,confirmed,runtime,"func is positional-or-keyword in 0.21.0 and positional-only (func=None, /) in 0.21.1 (metaflow and plum-dispatch installed)."
+31,wandb,wandb.sdk.launch.builder.abstract.AbstractBuilder.from_config,param_removed,confirmed,runtime,AbstractBuilder.from_config loses verify in 0.16.0.
+32,gunicorn,gunicorn.http.Request.parse_proxy_protocol,removed,confirmed,runtime,Request.parse_proxy_protocol present in 24.0.0; only private _parse_proxy_protocol_v1/v2 in 24.1.0.
+33,gunicorn,gunicorn.asgi.websocket.WebSocketProtocol.reader,removed,confirmed,source,self.reader set in WebSocketProtocol.__init__ in 25.1.0; reader arg and attribute removed in 25.2.0.
+34,langchain-google-genai,langchain_google_genai.genai_aqa,removed,confirmed,runtime,"langchain_google_genai.genai_aqa module present in 3.0.3, missing in 3.1.0."
+35,langchain-google-genai,langchain_google_genai.GoogleGenerativeAIEmbeddings.embed_documents,param_renamed,partially,runtime,"batch_size keyword calls do break, but batch_size was removed (it was unused), not renamed; task_type is a new, unrelated param."
+36,google-ads,google.ads.googleads.v22,removed,confirmed,runtime,google.ads.googleads.v22 imports in 31.1.0; ModuleNotFoundError in 33.0.0.
+37,google-ads,google.ads.googleads.interceptors.AsyncUnaryUnaryMetadataInterceptor,param_removed,confirmed,runtime,AsyncUnaryUnaryMetadataInterceptor.__init__ loses use_cloud_org_for_api_access in 33.0.0.
+38,confluent-kafka,confluent_kafka.schema_registry.rules.encryption.encrypt_executor.FieldEncryptionExecutorTransform,param_removed,confirmed,runtime,"Constructor (executor, cryptor, kek_name, dek_expiry_days) becomes (executor_transform) in 2.11.1 (schema-registry deps installed)."
+39,confluent-kafka,confluent_kafka.schema_registry.protobuf.protobufToDecimal,removed,confirmed,runtime,"schema_registry.protobuf.protobufToDecimal present in 2.10.0, missing in 2.10.1."
+40,pycodestyle,pycodestyle.TESTSUITE_PATH,removed,confirmed,runtime,"pycodestyle.TESTSUITE_PATH present in 2.10.0, missing in 2.11.0."
+41,pycodestyle,pycodestyle.missing_whitespace_around_operator,removed,confirmed,runtime,"missing_whitespace_around_operator present in 2.10.0, missing in 2.11.0."
+42,azure-servicebus,azure.servicebus.ServiceBusConnectionStringProperties,required_param_added,confirmed,runtime,Constructor goes from (**kwargs) to required keyword-only fully_qualified_namespace in 7.12.0.
+43,azure-servicebus,azure.servicebus.ServiceBusConnectionStringProperties,required_param_added,confirmed,runtime,Constructor goes from (**kwargs) to required keyword-only endpoint in 7.12.0.
+44,langchain-protocol,langchain_protocol.ServerToolCallResultBlock,removed,confirmed,runtime,"langchain_protocol.ServerToolCallResultBlock present in 0.0.8, missing in 0.0.9."
+45,langchain-protocol,langchain_protocol.VideoBlock,removed,confirmed,runtime,"langchain_protocol.VideoBlock present in 0.0.8, missing in 0.0.9."
+46,tornado,tornado.platform.twisted.TwistedResolver,removed,confirmed,runtime,TwistedResolver importable in 6.4.2 (twisted installed); missing from tornado.platform.twisted in 6.5.
+47,tornado,tornado.httputil.HTTPServerRequest,param_removed,confirmed,runtime,HTTPServerRequest.__init__ loses host in 6.5.
+48,beartype,beartype.BeartypeConf.is_check_pep557,removed,confirmed,runtime,"BeartypeConf.is_check_pep557 property present in 0.20.2, missing in 0.21.0."
+49,beartype,beartype.roar.BeartypeDoorHintViolation,required_param_added,confirmed,runtime,"BeartypeDoorHintViolation(message) becomes (message, culprits) with culprits required in 0.12.0."
+50,jeepney,jeepney.bindgen.generate,removed,confirmed,runtime,"jeepney.bindgen.generate present in 0.8.0, missing in 0.9.0."
+51,jeepney,jeepney.routing,removed,confirmed,runtime,"jeepney.routing module present in 0.8.0, missing in 0.9.0."
+52,bandit,bandit.plugins.pytorch_load_save,removed,confirmed,runtime,"bandit.plugins.pytorch_load_save module present in 1.8.2, missing in 1.8.3."
+53,bandit,bandit.core.manager.BanditManager.progress,removed,confirmed,runtime,BanditManager sets self.progress in 1.7.4; no such attribute in 1.7.5 (pbr installed).
+54,opentelemetry-api,opentelemetry.context.iter_entry_points,removed,confirmed,runtime,"opentelemetry.context.iter_entry_points (pkg_resources re-export) present in 1.15.0, missing in 1.16.0."
+55,opentelemetry-api,opentelemetry.propagate.entry_points,removed,confirmed,runtime,"opentelemetry.propagate.entry_points present in 1.42.1, missing in 1.43.0."
+56,import-linter,importlinter.domain.dotfile.Edge.emphasized,removed,confirmed,runtime,"Edge.emphasized bool attribute/field present in 2.14, missing in 2.15."
+57,import-linter,importlinter.contracts.layers.LayersContract.flattened_layers,removed,confirmed,runtime,LayersContract assigns self.flattened_layers in 1.12.1; no such attribute in 2.0.
+58,fastcore,fastcore.foundation.save_config_file,removed,confirmed,runtime,"fastcore.foundation.save_config_file present in 1.14.5, missing in 2.0.0."
+59,fastcore,fastcore.utils.run_procs,removed,confirmed,runtime,"fastcore.utils.run_procs present in 1.14.5, missing in 2.0.0."
+60,torchvision,torchvision.transforms.v2.functional.clamp_bounding_box,removed,confirmed,source,v2.functional exports clamp_bounding_box in 0.15.2; 0.16.0 exports only clamp_bounding_boxes.
+61,torchvision,torchvision.transforms.v2.functional.horizontal_flip_image_pil,removed,confirmed,source,v2.functional exports horizontal_flip_image_pil in 0.15.2; 0.16.0 has only private _horizontal_flip_image_pil.
+62,uvicorn,uvicorn.supervisors.Multiprocess.target,removed,confirmed,runtime,Multiprocess assigns self.target in 0.50.2; not present in 0.51.0.
+63,uvicorn,uvicorn.supervisors.Multiprocess.shutdown,removed,confirmed,runtime,"Multiprocess.shutdown method present in 0.29.0, missing in 0.30.0."
+64,boltons,boltons.timeutils.EPOCH_NAIVE,removed,confirmed,runtime,"boltons.timeutils.EPOCH_NAIVE present in 24.0.0, missing in 24.1.0."
+65,boltons,boltons.urlutils.unichr,removed,confirmed,runtime,"boltons.urlutils.unichr present in 23.1.1, missing in 24.0.0."
+66,openapi-pydantic,openapi_pydantic.v3.v3_1_0,removed,confirmed,runtime,"openapi_pydantic.v3.v3_1_0 module present in 0.4.1, missing in 0.5.0."
+67,openapi-pydantic,openapi_pydantic.v3.v3_0_3.header.LiteralEmptyString,removed,confirmed,runtime,"header.LiteralEmptyString present in 0.3.2, missing in 0.4.0."
+68,sendgrid,sendgrid.PublicKey,removed,confirmed,runtime,"sendgrid.PublicKey (ecdsa re-export) present in 6.12.0, missing in 6.12.1 (ecdsa installed)."
+69,sendgrid,sendgrid.Signature,removed,confirmed,runtime,"sendgrid.Signature (ecdsa re-export) present in 6.12.0, missing in 6.12.1 (ecdsa installed)."
+70,h3,h3.polyfill,removed,confirmed,runtime,"h3.polyfill present in 3.7.7, missing in 4.1.0."
+71,h3,h3.get_res0_indexes,removed,confirmed,runtime,"h3.get_res0_indexes present in 3.7.7, missing in 4.1.0."
+72,gcsfs,gcsfs.zonal_file.ZonalFile,vararg_removed,false_positive,source,"2025.12.0 *args only forwarded to GCSFile.__init__; 2026.1.0 spells out the same 15 positional params, so no previously working call breaks."
+73,gcsfs,gcsfs.prefetcher.PrefetchConsumer.on_error,removed,confirmed,runtime,PrefetchConsumer assigns self.on_error in 2026.5.0; not present in 2026.6.0.
+74,jsonconversion,source.jsonconversion,removed,confirmed,runtime,Top-level 'source.jsonconversion' package imports in 1.0.0; no 'source' package in 1.0.1.
+75,jsonconversion,jsonconversion.DistributionNotFound,removed,confirmed,runtime,"jsonconversion.DistributionNotFound (pkg_resources re-export) present in 1.1.2, missing in 1.2.0."
+76,jinja2,jinja2.sandbox.SandboxedEnvironment.format_string,removed,confirmed,runtime,"SandboxedEnvironment.format_string present in 3.1.4, missing in 3.1.5."
+77,jinja2,jinja2.sandbox.inspect_format_method,removed,confirmed,runtime,"jinja2.sandbox.inspect_format_method present in 3.1.4, missing in 3.1.5."
+78,python-multipart,multipart.multipart.DecodeError,removed,confirmed,runtime,"multipart.multipart.DecodeError present in 0.0.8, missing in 0.0.9."
+79,python-multipart,multipart.multipart.STATE_FIELD_DATA,removed,confirmed,runtime,"multipart.multipart.STATE_FIELD_DATA present in 0.0.8, missing in 0.0.9."
+80,pyproject-hooks,pyproject_hooks.BackendInvalid,kind_changed,false_positive,source,"1.1.0 has BackendInvalid = BackendUnavailable (a deprecated alias), so it is still a class."
+81,astroid,astroid.nodes.Subscript.infer_lhs,varkw_removed,confirmed,source,"Subscript.infer_lhs(context=None, **kwargs) becomes (context=None) in 4.3.0 (runtime signature is hidden by the decorator)."
+82,astroid,astroid.nodes.If.infer,varkw_removed,confirmed,runtime,"NodeNG.infer(context=None, **kwargs) becomes (context=None) in 4.3.0."
+83,chardet,chardet.enums.LanguageFilter.NONE,removed,confirmed,runtime,LanguageFilter.NONE enum member present in 5.2.0; AttributeError in 6.0.0.
+84,groq,groq.types.EmbeddingCreateParams.dimensions,removed,partially,source,"dimensions key removed from TypedDict EmbeddingCreateParams (and from embeddings.create) in 0.7.0, but a TypedDict key is not a runtime attribute; the break is type-level."
+85,groq,groq.types.chat.completion_create_params.Document.text,removed,partially,source,"Document TypedDict changes from {text} to {source, id}, so the break is real, but text was a TypedDict key, not a runtime attribute."
+86,attrs,attr.exceptions.FrozenError.args,removed,false_positive,runtime,"FrozenError drops its class-level args override in 26.1.0, but .args is still inherited from BaseException."
+87,universal-pathlib,upath.UPath.is_absolute,removed,false_positive,runtime,"UPath.is_absolute is still accessible in 0.2.0, inherited from pathlib.PurePath."
+88,universal-pathlib,upath.implementations.local.LocalPath.is_reserved,removed,false_positive,runtime,"LocalPath.is_reserved is still accessible in 0.3.0, inherited from pathlib.PurePath."
+89,langchain-community,langchain_community.embeddings.OctoAIEmbeddings.query_instruction,removed,confirmed,runtime,"OctoAIEmbeddings.query_instruction field present in 0.2.0, missing in 0.2.1."
+90,langchain-community,langchain_community.vectorstores.Yellowbrick.create_table_if_not_exists,removed,confirmed,runtime,"Yellowbrick.create_table_if_not_exists present in 0.0.37, missing in 0.0.38."
+91,urllib3,urllib3.connection.HTTPConnection.auto_open,removed,false_positive,runtime,"auto_open comes from stdlib http.client.HTTPConnection in both versions, so it is still accessible in 2.0.2."
+92,urllib3,urllib3.HTTPResponse.from_httplib,removed,confirmed,runtime,"HTTPResponse.from_httplib classmethod present in 1.26.20, missing in 2.0.2."
+93,pytest,pytest.Package.getmodpath,removed,confirmed,runtime,pytest.Package.getmodpath present in 7.4.4 (PyobjMixin); Package no longer has it in 8.0.0.
+94,pytest,pytest.Package.istestclass,removed,confirmed,runtime,pytest.Package.istestclass present in 7.4.4 (PyCollector); Package no longer has it in 8.0.0.
+95,sphinxcontrib-htmlhelp,sphinxcontrib.htmlhelp.HTMLHelpBuilder.default_translator_class,removed,false_positive,runtime,"HTMLHelpBuilder.default_translator_class is still accessible in 2.0.2, inherited from StandaloneHTMLBuilder (it changed from a property to an inherited attribute)."
+96,jaraco-context,jaraco.context.on_interrupt.action,removed,false_positive,source,on_interrupt.__init__ still sets self.action in 5.1.0 (only the param became positional-only).
+97,jaraco-context,jaraco.context.on_interrupt.code,removed,false_positive,source,on_interrupt.__init__ still sets self.code in 5.1.0.
+98,mysql-connector-python,mysql.connector.opentelemetry.instrumentation.TracedMySQLConnection.autocommit,varkw_removed,false_positive,source,"Only the property getter's def lost *args/**kwargs; property access never passes arguments, so no caller can break."
+99,mysql-connector-python,mysql.connector.opentelemetry.instrumentation.TracedMySQLConnection.database,varkw_removed,false_positive,source,"Only the property getter's def lost *args/**kwargs; property access never passes arguments, so no caller can break."
+100,bytecode,bytecode.instr.Intrinsic1Op.INSTRINSIC_1_INVALID,removed,confirmed,runtime,"Intrinsic1Op.INSTRINSIC_1_INVALID enum member present in 0.15.0, missing in 0.15.1."

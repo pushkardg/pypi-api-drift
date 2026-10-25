@@ -1,0 +1,42 @@
+{
+ "sample": {
+  "projects": 300,
+  "releases": 8149,
+  "seed": 20261021,
+  "errors": [],
+  "share_of_analysed_releases": 0.1466
+ },
+ "wheel_bytes": 22925191061,
+ "fetched_bytes": 1952593498,
+ "fetched_share": 0.08517,
+ "central_directory_bytes": 590301982,
+ "requests_per_release_median": 2.0,
+ "fetched_per_release_median_kb": 81.2,
+ "fetched_share_per_release_median": 1.0,
+ "py_members_fetched_share": 0.1522,
+ "without_crc_reuse_bytes_lower_bound": 2756141014,
+ "all_analysed_wheel_bytes": 300179402931,
+ "extrapolated_fetched_bytes_all": 25566999587,
+ "seconds": 275.8,
+ "note": "byte-weighted extrapolation from a random project sample; pip-installing every wheel would download all_analysed_wheel_bytes",
+ "fetched_share_ci95_bootstrap_projects": [
+  0.057,
+  0.1473
+ ],
+ "by_wheel_size": {
+  "<1MB": {
+   "releases": 6274,
+   "fetched_share": 0.7406,
+   "share_of_wheel_bytes": 0.0468
+  },
+  ">=1MB": {
+   "releases": 1875,
+   "fetched_share": 0.053,
+   "share_of_wheel_bytes": 0.9532
+  }
+ },
+ "extrapolated_fetched_bytes_all_ci95": [
+  17113655895,
+  44223337248
+ ]
+}

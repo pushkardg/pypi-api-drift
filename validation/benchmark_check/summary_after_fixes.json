@@ -1,0 +1,9 @@
+{
+ "audited_pairs": 200,
+ "still_in_rebuilt_benchmark": 136,
+ "correct_among_them": 130,
+ "precision_among_them": 0.9559,
+ "wrong_removed": 22,
+ "wrong_total": 28,
+ "correct_dropped": 42
+}

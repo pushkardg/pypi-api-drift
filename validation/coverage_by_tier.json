@@ -1,0 +1,23 @@
+{
+ "rank_101_500": {
+  "rows": 4119015,
+  "static": 0.8627,
+  "dynamic_module": 0.0577,
+  "compiled_boundary": 0.007,
+  "stub_only": 0.0727
+ },
+ "rank_501_plus": {
+  "rows": 11028951,
+  "static": 0.7659,
+  "dynamic_module": 0.2213,
+  "compiled_boundary": 0.0072,
+  "stub_only": 0.0056
+ },
+ "top_100": {
+  "rows": 449446,
+  "static": 0.7481,
+  "dynamic_module": 0.1977,
+  "compiled_boundary": 0.0527,
+  "stub_only": 0.0015
+ }
+}

@@ -1,0 +1,1233 @@
+{
+ "checker": "raw/check_frozen_20261020.py",
+ "cases": [
+  {
+   "case_id": "U1_01",
+   "downstream": "readability-lxml",
+   "library": "lxml",
+   "upgrade": "5.1.1 -> 5.2.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_02",
+   "downstream": "sqlmodel",
+   "library": "pydantic",
+   "upgrade": "1.10.9 -> 2.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 18,
+   "findings_after_confirmed": 15,
+   "findings_before": 0,
+   "outcome": "partial",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 27,
+     "symbol": "pydantic.errors.ConfigError",
+     "kind": "missing",
+     "message": "pydantic.errors.ConfigError does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 27,
+     "symbol": "pydantic.errors.DictError",
+     "kind": "missing",
+     "message": "pydantic.errors.DictError does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 28,
+     "symbol": "pydantic.fields.SHAPE_SINGLETON",
+     "kind": "missing",
+     "message": "pydantic.fields.SHAPE_SINGLETON does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 30,
+     "symbol": "pydantic.fields.ModelField",
+     "kind": "missing",
+     "message": "pydantic.fields.ModelField does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 30,
+     "symbol": "pydantic.fields.Undefined",
+     "kind": "missing",
+     "message": "pydantic.fields.Undefined does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 30,
+     "symbol": "pydantic.fields.UndefinedType",
+     "kind": "missing",
+     "message": "pydantic.fields.UndefinedType does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 31,
+     "symbol": "pydantic.main.validate_model",
+     "kind": "missing",
+     "message": "pydantic.main.validate_model does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 32,
+     "symbol": "pydantic.typing.NoArgAnyCallable",
+     "kind": "missing",
+     "message": "pydantic.typing.NoArgAnyCallable does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 32,
+     "symbol": "pydantic.typing.resolve_annotations",
+     "kind": "missing",
+     "message": "pydantic.typing.resolve_annotations does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 33,
+     "symbol": "pydantic.utils.ROOT_KEY",
+     "kind": "missing",
+     "message": "pydantic.utils.ROOT_KEY does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 33,
+     "symbol": "pydantic.utils.Representation",
+     "kind": "missing",
+     "message": "pydantic.utils.Representation does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 236,
+     "symbol": "pydantic.typing.resolve_annotations",
+     "kind": "missing",
+     "message": "pydantic.typing.resolve_annotations does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 498,
+     "symbol": "pydantic.main.validate_model",
+     "kind": "missing",
+     "message": "pydantic.main.validate_model does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 537,
+     "symbol": "pydantic.errors.ConfigError",
+     "kind": "missing",
+     "message": "pydantic.errors.ConfigError does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 552,
+     "symbol": "pydantic.main.validate_model",
+     "kind": "missing",
+     "message": "pydantic.main.validate_model does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 589,
+     "symbol": "pydantic.main.validate_model",
+     "kind": "missing",
+     "message": "pydantic.main.validate_model does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/sqlmodel/main.py",
+     "line": 604,
+     "symbol": "pydantic.errors.DictError",
+     "kind": "missing",
+     "message": "pydantic.errors.DictError does not exist in pydantic==2.0 (last present in 1.10.26)"
+    },
+    {
+     "file": "src/tests/test_validation.py",
+     "line": 5,
+     "symbol": "pydantic.error_wrappers.ValidationError",
+     "kind": "missing",
+     "message": "pydantic.error_wrappers.ValidationError does not exist in pydantic==2.0 (last present in 1.10.26)"
+    }
+   ]
+  },
+  {
+   "case_id": "U1_03",
+   "downstream": "nptyping",
+   "library": "numpy",
+   "upgrade": "1.26.4 -> 2.0.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 10,
+   "findings_after_confirmed": 10,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "src/tests/test_ndarray.py",
+     "line": 267,
+     "symbol": "numpy.float_",
+     "kind": "missing",
+     "message": "numpy.float_ does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 91,
+     "symbol": "numpy.float_",
+     "kind": "missing",
+     "message": "numpy.float_ does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 93,
+     "symbol": "numpy.longfloat",
+     "kind": "missing",
+     "message": "numpy.longfloat does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 98,
+     "symbol": "numpy.singlecomplex",
+     "kind": "missing",
+     "message": "numpy.singlecomplex does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 100,
+     "symbol": "numpy.complex_",
+     "kind": "missing",
+     "message": "numpy.complex_ does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 101,
+     "symbol": "numpy.cfloat",
+     "kind": "missing",
+     "message": "numpy.cfloat does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 103,
+     "symbol": "numpy.clongfloat",
+     "kind": "missing",
+     "message": "numpy.clongfloat does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 104,
+     "symbol": "numpy.longcomplex",
+     "kind": "missing",
+     "message": "numpy.longcomplex does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 111,
+     "symbol": "numpy.string_",
+     "kind": "missing",
+     "message": "numpy.string_ does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    },
+    {
+     "file": "src/nptyping/typing_.py",
+     "line": 113,
+     "symbol": "numpy.unicode_",
+     "kind": "missing",
+     "message": "numpy.unicode_ does not exist in numpy==2.0.0 (last present in 1.26.4)"
+    }
+   ]
+  },
+  {
+   "case_id": "U1_04",
+   "downstream": "Cerberus",
+   "library": "setuptools",
+   "upgrade": "81.0.0 -> 82.0.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_05",
+   "downstream": "pyyaml-include",
+   "library": "pyyaml",
+   "upgrade": "5.4.1 -> 6.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 1,
+   "findings_after": 3,
+   "findings_after_confirmed": 3,
+   "findings_before": 0,
+   "outcome": "flagged_real_but_untested",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "src/tests/test_loader.py",
+     "line": 23,
+     "symbol": "yaml.YAMLLoadWarning",
+     "kind": "missing",
+     "message": "yaml.YAMLLoadWarning does not exist in pyyaml==6.0 (last present in 5.4.1)"
+    },
+    {
+     "file": "src/tests/test_loader.py",
+     "line": 315,
+     "symbol": "yaml.YAMLLoadWarning",
+     "kind": "missing",
+     "message": "yaml.YAMLLoadWarning does not exist in pyyaml==6.0 (last present in 5.4.1)"
+    },
+    {
+     "file": "src/tests/test_loader.py",
+     "line": 331,
+     "symbol": "yaml.YAMLLoadWarning",
+     "kind": "missing",
+     "message": "yaml.YAMLLoadWarning does not exist in pyyaml==6.0 (last present in 5.4.1)"
+    }
+   ]
+  },
+  {
+   "case_id": "U1_06",
+   "downstream": "netrd",
+   "library": "networkx",
+   "upgrade": "2.8.8 -> 3.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_07",
+   "downstream": "sqlalchemy-mixins",
+   "library": "sqlalchemy",
+   "upgrade": "1.4.46 -> 2.0.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 5,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_08",
+   "downstream": "flask-restx",
+   "library": "werkzeug",
+   "upgrade": "2.1.2 -> 2.2.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 4,
+   "findings_after_confirmed": 4,
+   "findings_before": 2,
+   "outcome": "full",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "src/flask_restx/api.py",
+     "line": 43,
+     "symbol": "werkzeug.wrappers.BaseResponse",
+     "kind": "missing",
+     "message": "werkzeug.wrappers.BaseResponse does not exist in werkzeug==2.2.0 (last present in 2.0.3)"
+    },
+    {
+     "file": "src/flask_restx/resource.py",
+     "line": 11,
+     "symbol": "werkzeug.wrappers.BaseResponse",
+     "kind": "missing",
+     "message": "werkzeug.wrappers.BaseResponse does not exist in werkzeug==2.2.0 (last present in 2.0.3)"
+    },
+    {
+     "file": "src/flask_restx/swagger.py",
+     "line": 18,
+     "symbol": "werkzeug.routing.parse_rule",
+     "kind": "missing",
+     "message": "werkzeug.routing.parse_rule does not exist in werkzeug==2.2.0 (last present in 2.1.2)"
+    },
+    {
+     "file": "src/flask_restx/swagger.py",
+     "line": 82,
+     "symbol": "werkzeug.routing.parse_rule",
+     "kind": "missing",
+     "message": "werkzeug.routing.parse_rule does not exist in werkzeug==2.2.0 (last present in 2.1.2)"
+    }
+   ]
+  },
+  {
+   "case_id": "U1_09",
+   "downstream": "empyrical",
+   "library": "pandas",
+   "upgrade": "1.5.3 -> 2.0.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 2,
+   "findings_after_confirmed": 2,
+   "findings_before": 0,
+   "outcome": "full",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "src/empyrical/tests/test_perf_attrib.py",
+     "line": 157,
+     "symbol": "pandas.read_csv",
+     "kind": "bad_call",
+     "message": "pandas.read_csv has no parameter 'squeeze' in pandas==2.0.0 (accepted up to 1.5.3)"
+    },
+    {
+     "file": "src/empyrical/tests/test_perf_attrib.py",
+     "line": 176,
+     "symbol": "pandas.read_csv",
+     "kind": "bad_call",
+     "message": "pandas.read_csv has no parameter 'squeeze' in pandas==2.0.0 (accepted up to 1.5.3)"
+    }
+   ]
+  },
+  {
+   "case_id": "U1_10",
+   "downstream": "PeakUtils",
+   "library": "scipy",
+   "upgrade": "1.13.1 -> 1.14.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_11",
+   "downstream": "UpSetPlot",
+   "library": "matplotlib",
+   "upgrade": "3.8.4 -> 3.9.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_12",
+   "downstream": "related",
+   "library": "attrs",
+   "upgrade": "19.1.0 -> 19.2.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": "attrs==19.2.0 is not among the analysed releases; attrs was not checked (use --nearest to check against the closest earlier analysed release)",
+   "api_failures": 3,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_13",
+   "downstream": "scikit-fuzzy",
+   "library": "numpy",
+   "upgrade": "1.23.5 -> 1.24.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_14",
+   "downstream": "readability-lxml",
+   "library": "lxml",
+   "upgrade": "4.9.3 -> 4.9.4",
+   "expected": "control",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_15",
+   "downstream": "UpSetPlot",
+   "library": "pandas",
+   "upgrade": "2.2.1 -> 2.2.2",
+   "expected": "control",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_16",
+   "downstream": "sqlalchemy-mixins",
+   "library": "sqlalchemy",
+   "upgrade": "1.4.45 -> 1.4.46",
+   "expected": "control",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U1_17",
+   "downstream": "flask-restx",
+   "library": "werkzeug",
+   "upgrade": "2.1.1 -> 2.1.2",
+   "expected": "control",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 2,
+   "findings_after_confirmed": 0,
+   "findings_before": 2,
+   "outcome": "false_alarm",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "src/flask_restx/api.py",
+     "line": 43,
+     "symbol": "werkzeug.wrappers.BaseResponse",
+     "kind": "missing",
+     "message": "werkzeug.wrappers.BaseResponse does not exist in werkzeug==2.1.2 (last present in 2.0.3)"
+    },
+    {
+     "file": "src/flask_restx/resource.py",
+     "line": 11,
+     "symbol": "werkzeug.wrappers.BaseResponse",
+     "kind": "missing",
+     "message": "werkzeug.wrappers.BaseResponse does not exist in werkzeug==2.1.2 (last present in 2.0.3)"
+    }
+   ]
+  },
+  {
+   "case_id": "U1_18",
+   "downstream": "pyyaml-include",
+   "library": "pyyaml",
+   "upgrade": "5.3.1 -> 5.4.1",
+   "expected": "control",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U2_01",
+   "downstream": "pip-requirements-parser",
+   "library": "packaging",
+   "upgrade": "21.3 -> 22.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 1,
+   "findings_after_confirmed": 1,
+   "findings_before": 0,
+   "outcome": "full",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "pip-requirements-parser-31.2.0/src/pip_requirements_parser.py",
+     "line": 73,
+     "symbol": "packaging.version.LegacyVersion",
+     "kind": "missing",
+     "message": "packaging.version.LegacyVersion does not exist in packaging==22.0 (last present in 21.3)"
+    }
+   ]
+  },
+  {
+   "case_id": "U2_02",
+   "downstream": "python-jose",
+   "library": "cryptography",
+   "upgrade": "3.0 -> 37.0.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 3,
+   "findings_after_confirmed": 3,
+   "findings_before": 0,
+   "outcome": "flagged_real_but_untested",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "python-jose-3.2.0/jose/backends/cryptography_backend.py",
+     "line": 18,
+     "symbol": "cryptography.utils.int_from_bytes",
+     "kind": "missing",
+     "message": "cryptography.utils.int_from_bytes does not exist in cryptography==37.0.0 (last present in 36.0.2)"
+    },
+    {
+     "file": "python-jose-3.2.0/jose/backends/cryptography_backend.py",
+     "line": 118,
+     "symbol": "cryptography.utils.int_from_bytes",
+     "kind": "missing",
+     "message": "cryptography.utils.int_from_bytes does not exist in cryptography==37.0.0 (last present in 36.0.2)"
+    },
+    {
+     "file": "python-jose-3.2.0/jose/backends/cryptography_backend.py",
+     "line": 119,
+     "symbol": "cryptography.utils.int_from_bytes",
+     "kind": "missing",
+     "message": "cryptography.utils.int_from_bytes does not exist in cryptography==37.0.0 (last present in 36.0.2)"
+    }
+   ]
+  },
+  {
+   "case_id": "U2_03",
+   "downstream": "environs",
+   "library": "marshmallow",
+   "upgrade": "3.14.1 -> 4.0.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [
+    "marshmallow.__version_info__"
+   ],
+   "findings": []
+  },
+  {
+   "case_id": "U2_04",
+   "downstream": "environs",
+   "library": "marshmallow",
+   "upgrade": "3.14.1 -> 3.21.3",
+   "expected": "control",
+   "l_kind": "pure",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U2_05",
+   "downstream": "Flask-Moment",
+   "library": "jinja2",
+   "upgrade": "3.0.3 -> 3.1.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 8,
+   "findings_after_confirmed": 8,
+   "findings_before": 0,
+   "outcome": "full",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "flask-moment-0.11.0/flask_moment.py",
+     "line": 3,
+     "symbol": "jinja2.Markup",
+     "kind": "missing",
+     "message": "jinja2.Markup does not exist in jinja2==3.1.0 (last present in 3.0.3)"
+    },
+    {
+     "file": "flask-moment-0.11.0/flask_moment.py",
+     "line": 55,
+     "symbol": "jinja2.Markup",
+     "kind": "missing",
+     "message": "jinja2.Markup does not exist in jinja2==3.1.0 (last present in 3.0.3)"
+    },
+    {
+     "file": "flask-moment-0.11.0/flask_moment.py",
+     "line": 109,
+     "symbol": "jinja2.Markup",
+     "kind": "missing",
+     "message": "jinja2.Markup does not exist in jinja2==3.1.0 (last present in 3.0.3)"
+    },
+    {
+     "file": "flask-moment-0.11.0/flask_moment.py",
+     "line": 114,
+     "symbol": "jinja2.Markup",
+     "kind": "missing",
+     "message": "jinja2.Markup does not exist in jinja2==3.1.0 (last present in 3.0.3)"
+    },
+    {
+     "file": "flask-moment-0.11.0/flask_moment.py",
+     "line": 119,
+     "symbol": "jinja2.Markup",
+     "kind": "missing",
+     "message": "jinja2.Markup does not exist in jinja2==3.1.0 (last present in 3.0.3)"
+    },
+    {
+     "file": "flask-moment-0.11.0/flask_moment.py",
+     "line": 122,
+     "symbol": "jinja2.Markup",
+     "kind": "missing",
+     "message": "jinja2.Markup does not exist in jinja2==3.1.0 (last present in 3.0.3)"
+    },
+    {
+     "file": "flask-moment-0.11.0/flask_moment.py",
+     "line": 151,
+     "symbol": "jinja2.Markup",
+     "kind": "missing",
+     "message": "jinja2.Markup does not exist in jinja2==3.1.0 (last present in 3.0.3)"
+    },
+    {
+     "file": "flask-moment-0.11.0/tests/test_flask_moment.py",
+     "line": 3,
+     "symbol": "jinja2.Markup",
+     "kind": "missing",
+     "message": "jinja2.Markup does not exist in jinja2==3.1.0 (last present in 3.0.3)"
+    }
+   ]
+  },
+  {
+   "case_id": "U2_06",
+   "downstream": "Flask-Babel",
+   "library": "flask",
+   "upgrade": "2.2.5 -> 3.0.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 1,
+   "findings_after_confirmed": 1,
+   "findings_before": 0,
+   "outcome": "full",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "Flask-Babel-2.0.0/flask_babel/__init__.py",
+     "line": 17,
+     "symbol": "flask.helpers.locked_cached_property",
+     "kind": "missing",
+     "message": "flask.helpers.locked_cached_property does not exist in flask==3.0.0 (last present in 2.3.3)"
+    }
+   ]
+  },
+  {
+   "case_id": "U2_07",
+   "downstream": "aioresponses",
+   "library": "aiohttp",
+   "upgrade": "3.7.4.post0 -> 3.9.1",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 1,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U2_08",
+   "downstream": "pytest-describe",
+   "library": "pytest",
+   "upgrade": "7.4.4 -> 8.4.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 1,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U2_09",
+   "downstream": "Jinja2",
+   "library": "markupsafe",
+   "upgrade": "1.1.1 -> 2.1.0",
+   "expected": "break",
+   "l_kind": "compiled",
+   "l_dynamic": "yes",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 14,
+   "findings_after_confirmed": 14,
+   "findings_before": 0,
+   "outcome": "full",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 13,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 194,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 195,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 200,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 205,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 248,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 258,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 498,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 764,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 823,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/filters.py",
+     "line": 828,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/runtime.py",
+     "line": 9,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/utils.py",
+     "line": 729,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    },
+    {
+     "file": "Jinja2-2.11.3/src/jinja2/utils.py",
+     "line": 737,
+     "symbol": "markupsafe.soft_unicode",
+     "kind": "missing",
+     "message": "markupsafe.soft_unicode does not exist in markupsafe==2.1.0 (last present in 2.0.1)"
+    }
+   ]
+  },
+  {
+   "case_id": "U2_10",
+   "downstream": "typer",
+   "library": "click",
+   "upgrade": "8.0.4 -> 8.1.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 1,
+   "findings_after_confirmed": 1,
+   "findings_before": 0,
+   "outcome": "full",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "typer-0.4.0/typer/__init__.py",
+     "line": 12,
+     "symbol": "click.termui.get_terminal_size",
+     "kind": "missing",
+     "message": "click.termui.get_terminal_size does not exist in click==8.1.0 (last present in 8.0.4)"
+    }
+   ]
+  },
+  {
+   "case_id": "U2_11",
+   "downstream": "starlette",
+   "library": "httpx",
+   "upgrade": "0.26.0 -> 0.28.0",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "missed",
+   "api_failures_on_private_names": [
+    "httpx.Client.__init__"
+   ],
+   "findings": []
+  },
+  {
+   "case_id": "U2_12",
+   "downstream": "docstrfmt",
+   "library": "docutils",
+   "upgrade": "0.20.1 -> 0.22",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 1,
+   "api_failures_predicted": 1,
+   "other_failures": 0,
+   "findings_after": 1,
+   "findings_after_confirmed": 1,
+   "findings_before": 0,
+   "outcome": "full",
+   "api_failures_on_private_names": [],
+   "findings": [
+    {
+     "file": "docstrfmt-1.9.0/docstrfmt/util.py",
+     "line": 9,
+     "symbol": "docutils.utils.roman",
+     "kind": "missing",
+     "message": "docutils.utils.roman does not exist in docutils==0.22 (last present in 0.21.2)"
+    }
+   ]
+  },
+  {
+   "case_id": "U2_13",
+   "downstream": "requests-file",
+   "library": "requests",
+   "upgrade": "2.24.0 -> 2.25.1",
+   "expected": "control",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": "requests==2.25.1 is not among the analysed releases; requests was not checked (use --nearest to check against the closest earlier analysed release)",
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U2_14",
+   "downstream": "sprockets.mixins.mediatype",
+   "library": "tornado",
+   "upgrade": "6.0.4 -> 6.1",
+   "expected": "control",
+   "l_kind": "compiled",
+   "l_dynamic": "no",
+   "coverage_note": "tornado==6.1 is not among the analysed releases; tornado was not checked (use --nearest to check against the closest earlier analysed release)",
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U2_15",
+   "downstream": "sphinx-click",
+   "library": "sphinx",
+   "upgrade": "5.0.2 -> 5.1.1",
+   "expected": "control",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U2_16",
+   "downstream": "docker",
+   "library": "urllib3",
+   "upgrade": "1.26.12 -> 2.0.2",
+   "expected": "break",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 1,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  },
+  {
+   "case_id": "U2_17",
+   "downstream": "docker",
+   "library": "urllib3",
+   "upgrade": "1.26.12 -> 1.26.18",
+   "expected": "control",
+   "l_kind": "pure",
+   "l_dynamic": "no",
+   "coverage_note": null,
+   "api_failures": 0,
+   "api_failures_predicted": 0,
+   "other_failures": 0,
+   "findings_after": 0,
+   "findings_after_confirmed": 0,
+   "findings_before": 0,
+   "outcome": "correct_silent",
+   "api_failures_on_private_names": [],
+   "findings": []
+  }
+ ],
+ "summary": {
+  "cases": 35,
+  "cases_checked": 32,
+  "cases_not_checked": [
+   "U1_12",
+   "U2_13",
+   "U2_14"
+  ],
+  "per_failure_recall": {
+   "predicted": 9,
+   "api_failures": 18,
+   "recall": 0.5,
+   "ci": [
+    29.0,
+    71.0
+   ]
+  },
+  "finding_precision": {
+   "confirmed": 63,
+   "findings": 68,
+   "precision": 0.9265,
+   "ci": [
+    83.9,
+    96.8
+   ]
+  },
+  "findings_in_before_env": 4,
+  "per_upgrade_outcomes": {
+   "correct_silent": 11,
+   "missed": 9,
+   "full": 8,
+   "flagged_real_but_untested": 2,
+   "partial": 1,
+   "false_alarm": 1
+  },
+  "upgrade_classification": {
+   "truly_breaking": 18,
+   "flagged_of_truly_breaking": 10,
+   "not_api_breaking": 14,
+   "flagged_of_not_api_breaking": 3,
+   "accuracy": 0.6562,
+   "precision": 0.7692,
+   "recall": 0.5556
+  },
+  "fully_predicted_upgrades": {
+   "full": 8,
+   "of": 18
+  },
+  "by_l_kind": {
+   "compiled": {
+    "api_failures": 7,
+    "predicted": 2
+   },
+   "pure": {
+    "api_failures": 11,
+    "predicted": 7
+   }
+  },
+  "by_l_dynamic": {
+   "no": {
+    "api_failures": 10,
+    "predicted": 5
+   },
+   "yes": {
+    "api_failures": 8,
+    "predicted": 4
+   }
+  },
+  "api_failures_on_private_names": 2
+ }
+}
