@@ -3,6 +3,7 @@
 *.parquet
 !benchmark/*.parquet
 !tests/fixtures/data/*.parquet
+!validation/code_repair/prompts.parquet
 # Python
 __pycache__/
 *.py[cod]
