@@ -98,4 +98,4 @@ the MCP server `apidrift-mcp`, the evaluation script, the integrity checks and a
 repository: <https://github.com/pushkardg/pypi-api-drift>.
 
 **Author:** Pushkar Devanahalli Gopalakrishna (Independent Researcher, USA). **Citation:** see `CITATION.cff` or the
-TechRxiv paper (link to be added on publication).
+the paper, <https://doi.org/10.5281/zenodo.23648339>.

@@ -11,6 +11,18 @@ date-released: "2026-10-22"
 license: CC-BY-4.0
 repository-code: "https://github.com/pushkardg/pypi-api-drift"
 url: "https://huggingface.co/datasets/pushkar87dg/pypi-api-drift"
+preferred-citation:
+  type: article
+  title: "PyPI API Drift: A Release-Level Record of Public API Changes in 1,872 Popular Python Libraries, with a Checker and a Benchmark for Version-Aware Code Generation"
+  authors:
+    - family-names: "Devanahalli Gopalakrishna"
+      given-names: "Pushkar"
+      affiliation: "Independent Researcher, USA"
+  year: 2026
+  publisher:
+    name: "Zenodo"
+  doi: "10.5281/zenodo.23648339"
+  url: "https://doi.org/10.5281/zenodo.23648339"
 keywords:
   - Python
   - PyPI

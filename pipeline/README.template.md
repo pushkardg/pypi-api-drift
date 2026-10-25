@@ -5,11 +5,14 @@
 [![tests](https://github.com/pushkardg/pypi-api-drift/actions/workflows/tests.yml/badge.svg)](https://github.com/pushkardg/pypi-api-drift/actions/workflows/tests.yml)
 [![Downloads](https://static.pepy.tech/badge/pypi-api-drift/month)](https://pepy.tech/project/pypi-api-drift)
 [![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20dataset-pypi--api--drift-yellow)](https://huggingface.co/datasets/pushkar87dg/pypi-api-drift)
-[![MCP server](https://img.shields.io/badge/MCP-server-blueviolet)](#look-things-up-or-give-a-coding-agent-the-same-lookups)
-[![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE)
-[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE-DATA.md)
+[![MCP server](https://img.shields.io/badge/MCP-server-blueviolet)](https://github.com/pushkardg/pypi-api-drift#look-things-up-or-give-a-coding-agent-the-same-lookups)
+[![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](https://github.com/pushkardg/pypi-api-drift/blob/main/LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](https://github.com/pushkardg/pypi-api-drift/blob/main/LICENSE-DATA.md)
+[![Paper DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23648339.svg)](https://doi.org/10.5281/zenodo.23648339)
 
 **How the public APIs of the {{projects}} most-downloaded Python libraries changed, release by release: up to 80 recent final releases per library, drawn from 2021–{{snapshot_month}}.**
+
+**Paper:** [https://doi.org/10.5281/zenodo.23648339](https://doi.org/10.5281/zenodo.23648339) · **Data:** [Hugging Face](https://huggingface.co/datasets/pushkar87dg/pypi-api-drift) · **Install:** `pip install pypi-api-drift`
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/pushkardg/pypi-api-drift/main/docs/demo.gif" alt="apidrift-check flags flask.escape, DataFrame.append, read_csv(error_bad_lines=...) and Retry(method_whitelist=...) against pandas 2.2, Flask 3.0 and urllib3 2.2" width="820">
@@ -254,8 +257,8 @@ The six tables are published separately from the code (they are too large for th
 <https://huggingface.co/datasets/pushkar87dg/pypi-api-drift>. Download them with
 
 ```bash
-pip install huggingface_hub
-huggingface-cli download pushkar87dg/pypi-api-drift --repo-type dataset --include "data/*" --local-dir .
+pip install -U huggingface_hub     # provides the `hf` command
+hf download pushkar87dg/pypi-api-drift --repo-type dataset --include "data/*" --local-dir .
 export APIDRIFT_DATA=$PWD/data
 ```
 
@@ -551,7 +554,22 @@ release, so the checker still cannot flag `numpy.float` for numpy 1.24.0.
 
 ## Citation
 
-See `CITATION.cff`.
+If you use the dataset, the tools or the benchmark, please cite the paper:
+
+> Pushkar Devanahalli Gopalakrishna. *PyPI API Drift: A Release-Level Record of Public API Changes in 1,872 Popular Python Libraries, with a Checker and a Benchmark for Version-Aware Code Generation*. Zenodo, 2026. <https://doi.org/10.5281/zenodo.23648339>
+
+```bibtex
+@misc{devanahalli2026apidrift,
+  author    = {Devanahalli Gopalakrishna, Pushkar},
+  title     = {{PyPI API Drift}: A Release-Level Record of Public {API} Changes in 1,872 Popular {Python} Libraries, with a Checker and a Benchmark for Version-Aware Code Generation},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23648339},
+  url       = {https://doi.org/10.5281/zenodo.23648339}
+}
+```
+
+`CITATION.cff` has the same information in machine-readable form (GitHub's "Cite this repository" button uses it).
 
 ## License
 
