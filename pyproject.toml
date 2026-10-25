@@ -1,13 +1,14 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "pypi-api-drift"
-version = "0.2.0"
+version = "1.3.2"
 description = "Check Python code against the real public API of pinned library versions (PyPI API Drift dataset)"
 readme = "README.md"
-license = {text = "Apache-2.0"}
+license = "Apache-2.0"
+license-files = ["LICENSE", "LICENSE-DATA.md"]
 authors = [{name = "Pushkar Devanahalli Gopalakrishna"}]
 requires-python = ">=3.10"
 dependencies = ["pandas>=1.5", "pyarrow>=12", "packaging>=21"]
@@ -19,13 +20,18 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
-  "License :: OSI Approved :: Apache Software License",
   "Topic :: Software Development :: Quality Assurance",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
 ]
 
 [project.urls]
 Homepage = "https://github.com/pushkardg/pypi-api-drift"
 Dataset = "https://huggingface.co/datasets/pushkar87dg/pypi-api-drift"
+Source = "https://github.com/pushkardg/pypi-api-drift"
+Issues = "https://github.com/pushkardg/pypi-api-drift/issues"
 
 [project.optional-dependencies]
 mcp = ["mcp>=1.2"]

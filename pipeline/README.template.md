@@ -1,5 +1,9 @@
 # PyPI API Drift
 
+[![PyPI](https://img.shields.io/pypi/v/pypi-api-drift)](https://pypi.org/project/pypi-api-drift/)
+[![tests](https://github.com/pushkardg/pypi-api-drift/actions/workflows/tests.yml/badge.svg)](https://github.com/pushkardg/pypi-api-drift/actions/workflows/tests.yml)
+[![Dataset on Hugging Face](https://img.shields.io/badge/dataset-Hugging%20Face-yellow)](https://huggingface.co/datasets/pushkar87dg/pypi-api-drift)
+
 **How the public APIs of the {{projects}} most-downloaded Python libraries changed, release by release: up to 80 recent final releases per library, drawn from 2021–{{snapshot_month}}.**
 
 > This is a v1 research release. Precision is measured and good; recall outside the dataset's static definition of
@@ -76,7 +80,7 @@ Plus tools built on it:
 Requires Python 3.10 or newer.
 
 ```bash
-pip install "git+https://github.com/pushkardg/pypi-api-drift"   # or: pip install -e . from a clone
+pip install pypi-api-drift          # or: pip install -e . from a clone
 export APIDRIFT_DATA=/path/to/data
 apidrift-check my_script.py --pin pandas==2.2.0 --pin flask==3.0.0
 apidrift-check my_script.py -r requirements.txt --json
@@ -116,7 +120,7 @@ apidrift-lookup versions sklearn                 # analysed releases (distributi
 change is listed once (subclass and re-export copies are folded; `--every-path` lists them all). For a removed name it
 shows where the same name still exists in the new release, as a hint rather than a verified replacement.
 
-`pip install "pypi-api-drift[mcp] @ git+https://github.com/pushkardg/pypi-api-drift"` adds `apidrift-mcp`, a stdio MCP server with four read-only tools: `api_versions`,
+`pip install "pypi-api-drift[mcp]"` adds `apidrift-mcp`, a stdio MCP server with four read-only tools: `api_versions`,
 `api_history`, `api_diff` and `check_code`. Add it to a client with
 
 ```json
