@@ -1,10 +1,19 @@
 # PyPI API Drift
 
 [![PyPI](https://img.shields.io/pypi/v/pypi-api-drift)](https://pypi.org/project/pypi-api-drift/)
+[![Python](https://img.shields.io/pypi/pyversions/pypi-api-drift)](https://pypi.org/project/pypi-api-drift/)
 [![tests](https://github.com/pushkardg/pypi-api-drift/actions/workflows/tests.yml/badge.svg)](https://github.com/pushkardg/pypi-api-drift/actions/workflows/tests.yml)
-[![Dataset on Hugging Face](https://img.shields.io/badge/dataset-Hugging%20Face-yellow)](https://huggingface.co/datasets/pushkar87dg/pypi-api-drift)
+[![Downloads](https://static.pepy.tech/badge/pypi-api-drift/month)](https://pepy.tech/project/pypi-api-drift)
+[![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20dataset-pypi--api--drift-yellow)](https://huggingface.co/datasets/pushkar87dg/pypi-api-drift)
+[![MCP server](https://img.shields.io/badge/MCP-server-blueviolet)](#look-things-up-or-give-a-coding-agent-the-same-lookups)
+[![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey)](LICENSE-DATA.md)
 
 **How the public APIs of the {{projects}} most-downloaded Python libraries changed, release by release: up to 80 recent final releases per library, drawn from 2021–{{snapshot_month}}.**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/pushkardg/pypi-api-drift/main/docs/demo.gif" alt="apidrift-check flags flask.escape, DataFrame.append, read_csv(error_bad_lines=...) and Retry(method_whitelist=...) against pandas 2.2, Flask 3.0 and urllib3 2.2" width="820">
+</p>
 
 > This is a v1 research release. Precision is measured and good; recall outside the dataset's static definition of
 > public API is limited (see [Validation](#validation)). All validation was done by AI agents isolated from the
