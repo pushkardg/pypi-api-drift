@@ -1,7 +1,7 @@
 """apidrift-mcp: a Model Context Protocol server (stdio) that lets coding agents query the PyPI API Drift dataset
 offline and check generated code against the library versions a project pins.
 
-    pip install "apidrift[mcp]"
+    pip install "pypi-api-drift[mcp] @ git+https://github.com/pushkardg/pypi-api-drift"
     APIDRIFT_DATA=/path/to/data apidrift-mcp
 
 Example client configuration (Claude Code, Claude Desktop and most MCP clients):
@@ -93,7 +93,7 @@ def build_server():
         try:  # mcp 1.x
             from mcp.server.fastmcp import FastMCP as Server
         except ImportError:
-            sys.exit("apidrift-mcp needs the MCP SDK: pip install 'apidrift[mcp]'")
+            sys.exit("apidrift-mcp needs the MCP SDK: pip install 'pypi-api-drift[mcp] @ git+https://github.com/pushkardg/pypi-api-drift'")
     srv = Server("apidrift", instructions=INSTRUCTIONS)
     for fn in TOOLS:
         srv.tool()(fn)

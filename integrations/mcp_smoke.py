@@ -2,7 +2,7 @@
 each one and check the answers against known facts (Flask 3.0 removed `escape` and `Markup`; pandas 2.0 removed
 `DataFrame.append`).
     APIDRIFT_DATA=/path/to/data python mcp_smoke.py [--server-cmd apidrift-mcp] [--json OUT]
-Exit 0 when every check passes. Needs the MCP SDK (pip install "apidrift[mcp]")."""
+Exit 0 when every check passes. Needs the MCP SDK (pip install "pypi-api-drift[mcp] @ git+https://github.com/pushkardg/pypi-api-drift")."""
 import asyncio, json, os, shutil, sys
 
 from mcp import ClientSession, StdioServerParameters

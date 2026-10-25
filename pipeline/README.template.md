@@ -73,8 +73,10 @@ Plus tools built on it:
 
 ## Quick start
 
+Requires Python 3.10 or newer.
+
 ```bash
-pip install apidrift            # or: pip install -e . from this folder
+pip install "git+https://github.com/pushkardg/pypi-api-drift"   # or: pip install -e . from a clone
 export APIDRIFT_DATA=/path/to/data
 apidrift-check my_script.py --pin pandas==2.2.0 --pin flask==3.0.0
 apidrift-check my_script.py -r requirements.txt --json
@@ -114,7 +116,7 @@ apidrift-lookup versions sklearn                 # analysed releases (distributi
 change is listed once (subclass and re-export copies are folded; `--every-path` lists them all). For a removed name it
 shows where the same name still exists in the new release, as a hint rather than a verified replacement.
 
-`pip install "apidrift[mcp]"` adds `apidrift-mcp`, a stdio MCP server with four read-only tools: `api_versions`,
+`pip install "pypi-api-drift[mcp] @ git+https://github.com/pushkardg/pypi-api-drift"` adds `apidrift-mcp`, a stdio MCP server with four read-only tools: `api_versions`,
 `api_history`, `api_diff` and `check_code`. Add it to a client with
 
 ```json

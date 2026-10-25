@@ -3,17 +3,22 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "apidrift"
+name = "pypi-api-drift"
 version = "0.2.0"
 description = "Check Python code against the real public API of pinned library versions (PyPI API Drift dataset)"
 readme = "README.md"
 license = {text = "Apache-2.0"}
 authors = [{name = "Pushkar Devanahalli Gopalakrishna"}]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = ["pandas>=1.5", "pyarrow>=12", "packaging>=21"]
 keywords = ["api", "breaking-changes", "llm", "code-generation", "static-analysis", "pypi", "semver"]
 classifiers = [
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
   "License :: OSI Approved :: Apache Software License",
   "Topic :: Software Development :: Quality Assurance",
 ]
